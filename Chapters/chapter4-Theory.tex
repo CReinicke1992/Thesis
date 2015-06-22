@@ -354,53 +354,7 @@ Each row of $\mathbf{\Gamma}$ represents a source $i$ and each column of $\mathb
 	\label{fig:Ch-Theory	-GGH}
 \end{figure}
 
-\begin{equation}
-	\begin{aligned}
-	\mathbf{\Gamma \Gamma ^H} \, = \,\,\, &
-	\bordermatrix{
-  				& 1 \,\,\,\, \dots \,\, l \,\,\dots  		\,\,\,\, Ne			\cr
-  	  1			&																\cr	
-	    		&        			 					 						\cr
-	  \vdots 	& 		 						 								\cr
-      	 		& \vdots	   							 			   				\cr
-      i  		& \mathrm{s\,o\,u\,r\,c\,e_{\,i}	}								\cr
-      		 	& \vdots		 		 					 						\cr
-      \vdots 	& 		 														\cr
-      		 	& 		 			 					 		 				\cr
-   				&										  						\cr	     
-      Ns 		& 	 	 		 						 		 		  			
-	}
-%	 
-	\,\,\,\mathrm{x} \,\,\,
-%
-%
-	\bordermatrix{
-  	 & 1	& \dots  & k &&& \dots &&& Ns 														\cr
-  	 %
-  	 \rotatebox{270}{\rotatebox{90}{1}$\,\dots$ \rotatebox{90}{$l$} $\dots\,$ \rotatebox{90}{Ne}} 
-  	 && \dots & \rotatebox{270}{$\mathrm{s\,o\,u\,r\,c\,e_{\,k}}^*$} &&& \dots &&&  	 			\cr	
-	  	} = \\
-	 &\\
-%
-%  	
-	& \bordermatrix{
-  														& 1	& \dots\,\,k\,\,\dots &&&&&& Ns  \cr
-  														&	&				      &&&&&&	 \cr	
-	  1 												& 1 & 		 			  &&&&&&  	 \cr
-       													& 	&  \ddots 			  &&&&&& 	 \cr
-      		 											& 	& 		 			  &&&&&& 	 \cr
-      \vdots											& 	& \vdots	 \,\,\,\,\,\, &&&&&&	 \cr
-      \rotatebox{270}{\rotatebox{90}{i}$\,\,\,\,\dots$} & 	& \dots \,\,\, % ...
-      		\rotatebox{270}{\rotatebox{90}{$a_{ik}$}$\,\,\,\,\dots$} \,\,\, \dots &&&&&& 	 \cr 
-      Ns 												& 	& 		 			  &&&&&& 1   			
-	}, 
-%
-	\,\,\,a_{ik} = \mathrm{s\,o\,u\,r\,c\,e_{\,i}} \cdot \mathrm{s\,o\,u\,r\,c\,e_{\,k}}^*\,.
-	\end{aligned}
-	\label{eq:Ch-Theory-G-GH}
-\end{equation}
-
- Consequently, an element $a_{ik}$ of the product $\mathbf{\Gamma \Gamma ^H}$ represents the overlap of the sources $i$ and $k$ for all experiments. The main diagonal of $\mathbf{\Gamma \Gamma ^H}$ refers to the overlap of each source with itself, which of course is perfect and therefore equal to 1. The off diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ are either 0 if the associated sources do not overlap, or contain a phase shift, $\mathrm{e}^{\, -j \omega \Delta t_{ik}}$.
+Consequently, an element $a_{ik}$ of the product $\mathbf{\Gamma \Gamma ^H}$ represents the overlap of the sources $i$ and $k$ for all experiments. The main diagonal of $\mathbf{\Gamma \Gamma ^H}$ refers to the overlap of each source with itself, which of course is perfect and therefore equal to 1. The off diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ are either 0 if the associated sources do not overlap, or contain a phase shift, $\mathrm{e}^{\, -j \omega \Delta t_{ik}}$.
   
 
 In equation \ref{eq:Ch-Theory-Pseudo-Deblended-Data} the main diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ copy the data matrix, $\mathbf{P}$, while the off-diagonal elements create the source interference, $\mathbf{N}$. If the elements $a_{ik}$ along a lower or upper diagonal are in phase, they will shift the columns of the data matrix and apply a coherent phase shift to each of them. Instead if the elements $a_{ik}$ along a lower or upper diagonal are out of phase, they will shift the columns of the data matrix and distort the phase of each column. 
