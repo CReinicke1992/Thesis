@@ -423,7 +423,7 @@ First, the data sorting will be modified such that the blended 3D data can be de
 
 \subsubsection*{Data Matrix}
 
-In 3D acquisition the sources and receivers are distributed on a 2D surface. Thus, their locations are defined by their crossline and inline positions. Each data point which is measured by a source receiver pair at a specific time is therefore constraint by 5 coordinates: Time $t$, receiver crossline and inline position ($x_r$, $in_r$), and source crossline and inline position ($x_s$, $in_s$).
+In 3D acquisition the sources and receivers are distributed on a 2D surface. Thus, their locations are defined by their crossline and inline positions, ($x$, $y$). Each data point which is measured by a source receiver pair at a specific time is therefore constraint by 5 coordinates: Time $t$, receiver crossline and inline position ($x_r$, $y_r$), and source crossline and inline position ($x_s$, $y_s$).
 
 Before applying the Mahdad deblending method the 5D data array will be reorganized in a 2D data matrix according to \citet{Delphi-Format}. For this data sorting a 1D Fourier transform with respect to time is performed and a frequency slice is selected. This reduces the data array from 5 to 4 dimensions. 
 
