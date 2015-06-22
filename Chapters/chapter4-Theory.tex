@@ -340,16 +340,16 @@ The more incoherent the source interference, $\mathbf{N}$, the better it can be 
 
 In the following the effect of the blending matrix, $\mathbf{\Gamma}$, on the product $\mathbf{\Gamma \Gamma^H}$ and on the pseudo-deblended data is analyzed. For simplicity, it is assumed that the blending matrix, $\mathbf{\Gamma}$, only contains phase shift terms, $\mathrm{e}^{-j \omega \Delta t}$, with an amplitude equal to 1 or 0. It is also assumed that each source is fired only once, unlike the shot repetition case \citep{Sixue}.
 
-Each row of $\mathbf{\Gamma}$ represents a source $i$ and each column of $\mathbf{\Gamma ^H}$ represents a source $k$ with a complex conjugated phase term. Hence, each element $a_{ik}$ of the matrix $\mathbf{\Gamma \Gamma^H}$ is the dot product between the $i^{th}$ source and the complex conjugate of the $k^{th}$ source,
+Each row of $\mathbf{\Gamma}$ represents a source $k$ and each column of $\mathbf{\Gamma ^H}$ represents a source $l$ with a complex conjugated phase term (see Figure \ref{fig:Ch-Theory-GGH}). Hence, each element $g_{kl}$ of the matrix $\mathbf{\Gamma \Gamma^H}$ is the dot product between the $k^{th}$ source and the complex conjugate of the $l^{th}$ source.
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 0.9\textwidth]{Plots/GGH}
+	\includegraphics[width = \textwidth]{Plots/GGH}
 	\caption{Illustration of the matrix product, $\mathbf{\Gamma \Gamma^H}$. In this notation $\Delta t_k$ refers to the phase shift of the source $k$, and $\Delta t_{kl}$ refers to the phase shift between the sources $k$ and $l$, $\Delta t_{kl} = \Delta t_k - \Delta t_l$.}
-	\label{fig:Ch-Theory	-GGH}
+	\label{fig:Ch-Theory-GGH}
 \end{figure}
 
-Consequently, an element $a_{ik}$ of the product $\mathbf{\Gamma \Gamma ^H}$ represents the overlap of the sources $i$ and $k$ for all experiments. The main diagonal of $\mathbf{\Gamma \Gamma ^H}$ refers to the overlap of each source with itself, which of course is perfect and therefore equal to 1. The off diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ are either 0 if the associated sources do not overlap, or contain a phase shift, $\mathrm{e}^{\, -j \omega \Delta t_{ik}}$.
+Consequently, an element $g_{kl}$ of the product $\mathbf{\Gamma \Gamma ^H}$ represents the overlap of the sources $k$ and $l$ for all experiments. The main diagonal of $\mathbf{\Gamma \Gamma ^H}$ refers to the overlap of each source with itself, which of course is perfect and therefore equal to 1. The off diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ are either 0 if the associated sources do not overlap, or contain a phase shift, $\mathrm{e}^{\, -j \omega \Delta t_{kl}}$.
   
 
 In equation \ref{eq:Ch-Theory-Pseudo-Deblended-Data} the main diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ copy the data matrix, $\mathbf{P}$, while the off-diagonal elements create the source interference, $\mathbf{N}$. If the elements $a_{ik}$ along a lower or upper diagonal are in phase, they will shift the columns of the data matrix and apply a coherent phase shift to each of them. Instead if the elements $a_{ik}$ along a lower or upper diagonal are out of phase, they will shift the columns of the data matrix and distort the phase of each column. 
