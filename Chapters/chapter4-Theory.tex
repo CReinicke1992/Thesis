@@ -182,8 +182,6 @@ For a 2D $f$-$k$-spectrum the minimum (physical) velocity of the subsurface, $v_
 
 For each frequency, $f$, wavenumbers above $k_{max}$ are removed which results in a 2D signal cone as depicted in Figure \ref{fig:Ch-Theory-FK-Mask}.
 
-\todo[inline]{Revise the discussion about the fk cone. kmax also depends on the spatial sampling rate! I think usually the spatial sampling rate should be chosen such that he highest frequency of interest can be recorded unaliased. $kmax = \frac{1}{2 \Delta x}$, $f_{max} = k_{max} v_{min}$.}
-
 $f$-$k$-filtering removes the part of the blending noise, which maps outside of the signal cone. Thus, the amplitudes of the spiky noise in space time domain are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
 
 Note that $f$-$k$-filtering can only reduce unaliased frequency components of the blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}.
@@ -300,7 +298,7 @@ which is illustrated in Figure \ref{fig:Ch-Theory-Noise}.
 
 At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted source interference increases and approaches the true source interference. 
 
- Thresholding allows to reduce aliased frequency components of the blending noise.
+Thresholding allows to reduce aliased frequency components of the blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
 
 \subsubsection*{Blending Noise Subtraction} 
 The estimate of the unblended data matrix \textbf{\^{P}}$_\textbf{i}$ is updated by subtracting the noise from the pseudo-deblended data,
@@ -399,6 +397,8 @@ In order to generate incoherent source interference, $\mathbf{N}$, it is therefo
 \end{comment}
 
 Intuitively, the degree of incoherency of the source interference, $\mathbf{N}$, also depends on whether the sources blended in an experiment are selected randomly, or in a spatially coherent pattern. For example, one expects the source interference to be more incoherent if in each experiment randomly picked sources are blended, than if in each experiment adjacent sources are blended.
+
+\todo[inline]{This might need some extra explanation and plot!}
 
 \begin{comment}
 
