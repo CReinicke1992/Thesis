@@ -395,27 +395,6 @@ Each row of $\mathbf{\Gamma}$ represents a source $i$ and each column of $\mathb
 
  Consequently, an element $a_{ik}$ of the product $\mathbf{\Gamma \Gamma ^H}$ represents the overlap of the sources $i$ and $k$ for all experiments. The main diagonal of $\mathbf{\Gamma \Gamma ^H}$ refers to the overlap of each source with itself, which of course is perfect and therefore equal to 1. The off diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ are either 0 if the associated sources do not overlap, or contain a phase shift, $\mathrm{e}^{\, -j \omega \Delta t_{ik}}$.
   
-\begin{comment}
-
-\begin{equation}
-	\mathbf{\Gamma \Gamma ^H} = \,\,\,
-	\bordermatrix{
-  				& 1			& \dots   		& i		 		& \dots	       	& Ns   			\cr
-  				&			&				&				&				&				\cr	
-	  1 		& 1   		& \ddots		 	& \ddots 		& 				&  				\cr
-	  			&			&				&				& diag_2			&				\cr
-      \vdots 	& 		 	& \ddots   		& diag_1   		& 			   	& 				\cr
-        		& \ddots		&				& 				& 				& \ddots		\cr
-      i		 	& 		  	& diag_{-1} 		& 1			 	& \ddots			& 			    \cr
-    			& 			&				& 				&				&				\cr
-      \vdots	& 		 	& 			 	& \ddots			& \ddots 		& 				\cr
-   				&			&				&				& 				&				\cr	     
-      Ns 		& 	 		& 		 		& 				& 		 		& 1   			
-	},
-	\label{eq:Ch-Theory-GGH}
-\end{equation}
-	
-\end{comment}
 
 In equation \ref{eq:Ch-Theory-Pseudo-Deblended-Data} the main diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ copy the data matrix, $\mathbf{P}$, while the off-diagonal elements create the source interference, $\mathbf{N}$. If the elements $a_{ik}$ along a lower or upper diagonal are in phase, they will shift the columns of the data matrix and apply a coherent phase shift to each of them. Instead if the elements $a_{ik}$ along a lower or upper diagonal are out of phase, they will shift the columns of the data matrix and distort the phase of each column. 
 
@@ -427,97 +406,6 @@ In terms of the blending matrix $\mathbf{\Gamma}$ a spatially incoherent firing 
 
 In practice, the maximum allowed firing time delay is limited by the available acquisition time. The spatial distribution of blended sources is constraint by the acquisition design.
 
-%Based on the above reasoning it is suggested to randomly pick sources from a crossline and blend them with a maximum firing delay time which is chosen in accordance with the vessel speed and the spatial inline sampling rate. 
-
-\begin{comment}
-
-which will be referred to as sub-diagonals in this thesis. The sub-diagonals contain either phase shifts or zeros, and they generate the blending noise in the pseudo-deblended data. Thus, in order to design an acquisition set up which optimizes the pseudo-deblended data, one should take into account the effect of the sub-diagonals on the data.
-
-Consider the example in Figure \ref{fig:Ch-Theory-Diagonal-Effect}: The $i^{th}$ element of the $k^{th}$ upper diagonal $d_{ik}$ scales the $i^{th}$ column of the data matrix $\mathbf{P_i}$ with a factor $d_{ik}$ and shifts this column by $k$ positions to the right:
-
-\begin{equation}
-	\mathbf{P_i} \rightarrow d_{ik}\mathbf{P_{i+k}}.	
-	\label{eq:Ch-Theory-UpperDiag}
-\end{equation}
-
-Analogously, the $i^{th}$ element of the $k^{th}$ lower diagonal $d_{ik}$ scales the $(i + k)^{th}$ column of the data matrix $\mathbf{P_{i + k}}$ with a factor $d_{ik}$ and shifts this column by $k$ positions to the left:
-
-\begin{equation}
-	\mathbf{P_{i+k}} \rightarrow d_{ik}\mathbf{P_{i}}.
-	\label{eq:Ch-Theory-LowerDiag}	
-\end{equation} 
-
-
-\begin{figure}
-	
-	\centering
-	
-	\begin{minipage}{0.45\textwidth}
-	\begin{subfigure}[b]{\textwidth}
-	\includegraphics[width = \textwidth]{Plots/BlendingMatrix/P}
-	\caption{Data $\mathbf{P}$.}
-	\end{subfigure}
-	\end{minipage}
-	%
-	\text{x}
-	%
-	\begin{minipage}{0.45\textwidth}
-	\begin{subfigure}[b]{\textwidth}
-	\includegraphics[width = \textwidth]{Plots/BlendingMatrix/Diag}
-	\caption{First upper diagonal $\mathbf{diag_1}$.}
-	\end{subfigure}
-	\end{minipage}
-	
-	\text{=}
-	%
-	\begin{minipage}{0.45\textwidth}
-	\begin{subfigure}[b]{\textwidth}
-	\includegraphics[width = \textwidth]{Plots/BlendingMatrix/P_Diag}
-	\caption{Product of the data and the diagonal matrix $\mathbf{P \,diag_1}$.}
-	\end{subfigure}
-	\end{minipage}
-	
-	\caption{The data matrix (a) is multiplied with a diagonal matrix which has non-zero values only on the first upper diagonal. The resulting matrix (c) illustrates that the first upper diagonal shifts the data by one column to the right, and that the columns of the data matrix are scaled with the elements of the diagonal in matrix (b). }
-	
-	\label{fig:Ch-Theory-Diagonal-Effect}
-	
-\end{figure}
-
-\FloatBarrier
-
-One can think of the product $\mathbf{\Gamma \Gamma ^H}$ as a superposition of  $(2*Ns-1)$ diagonal matrices, where each matrix contains one of the sub-diagonals of $\mathbf{\Gamma \Gamma ^H}$,
-
-\begin{equation}
-	\mathbf{\Gamma \Gamma ^H} = \sum^{N_s-1}_{i=-\left(N_s-1\right)} \mathbf{diag\,_{i}}.
-	\label{eq:Ch-Theory-GGH-Decom}
-\end{equation}
-
-Thus, the pseudo-deblended data can be written as,
-
-\begin{equation}
-	\mathbf{P \Gamma \Gamma ^H} = \mathbf{P \, diag_{0}} + \mathbf{P \, diag_{1-N_s}} + \dots + \mathbf{P \, diag_{Ns-1}} = \mathbf{P} + \text{Blending Noise}.
-	\label{eq:Ch-Theory-GGH-Pseudo}
-\end{equation}
-
-This shows that the main diagonal copies the unblended data, whereas the lower and upper diagonals create the blending noise. 
-
-As the Mahdad deblending method is based on noise filtering the blending noise in equation \ref{eq:Ch-Theory-GGH-Pseudo} should be designed as incoherent as possible. 
-
-First, all sub-diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ shift the data $\mathbf{P}$ coherently to the left or right. If these sub-diagonal elements had the same phase, the shifted data would remain coherent and a noise filter could not remove the blending noise. However, if these sub-diagonal elements contain random phase shifts the traces of shifted data are delayed with random times and lose coherency. Blending with random time delays or phase shifts is referred to as temporal blending in this thesis. Temporal blending shifts the blending noise across and along traces. 
-
-Second, one can make use of spatial incoherency: Instead of blending sources in an organized spatial pattern one could randomly pick sources and blend them. This means the sub-diagonal elements of $\mathbf{\Gamma \Gamma ^H}$ are spread across the $\mathbf{\Gamma \Gamma ^H}$ matrix, which means that each column of the data matrix $\mathbf{P}$ is shifted by a different lag to the left or right. Thus, the columns of the data matrix $\mathbf{P}$ are not shifted coherently across traces, and a noise filter can reduce the blending noise. But the columns of the data matrix $\mathbf{P}$ are not shifted along traces in time direction.
-
-%In practice of marine acquisition the spatial spread of the sources is limited, whereas random time delays between blended sources can easily be performed. Therefore, a spatial 
-Comparing temporal and spatial incoherent acquisition one realizes that the temporal incoherent acquisition shifts the data across and along traces, while the spatial incoherent acquisition only shifts the data across traces. This suggests that temporal incoherent acquisition yields more incoherent blending noise than spatial incoherent acquisition, and therefore gives a better deblending result. This could be confirmed by comparing deblending quality factors of acquisition designs with different incoherency types. 
-
-Ideally one combines temporal and spatial incoherent acquisition: If in the case of temporal incoherent acquisition the maximum allowed phase shift is large the traces of the blending noise are sufficiently spread in time direction to destroy their coherency. However, if the the maximum allowed phase shift is small the traces of the blending noise might still be coherent to a certain extent. In such a case the spatial incoherency can improve the pseudo-deblended result. Only spatially incoherent acquisition is strongly limited by the area over which the blended sources can be distributed in a marine acquisition. Therefore, it is rather considered as a support for temporal incoherent acquisition, but it is not sufficiently powerful to stand alone.
-
-In short, this thesis suggests to acquire blended data with temporally and spatially incoherent blending patterns.
-
-\todo[inline]{Mention the effect of temporal and spatial randomness on the diagonals and therefore on the pseudodeblended result. Plus, the spatial randomness becomes important for short shooting windows.
-What is the effect of only spatial randomness? Include visual support!}
-	
-\end{comment}
 
 \begin{figure}
 	\centering
