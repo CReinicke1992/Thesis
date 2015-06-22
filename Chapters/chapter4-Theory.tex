@@ -427,7 +427,7 @@ In 3D acquisition the sources and receivers are distributed on a 2D surface. Thu
 
 Before applying the Mahdad deblending method the 5D data array will be reorganized in a 2D data matrix according to \citet{Delphi-Format}. For this data sorting a 1D Fourier transform with respect to time is performed and a frequency slice is selected. This reduces the data array from 5 to 4 dimensions. 
 
-The 4D data array is sorted in a 2D matrix data matrix, $\mathbf{P}$, with as many rows as receivers and as many columns as sources. Assume there are $Ns_x$ sources per crossline. The sources of the first crossline are assigned to the first $Ns_x$ columns of the data matrix, the sources of the second crossline are assigned to the next $Ns_x$ columns of the data matrix, etc. The cross- and inline receivers are sorted in the rows of the data matrix in analogy. This is illustrated in figure \ref{fig:Ch-Theory-DelphiFormat}. 
+The 4D data array is sorted in a 2D matrix data matrix, $\mathbf{P}$, with as many rows as receivers and as many columns as sources. The total number of receivers (or sources) is obtained by multiplying the number of crossline and inline receivers (or sources). Assume there are $Ns_x$ sources per crossline. The sources of the first crossline are assigned to the first $Ns_x$ columns of the data matrix, the sources of the second crossline are assigned to the next $Ns_x$ columns of the data matrix, etc. The cross- and inline receivers are sorted in the rows of the data matrix in analogy. This is illustrated in figure \ref{fig:Ch-Theory-DelphiFormat}. 
 
 \begin{figure}
 	\centering
