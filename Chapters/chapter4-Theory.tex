@@ -464,7 +464,26 @@ As described in section \ref{sec:BlendingMatrix} each row of the blending matrix
 
 With the new data and blending matrix sorting one can already apply the 2D Mahdad method to the 3D data.
 
-\todo[inline]{Insert a figure to illustrate this!}
+\begin{figure}
+
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Plots/DrawingsCartesianFormat1}
+		\caption{}
+		\label{fig:Ch-Theory-3D-BlendedAcquisition}
+	\end{subfigure}
+	%
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width = 0.7\textwidth]{Plots/DrawingsCartesianFormat2}
+		\caption{}
+		\label{fig:Ch-Theory-3D-BlendingMatrix}
+	\end{subfigure}
+	
+	\caption{(a) Acquisition with blended crossline ($x$ direction) sources: The blending process is described at each inline position with a blending matrix which has as many rows as crossline sources, $Ns_x$. Such a blending matrix exists for each of the $Ns_y$ inline positions. (b) All these blending matrices are assembled in a single blending matrix, $\mathbf{\Gamma}$, which has $Ns_x$ by $Ns_y$ rows.}
+	\label{fig:Ch-Theory-3D-BlendingMatrix-Design}
+
+\end{figure}
 
 \subsection{3D FKK Filter} \label{sec:Ch-Theory-3dExtension-FKK}
 
