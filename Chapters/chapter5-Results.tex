@@ -10,11 +10,11 @@
 	\item Show quality factor versus incoherency/firing pattern
 \end{itemize}
 
-An incoherent blending pattern is important for good deblending performance (see section \ref{sec:BlendingMatrix}). Different incoherent blending patterns will be tested, in particular, temporally and spatially inherent blending patterns. 
+An incoherent blending pattern is important for good deblending performance (see section \ref{sec:BlendingMatrix}). Different incoherent blending patterns will be tested, in particular, temporally and spatially incoherent blending patterns. 
 
-As this thesis focuses on blended crossline sources (see Figure \ref{fig:Ch-Theory-3D-BlendedAcquisition}) the blending pattern already underlies some constraints. For example, the sources within one crossline must be blended before the vessel reaches the next inline position in order to achieve a sufficiently small inline source sampling rate. 
+This thesis focuses on blended crossline sources (see Figure \ref{fig:Ch-Theory-3D-BlendedAcquisition}), which limits the range of possible blending patterns. The most important constraint is that each experiment can only blend sources which belong to the same crossline. In addition, the source sampling rate in inline direction must be sufficiently small to avoid spatial aliasing. Thus, the sources within one crossline must be blended and recorded before the vessel reaches the next inline position. This limits the maximum time delay between blended sources.
 
-Based on these limits there are three possibilities to blend the sources incoherently. First, the sources can be blended with random time delays. Second, one can randomly pick sources from the crossline and blend them, which will be called spatial incoherency. Third, temporal and spatial incoherency can be combined, i.e. randomly picked sources are blended with random time delays.
+Based on these conditions there are three possibilities to blend the sources incoherently. First, the sources can be blended with random time delays (temporal incoherency). Second, one can randomly pick sources from the crossline and blend them (spatial incoherency). Third, temporal and spatial incoherency can be combined, i.e. randomly picked sources are blended with random time delays.
 
 
 \section{3D FKK Filter Performance}
