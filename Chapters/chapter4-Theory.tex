@@ -489,18 +489,16 @@ With the new data and blending matrix sorting one can already apply the 2D Mahda
 
 In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. In 3D there are two spatial direction ($x$, $y$), i.e. the filter can be extended to a 3D $f$-$k_x$-$k_y$-filter.
 
-One obtains the $f$-$k_x$-$k_y$-spectrum by applying an n-dimensional Fourier transform to the 5D data array. As Mahdad's deblending method is applied to common receiver gathers one picks a single receiver, i.e constant cross- and inline receiver number. Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers ($k_x$, $k_y$). Again the minimum velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber}. The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
+One obtains the $f$-$k_x$-$k_y$-spectrum by applying an n-dimensional Fourier transform to the 5D data array. As Mahdad's deblending method is applied to common receiver gathers one picks a single receiver, i.e constant cross- and inline receiver number. Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers ($k_x$, $k_y$) (see Figure \ref{fig:Ch-Theory-FK-f_slice-data}). Again the minimum velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber}. The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
 
 \begin{equation}
 	k_{T} = \sqrt{k_x^2 + k_{y}^2} < k_{max}.
 	\label{eq:Ch-Theory-TotalWavenumber}
 \end{equation}
 
-Hence the signal "cone" is defined by a circle. This is repeated for each frequency component, such that the overall $f$-$k_x$-$k_y$-mask is a 3D cone. Finally, this mask is computed for each receiver gather.
+Hence the signal "cone" is defined by a circle (see Figure \ref{fig:Ch-Theory-FK-f_slice-mask}). This is repeated for each frequency component, such that the overall $f$-$k_x$-$k_y$-mask is a 3D cone. Finally, this mask is computed for each receiver gather.
 
-Once the mask is built for a 5D data array it can either be applied to filter a 5D data array, or the mask is sorted to 2D according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, and applied to the $f$-$k_x$-$k_y$-spectrum of the data matrix.
-
-\todo[inline]{Show plots to illustrate the difference between fk and fkk mask. Maybe add a plot of the same data as in the part about 3d extension of the blending matrix but with a 3d fkk filter.}
+Once the mask is built for a 5D data array it can either be applied to filter a 5D data array, or the mask is sorted to 2D according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, and applied to the $f$-$k_x$-$k_y$-spectrum of the data matrix (see Figure \ref{fig:Ch-Theory-FK-delphi-data}, \ref{fig:Ch-Theory-FK-delphi-mask}).
 
 \begin{figure}
 	\centering
