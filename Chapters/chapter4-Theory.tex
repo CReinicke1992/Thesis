@@ -460,7 +460,7 @@ The 4D data array is sorted in a 2D matrix data matrix, $\mathbf{P}$, with as ma
 
 \subsubsection*{Blending matrix}
 
-As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one source. For extension to 3D the sources of the first crossline are saved in the top $Ns_x$ rows of the blending matrix, followed by the sources of the second crossline etc. This framework allows to blend any source combination independent of the cross- and inline positions of the involved sources.
+As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one source. For extension to 3D the sources of the first crossline are saved in the top $Ns_x$ rows of the blending matrix, followed by the sources of the second crossline etc. (see Figure \ref{fig:Ch-Theory-3D-BlendingMatrix-Design}). This framework allows to blend any source combination independent of the cross- and inline positions of the involved sources.
 
 With the new data and blending matrix sorting one can already apply the 2D Mahdad method to the 3D data.
 
@@ -480,7 +480,7 @@ With the new data and blending matrix sorting one can already apply the 2D Mahda
 		\label{fig:Ch-Theory-3D-BlendingMatrix}
 	\end{subfigure}
 	
-	\caption{(a) Acquisition with blended crossline ($x$ direction) sources: The blending process is described at each inline position with a blending matrix which has as many rows as crossline sources, $Ns_x$. Such a blending matrix exists for each of the $Ns_y$ inline positions. (b) All these blending matrices are assembled in a single blending matrix, $\mathbf{\Gamma}$, which has $Ns_x$ by $Ns_y$ rows.}
+	\caption{Illustration of the blending matrix, $\mathbf{\Gamma}$, for 3D acquisition. (a) At each of the $Ns_y$ inline position the crossline sources ($x$ direction) are blended. Each of these 2D blending processes is described by a 2D blending matrix, which has as many rows as there are crossline sources, $Ns_x$. (b) The 2D blending matrices are assembled in a single 3D blending matrix, $\mathbf{\Gamma}$, which has $Ns_x$ by $Ns_y$ rows.}
 	\label{fig:Ch-Theory-3D-BlendingMatrix-Design}
 
 \end{figure}
