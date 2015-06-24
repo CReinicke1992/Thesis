@@ -1,6 +1,6 @@
 \chapter{Results}
 
-This chapter presents the three major results of this thesis. First, an optimal blending pattern for simultaneous crossline sources will be derived. Then, the advantages of a 3D $f$-$k_x$-$k_y$-filter towards a 2D $f$-$k$-filter will be shown. Finally, the feasibility of the suggested acquisition design will be proven on a synthetic 3D data set. 
+This chapter presents the major results of this thesis. First, an optimal blending pattern for simultaneous crossline sources will be derived. Then, the advantages of a 3D $f$-$k_x$-$k_y$-filter towards a 2D $f$-$k$-filter will be shown. Finally, the feasibility of the suggested acquisition design will be proven on a synthetic 3D data set. 
 
  
 \section{Blending pattern}
@@ -15,7 +15,7 @@ This chapter presents the three major results of this thesis. First, an optimal 
 
 An incoherent blending pattern is important for good deblending performance (see section \ref{sec:BlendingMatrix}). Different incoherent blending patterns will be tested, in particular, temporally and spatially incoherent blending patterns. 
 
-This thesis focuses on blended crossline sources (see Figure \ref{fig:Ch-Theory-3D-BlendedAcquisition}), which limits the range of possible blending patterns. The most important constraint is that each experiment can only blend sources which belong to the same crossline. In addition, the source sampling rate in inline direction must be sufficiently small to avoid spatial aliasing. Thus, the sources within one crossline must be blended and recorded before the vessel reaches the next inline position. This limits the maximum time delay between blended sources.
+This thesis considers the following blended acquisition set up: The sources are assembled in crossline direction and move in inline direction due to the movement of the vessel (see Figure \ref{fig:Ch-Theory-3D-BlendedAcquisition}). As a consequence each experiment can blend sources which belong to the same crossline. The source sampling rate in inline direction must be sufficiently small to avoid spatial aliasing. Thus, the sources within one crossline must be blended and recorded before the vessel reaches the next inline position.
 
 Based on these conditions there are three possibilities to blend the sources incoherently. First, the sources can be blended with random time delays (temporal incoherency). Second, one can randomly pick sources from the crossline and blend them (spatial incoherency). Third, temporal and spatial incoherency can be combined, i.e. randomly picked sources are blended with random time delays.
 
