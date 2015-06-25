@@ -24,7 +24,6 @@ In the following these blending patterns will be tested on a synthetic data set.
 \begin{equation}
 	Q = 10 \cdot \frac{\left|\left|\text{Unblended data}\right|\right| _2 ^2}{\left|\left|\text{Unblended data - Deblended data}\right|\right| _2 ^2} .	
 \end{equation}
-change
 
 \begin{figure}
 	\centering
@@ -60,6 +59,8 @@ change
 	\end{subfigure}
 	
 	\caption{These 3D common receiver gathers are sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}. The unblended synthetic data (a) is used to simulate a blended acquisition with 3 experiments per crossline and 7 shots per experiment. The maximum firing time delay is \SI{400}{\milli\second}. The sources are blended in three different patterns: (b) Randomly selected sources are blended without time delay, (c) neighboring sources are blended with random time delays, (d) randomly picked sources are blended with random time delays. Next, the blended data sets are deblended. The corresponding deblending results are illustrated in (b) to (d).}
+	\label{fig:Ch-Results-Debl-Delphi}
+	
 \end{figure}
 
 \todo[inline]{Make a sketch of the set up of the synthetic data.}
@@ -96,7 +97,7 @@ change
 		\caption{}
 		\label{fig:Ch-Results-Debl-inline10-xt}
 	\end{subfigure}
-	
+	\par\bigskip
 	\centering
 	\begin{subfigure}[t]{0.24\textwidth}
 		\centering
@@ -128,10 +129,13 @@ change
 		\caption{}
 		\label{fig:Ch-Results-Debl-xline10-xt}
 	\end{subfigure}
+	
+	\caption{(a)-(d) show inline slices of the data shown in Figure \ref{fig:Ch-Results-Debl-Delphi}. (e)-(h) display the corresponding crossline slices. }
+	\label{fig:Ch-Results-Debl-x-inline}
 
 \end{figure}
 
-
+\FloatBarrier
 \section{3D FKK Filter Performance}
 
 \section{Feasibility}
