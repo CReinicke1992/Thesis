@@ -19,7 +19,11 @@ This thesis considers the following blended acquisition set up: The sources are 
 
 Based on this set up there are three possibilities to blend the sources incoherently. First, the sources can be blended with random time delays (temporal incoherency). Second, one can randomly pick sources for each experiment (spatial incoherency). Third, temporal and spatial incoherency can be combined, i.e. randomly picked sources are blended with random time delays.
 
-In the following these blending patterns will be tested on a synthetic data set. The deblending performance is evaluated with a quality factor, $Q$, according to \citet{IbrahimQuality}. The quality factor, $Q$, is defined as;
+In the following these blending patterns will applied to a synthetic data set (see Figure \ref{fig:Ch-Results-Unbl-Delphi}, \ref{fig:Ch-Results-Unbl-inline10}, \ref{fig:Ch-Results-Unbl-xline10}). Next, the data is deblended with the 3D deblending algorithm of section \ref{sec:MahdadMethod3d}. 
+
+The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-Delphi} and \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-Delphi-x}, \ref{fig:Ch-Results-Debl-inline10-x}, \ref{fig:Ch-Results-Debl-xline10-x}). By introducing random firing time delays the deblended data improves significantly as shown in Figure \ref{fig:Ch-Results-Debl-Delphi-t}, \ref{fig:Ch-Results-Debl-inline10-t}, \ref{fig:Ch-Results-Debl-xline10-t}). A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-Delphi-xt}, \ref{fig:Ch-Results-Debl-inline10-xt}, \ref{fig:Ch-Results-Debl-xline10-xt}).
+
+ Then, the deblending performance is evaluated with a quality factor, $Q$, which is defined by \citet{IbrahimQuality} as;
 
 \begin{equation}
 	Q = 10 \cdot \frac{\left|\left|\text{Unblended data}\right|\right| _2 ^2}{\left|\left|\text{Unblended data - Deblended data}\right|\right| _2 ^2} .	
@@ -133,6 +137,13 @@ In the following these blending patterns will be tested on a synthetic data set.
 	\caption{(a)-(d) show inline slices of the data shown in Figure \ref{fig:Ch-Results-Debl-Delphi}. (e)-(h) display the corresponding crossline slices. }
 	\label{fig:Ch-Results-Debl-x-inline}
 
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{Plots/BlendingPatterns/quality_line_plot}
+	\caption{The 3 suggested blending patterns are simulated with maximum firing time delays between \SI{40}{\milli\second} and \SI{400}{\milli\second}. The quality factors are computed with respect to the unblended data and illustrated as a function of the maximum firing time.}
+	\label{fig:Ch-Results-QualityFactors}
 \end{figure}
 
 \FloatBarrier
