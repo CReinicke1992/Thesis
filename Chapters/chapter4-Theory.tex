@@ -32,7 +32,7 @@ According to the seismic forward model of \citet{Berkhout1982} the data matrix, 
 	\label{eq:Ch-Theory-DataRepresentation}
 \end{equation}
 
-In the source matrix, $\mathbf{S}$, each row and each column represent one source position (see Figure \ref{fig:Ch-Theory-BlendedSource}). Thus, $\mathbf{S}$ is a diagonal matrix. $\mathbf{S}$ captures one frequency component of the source signature. By applying a Fourier transform to all frequency components the source signature is obtained.
+In the source matrix, $\mathbf{S}$, each row and each column represent one source position (see Figure \ref{fig:Ch-Theory-BlendedSource}). Thus, $\mathbf{S}$ is a diagonal matrix. Each diagonal element $s_{ii}$ captures one frequency component of the source signature injected in the earth at the position $x_s = x_i$. By applying a Fourier transform to all frequency components of the element $s_{ii}$ the source signature is obtained.
 
  The impulse response of the Earth, $\mathbf{X}$, describes how an impulse at the source location, $x_s$, is transformed in the Earth into the signal at the receiver location, $x_r$.
 
