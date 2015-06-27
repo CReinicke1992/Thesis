@@ -1,6 +1,6 @@
 \chapter{Theory} \label{chap:theory}
 
-This chapter describes the theory behind blending and deblending. First the detail hiding operator notation is explained. This notation is used to describe the forward model of seismic data. By introducing the blending operator the forward model is extended to the blended case. Next, the deblending method of \citet{Mahdad-Deblending-Method} is discussed to illustrate the concepts on which this thesis is based. At the end of the chapter the blending operator is analyzed in greater detail, and the extension to 3D is discussed.
+This chapter describes the theory behind blending and deblending. First the detail hiding operator notation is explained. This notation is used to describe the forward model of seismic data. By introducing the blending operator the forward model is extended to the blended case. Next, the deblending method presented in \citet{Mahdad-Deblending-Method} is discussed to illustrate the concepts on which this thesis is based. At the end of the chapter the blending operator is analyzed in greater detail, and the extension from 2D blending to 3D blending is discussed.
 
 \section{The Forward Model of Blending} \label{sec:Ch-Theory-Operator}
 %The detail hiding operator notation was introduced by \citet{Berkhout1982}, and later on it was extended for blended data. 
@@ -8,7 +8,7 @@ This chapter describes the theory behind blending and deblending. First the deta
 \subsection{Conventional Seismic Data}
 In the detail hiding operator notation \citep{Berkhout1982} the recorded signal is considered discrete in terms of time $t$, receiver position $x_r$, and source position $x_s$. Thus, the measurements can be organized in a cube, $\mathbf{p(t,x_r,x_s)}$ (see Figure \ref{fig:Ch-Theory-DataMatrix}). Each frequency slice of this new cube represents the data matrix, $\mathbf{P}$. 
 
-In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic common shot gather, each row to a monochromatic common receiver gather, each diagonal to a monochromatic common offset gather, and each anti-diagonal to a monochromatic common midpoint gather. These properties are summarized in Figure \ref{fig:Ch-Theory-DataMatrixMahdad}. 
+In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic common shot gather (see Figure \ref{fig:Ch-Theory-DataMatrixMahdad}), each row to a monochromatic common receiver gather, each diagonal to a monochromatic common offset gather, and each anti-diagonal to a monochromatic common midpoint gather. 
 
 \begin{figure}
     \centering
@@ -25,7 +25,7 @@ In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic com
 	\label{fig:Ch-Theory-DataMatrixMahdad}
 \end{figure}
 
-Based on the seismic forward model of \citet{Berkhout1982} the data matrix, $\mathbf{P}$, can be represented by a matrix multiplication of the source matrix, $\mathbf{S}$, the impulse response of the Earth, $\mathbf{X}$, and the receiver matrix, $\mathbf{D}$:
+According to the seismic forward model of \citet{Berkhout1982} the data matrix, $\mathbf{P}$, can be represented by a matrix multiplication of the source matrix, $\mathbf{S}$, the impulse response of the Earth, $\mathbf{X}$, and the receiver matrix, $\mathbf{D}$:
 
 \begin{equation}
 	\mathbf{P} = \mathbf{D \, X \, S}.
@@ -40,7 +40,39 @@ $\mathbf{D}$ is the receiver matrix, which converts the seismic wavefield at the
 
 In practice, one tries to retrieve the unknown Earth response, $\mathbf{X}$, from the data, $\mathbf{P}$, by removing $\mathbf{S}$ (designature) and $\mathbf{D}$ (receiver deghosting).
 
+
+
 \subsection{Blended Seismic Data}
+
+\begin{figure}
+	
+	\centering
+	\begin{subfigure}[t]{0.6\textwidth}	
+	\includegraphics[width=\textwidth]{Plots/Blended-Source-edit2}
+	\caption{}
+	\label{fig:Ch-Theory-BlendedSource-Matrices}
+	\end{subfigure}
+	\par\bigskip
+	\begin{subfigure}[t]{\textwidth}
+	\centering
+	\includegraphics[width=0.5\textwidth]{Plots/Blended-Source-Conventional}
+	\caption{}
+	\label{fig:Ch-Theory-BlendedSource-Conventional}
+	\end{subfigure}
+	\par\bigskip
+	\begin{subfigure}[t]{\textwidth}
+	\centering
+	\includegraphics[width=0.36\textwidth]{Plots/Blended-Source-New}
+	\caption{}
+	\label{fig:Ch-Theory-BlendedSource-Blended}
+	\end{subfigure}
+    % RATIO of the boat images 294 : 410
+	
+	\caption{(a) A conventional source matrix, $\mathbf{S}$, is transformed to a blended source matrix, $\mathbf{S_{bl}}$, by applying the blending matrix, $\mathbf{\Gamma}$. Each star represents a source, and the gray scale of the stars represents the relative firing time. (b) Illustration of conventional acquisition with one vessel. This acquisition set up is modeled by the source matrix $\mathbf{S}$. (c) Illustration of blended acquisition with two vessels. In this case the blended source matrix $\mathbf{S_{bl}}$ models the acquisition set up. The experiment number is indicated on top of each drawing.}
+	\label{fig:Ch-Theory-BlendedSource}
+	
+\end{figure}
+
 
 For blended acquisition the recorded events belonging to different sources overlap as shown in the shot gather in Figure \ref{fig:Ch-Theory-BlendedData}. 
 
@@ -68,35 +100,6 @@ This can be captured in the forward model by introducing a blending matrix, $\ma
 \end{equation} 
 
 Thus, the blending matrix selects specific sources from the source matrix and superimposes as visualized in Figure \ref{fig:Ch-Theory-BlendedSource}. From Figure \ref{fig:Ch-Theory-BlendedSource} it also becomes clear that both the blending matrix, $\mathbf{\Gamma}$, and the blended source matrix, $\mathbf{S_{bl}}$, have more rows than columns. 
-
-\begin{figure}
-	
-	\centering
-	\begin{subfigure}[t]{0.6\textwidth}	
-	\includegraphics[width=\textwidth]{Plots/Blended-Source-edit2}
-	\caption{}
-	\label{fig:Ch-Theory-BlendedSource-Matrices}
-	\end{subfigure}
-	\par\bigskip
-	\begin{subfigure}[t]{\textwidth}
-	\centering
-	\includegraphics[width=0.5\textwidth]{Plots/Blended-Source-Conventional}
-	\caption{}
-	\label{fig:Ch-Theory-BlendedSource-Conventional}
-	\end{subfigure}
-	\par\bigskip
-	\begin{subfigure}[t]{\textwidth}
-	\centering
-	\includegraphics[width=0.36\textwidth]{Plots/Blended-Source-New}
-	\caption{}
-	\label{fig:Ch-Theory-BlendedSource-Blended}
-	\end{subfigure}
-    % RATIO of the boat images 294 : 410
-	
-	\caption{(a) A conventional source matrix, $\mathbf{S}$, is transformed to a blended source matrix, $\mathbf{S_{bl}}$, by applying the blending matrix, $\mathbf{\Gamma}$. Each star represents a source, and the gray scale of the stars represents the relative firing time. (b) Illustration of conventional acquisition with one vessel and the source matrix $\mathbf{S}$. (c) Illustration of blended acquisition with two vessels and the source matrix $\mathbf{S_{bl}}$. The experiment number is indicated on top of each drawing.}
-	\label{fig:Ch-Theory-BlendedSource}
-	
-\end{figure}
 
 In the case of source blending the receiver matrix, $\mathbf{D}$, is not influenced by blending. And of course, the Earth impulse response, $\mathbf{X}$, is independent of the acquisition design. Hence, the blended data can be written as;
 
