@@ -68,7 +68,7 @@ In practice, one tries to retrieve the unknown earth response, $\mathbf{X}$, fro
 	\end{subfigure}
     % RATIO of the boat images 294 : 410
 	
-	\caption{(a) A conventional source matrix, $\mathbf{S}$, is transformed to a blended source matrix, $\mathbf{S_{bl}}$, by applying the blending matrix, $\mathbf{\Gamma}$. Each star represents a source, and the gray scale of the stars represents the relative firing time. (b) Illustration of conventional acquisition with one vessel. This acquisition set up is modeled by the source matrix $\mathbf{S}$. (c) Illustration of blended acquisition with two vessels. In this case the blended source matrix $\mathbf{S_{bl}}$ models the acquisition set up. The experiment number is indicated on top of each drawing.}
+	\caption{(a) A conventional source matrix, $\mathbf{S}$, is transformed to a blended source matrix, $\mathbf{S}_{bl}$, by applying the blending matrix, $\mathbf{\Gamma}$. Each star represents a source, and the gray scale of the stars represents the relative firing time. (b) Illustration of conventional acquisition with one vessel. This acquisition set up is modeled by the source matrix $\mathbf{S}$. (c) Illustration of blended acquisition with two vessels. In this case the blended source matrix $\mathbf{S}_{bl}$ models the acquisition set up. The experiment number is indicated on top of each drawing.}
 	\label{fig:Ch-Theory-BlendedSource}
 	
 \end{figure}
@@ -83,10 +83,10 @@ For blended acquisition the recorded events belonging to different sources overl
 	\label{fig:Ch-Theory-BlendedData}
 \end{figure}
 
-Blending can be captured in the forward model by introducing a blending matrix, $\mathbf{\Gamma}$, which transforms the source matrix, $\mathbf{S}$, into a blended source matrix, $\mathbf{S_{bl}}$,
+Blending can be captured in the forward model by introducing a blending matrix, $\mathbf{\Gamma}$, which transforms the source matrix, $\mathbf{S}$, into a blended source matrix, $\mathbf{S}_{bl}$,
 
 \begin{equation}
-	\mathbf{S_{bl}} = \mathbf{S \, \Gamma}.
+	\mathbf{S}_{bl} = \mathbf{S \, \Gamma}.
 	\label{eq:Ch-Theory-BlendedSource}
 \end{equation}
 
@@ -101,16 +101,16 @@ Blending can be captured in the forward model by introducing a blending matrix, 
  
 If the source $i$ is not fired in the $j^{th}$ experiment the amplitude $A_{ij}$ is zero.
 
-Thus, the blending matrix selects specific sources from the source matrix and superimposes as visualized in Figure \ref{fig:Ch-Theory-BlendedSource}. From Figure \ref{fig:Ch-Theory-BlendedSource} it also becomes clear that both the blending matrix, $\mathbf{\Gamma}$, and the blended source matrix, $\mathbf{S_{bl}}$, have more rows than columns. 
+Thus, the blending matrix selects specific sources from the source matrix and superimposes as visualized in Figure \ref{fig:Ch-Theory-BlendedSource}. From Figure \ref{fig:Ch-Theory-BlendedSource} it also becomes clear that both the blending matrix, $\mathbf{\Gamma}$, and the blended source matrix, $\mathbf{S}_{bl}$, have more rows than columns, i.e. there are more sources than experiments. 
 
 In the case of source blending the receiver matrix, $\mathbf{D}$, is not influenced by blending. And of course, the earth impulse response, $\mathbf{X}$, is independent of the acquisition design. Hence, the blended data can be written as;
 
 \begin{equation}
-	\mathbf{P_{bl}} = \mathbf{D} \, \mathbf{X} \, \mathbf{S_{bl}} = \mathbf{D} \, \mathbf{X} \, \mathbf{S} \, \mathbf{\Gamma} = \mathbf{P \, \Gamma}.
+	\mathbf{P}_{bl} = \mathbf{D} \, \mathbf{X} \, \mathbf{S}_{bl} = \mathbf{D} \, \mathbf{X} \, \mathbf{S} \, \mathbf{\Gamma} = \mathbf{P \, \Gamma}.
 	\label{eq:Ch-Theory-BlendedData}
 \end{equation}
 
-Note that the blended data matrix, $\mathbf{P_{bl}}$, has less columns, i.e. less experiments, than the unblended data matrix, $\mathbf{P}$.
+Note that, the blended data matrix, $\mathbf{P}_{bl}$, also has less columns, i.e. less experiments, than the unblended data matrix, $\mathbf{P}$.
 
 
 
@@ -123,8 +123,8 @@ The basic workflow of the method of \citet{Mahdad-Deblending-Method} is summariz
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{Plots/Mahdad-FlowChart-v3}
-	\caption{Pseudo-deblending provides a first estimate of the unblended data. The blended sources are incoherent in the common receiver domain. This incoherent blending noise is attenuated with f-k-filtering and thresholding. Next, the source interference is estimated and subtracted from the pseudo-deblended data. The deblended data is achieved when the data estimation converges.}
+	\includegraphics[width=0.8\textwidth]{Plots/Mahdad-FlowChart-v4}
+	\caption{Flowchart belonging to the deblending method of \citet{Mahdad-Deblending-Method}.}
 	\label{fig:Ch-Theory-FlowChart}
 \end{figure}
 
@@ -134,7 +134,7 @@ The basic workflow of the method of \citet{Mahdad-Deblending-Method} is summariz
 The first guess of the unblended data matrix, $\mathbf{P}$, is estimated via pseudo-deblending;
 
 \begin{equation}
-	\mathbf{P_{ps}} = \mathbf{P_{bl}} \, \mathbf{\Gamma^H}.
+	\mathbf{P}_{ps} = \mathbf{P}_{bl} \, \mathbf{\Gamma}^H.
 	\label{eq:Ch-Theory-PseudoDeblended}
 \end{equation}
 
@@ -158,7 +158,7 @@ Pseudo-deblending copies the blended data to the locations of all shots present 
 		\caption{Common-receiver-gather}
 		\label{fig:Ch-Theory-PseudoDeblendedCRG}
 	\end{subfigure}
-	\caption{Pseudo-deblended data, $\mathbf{P_{ps}}$, sorted in a common shot gather (left) and common receiver gather (right). The overlapping sources map in the pseudo-deblended shot gather as coherent events, while they map as incoherent spikes in the pseudo-deblended receiver gather.}
+	\caption{Pseudo-deblended data, $\mathbf{P}_{ps}$, sorted in a common shot gather (left) and common receiver gather (right). The overlapping sources map in the pseudo-deblended shot gather as coherent events, while they map as incoherent spikes in the pseudo-deblended receiver gather.}
 	\label{fig:Ch-Theory-PseudoDeblended}
 
 \end{figure}
@@ -171,7 +171,7 @@ Note that all the quantities which are estimated are indicated with a hat. The s
 In an ideal case the blending noise, $\mathbf{N}$, which overlies the signal in the pseudo-deblended data would be calculated based on the unblended data,
 
 \begin{equation}
-	\mathbf{N} = \mathbf{P_{bl}} \, \mathbf{\Gamma^H} - \mathbf{P}.
+	\mathbf{N} = \mathbf{P}_{bl} \, \mathbf{\Gamma}^H - \mathbf{P}.
 	\label{eq:Ch-Theory-Noise}
 \end{equation}
 
@@ -309,7 +309,7 @@ Thresholding allows to reduce aliased frequency components of the blending noise
 The estimate of the unblended data matrix \textbf{\^{P}}$_\textbf{i}$ is updated by subtracting the noise from the pseudo-deblended data,
 
 \begin{equation}
-	\textbf{\^P}_\textbf{i+1} = \textbf{P}_\textbf{bl} \, \mathbf{\Gamma^H} - \textbf{\^{N}}_\textbf{i}, 
+	\textbf{\^P}_\textbf{i+1} = \textbf{P}_\textbf{bl} \, \mathbf{\Gamma}^H - \textbf{\^{N}}_\textbf{i}, 
 	\label{eq:Ch-Theory-DataUpdate1}
 \end{equation}
 
@@ -335,7 +335,7 @@ The blending matrix $\mathbf{\Gamma}$ determines the pseudo-deblended data,
 which is a superposition of the unblended data, $\mathbf{P}$, and the source interference, $\mathbf{N}$,
 
 \begin{equation}
-	\mathbf{P_{ps}} = \mathbf{P} + \mathbf{N}.
+	\mathbf{P}_{ps} = \mathbf{P} + \mathbf{N}.
 	\label{eq:Ch-Theory-PseudoSuperposition}
 \end{equation}
 
