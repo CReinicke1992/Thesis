@@ -116,8 +116,9 @@ Note that, the blended data matrix, $\mathbf{P}_{bl}$, also has less columns, i.
 
 \section{Deblending} \label{sec:MahdadMethod}
 
-The deblending method in this thesis builds on the method of \citet{Mahdad-Deblending-Method}. Therefore, the method of \citet{Mahdad-Deblending-Method} is described in detail. In section \ref{sec:MahdadMethod3d} it will be extended to 3D.
+Before removing the receiver matrix, $\mathbf{D}$, and the source matrix, $\mathbf{S}$, one must remove  the blending matrix, $\mathbf{\Gamma}$, from the blended data, $\mathbf{P}_{bl}$. This process is called deblending.
 
+The deblending method in this thesis builds on the method of \citet{Mahdad-Deblending-Method}. Therefore, the method of \citet{Mahdad-Deblending-Method} is described in great detail.
 
 The basic workflow of the method of \citet{Mahdad-Deblending-Method} is summarized in Figure \ref{fig:Ch-Theory-FlowChart} and will be explained step by step in the following subsections. 
 
