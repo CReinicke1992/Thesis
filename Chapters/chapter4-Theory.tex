@@ -83,7 +83,7 @@ For blended acquisition the recorded events belonging to different sources overl
 	\label{fig:Ch-Theory-BlendedData}
 \end{figure}
 
-This can be captured in the forward model by introducing a blending matrix, $\mathbf{\Gamma}$, which transforms the source matrix, $\mathbf{S}$, into a blended source matrix, $\mathbf{S_{bl}}$,
+Blending can be captured in the forward model by introducing a blending matrix, $\mathbf{\Gamma}$, which transforms the source matrix, $\mathbf{S}$, into a blended source matrix, $\mathbf{S_{bl}}$,
 
 \begin{equation}
 	\mathbf{S_{bl}} = \mathbf{S \, \Gamma}.
@@ -92,12 +92,14 @@ This can be captured in the forward model by introducing a blending matrix, $\ma
 
  Each row of $\mathbf{\Gamma}$ represents one source, and each column of $\mathbf{\Gamma}$ represents one experiment (see Figure \ref{fig:Ch-Theory-BlendedSource}). 
  
- The blending matrix captures the physics of a blended acquisition as follows: An element $\gamma_{ij}$ of the blending matrix relates a source $i$ to an experiment $j$. Within the experiment $j$ the source $i$ has a relative amplitude $A_{ij}$ and a relative time delay $t_{ij}$ with respect to the first source fired in the $j^{th}$ experiment. If the source $i$ is not fired in the $j^{th}$ experiment the amplitude $A_{ij}$ is zero. Based on these considerations the element $\gamma_{ij}$ is described with an amplitude term $A_{ij}$ and a phase term $\mathrm{e}^{-j \omega \Delta t_{ij}}$; 
+ The blending matrix captures the physics of a blended acquisition as follows: An element $\gamma_{ij}$ of the blending matrix includes a source $i$ and an experiment $j$. The source $i$ has a relative amplitude $A_{ij}$ and a relative time delay $t_{ij}$ with respect to the first source fired in the $j^{th}$ experiment;
 
 \begin{equation}
 	\gamma_{ij} =  A_{ij} \mathrm{e}^{-j \omega \Delta t_{ij}}.
 	\label{eq:Ch-Theory-BlendingElement}
-\end{equation} 
+\end{equation}  
+ 
+If the source $i$ is not fired in the $j^{th}$ experiment the amplitude $A_{ij}$ is zero.
 
 Thus, the blending matrix selects specific sources from the source matrix and superimposes as visualized in Figure \ref{fig:Ch-Theory-BlendedSource}. From Figure \ref{fig:Ch-Theory-BlendedSource} it also becomes clear that both the blending matrix, $\mathbf{\Gamma}$, and the blended source matrix, $\mathbf{S_{bl}}$, have more rows than columns. 
 
