@@ -232,24 +232,25 @@ In the following all the quantities which are estimated are indicated with a hat
 
 \subsubsection*{F-K-Filtering}
 
-One of the constraints is coherency, i.e. by assuming the blending noise in Figure \ref{fig:Ch-Theory-PseudoDeblendedCRG} is incoherent it can be removed. For this purpose the data is transformed from the space time to the wavenumber frequency domain where the spiky noise spreads over all frequency and wavenumber components (see Figure \ref{fig:Ch-Theory-FKDeblended-NoFilter}, top). 
+One of the constraints is coherency, i.e. by assuming the blending noise in Figure \ref{fig:Ch-Theory-PseudoDeblendedCRG} is incoherent it can be removed. For this purpose the data is transformed from the space time to the wavenumber frequency domain where the spiky noise spreads over all wavenumber and frequency components (see Figure \ref{fig:Ch-Theory-FKDeblended-NoFilter}, top). 
 
+%For a 2D $f$-$k$-spectrum the minimum (physical) velocity of the subsurface, $v_{min}$, determines the maximum wavenumber, $k_{max}$,  for a given frequency, $f$;
 
-For a 2D $f$-$k$-spectrum the minimum (physical) velocity of the subsurface, $v_{min}$, determines the maximum wavenumber, $k_{max}$,  for a given frequency, $f$;
+The unblended data maps in the $f$-$k$-domain as a cone (see Figure \ref{fig:Ch-Theory-fk-Unblended-data}). The minimum (physical) velocity, $v_{min}$, of the subsurface determines the slope of the cone. This means that for a given frequency, $f$, the maximum wavenumber, $k_{max}$, is defined as; 
 
 \begin{equation}
 	k_{max} = \frac{f}{v_{min}}.
 	\label{eq_Ch-Theory-MaxWavenmber}
 \end{equation} 
 
-The unblended data maps in $f$-$k$-domain as a cone (see Figure \ref{fig:Ch-Theory-fk-Unblended-data}). The slope of the cone is determined by the minimum velocity, $v_{min}$, which is $v_{w} = \SI{1500}{\metre\per\second}$ for the marine case.
+In the marine case the minimum velocity is usually the water velocity, $v_{w} = \SI{1500}{\metre\per\second}$.
 
 \begin{figure}
 	\centering
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width = \textwidth]{Plots/Mahdad/30iter/FK-UnblendedCRG_r1}
-		\caption{cap}
+		\caption{$f$-$k$-spectrum of an unblended common shot gather.}
 		\label{fig:Ch-Theory-fk-Unblended-data}
 	\end{subfigure}
 	%
@@ -267,9 +268,11 @@ The unblended data maps in $f$-$k$-domain as a cone (see Figure \ref{fig:Ch-Theo
 
 For each frequency, $f$, wavenumbers above $k_{max}$ are removed which results in a 2D signal cone as depicted in Figure \ref{fig:Ch-Theory-FK-Mask}.
 
-$f$-$k$-filtering removes the part of the blending noise, which maps outside of the signal cone. Thus, the amplitudes of the spiky noise in space time domain are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
+$f$-$k$-filtering removes the part of the blending noise, which maps outside of the signal cone. Thus, after transforming the data back to the space time domain the amplitudes of the spiky noise are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
 
-Note that $f$-$k$-filtering can only reduce unaliased frequency components of the blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}.
+Note that $f$-$k$-filtering can only reduce unaliased frequency components of the blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}. 
+
+The high cut frequency of the $f$-$k$-mask is set according to the highest frequency components in the data. The aliased blending noise will be reduced by thresholding. 
  
 
 
