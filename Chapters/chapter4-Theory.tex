@@ -242,19 +242,34 @@ For a 2D $f$-$k$-spectrum the minimum (physical) velocity of the subsurface, $v_
 	\label{eq_Ch-Theory-MaxWavenmber}
 \end{equation} 
 
+The unblended data maps in $f$-$k$-domain as a cone (see Figure \ref{fig:Ch-Theory-fk-Unblended-data}). The slope of the cone is determined by the minimum velocity, $v_{min}$, which is $v_{w} = \SI{1500}{\metre\per\second}$ for the marine case.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{Plots/Mahdad/30iter/FK-UnblendedCRG_r1}
+		\caption{cap}
+		\label{fig:Ch-Theory-fk-Unblended-data}
+	\end{subfigure}
+	%
+	\centering
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width = 0.957\textwidth]{Plots/Mahdad/5iter/FK-MaskCRG_rec30}
+		\caption{The $f$-$k$-mask is determined by the minimum signal velocity in the subsurface. The white area of the filter equals one, the black area equals zero. Thus, the filter removes data which is mapped outside of the white signal cone.}
+		\label{fig:Ch-Theory-FK-Mask}
+	\end{subfigure}
+	
+	\caption{}
+	\label{fig:Ch-Theory-fk-unblended-data-mask}
+\end{figure}
+
 For each frequency, $f$, wavenumbers above $k_{max}$ are removed which results in a 2D signal cone as depicted in Figure \ref{fig:Ch-Theory-FK-Mask}.
 
 $f$-$k$-filtering removes the part of the blending noise, which maps outside of the signal cone. Thus, the amplitudes of the spiky noise in space time domain are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
 
 Note that $f$-$k$-filtering can only reduce unaliased frequency components of the blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}.
-
-\begin{figure}
-	\centering
-	\includegraphics[width = 0.5\textwidth]{Plots/Mahdad/5iter/FK-MaskCRG_rec30}
-	\caption{The $f$-$k$-mask is determined by the minimum signal velocity in the subsurface. The white area of the filter equals one, the black area equals zero. Thus, the filter removes data which is mapped outside of the white signal cone.}
-	\label{fig:Ch-Theory-FK-Mask}
-\end{figure}
-
  
 
 
