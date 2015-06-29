@@ -266,15 +266,47 @@ In the marine case the minimum velocity is usually the water velocity, $v_{w} = 
 	\label{fig:Ch-Theory-fk-unblended-data-mask}
 \end{figure}
 
-For each frequency, $f$, wavenumbers above $k_{max}$ are removed which results in a 2D signal cone as depicted in Figure \ref{fig:Ch-Theory-FK-Mask}.
+For each frequency, $f$, wavenumbers above $k_{max}$ are removed which results in a 2D $f$-$k$-filter as depicted in Figure \ref{fig:Ch-Theory-FK-Mask}.
 
-$f$-$k$-filtering removes the part of the blending noise, which maps outside of the signal cone. Thus, after transforming the data back to the space time domain the amplitudes of the spiky noise are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
+The $f$-$k$-filter removes the part of the blending noise, which maps outside of the signal cone. Thus, after transforming the data back to the space time domain the amplitudes of the spiky noise are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
 
 Note that $f$-$k$-filtering can only reduce unaliased frequency components of the blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}. 
 
-The high cut frequency of the $f$-$k$-mask is set according to the highest frequency components in the data. The aliased blending noise will be reduced by thresholding. 
- 
+The high cut frequency of the $f$-$k$-mask is set according to the highest frequency components in the data. The aliased blending noise will pass the $f$-$k$-filter and will be reduced afterwards by thresholding. 
 
+
+\subsubsection*{Thresholding}
+
+The second constraint for the estimation of the unblended data is sparsity of the signal in the space time domain.
+
+After $f$-$k$-filtering the spiky noise is attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). Next, one defines a threshold in the $x$-$t$ domain, which is larger than the noise amplitudes and smaller than the highest signal amplitudes. Only amplitudes above the threshold are picked, i.e. only signal with strong amplitudes is selected (see Figure \ref{fig:Ch-Theory-Threshold}). 
+
+The resulting thresholded data, \textbf{\={P}}, is used to predict the source interference;
+
+\begin{equation}
+	\textbf{\^{N}}_\textbf{i} = \textbf{\={P}} \, (\mathbf{\Gamma \, \Gamma^H} - \textbf{I}),
+	\label{eq:Ch-Theory-NoiseEstimation}
+\end{equation}
+
+which is illustrated in Figure \ref{fig:Ch-Theory-Noise}.
+
+At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted source interference increases and approaches the true source interference. 
+
+Thresholding allows to reduce aliased frequency components of the blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
+
+\subsubsection*{Blending Noise Subtraction} 
+The estimate of the unblended data matrix \textbf{\^{P}}$_\textbf{i}$ is updated by subtracting the noise from the pseudo-deblended data,
+
+\begin{equation}
+	\textbf{\^P}_\textbf{i+1} = \textbf{P}_\textbf{bl} \, \mathbf{\Gamma}^H - \textbf{\^{N}}_\textbf{i}, 
+	\label{eq:Ch-Theory-DataUpdate1}
+\end{equation}
+
+which is shown in Figure \ref{fig:Ch-Theory-Deblended}.
+
+This process is repeated iteratively till convergence is reached. In this context convergence can be defined as the point where the difference $\mid \textbf{\^P}_\textbf{i+1} - \textbf{\^{P}}_\textbf{i} \mid$ drops below a predefined limit. Alternatively, one can set a maximum number of iterations. 
+
+Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. One can observe that the blended shot is successively  attenuated.
 
 \begin{figure}
 	\centering
@@ -318,41 +350,6 @@ The high cut frequency of the $f$-$k$-mask is set according to the highest frequ
 	\label{fig:Ch-Theory-EstimatedData}
 
 \end{figure}
-
-
-
-\subsubsection*{Thresholding}
-The second constraint for the estimation of the unblended data is sparsity in the space time domain.
-
-After $f$-$k$-filtering the spiky noise is attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). Next, one defines a threshold in the $x$-$t$ domain, which is larger than the noise amplitudes and smaller than the highest signal amplitudes. Only amplitudes above the threshold are picked, i.e. only signal with strong amplitudes is selected (see Figure \ref{fig:Ch-Theory-Threshold}). 
-
-The resulting thresholded data, \textbf{\={P}}, is used to predict the source interference;
-
-\begin{equation}
-	\textbf{\^{N}}_\textbf{i} = \textbf{\={P}} \, (\mathbf{\Gamma \, \Gamma^H} - \textbf{I}),
-	\label{eq:Ch-Theory-NoiseEstimation}
-\end{equation}
-
-which is illustrated in Figure \ref{fig:Ch-Theory-Noise}.
-
-At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted source interference increases and approaches the true source interference. 
-
-Thresholding allows to reduce aliased frequency components of the blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
-
-\subsubsection*{Blending Noise Subtraction} 
-The estimate of the unblended data matrix \textbf{\^{P}}$_\textbf{i}$ is updated by subtracting the noise from the pseudo-deblended data,
-
-\begin{equation}
-	\textbf{\^P}_\textbf{i+1} = \textbf{P}_\textbf{bl} \, \mathbf{\Gamma}^H - \textbf{\^{N}}_\textbf{i}, 
-	\label{eq:Ch-Theory-DataUpdate1}
-\end{equation}
-
-which is shown in Figure \ref{fig:Ch-Theory-Deblended}.
-
-This process is repeated iteratively till convergence is reached. In this context convergence can be defined as the point where the difference $\mid \textbf{\^P}_\textbf{i+1} - \textbf{\^{P}}_\textbf{i} \mid$ drops below a predefined limit. Alternatively, one can set a maximum number of iterations. 
-
-Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. One can observe that the blended shot is successively  attenuated.
-
 
 
 \section{Analysis of the Blending Matrix} \label{sec:BlendingMatrix}
