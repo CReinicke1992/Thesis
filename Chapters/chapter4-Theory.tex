@@ -279,7 +279,9 @@ The high cut frequency of the $f$-$k$-mask is set according to the highest frequ
 
 The second constraint for the estimation of the unblended data is sparsity of the signal in the space time domain.
 
-After $f$-$k$-filtering the spiky noise is attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). Next, one defines a threshold in the $x$-$t$ domain, which is larger than the noise amplitudes and smaller than the highest signal amplitudes. Only amplitudes above the threshold are picked, i.e. only signal with strong amplitudes is selected (see Figure \ref{fig:Ch-Theory-Threshold}). 
+After $f$-$k$-filtering the spiky noise is attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). Consequently, the signal amplitudes are now stronger than the noise amplitudes. This allows to define a threshold in the $x$-$t$ domain, which is larger than the noise amplitudes and smaller than the highest signal amplitudes. Only amplitudes above the threshold are picked, i.e. only signal with strong amplitudes is selected (see Figure \ref{fig:Ch-Theory-Threshold}). 
+
+\subsubsection*{Interference Estimation}
 
 The resulting thresholded data, \textbf{\={P}}, is used to predict the source interference;
 
@@ -292,9 +294,9 @@ which is illustrated in Figure \ref{fig:Ch-Theory-Noise}.
 
 At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted source interference increases and approaches the true source interference. 
 
-Thresholding allows to reduce aliased frequency components of the blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
 
 \subsubsection*{Blending Noise Subtraction} 
+
 The estimate of the unblended data matrix \textbf{\^{P}}$_\textbf{i}$ is updated by subtracting the noise from the pseudo-deblended data,
 
 \begin{equation}
@@ -306,7 +308,10 @@ which is shown in Figure \ref{fig:Ch-Theory-Deblended}.
 
 This process is repeated iteratively till convergence is reached. In this context convergence can be defined as the point where the difference $\mid \textbf{\^P}_\textbf{i+1} - \textbf{\^{P}}_\textbf{i} \mid$ drops below a predefined limit. Alternatively, one can set a maximum number of iterations. 
 
-Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. One can observe that the blended shot is successively  attenuated.
+Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. One can observe that the blending noise is attenuated with every iteration, and the blended shot is successively  attenuated.
+
+Note that $f$-$k$-filtering lowers the noise level by removing unaliased blending noise. Next, the lowered noise level enables thresholding to reduce aliased frequency components of the blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
+
 
 \begin{figure}
 	\centering
