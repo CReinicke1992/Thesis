@@ -6,9 +6,9 @@ The deblending method of \citet{Mahdad-Deblending-Method} is designed for 2D ble
 
 First, the data sorting will be modified such that the blended 3D data can be described using the same forward model as in section \ref{sec:Ch-Theory-Operator}. Second, the $f$-$k$-filter will be extended to remove noise in crossline and inline direction. The presented data sorting will allow to maintain all other steps of the deblending algorithm of \citet{Mahdad-Deblending-Method} unchanged.
 
-\subsection{Data Sorting} \label{sec:Ch-Theory-3dExtension-DataSorting}
+\section{Data Sorting} \label{sec:Ch-Theory-3dExtension-DataSorting}
 
-\subsubsection*{Data Matrix}
+\subsection*{Data Matrix}
 
 In 3D acquisition the sources and receivers are distributed on a 2D surface. Thus, their locations are defined by their crossline and inline positions, ($x$, $y$). Each data point which is measured by a source receiver pair at a specific time is therefore constraint by 5 coordinates: Time $t$, receiver crossline and inline position ($x_r$, $y_r$), and source crossline and inline position ($x_s$, $y_s$).
 
@@ -45,7 +45,7 @@ The 4D data array is sorted in a 2D matrix data matrix, $\mathbf{P}$, with as ma
 \end{figure}
 
 
-\subsubsection*{Blending matrix}
+\subsection*{Blending matrix}
 
 As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one source. For extension to 3D the sources of the first crossline are saved in the top $Ns_x$ rows of the blending matrix, followed by the sources of the second crossline etc. (see Figure \ref{fig:Ch-Theory-3D-BlendingMatrix-Design}). This framework allows to blend any source combination independent of the cross- and inline positions of the involved sources.
 
@@ -72,7 +72,7 @@ With the new data and blending matrix sorting one can already apply the 2D Mahda
 
 \end{figure}
 
-\subsection{3D FKK Filter} \label{sec:Ch-Theory-3dExtension-FKK}
+\section{3D FKK Filter} \label{sec:Ch-Theory-3dExtension-FKK}
 
 In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. In 3D there are two spatial direction ($x$, $y$), i.e. the filter can be extended to a 3D $f$-$k_x$-$k_y$-filter.
 
