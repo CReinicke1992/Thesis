@@ -13,7 +13,15 @@ This chapter presents the major results of this thesis. First, an optimal blendi
 	\item Show quality factor versus incoherency/firing pattern
 \end{itemize}
 
-An incoherent blending pattern is important for good deblending performance (see section \ref{sec:BlendingMatrix}). Different incoherent blending patterns will be tested, in particular, temporally and spatially incoherent blending patterns. 
+An incoherent blending pattern is crucial for good deblending performance (see section \ref{sec:BlendingMatrix}). Thus, a measure of incoherency will be introduced. Then, the importance of the maximum firing delay time will be demonstrated.
+
+\subsection*{Incoherency Measure}
+
+In this thesis only the incoherency of the acquisition design is considered. Thus, the blending matrix, $\Gamma$, determines the incoherency. he matrix product $\mathbf{\Gamma \Gamma}^H$In section \ref{sec:BlendingMatrix} it was shown that the elements on a sub-diagonal of the matrix product $\mathbf{\Gamma \Gamma}^H$ should be out of phase. 
+
+
+
+Different incoherent blending patterns will be tested, in particular, temporally and spatially incoherent blending patterns. 
 
 This thesis considers the following blended acquisition set up: The sources are assembled in crossline direction and move in inline direction due to the vessel movement (see Figure \ref{fig:Ch-Theory-3D-BlendedAcquisition}). As a consequence each experiment can blend sources which belong to the same crossline. The source sampling rate in inline direction must be sufficiently small to avoid spatial aliasing. Thus, the sources within one crossline must be blended and recorded before the vessel reaches the next inline position.
 
