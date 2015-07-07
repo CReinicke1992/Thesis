@@ -19,7 +19,7 @@ An incoherent blending pattern is crucial for good deblending performance (see s
 
 In this thesis only the incoherency of the acquisition design is considered. Thus, the blending matrix, $\Gamma$, determines the incoherency. In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the product $\mathbf{\Gamma \Gamma}^H$ should be out of phase. 
 
-The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, are complex numbers with length 1 and variable phase. Hence, these elements are located on a unit circle in the complex number plane (see Figure \ref{fig:Ch-Results-complex-circle}). 
+These sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, are complex numbers with unit length and variable phase. Hence, the elements are located in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). 
 
 \begin{figure}
 	\centering
@@ -29,17 +29,17 @@ The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, are complex n
 \end{figure}
 
 
-If all elements are in phase the absolute value of their sum is maximized. The more the elements are out of phase, i.e. the more incoherent they are, the smaller the length of the summed elements. Figure \ref{fig:Ch-Results-Diagonal-Sums} illustrates the length of the summed sub-diagonals. For a perfectly incoherent blending design the elements on a sub-diagonal cancel and the plot becomes a perfect spike.
+If all elements are in phase the length of their sum is maximized. The more the elements are out of phase, i.e. the more incoherent they are, the smaller is the length of the summed elements. Figure \ref{fig:Ch-Results-Diagonal-Sums} illustrates the length of the summed sub-diagonals. The elements on the main diagonal of the product $\mathbf{\Gamma \Gamma}^H$ are all equal to 1. Thus, the spike in Figure \ref{fig:Ch-Results-Diagonal-Sums} refers to the main diagonal of $\mathbf{\Gamma \Gamma}^H$. For a perfectly incoherent blending design the elements on a sub-diagonal cancel and the plot becomes a perfect spike. 
 
 
 \begin{figure}
 	\centering
-	\includegraphics{Plots/diagonal-sums}
-	\caption{The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, of the product $\mathbf{\Gamma \Gamma}^H$ are summed. The length of each output is plotted as a function of the diagonal index. On the main diagonal all elements of the product $\mathbf{\Gamma \Gamma}^H$ are in phase, which results in a spike.}
+	\includegraphics[width=0.6\textwidth]{Plots/diagonal-sums}
+	\caption{The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, of the product $\mathbf{\Gamma \Gamma}^H$ are summed. The length of each output is plotted as a function of the diagonal. The spike is caused by the main diagonal elements of $\mathbf{\Gamma \Gamma}^H$ because they are all in phase.}
 	\label{fig:Ch-Results-Diagonal-Sums}
 \end{figure}
 
-In section \ref{sec:BlendingMatrix} it was also demonstrated that the main diagonal of the product $\mathbf{\Gamma \Gamma}^H$ only contains ones. Consequently, the sum along the main diagonal 
+
 
 
 
