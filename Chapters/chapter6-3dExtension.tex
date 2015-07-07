@@ -80,7 +80,7 @@ With the new data and blending matrix sorting one can already apply deblending t
 
 In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. In 3D there are two spatial direction ($x$, $y$), i.e. the filter can be extended to a 3D $f$-$k_x$-$k_y$-filter.
 
-One obtains the $f$-$k_x$-$k_y$-spectrum by applying an n-dimensional Fourier transform to the 5D data array. As Mahdad's deblending method is applied to common receiver gathers one picks a single receiver, i.e constant cross- and inline receiver number. Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers ($k_x$, $k_y$) (see Figure \ref{fig:Ch-Theory-FK-f_slice-data}). Again the minimum velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber}. The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
+The deblending method is applied to common receiver gathers. Thus, one picks a single receiver, i.e cross- and inline receiver number are constant. The common receiver gather, $\mathbf{p}(t,x_s,y_s)$, is transformed to the $f$-$k_x$-$k_y$-domain by applying an n-dimensional Fourier transform.  Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers ($k_x$, $k_y$) (see Figure \ref{fig:Ch-Theory-FK-f_slice-data}). Again the minimum velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber}. The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
 
 \begin{equation}
 	k_{T} = \sqrt{k_x^2 + k_{y}^2} < k_{max}.
