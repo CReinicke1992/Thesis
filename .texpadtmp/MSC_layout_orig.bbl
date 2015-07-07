@@ -1,0 +1,36 @@
+\begin{thebibliography}{}
+
+\bibitem[Berkhout, 1982]{Berkhout1982}
+Berkhout, A. (1982).
+\newblock {\em Seismic Migration: Imaging of Acoustic Energy by Wave Field
+  Extrapolation, Part A: Theoretical Aspects}.
+\newblock Elsevier.
+
+\bibitem[Ibrahim and Sacchi, 2015]{IbrahimQuality}
+Ibrahim, A. and Sacchi, M.~D. (2015).
+\newblock Fast simultaneous seismic source separation using stolt migration and
+  demigration operators.
+\newblock {\em researchgate.net}.
+
+\bibitem[Mahdad et~al., 2011]{Mahdad-Deblending-Method}
+Mahdad, A., Doulgeris, P., and Blacquiere, G. (2011).
+\newblock Separation of blended data by iterative estimation and subtraction of
+  blending interference noise.
+\newblock {\em Geophysics}, 76(3):Q9--Q17.
+
+\bibitem[van Dedem, 2002]{Delphi-Format}
+van Dedem, E.~J. (2002).
+\newblock {\em 3D surface-related multiple prediction}.
+\newblock PhD thesis, TU Delft.
+
+\bibitem[van Groenestijn, 2010]{Groenestijn_2010}
+van Groenestijn, G. J.~A. (2010).
+\newblock {\em Estimation of Primaries and Multiples by Sparse Inversion}.
+\newblock PhD thesis, TU Delft.
+
+\bibitem[Wu, 2014]{Sixue}
+Wu, S. (2014).
+\newblock Seismic deblending by shot repetition.
+\newblock Master's thesis, TU Delft.
+
+\end{thebibliography}
