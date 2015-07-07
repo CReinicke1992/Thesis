@@ -19,7 +19,7 @@ An incoherent blending pattern is crucial for good deblending performance (see s
 
 In this thesis only the incoherency of the acquisition design is considered. Thus, the blending matrix, $\Gamma$, determines the incoherency. In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the product $\mathbf{\Gamma \Gamma}^H$ should be out of phase. 
 
-The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, are complex numbers with length 1 and variable phase (see Figure \ref{fig:Ch-Results-complex-circle}). Hence, these elements are located on a unit circle in the complex number plane. If all elements are in phase the absolute value of their sum is maximized. However, if the elements have random phases the absolute value of their sum is small.
+The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, are complex numbers with length 1 and variable phase. Hence, these elements are located on a unit circle in the complex number plane (see Figure \ref{fig:Ch-Results-complex-circle}). 
 
 \begin{figure}
 	\centering
@@ -27,6 +27,14 @@ The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, are complex n
 	\caption{Illustration of the sub-diagonal elements in the complex number plane. The elements have unit length and variable phase. The absolute value of their sum depends on the phase coherency of the elements.}
 	\label{fig:Ch-Results-complex-circle}
 \end{figure}
+
+
+If all elements are in phase the absolute value of their sum is maximized. The more the elements are out of phase, i.e. the more incoherent they are, the smaller the length of the summed elements.
+
+In section \ref{sec:BlendingMatrix} it was also demonstrated that the main diagonal of the product $\mathbf{\Gamma \Gamma}^H$ only contains ones. Consequently, the sum along the main diagonal 
+
+
+
 
 
 
