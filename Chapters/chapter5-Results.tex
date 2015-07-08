@@ -60,44 +60,12 @@ In terms of the sub-diagonals of $\mathbf{\Gamma \Gamma}^H$ this is the ratio be
 
 Note that $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns.
 
-The incoherency, $\mu$, is quantified as follows: The elements are summed along sub-diagonals of $\mathbf{\Gamma \Gamma}^H$. Each sum is taken in absolute terms and squared;
-
-\begin{comment}
-\begin{equation}
-	\left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2.
-	\label{eq:Ch-Results-incoherency-diagsum}	
-\end{equation}
-\end{comment}
-
-This gives one value per sub-diagonal and per frequency component, $\omega$. These values are summed over all sub-diagonals;
- 
- \begin{equation}
- 	\sum_{i = 1-N_s}^{N_s-1}	 \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2 \right);
- 	\label{eq:Ch-Results-incoherency-srcsum}
- \end{equation}
- 
-and over all frequencies, $\omega$;
-
-\begin{equation}
-	\sum_{\omega} \left( \sum_{i = 1-N_s}^{N_s-1}	 \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2 \right) \right).
-	\label{eq:Ch-Results-incoherency-wsum}
-\end{equation}
-
- The output value measures the total coherent energy in the matrix $\mathbf{\Gamma \Gamma}^H$. The same calculation is performed for the main diagonal only;
- 
- \begin{equation}
- 	\sum_{\omega} \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{00} (\omega) \right|^2  \right).
- 	\label{eq:Ch-Results-incoherency-maindiag}
- \end{equation} 
-
- The incoherency is defined in this thesis as the ratio of the coherent energy on the main diagonal of $\mathbf{\Gamma \Gamma}^H$ (see equation \ref{eq:Ch-Results-incoherency-maindiag}) and the total coherent energy of $\mathbf{\Gamma \Gamma}^H$ (see equation \ref{eq:Ch-Results-incoherency-wsum});
-
 \begin{equation}
 	\mu = \frac{  \sum_{\omega} \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{00} (\omega) \right|^2  \right)  }{  \sum_{\omega} \left( \sum_{i = 1-N_s}^{N_s-1}	 \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2 \right) \right)  }.
 	\label{eq:Ch-Results-incoherency}
 \end{equation}
 
-Note that in equation \ref{eq:Ch-Results-incoherency} $N_s$ is the number of sources.
+
 
 For example, a perfectly incoherent blending pattern has coherent energy only on the main diagonal. Thus, the nominator and the denominator in equation \ref{eq:Ch-Results-incoherency} are identical. The incoherency equals 1. Instead a perfectly coherent blending pattern, e.g. all sources are fired simultaneously, has an even distribution of coherent energy across the matrix $\mathbf{\Gamma \Gamma}^H$. Consequently, the incoherency is nearly 0.
 
