@@ -1,19 +1,19 @@
 \chapter{Results}
 
 This chapter presents the major results of this thesis. First, an optimal blending pattern for simultaneous crossline sources will be derived. Then, the advantages of a 3D $f$-$k_x$-$k_y$-filter towards a 2D $f$-$k$-filter will be shown. Finally, the feasibility of the suggested acquisition design will be proven on a synthetic 3D data set. 
-
  
 \section{Blending pattern}
 
-
+\begin{comment}
 \begin{itemize}
 	\item Explain how the acquisition limits the firing pattern
 	\item Introduce spatial incoherency
 	\item Suggest the applied blending pattern
 	\item Show quality factor versus incoherency/firing pattern
 \end{itemize}
+\end{comment}
 
-An incoherent blending pattern is crucial for good deblending performance (see section \ref{sec:BlendingMatrix}). Thus, a measure of incoherency will be introduced. Then, the importance of the maximum firing delay time will be demonstrated.
+An incoherent blending pattern is crucial for good deblending performance (see section \ref{sec:BlendingMatrix}). Thus, a measure of incoherency and deblending quality will be introduced. Then, the effect of incoherency and of the maximum firing time delay on the deblending performance will be demonstrated.
 
 \subsection*{Incoherency Measure}
 
@@ -80,10 +80,15 @@ For example, a perfectly incoherent blending pattern has coherent energy only on
 
 
 
-\subsection*{}
+\subsection*{Deblending Performance Measure}
 
+The following data examples are synthetic data, i.e. the unblended data is known. Therefore, the deblending performance can be measured with the quality factor, $Q$, which is defined by \citet{IbrahimQuality} as;
 
+\begin{equation}
+	Q = 10 \cdot \frac{\left|\left|\text{Unblended data}\right|\right| _2 ^2}{\left|\left|\text{Unblended data - Deblended data}\right|\right| _2 ^2} \;.	
+\end{equation}
 
+\subsection*{Incoherency Effect}
 
 Different incoherent blending patterns will be tested, in particular, temporally and spatially incoherent blending patterns. 
 
@@ -91,7 +96,7 @@ This thesis considers the following blended acquisition set up: The sources are 
 
 Based on this set up there are three possibilities to blend the sources incoherently. First, the sources can be blended with random time delays (temporal incoherency). Second, one can randomly pick sources for each experiment (spatial incoherency). Third, temporal and spatial incoherency can be combined, i.e. randomly picked sources are blended with random time delays.
 
-In the following these blending patterns will applied to a synthetic data set (see Figure \ref{fig:Ch-Results-Unbl-Delphi}, \ref{fig:Ch-Results-Unbl-inline10}, \ref{fig:Ch-Results-Unbl-xline10}). Next, the data is deblended with the 3D deblending algorithm of section \ref{sec:MahdadMethod3d}. 
+In the following these blending patterns will applied to a synthetic data set (see Figure \ref{fig:Ch-Results-Unbl-Delphi}, \ref{fig:Ch-Results-Unbl-inline10}, \ref{fig:Ch-Results-Unbl-xline10}). Next, the data is deblended with the 3D deblending algorithm of chapter \ref{chap:MahdadMethod3d}. 
 
 The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-Delphi} and \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-Delphi-x}, \ref{fig:Ch-Results-Debl-inline10-x}, \ref{fig:Ch-Results-Debl-xline10-x}). By introducing random firing time delays the deblended data improves significantly as shown in Figure \ref{fig:Ch-Results-Debl-Delphi-t}, \ref{fig:Ch-Results-Debl-inline10-t}, \ref{fig:Ch-Results-Debl-xline10-t}). A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-Delphi-xt}, \ref{fig:Ch-Results-Debl-inline10-xt}, \ref{fig:Ch-Results-Debl-xline10-xt}).
 

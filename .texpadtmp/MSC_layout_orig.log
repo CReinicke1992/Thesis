@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  8 JUL 2015 10:23
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  8 JUL 2015 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3774,16 +3774,14 @@ Package xcolor Warning: Incompatible color definition on input line 32.
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-[25]
 File: Plots/diagonal-sums.pdf Graphic file (type QTm)
- <use  "Plots/diagonal-sums.pdf" >
+<use  "Plots/diagonal-sums.pdf" > [25] [26]
 
 Package xcolor Warning: Incompatible color definition on input line 70.
 
 
 Package xcolor Warning: Incompatible color definition on input line 70.
 
-[26]
 
 Package xcolor Warning: Incompatible color definition on input line 77.
 
@@ -3791,53 +3789,59 @@ Package xcolor Warning: Incompatible color definition on input line 77.
 Package xcolor Warning: Incompatible color definition on input line 79.
 
 
-Package xcolor Warning: Incompatible color definition on input line 90.
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
 
 [27]
 
-Package xcolor Warning: Incompatible color definition on input line 94.
+Package xcolor Warning: Incompatible color definition on input line 95.
 
 
-Package xcolor Warning: Incompatible color definition on input line 94.
+Package xcolor Warning: Incompatible color definition on input line 99.
 
 
-Package xcolor Warning: Incompatible color definition on input line 94.
+Package xcolor Warning: Incompatible color definition on input line 99.
 
 
-LaTeX Warning: Reference `sec:MahdadMethod3d' on page 28 undefined on input line 94.
+Package xcolor Warning: Incompatible color definition on input line 99.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 99.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 101.
+
+
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 File: Plots/BlendingPatterns/Unblended_Delphi_zoom.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Unblended_Delphi_zoom.pdf" >
@@ -3848,32 +3852,32 @@ File: Plots/BlendingPatterns/Deblended_Delphi_zoomt.pdf Graphic file (type QTm)
 File: Plots/BlendingPatterns/Deblended_Delphi_zoomxt.pdf Graphic file (type QTm)
  <use  "Plots/BlendingPatterns/Deblended_Delphi_zoomxt.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 131.
+Package xcolor Warning: Incompatible color definition on input line 136.
 
 
-Package xcolor Warning: Incompatible color definition on input line 131.
+Package xcolor Warning: Incompatible color definition on input line 136.
 
 File: Plots/BlendingPatterns/Unblended_inline10.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Unblended_inline10.pdf" >
-Overfull \hbox (4.56004pt too wide) in paragraph at lines 142--143
+Overfull \hbox (4.56004pt too wide) in paragraph at lines 147--148
  [][] 
  []
 
 File: Plots/BlendingPatterns/Deblended_inline10x.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Deblended_inline10x.pdf" >
-Overfull \hbox (4.69882pt too wide) in paragraph at lines 150--151
+Overfull \hbox (4.69882pt too wide) in paragraph at lines 155--156
  [][] 
  []
 
 File: Plots/BlendingPatterns/Deblended_inline10t.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Deblended_inline10t.pdf" >
-Overfull \hbox (4.02428pt too wide) in paragraph at lines 158--159
+Overfull \hbox (4.02428pt too wide) in paragraph at lines 163--164
  [][] 
  []
 
 File: Plots/BlendingPatterns/Deblended_inline10xt.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Deblended_inline10xt.pdf" >
-Overfull \hbox (4.54355pt too wide) in paragraph at lines 166--167
+Overfull \hbox (4.54355pt too wide) in paragraph at lines 171--172
  [][] 
  []
 
@@ -3886,19 +3890,19 @@ File: Plots/BlendingPatterns/Deblended_xline10t.pdf Graphic file (type QTm)
 File: Plots/BlendingPatterns/Deblended_xline10xt.pdf Graphic file (type QTm)
  <use  "Plots/BlendingPatterns/Deblended_xline10xt.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 203.
-
-
-Package xcolor Warning: Incompatible color definition on input line 203.
-
-
 Package xcolor Warning: Incompatible color definition on input line 208.
 
 
 Package xcolor Warning: Incompatible color definition on input line 208.
 
 
-Package xcolor Warning: Incompatible color definition on input line 214.
+Package xcolor Warning: Incompatible color definition on input line 213.
+
+
+Package xcolor Warning: Incompatible color definition on input line 213.
+
+
+Package xcolor Warning: Incompatible color definition on input line 219.
 
 File: Plots/BlendingPatterns/quality_line_plot_avg.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/quality_line_plot_avg.pdf" > [28] [29] [30]) [31]
@@ -4091,16 +4095,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 32794 strings out of 493734
- 624109 string characters out of 6146347
- 664621 words of memory out of 5000000
- 35514 multiletter control sequences out of 15000+600000
+ 32792 strings out of 493734
+ 624075 string characters out of 6146347
+ 664585 words of memory out of 5000000
+ 35512 multiletter control sequences out of 15000+600000
  26336 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10404b,1492s stack positions out of 5000i,500n,10000p,200000b,80000s
