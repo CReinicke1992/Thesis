@@ -13,7 +13,7 @@ This chapter presents the major results of this thesis. First, an optimal blendi
 \end{itemize}
 \end{comment}
 
-An incoherent blending pattern is crucial for good deblending performance (see section \ref{sec:BlendingMatrix}). Thus, a measure of incoherency and deblending quality will be introduced. Then, the effect of incoherency and of the maximum firing time delay on the deblending performance will be demonstrated.
+An incoherent blending pattern is crucial for good deblending performance (see section \ref{sec:BlendingMatrix}). Thus, a measure of incoherency and deblending quality will be introduced. Then, the possibilities of creating an incoherent blending pattern are presented. Finally, the effect of incoherency and of the maximum firing time delay on the deblending performance will be demonstrated.
 
 \subsection*{Incoherency Measure}
 
@@ -83,7 +83,9 @@ The following data examples are synthetic data, i.e. the unblended data is known
 	Q = 10 \cdot \mathrm{log_{10}} \left( \frac{\left|\left|\text{Unblended data}\right|\right| _2 ^2}{\left|\left|\text{Unblended data - Deblended data}\right|\right| _2 ^2} \right) \;.	
 \end{equation}
 
-\subsection*{Incoherency Effect}
+
+
+\subsection*{Incoherent Blending Patterns}
 
 This thesis considers the following blended acquisition set up: The sources are assembled in crossline direction and move in inline direction due to the vessel movement (see Figure \ref{fig:Ch-Theory-3D-BlendedAcquisition}). As a consequence each experiment can blend sources which belong to the same crossline. The inline source sampling rate must be sufficiently small to avoid spatial aliasing. Thus, the sources within one crossline must be blended and recorded before the vessel reaches the next inline position.
 
