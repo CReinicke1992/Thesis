@@ -39,7 +39,7 @@ If all elements are in phase the length of their sum is maximized. The more the 
 	\label{fig:Ch-Results-Diagonal-Sums}
 \end{figure}
 
-The incoherency, $\mu$, is quantified as follows: The length of the summed sub-diagonals of $\mathbf{\Gamma \Gamma}^H$ is squared. This gives one value per sub-diagonal. First these values are summed. Then, the computation is repeated for each frequency component, $\omega$, and all frequency components are summed. The same calculation is performed for the main diagonal only. The incoherency is the ratio of the two values;
+The incoherency, $\mu$, is quantified as follows: The elements are summed along sub-diagonals of $\mathbf{\Gamma \Gamma}^H$. Each sum is taken in absolute terms and squared. This gives one value per sub-diagonal and per frequency component, $\omega$. First these values are summed. Then, the computation is repeated for each frequency component, $\omega$, and all frequency components are summed. The same calculation is performed for the main diagonal only. The incoherency is the ratio of the two values;
 
 \begin{equation}
 	\mu = \frac{  \sum_{\omega} \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{00} (\omega) \right|^2  \right)  }{  \sum_{\omega} \left( \sum_{i = 1-N_s}^{N_s-1}	 \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2 \right) \right)  }.
