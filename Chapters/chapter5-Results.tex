@@ -39,9 +39,35 @@ If all elements are in phase the length of their sum is maximized. The more the 
 	\label{fig:Ch-Results-Diagonal-Sums}
 \end{figure}
 
-The incoherency, $\mu$, is quantified as follows: The elements are summed along sub-diagonals of $\mathbf{\Gamma \Gamma}^H$. Each sum is taken in absolute terms and squared. This gives one value per sub-diagonal and per frequency component, $\omega$. These values are summed over all sub-diagonals and over all frequencies, $\omega$. The output value measures the total coherent energy in the matrix $\mathbf{\Gamma \Gamma}^H$. The same calculation is performed for the main diagonal only. 
+The incoherency, $\mu$, is quantified as follows: The elements are summed along sub-diagonals of $\mathbf{\Gamma \Gamma}^H$. Each sum is taken in absolute terms and squared;
 
- The incoherency is the ratio of the coherent energy on the main diagonal of $\mathbf{\Gamma \Gamma}^H$ and the energy of the total coherent energy of $\mathbf{\Gamma \Gamma}^H$;
+\begin{equation}
+	\left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2.
+	\label{eq:Ch-Results-incoherency-diagsum}	
+\end{equation}
+
+This gives one value per sub-diagonal and per frequency component, $\omega$. These values are summed over all sub-diagonals;
+ 
+ \begin{equation}
+ 	\sum_{i = 1-N_s}^{N_s-1}	 \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2 \right);
+ 	\label{eq:Ch-Results-incoherency-srcsum}
+ \end{equation}
+ 
+and over all frequencies, $\omega$;
+
+\begin{equation}
+	\sum_{\omega} \left( \sum_{i = 1-N_s}^{N_s-1}	 \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2 \right) \right).
+	\label{eq:Ch-Results-incoherency-wsum}
+\end{equation}
+
+ The output value measures the total coherent energy in the matrix $\mathbf{\Gamma \Gamma}^H$. The same calculation is performed for the main diagonal only;
+ 
+ \begin{equation}
+ 	\sum_{\omega} \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{00} (\omega) \right|^2  \right).
+ 	\label{eq:Ch-Results-incoherency-maindiag}
+ \end{equation} 
+
+ The incoherency is the ratio of the coherent energy on the main diagonal of $\mathbf{\Gamma \Gamma}^H$ and the total coherent energy of $\mathbf{\Gamma \Gamma}^H$;
 
 \begin{equation}
 	\mu = \frac{  \sum_{\omega} \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{00} (\omega) \right|^2  \right)  }{  \sum_{\omega} \left( \sum_{i = 1-N_s}^{N_s-1}	 \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2 \right) \right)  }.

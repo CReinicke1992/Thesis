@@ -18,17 +18,17 @@
 \contentsline {section}{\numberline {3-2}3D f-k-k Filter}{22}{section.3.2}
 \contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
 \contentsline {section}{\numberline {4-1}Blending pattern}{25}{section.4.1}
-\contentsline {section}{\numberline {4-2}3D FKK Filter Performance}{30}{section.4.2}
-\contentsline {section}{\numberline {4-3}Feasibility}{30}{section.4.3}
-\contentsline {chapter}{\numberline {5}Incoherency}{31}{chapter.5}
-\contentsline {section}{\numberline {5-1}Incoherency Control Factors}{31}{section.5.1}
-\contentsline {section}{\numberline {5-2}Quantification of Incoherency}{32}{section.5.2}
-\contentsline {section}{\numberline {5-3}Optimization of Incoherency}{33}{section.5.3}
-\contentsline {section}{\numberline {5-4}Fingerprint of the Incoherency in the Blending Matrix $\mathbf {\Gamma }$}{33}{section.5.4}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{35}{equation.5.4.7}
-\contentsline {chapter}{\numberline {A}The back of the thesis}{37}{appendix.A}
-\contentsline {section}{\numberline {A-1}An appendix section}{37}{section.A.1}
-\contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{37}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A-1-2}A \textsc {Matlab}$ $ Listing}{37}{subsection.A.1.2}
-\contentsline {chapter}{\numberline {B}Yet another appendix}{39}{appendix.B}
-\contentsline {section}{\numberline {B-1}Another test section}{39}{section.B.1}
+\contentsline {section}{\numberline {4-2}3D FKK Filter Performance}{31}{section.4.2}
+\contentsline {section}{\numberline {4-3}Feasibility}{31}{section.4.3}
+\contentsline {chapter}{\numberline {5}Incoherency}{33}{chapter.5}
+\contentsline {section}{\numberline {5-1}Incoherency Control Factors}{33}{section.5.1}
+\contentsline {section}{\numberline {5-2}Quantification of Incoherency}{34}{section.5.2}
+\contentsline {section}{\numberline {5-3}Optimization of Incoherency}{35}{section.5.3}
+\contentsline {section}{\numberline {5-4}Fingerprint of the Incoherency in the Blending Matrix $\mathbf {\Gamma }$}{35}{section.5.4}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{37}{equation.5.4.7}
+\contentsline {chapter}{\numberline {A}The back of the thesis}{39}{appendix.A}
+\contentsline {section}{\numberline {A-1}An appendix section}{39}{section.A.1}
+\contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{39}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A-1-2}A \textsc {Matlab}$ $ Listing}{39}{subsection.A.1.2}
+\contentsline {chapter}{\numberline {B}Yet another appendix}{41}{appendix.B}
+\contentsline {section}{\numberline {B-1}Another test section}{41}{section.B.1}
