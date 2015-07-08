@@ -205,7 +205,20 @@ The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-Delphi} and 
 
 \end{figure}
 
+
 \subsection*{Effect of Incoherency}
+
+The above comparison of incoherencies distinguishes different incoherency types. However, each of these types has a different degree of incoherency, $\mu$. Therefore, the dependence of the deblending quality, $Q$, on the incoherency, $\mu$, will be analyzed.
+
+For this purpose blending matrices with incoherencies between \SI{5}{\percent} and \SI{100}{\percent} are generated. Next, synthetic data is blended and deblended with these blending matrices. The quality factor, $Q$, is computed for each deblended data set. Figure \ref{fig:Ch-Results-QvsMu} illustrates the resulting quality factor as a function of the incoherency. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{Plots/Incoherency/Q-vs-Mu}
+	\caption{Quality factor, $Q$, as a function of the incoherency, $\mu$. The quality factor is a measure for the deblending performance. The deblending results for quality factors above 5 look acceptable.}
+	\label{fig:Ch-Results-QvsMu}
+\end{figure}
+
 
 \subsection*{Effect of Maximum Firing Time Delay}
 
