@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  8 JUL 2015 15:30
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  8 JUL 2015 15:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3783,32 +3783,23 @@ Package xcolor Warning: Incompatible color definition on input line 52.
 Package xcolor Warning: Incompatible color definition on input line 52.
 
 
-Package xcolor Warning: Incompatible color definition on input line 70.
+Package xcolor Warning: Incompatible color definition on input line 63.
 
 [26]
 
-Package xcolor Warning: Incompatible color definition on input line 76.
+Package xcolor Warning: Incompatible color definition on input line 72.
 
 
-Package xcolor Warning: Incompatible color definition on input line 76.
+Package xcolor Warning: Incompatible color definition on input line 78.
 
 
-Package xcolor Warning: Incompatible color definition on input line 84.
+Package xcolor Warning: Incompatible color definition on input line 78.
+
+
+Package xcolor Warning: Incompatible color definition on input line 86.
 
 [27]
 
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-
 Package xcolor Warning: Incompatible color definition on input line 90.
 
 
@@ -3821,25 +3812,37 @@ Package xcolor Warning: Incompatible color definition on input line 90.
 Package xcolor Warning: Incompatible color definition on input line 90.
 
 
-Package xcolor Warning: Incompatible color definition on input line 90.
+Package xcolor Warning: Incompatible color definition on input line 92.
 
 
-Package xcolor Warning: Incompatible color definition on input line 90.
+Package xcolor Warning: Incompatible color definition on input line 92.
 
 
-Package xcolor Warning: Incompatible color definition on input line 90.
+Package xcolor Warning: Incompatible color definition on input line 92.
 
 
-Package xcolor Warning: Incompatible color definition on input line 90.
+Package xcolor Warning: Incompatible color definition on input line 92.
 
 
-Package xcolor Warning: Incompatible color definition on input line 90.
+Package xcolor Warning: Incompatible color definition on input line 92.
 
 
-Package xcolor Warning: Incompatible color definition on input line 90.
+Package xcolor Warning: Incompatible color definition on input line 92.
 
 
-Package xcolor Warning: Incompatible color definition on input line 90.
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
 
 File: Plots/BlendingPatterns/Unblended_Delphi_zoom.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Unblended_Delphi_zoom.pdf" >
@@ -3850,32 +3853,32 @@ File: Plots/BlendingPatterns/Deblended_Delphi_zoomt.pdf Graphic file (type QTm)
 File: Plots/BlendingPatterns/Deblended_Delphi_zoomxt.pdf Graphic file (type QTm)
  <use  "Plots/BlendingPatterns/Deblended_Delphi_zoomxt.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 125.
+Package xcolor Warning: Incompatible color definition on input line 127.
 
 
-Package xcolor Warning: Incompatible color definition on input line 125.
+Package xcolor Warning: Incompatible color definition on input line 127.
 
 File: Plots/BlendingPatterns/Unblended_inline10.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Unblended_inline10.pdf" >
-Overfull \hbox (4.56004pt too wide) in paragraph at lines 136--137
+Overfull \hbox (4.56004pt too wide) in paragraph at lines 138--139
  [][] 
  []
 
 File: Plots/BlendingPatterns/Deblended_inline10x.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Deblended_inline10x.pdf" >
-Overfull \hbox (4.69882pt too wide) in paragraph at lines 144--145
+Overfull \hbox (4.69882pt too wide) in paragraph at lines 146--147
  [][] 
  []
 
 File: Plots/BlendingPatterns/Deblended_inline10t.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Deblended_inline10t.pdf" >
-Overfull \hbox (4.02428pt too wide) in paragraph at lines 152--153
+Overfull \hbox (4.02428pt too wide) in paragraph at lines 154--155
  [][] 
  []
 
 File: Plots/BlendingPatterns/Deblended_inline10xt.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Deblended_inline10xt.pdf" >
-Overfull \hbox (4.54355pt too wide) in paragraph at lines 160--161
+Overfull \hbox (4.54355pt too wide) in paragraph at lines 162--163
  [][] 
  []
 
@@ -3888,19 +3891,19 @@ File: Plots/BlendingPatterns/Deblended_xline10t.pdf Graphic file (type QTm)
 File: Plots/BlendingPatterns/Deblended_xline10xt.pdf Graphic file (type QTm)
  <use  "Plots/BlendingPatterns/Deblended_xline10xt.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 197.
+Package xcolor Warning: Incompatible color definition on input line 199.
 
 
-Package xcolor Warning: Incompatible color definition on input line 197.
+Package xcolor Warning: Incompatible color definition on input line 199.
 
 
-Package xcolor Warning: Incompatible color definition on input line 202.
+Package xcolor Warning: Incompatible color definition on input line 204.
 
 
-Package xcolor Warning: Incompatible color definition on input line 202.
+Package xcolor Warning: Incompatible color definition on input line 204.
 
 
-Package xcolor Warning: Incompatible color definition on input line 208.
+Package xcolor Warning: Incompatible color definition on input line 210.
 
 File: Plots/BlendingPatterns/quality_line_plot_avg.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/quality_line_plot_avg.pdf" > [28] [29] [30]) [31]
@@ -4098,7 +4101,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
 Here is how much of TeX's memory you used:
  32788 strings out of 493734
  623953 string characters out of 6146347
- 665485 words of memory out of 5000000
+ 664455 words of memory out of 5000000
  35508 multiletter control sequences out of 15000+600000
  26336 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
