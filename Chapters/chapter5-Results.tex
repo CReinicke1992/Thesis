@@ -49,10 +49,10 @@ For illustration a blending matrix, $\mathbf{\Gamma}$, is generated and inserted
 	\label{fig:Ch-Results-Diagonal-Sums}
 \end{figure}
 
-The closer Figure \ref{fig:Ch-Results-Diagonal-Sums} comes to a spike the more incoherent is the blending pattern. Thus, the incoherency is measured as the ratio between absolute value of the summed main diagonal of $\mathbf{\Gamma \Gamma}^H$ and the sum of all absolute summed sub-diagonals;
+The closer Figure \ref{fig:Ch-Results-Diagonal-Sums} comes to a spike the more incoherent is the blending pattern. Thus, the incoherency, $\mu$, is measured as the ratio between squared absolute value of the summed main diagonal of $\mathbf{\Gamma \Gamma}^H$ and the sum of all squared absolute summed sub-diagonals;
 
 \begin{equation}
-	\mu = \frac{  \left| \sum_{j-i = 0} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2    }{ \sum_{k = 1-N_s}^{N_s-1}	 \left( \left| \sum_{j-i = k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2 \right)   }.
+	\mu(\omega) = \frac{  \left| \sum_{j-i = 0} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2    }{ \sum_{k = 1-N_s}^{N_s-1}	 \left( \left| \sum_{j-i = k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2 \right)   }.
 	\label{eq:Ch-Results-incoherency-monochromatic}
 \end{equation}
 
