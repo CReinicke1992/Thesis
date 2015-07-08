@@ -39,18 +39,22 @@ If all elements are in phase the length of their sum is maximized. The more the 
 	\label{fig:Ch-Results-Diagonal-Sums}
 \end{figure}
 
-The incoherency, $\mu$, is quantified as follows: The elements are summed along sub-diagonals of $\mathbf{\Gamma \Gamma}^H$. Each sum is taken in absolute terms and squared. This gives one value per sub-diagonal and per frequency component, $\omega$. First these values are summed. Then, the computation is repeated for each frequency component, $\omega$, and all frequency components are summed. The same calculation is performed for the main diagonal only. The incoherency is the ratio of the two values;
+The incoherency, $\mu$, is quantified as follows: The elements are summed along sub-diagonals of $\mathbf{\Gamma \Gamma}^H$. Each sum is taken in absolute terms and squared. This gives one value per sub-diagonal and per frequency component, $\omega$. These values are summed over all sub-diagonals and over all frequencies, $\omega$. The output value measures the total coherent energy in the matrix $\mathbf{\Gamma \Gamma}^H$. The same calculation is performed for the main diagonal only. 
+
+ The incoherency is the ratio of the coherent energy on the main diagonal of $\mathbf{\Gamma \Gamma}^H$ and the energy of the total coherent energy of $\mathbf{\Gamma \Gamma}^H$;
 
 \begin{equation}
 	\mu = \frac{  \sum_{\omega} \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{00} (\omega) \right|^2  \right)  }{  \sum_{\omega} \left( \sum_{i = 1-N_s}^{N_s-1}	 \left( \left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2 \right) \right)  }.
-	.
+	\label{eq:Ch-Results-incoherency}
 \end{equation}
 
-Note that $N_s$ is the number of sources.
+Note that in equation \ref{eq:Ch-Results-incoherency} $N_s$ is the number of sources.
+
+For example, a perfectly incoherent blending pattern has coherent energy only on the main diagonal. Thus, the nominator and the denominator in equation \ref{eq:Ch-Results-incoherency} are identical. The incoherency equals 1. Instead a perfectly coherent blending pattern, e.g. all sources are fired simultaneously, has an even distribution of coherent energy across the matrix $\mathbf{\Gamma \Gamma}^H$. Consequently, the incoherency is nearly 0.
 
 
 
-
+\subsection*{}
 
 
 
