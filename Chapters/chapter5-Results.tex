@@ -30,7 +30,7 @@ Note that the sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map
 	\label{fig:Ch-Results-complex-circle}
 \end{figure}
 
-The sum of the elements along the $k^{th}$ sub-diagonal can be constructive or destructive depending on the phase variability. This allows to use absolute value of the sum as a incoherency measure for an individual sub-diagonal. The resulting value is squared in order to put it in terms of energy;
+The sum of the elements along the $k^{th}$ sub-diagonal can be constructive or destructive, depending on the phase variability. Thus, the absolute value of the sum measures the incoherency of an individual sub-diagonal. The resulting value is squared in order to put it in terms of energy;
 
 \begin{equation}
 	\left| \sum_{j-i=k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2.
@@ -39,7 +39,7 @@ The sum of the elements along the $k^{th}$ sub-diagonal can be constructive or d
 
 For example, if all elements are in phase the length of their sum is maximized. The more the elements are out of phase, i.e. the more incoherent they are, the smaller is the length of the summed elements. 
 
-Figure \ref{fig:Ch-Results-Diagonal-Sums} illustrates the length of the summed sub-diagonals. The elements on the main diagonal of the product $\mathbf{\Gamma \Gamma}^H$ are all equal to 1. Thus, the spike in Figure \ref{fig:Ch-Results-Diagonal-Sums} refers to the main diagonal of $\mathbf{\Gamma \Gamma}^H$. For a perfectly incoherent blending design the elements on a sub-diagonal cancel and the plot becomes a perfect spike. 
+For illustration a blending matrix, $\Gamma$, is generated and inserted in equation \ref{eq:Ch-Results-incoherency-diagsum}. This yields an output for each sub-diagonal, which is shown in Figure \ref{fig:Ch-Results-Diagonal-Sums}. The spike is caused by the elements on the main diagonal of $\mathbf{\Gamma \Gamma}^H$, which are all equal to 1, i.e. in phase. For a perfectly incoherent blending design the elements on a sub-diagonal cancel and the plot becomes a perfect spike. 
 
 
 \begin{figure}
@@ -51,10 +51,12 @@ Figure \ref{fig:Ch-Results-Diagonal-Sums} illustrates the length of the summed s
 
 The incoherency, $\mu$, is quantified as follows: The elements are summed along sub-diagonals of $\mathbf{\Gamma \Gamma}^H$. Each sum is taken in absolute terms and squared;
 
+\begin{comment}
 \begin{equation}
 	\left| \sum \mathbf{\Gamma \Gamma}^H_{ii} (\omega) \right|^2.
 	\label{eq:Ch-Results-incoherency-diagsum}	
 \end{equation}
+\end{comment}
 
 This gives one value per sub-diagonal and per frequency component, $\omega$. These values are summed over all sub-diagonals;
  
