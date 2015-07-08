@@ -39,7 +39,7 @@ The sum of the elements along the $k^{th}$ sub-diagonal can be constructive or d
 
 For example, if all elements are in phase the length of their sum is maximized. The more the elements are out of phase, i.e. the more incoherent they are, the smaller is the length of the summed elements. 
 
-For illustration a blending matrix, $\Gamma$, is generated and inserted in equation \ref{eq:Ch-Results-incoherency-diagsum}. This yields an output for each sub-diagonal, which is shown in Figure \ref{fig:Ch-Results-Diagonal-Sums}. The spike is caused by the elements on the main diagonal of $\mathbf{\Gamma \Gamma}^H$, which are all equal to 1, i.e. in phase. For a perfectly incoherent blending design the elements on a sub-diagonal cancel and the plot becomes a perfect spike. 
+For illustration a blending matrix, $\mathbf{\Gamma}$, is generated and inserted in equation \ref{eq:Ch-Results-incoherency-diagsum}. This yields an output for each sub-diagonal, which is shown in Figure \ref{fig:Ch-Results-Diagonal-Sums}. The spike is caused by the elements on the main diagonal of $\mathbf{\Gamma \Gamma}^H$, which are all equal to 1, i.e. in phase. For a perfectly incoherent blending design the elements on a sub-diagonal cancel and the plot becomes a perfect spike. 
 
 
 \begin{figure}
@@ -48,6 +48,14 @@ For illustration a blending matrix, $\Gamma$, is generated and inserted in equat
 	\caption{The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, of the product $\mathbf{\Gamma \Gamma}^H$ are summed. The length of each output is plotted as a function of the diagonal. The spike is caused by the main diagonal elements of $\mathbf{\Gamma \Gamma}^H$ because they are all in phase.}
 	\label{fig:Ch-Results-Diagonal-Sums}
 \end{figure}
+
+The closer Figure \ref{fig:Ch-Results-Diagonal-Sums} comes to a spike the more incoherent is the blending pattern. Thus, the incoherency is measured as the ratio between absolute value of the summed main diagonal of $\mathbf{\Gamma \Gamma}^H$ and the sum of all absolute summed sub-diagonals;
+
+\begin{equation}
+	\mu = \frac{  \left| \sum_{j-i = 0} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2    }{ \sum_{k = 1-N_s}^{N_s-1}	 \left( \left| \sum_{j-i = k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2 \right)   }.
+	\label{eq:Ch-Results-incoherency-monochromatic}
+\end{equation}
+
 
 The incoherency, $\mu$, is quantified as follows: The elements are summed along sub-diagonals of $\mathbf{\Gamma \Gamma}^H$. Each sum is taken in absolute terms and squared;
 
