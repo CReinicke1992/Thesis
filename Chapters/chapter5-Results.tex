@@ -19,9 +19,9 @@ An incoherent blending pattern is crucial for good deblending performance (see s
 
 In this thesis only the incoherency of the acquisition design is considered. Thus, the blending matrix, $\Gamma$, or more precisely the product $\mathbf{\Gamma \Gamma}^H$ determines the incoherency.
 
-In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the product $\mathbf{\Gamma \Gamma}^H$ should be out of phase. The phase variation of the sub-diagonal elements will be used to quantify incoherency.
+In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the product $\mathbf{\Gamma \Gamma}^H$ should be out of phase. Therefore, the phase variability of the sub-diagonal elements will be used to quantify incoherency.
 
-The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, are complex numbers with unit length and variable phase. Hence, they are located in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). 
+Note that the sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). 
 
 \begin{figure}
 	\centering
@@ -30,7 +30,7 @@ The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, are complex n
 	\label{fig:Ch-Results-complex-circle}
 \end{figure}
 
-The elements along the $k^{th}$ sub-diagonal are summed. The length of the resulting complex number indicates if the elements superimposed constructively or destructively. The resulting number is squared in order to put it in terms of energy;
+The sum of the elements along the $k^{th}$ sub-diagonal can be constructive or destructive depending on the phase variability. This allows to use absolute value of the sum as a incoherency measure for an individual sub-diagonal. The resulting value is squared in order to put it in terms of energy;
 
 \begin{equation}
 	\left| \sum_{j-i=k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2.
