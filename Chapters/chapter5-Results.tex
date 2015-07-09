@@ -247,6 +247,14 @@ Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the thr
 \FloatBarrier
 \section{$f$-$k_x$-$k_y$ Filter vs. $f$-$k_{(x)}$ Filter}
 
+The 3D $f$-$k_x$-$k_y$ filter removes incoherent energy in the crossline and inline direction. The suggested 3D blended acquisition design blends sources within the same crossline. Hence, the question arouses whether an extension of the $f$-$k_x$ filter to the inline direction provides significant deblending enhancements.
+
+For this purpose the synthetic data of Figure \ref{fig:Ch-Results-Unbl-Delphi} is blended: Within each crossline there are 21 sources, which are blended in 3 experiments. For each experiment 7 randomly selected sources are blended with random time delays and a maximum allowed firing time delay of \SI{400}{\milli\second}. 
+
+The blended data is deblended with the 3D deblending algorithm. In the one case a 2D $f$-$k_x$ filter is applied (see Figure \ref{fig:Ch-Results-Deblending-2dfk}). In the other case a 3D $f$-$k_x$-$k_y$ filter is applied (see Figure \ref{fig:Ch-Results-Deblending-3dfk}).  
+
+ 
+
 \begin{figure}
 	
 	\centering
