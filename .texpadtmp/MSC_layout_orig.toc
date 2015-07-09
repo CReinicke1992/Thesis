@@ -16,7 +16,7 @@
 \contentsline {chapter}{\numberline {3}Crossline Deblending (3D)}{19}{chapter.3}
 \contentsline {section}{\numberline {3-1}Data Sorting}{19}{section.3.1}
 \contentsline {section}{\numberline {3-2}3D f-k-k Filter}{22}{section.3.2}
-\contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
+\contentsline {chapter}{\numberline {4}Results on Synthetic Data}{25}{chapter.4}
 \contentsline {section}{\numberline {4-1}Blending pattern}{25}{section.4.1}
 \contentsline {section}{\numberline {4-2}3D FKK Filter Performance}{32}{section.4.2}
 \contentsline {section}{\numberline {4-3}Feasibility}{32}{section.4.3}

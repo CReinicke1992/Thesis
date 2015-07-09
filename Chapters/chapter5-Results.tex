@@ -1,4 +1,4 @@
-\chapter{Results}
+\chapter{Results on Synthetic Data}
 
 This chapter presents the major results of this thesis. First, an optimal blending pattern for simultaneous crossline sources will be derived. Then, the advantages of a 3D $f$-$k_x$-$k_y$-filter towards a 2D $f$-$k$-filter will be shown. Finally, the feasibility of the suggested acquisition design will be proven on a synthetic 3D data set. 
  
@@ -228,7 +228,7 @@ Another control factor of the deblending performance is the maximum firing time 
 
 The three suggested blending patterns namely temporal, spatial and mixed incoherency are applied to synthetic data with varying maximum firing time delays. 
 
-Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the three blending patterns as a function of maximum firing time delay. Obviously, the quality of the spatially incoherent blending pattern is independent of the maximum firing time delay because it blends the sources without time delay. The quality of the other two blending patterns continuously enhances with increasing maximum firing time delay. The difference between the deblending quality given by temporal and mixed blending patterns seems to be independent of the maximum firing time delay.
+Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the three blending patterns as a function of maximum firing time delay. The spatially incoherent blending pattern yields a constant deblending quality independent of the maximum firing time delay. This is expected because it blends the sources without time delay. The deblending quality provided by the other two blending patterns continuously enhances with increasing maximum firing time delay. The difference between the deblending quality given by temporal and mixed blending patterns seems to be independent of the maximum firing time delay.
 
 \begin{figure}
 	\centering
@@ -238,7 +238,8 @@ Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the thr
 \end{figure}
 
 \todo[inline]{For the conclusion/discussion of these results: \\ 
-				Say that a high degree of incoherency is required for successful deblending, but it is not useful as a control factor of the deblending performance. Instead the maximum firing time delay allows to fine tune the quality factor and might be suitable to fine tune a trade off between deblending quality and acquisition time.}
+				Say that a high degree of incoherency is required for successful deblending, but it is not useful as a control factor of the deblending performance. Instead the maximum firing time delay allows to fine tune the quality factor and might be suitable to fine tune a trade off between deblending quality and acquisition time.\\
+				One can also say that the  spatial incoherency performs poorly because its degree of incoherency is simply too low.}
 
 \FloatBarrier
 \section{3D FKK Filter Performance}
