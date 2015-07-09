@@ -261,7 +261,7 @@ In order to quantify the quality gap between the results with 2D and 3D filters,
 	\centering
 	\begin{subfigure}[t]{0.8\textwidth}
 		\includegraphics[width = \textwidth]{Plots/2dvs3dfk/Deblendedv6_xt_100}
-		\caption{}
+		\caption{Deblending result with a 2D $f$-$k_x$ filter}
 		\label{fig:Ch-Results-Deblending-2dfk}
 	\end{subfigure}
 	
@@ -270,12 +270,13 @@ In order to quantify the quality gap between the results with 2D and 3D filters,
 	\centering
 	\begin{subfigure}[t]{0.8\textwidth}
 		\includegraphics[width = \textwidth]{Plots/2dvs3dfk/Deblendedv5_xt_100}
-		\caption{}
+		\caption{Deblending result with a 3D $f$-$k_x$-$k_y$ filter}
 		\label{fig:Ch-Results-Deblending-3dfk}
 	\end{subfigure}
 	
-	\caption{}
+	\caption{The crossline sources of the synthetic data in Figure \ref{fig:Ch-Results-Unbl-Delphi} are blended. Then, the 3D deblending algorithm is applied. In case (a) the algorithm uses a 2D $f$-$k_x$ filter. In case (b) it uses a 3D $f$-$k_x$-$k_y$ filter.}
 	\label{fig:Ch-Results-Deblending-2dvs3d-fk}
+	
 \end{figure}
 
 \begin{figure}
@@ -294,7 +295,7 @@ It is assumed that the vessel moves with a speed of \SI{1.2}{\metre\per\second},
 
 In the synthetic data in Figure \ref{fig:Ch-Results-Debl-Delphi} the cross- and inline spacing equals \SI{12.5}{\metre}. The acquisition set up of the synthetic data is shown in \ref{fig:Ch-Results-Feasibility-Set-Up}.
 
-The deblending result in Figure \ref{fig:Ch-Results-Debl-Delphi-xt} fulfills all the conditions of the feasibility test. The deblending quality of $Q = \SI{8.6}{\decibel}$ is very good. Therefore, the suggested blended acquisition is feasible for synthetic data.
+The deblending result in Figure \ref{fig:Ch-Results-Debl-Delphi-xt} fulfills all the conditions of the feasibility test. For a maximum firing time delay of \SI{400}{\milli\second} the deblending quality is $Q = \SI{8.6}{\decibel}$, which is very good. Therefore, the suggested blended acquisition is feasible for synthetic data.
 
 \begin{figure}
 	\centering

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  9 JUL 2015 16:44
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  9 JUL 2015 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3995,24 +3995,30 @@ File: Plots/2dvs3dfk/Deblendedv6_xt_100.pdf Graphic file (type QTm)
 <use  "Plots/2dvs3dfk/Deblendedv6_xt_100.pdf" >
 File: Plots/2dvs3dfk/Deblendedv5_xt_100.pdf Graphic file (type QTm)
  <use  "Plots/2dvs3dfk/Deblendedv5_xt_100.pdf" >
+
+Package xcolor Warning: Incompatible color definition on input line 277.
+
+
+Package xcolor Warning: Incompatible color definition on input line 277.
+
 File: Plots/2dvs3dfk/Q_vs_tg_2dfk.pdf Graphic file (type QTm)
- <use  "Plots/2dvs3dfk/Q_vs_tg_2dfk.pdf" > [32] [33]
+<use  "Plots/2dvs3dfk/Q_vs_tg_2dfk.pdf" > [32] [33]
 
-Package xcolor Warning: Incompatible color definition on input line 295.
-
-
-Package xcolor Warning: Incompatible color definition on input line 295.
+Package xcolor Warning: Incompatible color definition on input line 296.
 
 
-Package xcolor Warning: Incompatible color definition on input line 297.
+Package xcolor Warning: Incompatible color definition on input line 296.
+
+
+Package xcolor Warning: Incompatible color definition on input line 298.
 
 File: Plots/Feasibility/acquisition-set-up-syn.pdf Graphic file (type QTm)
 <use  "Plots/Feasibility/acquisition-set-up-syn.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 302.
+Package xcolor Warning: Incompatible color definition on input line 303.
 
 
-Package xcolor Warning: Incompatible color definition on input line 302.
+Package xcolor Warning: Incompatible color definition on input line 303.
 
 ) [34]
 \openout2 = `Chapters/chapter3-Incoherency.aux'.
@@ -4209,7 +4215,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
 Here is how much of TeX's memory you used:
  32821 strings out of 493734
  624903 string characters out of 6146347
- 665441 words of memory out of 5000000
+ 665874 words of memory out of 5000000
  35533 multiletter control sequences out of 15000+600000
  26336 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
