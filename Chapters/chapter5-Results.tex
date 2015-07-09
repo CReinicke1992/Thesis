@@ -290,12 +290,16 @@ In order to quantify the quality gap between the results with 2D and 3D filters,
 
 The results demonstrate how the 3D deblending result can be optimized. In practice, the sources within a crossline must be fired and recorded before the vessel reaches the next inline position.
 
-For this feasibility test it is assumed that the vessel moves with a speed of \SI{1.2}{\metre\per\second}, the recording time per experiment is \SI{3}{\second} and the maximum firing time delay is \SI{400}{\milli\second}. 
+It is assumed that the vessel moves with a speed of \SI{1.2}{\metre\per\second}, the recording time per experiment is \SI{3}{\second} and the desired inline spacing is \SI{12.5}{\metre}. Thus, the maximum firing time delay can be up to \SI{400}{\milli\second}.
+
+In the synthetic data in Figure \ref{fig:Ch-Results-Debl-Delphi} the cross- and inline spacing equals \SI{12.5}{\metre}. The acquisition set up of the synthetic data is shown in \ref{fig:Ch-Results-Feasibility-Set-Up}.
+
+The deblending result in Figure \ref{fig:Ch-Results-Debl-Delphi-xt} fulfills all the conditions of the feasibility test. The deblending quality of $Q = \SI{8.6}{\decibel}$ is very good. Therefore, the suggested blended acquisition is feasible for synthetic data.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\textwidth]{Plots/Feasibility/acquisition-set-up}
-	\caption{}
+	\includegraphics[width=0.6\textwidth]{Plots/Feasibility/acquisition-set-up-syn}
+	\caption{Illustration of the acquisition design of the synthetic data in Figure \ref{fig:Ch-Results-Debl-Delphi}. There are 21 sources in the crossline with a spacing of \SI{12.5}{\metre}. At each inline position the crossline sources are blended in 3 experiments with 7 sources per experiment.}
 	\label{fig:Ch-Results-Feasibility-Set-Up}
 \end{figure}
 
