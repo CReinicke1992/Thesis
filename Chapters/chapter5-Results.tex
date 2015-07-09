@@ -228,8 +228,7 @@ Another control factor of the deblending performance is the maximum firing time 
 
 The three suggested blending patterns namely temporal, spatial and mixed incoherency are applied to synthetic data with varying maximum firing time delays. 
 
-Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the three blending patterns as a function of maximum firing time delay. Obviously, the quality of the spatially incoherent blending pattern is independent of the maximum firing time delay because it blends the sources without time delay. The other two blending patterns 
-
+Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the three blending patterns as a function of maximum firing time delay. Obviously, the quality of the spatially incoherent blending pattern is independent of the maximum firing time delay because it blends the sources without time delay. The quality of the other two blending patterns continuously enhances with increasing maximum firing time delay. The difference between the deblending quality given by temporal and mixed blending patterns seems to be independent of the maximum firing time delay.
 
 \begin{figure}
 	\centering
@@ -237,6 +236,9 @@ Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the thr
 	\caption{The 3 suggested blending patterns are simulated with maximum firing time delays between \SI{40}{\milli\second} and \SI{400}{\milli\second}. The quality factors are computed with respect to the unblended data and illustrated as a function of the maximum firing time.}
 	\label{fig:Ch-Results-QualityFactors}
 \end{figure}
+
+\todo[inline]{For the conclusion/discussion of these results: \\ 
+				Say that a high degree of incoherency is required for successful deblending, but it is not useful as a control factor of the deblending performance. Instead the maximum firing time delay allows to fine tune the quality factor and might be suitable to fine tune a trade off between deblending quality and acquisition time.}
 
 \FloatBarrier
 \section{3D FKK Filter Performance}
