@@ -25,7 +25,7 @@
 \contentsline {figure}{\numberline {4-5}{\ignorespaces Quality factor, $Q$, as a function of the incoherency, $\mu $. The quality factor is a measure for the deblending performance. The deblending results for quality factors above 5 look acceptable.\relax }}{31}{figure.caption.43}
 \contentsline {figure}{\numberline {4-6}{\ignorespaces The 3 suggested blending patterns are simulated with maximum firing time delays between \SI {40}{\milli \second } and \SI {400}{\milli \second }. The quality factors are computed with respect to the unblended data and illustrated as a function of the maximum firing time.\relax }}{32}{figure.caption.45}
 \contentsline {figure}{\numberline {4-7}{\ignorespaces The crossline sources of the synthetic data in Figure \ref {fig:Ch-Results-Unbl-Delphi} are blended. Then, the 3D deblending algorithm is applied. In case (a) the algorithm uses a 2D $f$-$k_x$ filter. In case (b) it uses a 3D $f$-$k_x$-$k_y$ filter.\relax }}{33}{figure.caption.48}
-\contentsline {figure}{\numberline {4-8}{\ignorespaces \relax }}{33}{figure.caption.49}
+\contentsline {figure}{\numberline {4-8}{\ignorespaces The plot of Figure \ref {fig:Ch-Results-QualityFactors} is reproduced with a 2D $f$-$k_x$ filter instead of a 3D $f$-$k_x$-$k_y$ filter. Note that the quality factors decreased significantly.\relax }}{33}{figure.caption.49}
 \contentsline {figure}{\numberline {4-9}{\ignorespaces Illustration of the acquisition design of the synthetic data in Figure \ref {fig:Ch-Results-Debl-Delphi}. There are 21 sources in the crossline with a spacing of \SI {12.5}{\metre }. At each inline position the crossline sources are blended in 3 experiments with 7 sources per experiment.\relax }}{34}{figure.caption.50}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
