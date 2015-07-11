@@ -116,19 +116,19 @@ Note that, the blended data matrix, $\mathbf{P}_{bl}$, also has less columns, i.
 
 Before removing the receiver matrix, $\mathbf{D}$, and the source matrix, $\mathbf{S}$, one must remove  the blending matrix, $\mathbf{\Gamma}$, from the blended data, $\mathbf{P}_{bl}$. This process is called deblending.
 
-The deblending method in this thesis builds on the method of \citet{Mahdad-Deblending-Method}. Therefore, the method of \citet{Mahdad-Deblending-Method} is described in great detail.
+The deblending method presented in this thesis builds on the method of \citet{Mahdad-Deblending-Method}. Therefore, the method of \citet{Mahdad-Deblending-Method} is described in great detail.
 
 The basic workflow of the method of \citet{Mahdad-Deblending-Method} is summarized in Figure \ref{fig:Ch-Theory-FlowChart} and will be explained step by step in the following subsections. 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{Plots/Mahdad-FlowChart-v4}
+	\includegraphics[width=0.8\textwidth]{Plots/Mahdad-FlowChart-v5}
 	\caption{Flowchart belonging to the deblending method of \citet{Mahdad-Deblending-Method}.}
 	\label{fig:Ch-Theory-FlowChart}
 \end{figure}
 
 \subsection{Pseudo-Deblending}
-Unfortunately, the inverse problem of equation \ref{eq:Ch-Theory-BlendedData} is underdetermined, which means that there is not a unique solution for the unblended data, $\mathbf{P}$. Thus, additional constraints are required to deblend the data, which are sparsity of the signal in the $x$-$t$-domain and coherency of the signal in the $f$-$k$-domain. 
+Unfortunately, the inverse problem of equation \ref{eq:Ch-Theory-BlendedData} is underdetermined, which means that there is not a unique solution for the unblended data, $\mathbf{P}$. Thus, additional constraints are required to deblend the data, which are (1) sparsity of the signal in the $x$-$t$-domain and (2) coherency of the signal in the $f$-$k$-domain. 
 
 The first estimate of the unblended data matrix, $\mathbf{P}$, is obtained by pseudo-deblending;
 
