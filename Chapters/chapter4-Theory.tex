@@ -288,8 +288,7 @@ The resulting thresholded data, \textbf{\={P}}, is used to predict the source in
 \end{equation}
 
 which is illustrated in Figure \ref{fig:Ch-Theory-Noise}.
-
-At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted source interference increases and approaches the true source interference. 
+ 
 
 
 \subsubsection*{Blending Noise Subtraction} 
@@ -297,7 +296,7 @@ At each iteration the blending noise is attenuated further, such that the thresh
 The estimate of the unblended data matrix \textbf{\^{P}}$_\textbf{i}$ is updated by subtracting the noise from the pseudo-deblended data,
 
 \begin{equation}
-	\textbf{\^P}_\textbf{i+1} = \textbf{P}_\textbf{bl} \, \mathbf{\Gamma}^H - \textbf{\^{N}}_\textbf{i}, 
+	\textbf{\^P}_\textbf{i+1} = \textbf{P}_\textbf{ps} - \textbf{\^{N}}_\textbf{i}, 
 	\label{eq:Ch-Theory-DataUpdate1}
 \end{equation}
 
@@ -305,9 +304,9 @@ which is shown in Figure \ref{fig:Ch-Theory-Deblended}.
 
 This process is repeated iteratively till convergence is reached. In this context convergence can be defined as the point where the difference $\mid \textbf{\^P}_\textbf{i+1} - \textbf{\^{P}}_\textbf{i} \mid$ drops below a predefined limit. Alternatively, one can set a maximum number of iterations. 
 
-Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. One can observe that the blending noise is attenuated with every iteration, and the blended shot is successively  attenuated.
+Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted blending noise increases and approaches the true blending noise. The blended shot is successively  attenuated.
 
-Note that $f$-$k$-filtering lowers the noise level by removing unaliased blending noise. Next, the lowered noise level enables thresholding to reduce aliased frequency components of the blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
+Note that $f$-$k$-filtering lowers the noise level by removing spatially unaliased blending noise. Next, the lowered noise level enables thresholding to reduce spatially aliased the blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
 
 
 \begin{figure}
