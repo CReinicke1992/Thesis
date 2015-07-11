@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  11 JUL 2015 22:13
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  11 JUL 2015 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3579,26 +3579,29 @@ File: Plots/Mahdad/5iter/FK-MaskCRG_rec30.pdf Graphic file (type QTm)
 Package xcolor Warning: Incompatible color definition on input line 269.
 
 
+Package xcolor Warning: Incompatible color definition on input line 269.
+
+
+Package xcolor Warning: Incompatible color definition on input line 269.
+
+
 Package xcolor Warning: Incompatible color definition on input line 271.
-
-
-Package xcolor Warning: Incompatible color definition on input line 273.
 
 [12]
 
-Package xcolor Warning: Incompatible color definition on input line 282.
+Package xcolor Warning: Incompatible color definition on input line 280.
 
 
-Package xcolor Warning: Incompatible color definition on input line 282.
+Package xcolor Warning: Incompatible color definition on input line 280.
 
 
-Package xcolor Warning: Incompatible color definition on input line 293.
+Package xcolor Warning: Incompatible color definition on input line 291.
 
 
-Package xcolor Warning: Incompatible color definition on input line 307.
+Package xcolor Warning: Incompatible color definition on input line 305.
 
 
-Package xcolor Warning: Incompatible color definition on input line 311.
+Package xcolor Warning: Incompatible color definition on input line 309.
 
 File: Plots/Mahdad/1iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
 <use  "Plots/Mahdad/1iter/DeblendedCRG_rec30.pdf" >
@@ -3613,30 +3616,30 @@ File: Plots/Mahdad/20iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
 File: Plots/Mahdad/25iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
  <use  "Plots/Mahdad/25iter/DeblendedCRG_rec30.pdf" > [13] [14]
 
-Package xcolor Warning: Incompatible color definition on input line 381.
+Package xcolor Warning: Incompatible color definition on input line 379.
+
+
+Package xcolor Warning: Incompatible color definition on input line 379.
 
 
 Package xcolor Warning: Incompatible color definition on input line 381.
-
-
-Package xcolor Warning: Incompatible color definition on input line 383.
 
 File: Plots/GGH.pdf Graphic file (type QTm)
 <use  "Plots/GGH.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 394.
+Package xcolor Warning: Incompatible color definition on input line 392.
+
+
+Package xcolor Warning: Incompatible color definition on input line 392.
+
+
+Package xcolor Warning: Incompatible color definition on input line 392.
 
 
 Package xcolor Warning: Incompatible color definition on input line 394.
 
 
 Package xcolor Warning: Incompatible color definition on input line 394.
-
-
-Package xcolor Warning: Incompatible color definition on input line 396.
-
-
-Package xcolor Warning: Incompatible color definition on input line 396.
 
 File: Plots/Mahdad/25iter/TimeDelay/Pseudo-DeblendedCRG_rec30_coh.pdf Graphic file (type QTm)
 <use  "Plots/Mahdad/25iter/TimeDelay/Pseudo-DeblendedCRG_rec30_coh.pdf" >
@@ -3649,13 +3652,13 @@ File: Plots/Mahdad/25iter/TimeDelay/FK-Pseudo-deblendedCRG_rec30.pdf Graphic fil
 File: Plots/GGH_x.pdf Graphic file (type QTm)
  <use  "Plots/GGH_x.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 440.
+Package xcolor Warning: Incompatible color definition on input line 438.
 
 
-Package xcolor Warning: Incompatible color definition on input line 440.
+Package xcolor Warning: Incompatible color definition on input line 438.
 
 
-Package xcolor Warning: Incompatible color definition on input line 448.
+Package xcolor Warning: Incompatible color definition on input line 446.
 
 [15] [16]) [17]
 \openout2 = `Chapters/chapter7-Incoherency.aux'.
@@ -4240,7 +4243,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
 Here is how much of TeX's memory you used:
  32866 strings out of 493734
  626206 string characters out of 6146347
- 667145 words of memory out of 5000000
+ 668147 words of memory out of 5000000
  35571 multiletter control sequences out of 15000+600000
  26336 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191

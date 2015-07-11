@@ -257,7 +257,7 @@ In the marine case the minimum velocity is usually the water velocity, $v_{w} = 
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width = 0.957\textwidth]{Plots/Mahdad/5iter/FK-MaskCRG_rec30}
-		\caption{The $f$-$k$-mask is determined by the minimum signal velocity in the subsurface. The white area of the filter equals one, the black area equals zero. Thus, the filter removes data which is mapped outside of the white signal cone.}
+		\caption{The $f$-$k$-mask is determined by the minimum signal velocity in the subsurface. The white area of the filter equals one, the black area equals zero. Thus, the filter removes data which are mapped outside of the white signal cone.}
 		\label{fig:Ch-Theory-FK-Mask}
 	\end{subfigure}
 	
@@ -265,11 +265,9 @@ In the marine case the minimum velocity is usually the water velocity, $v_{w} = 
 	\label{fig:Ch-Theory-fk-unblended-data-mask}
 \end{figure}
 
-For each frequency, $f$, wavenumbers above $k_{max}$ are removed which results in a 2D $f$-$k$-filter as depicted in Figure \ref{fig:Ch-Theory-FK-Mask}.
+A 2D $f$-$k$-filter can be designed that removes all elements outside the cone (see Figure \ref{fig:Ch-Theory-FK-Mask}). The $f$-$k$-filter removes the part of the blending noise, which maps outside of the signal cone (see Figure \ref{fig:Ch-Theory-FKDeblended-NoFilter}). Thus, after transforming the data back to the space time domain the amplitudes of the spiky noise are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
 
-The $f$-$k$-filter removes the part of the blending noise, which maps outside of the signal cone. Thus, after transforming the data back to the space time domain the amplitudes of the spiky noise are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
-
-Note that $f$-$k$-filtering can only reduce unaliased frequency components of the blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}. 
+Note that $f$-$k$-filtering can only reduce spatially unaliased blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest spatially unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}. 
 
 The high cut frequency of the $f$-$k$-mask is set according to the highest frequency components in the data. The aliased blending noise will pass the $f$-$k$-filter and will be reduced afterwards by thresholding. 
 
