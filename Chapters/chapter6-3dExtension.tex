@@ -51,11 +51,11 @@ For example, one row in the data matrix, $\mathbf{P}$, in Figure \ref{fig:Ch-The
 
 \subsection*{Blending matrix}
 
-As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one source. For extension to 3D the sources of the first crossline are saved in the top $Ns_x$ rows of the blending matrix, followed by the sources of the second crossline etc. (see Figure \ref{fig:Ch-Theory-3D-BlendingMatrix-Design}). The elements in the $j^{th}$ column of the blending matrix, $\mathbf{\Gamma}$, select the sources which are blended in the $j^{th}$ experiment and give each source a time delay. For example, the first column of the blending matrix in Figure \ref{fig:Ch-Theory-3D-BlendingMatrix} describes that in the first experiment sources $1$ and $3$ are blended with a time delay of $\Delta t_1$.
+The blending matrix for 3D is build in a similar fashion as the data matrix in 3D. As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one shot. For extension to 3D the shots of the first crossline are placed in the top $Ns_x$ rows of the blending matrix, followed by the shots of the second crossline etc. (see Figure \ref{fig:Ch-Theory-3D-BlendingMatrix-Design}). The elements in the $j^{th}$ column of the blending matrix, $\mathbf{\Gamma}$, select the shots which are blended in the $j^{th}$ experiment. For example, the first column of the blending matrix in Figure \ref{fig:Ch-Theory-3D-BlendingMatrix} describes that in the first experiment shots $1$ and $3$ are blended with a time delay of $\Delta t_1$.
 
 \todo[inline]{Keep this sentence for later: This framework allows to blend any source combination independent of the cross- and inline positions of the involved sources.}
 
-With the new data and blending matrix sorting one can already apply deblending to 3D data.
+With the new data and blending matrix sorting one can apply deblending to 3D data.
 
 \begin{figure}
 
