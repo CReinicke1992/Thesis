@@ -2,19 +2,23 @@
 
 This thesis suggests to blend crossline sources, i.e. in combination with the movement of the seismic vessel one effectively blends sources in 3D.
 
+\todo[inline]{In this paragraph I use the word "source". For consistency I thought about using the word "shot". However, it seems to sound strange in this sentence.}
+
 The deblending method of \citet{Mahdad-Deblending-Method} described in section \ref{sec:MahdadMethod} is designed for 2D blended data. In this thesis I will explain how each step of the Mahdad method can be applied to 3D data as well, and I will demonstrate its performance.
 
-First, the data sorting will be modified such that the blended 3D data can be described using the same forward model as in section \ref{sec:Ch-Theory-Operator}. Second, the $f$-$k$-filter will be extended to an $f$-$k_x$-$k_y$-filter to remove noise in crossline and inline direction. The presented data sorting will allow to maintain all other steps of the deblending algorithm of \citet{Mahdad-Deblending-Method} unchanged.
+First, the data sorting will be modified such that the blended 3D data can be described using the same forward model as in section \ref{sec:Ch-Theory-Operator}. The presented data sorting will allow to maintain all other steps of the deblending algorithm of \citet{Mahdad-Deblending-Method} unchanged. Second, the $f$-$k$-filter will be extended to an $f$-$k_x$-$k_y$-filter to remove noise in crossline and inline direction.
 
 \section{Data Sorting} \label{sec:Ch-Theory-3dExtension-DataSorting}
 
 \subsection*{Data Matrix}
 
-In 3D acquisition the sources and receivers are distributed on a 2D surface. Thus, their locations are defined by their crossline and inline positions, ($x$, $y$). Each data point which is measured by a source receiver pair at a specific time is therefore described by 5 coordinates: Time $t$, receiver crossline and inline position ($x_r$, $y_r$), and source crossline and inline position ($x_s$, $y_s$).
+In 3D acquisition the sources and receivers are distributed on a 2D surface. Thus, their locations are defined by their crossline and inline positions, ($x$, $y$). Each data point which is measured by a source receiver pair at a specific time is therefore described by 5 coordinates, time $t$, receiver crossline and inline position ($x_r$, $y_r$), and source crossline and inline position ($x_s$, $y_s$).
 
-The 5D data "cube" will be again reorganized in a 2D data matrix according to \citet{Delphi-Format} (see Figure \ref{fig:Ch-Theory-DelphiFormat}). For this data sorting a 1D Fourier transform with respect to time is performed and a frequency slice is selected. This reduces the data array from 5 to 4 dimensions. 
+The 5D data "cube" will be again reorganized in a 2D data matrix according to \citet{Delphi-Format} (see Figure \ref{fig:Ch-Theory-DelphiFormat}). For this data sorting a 1D Fourier transform with respect to time is performed and a 4D frequency "slice" is selected.
 
-The 4D data array is sorted in a 2D data matrix, $\mathbf{P}$, with as many rows as receivers and as many columns as sources. The total number of sources is obtained by multiplying the number of crossline and inline sources. The total number of receivers is obtained likewise. Assume there are $Ns_x$ sources per crossline. The sources of the first crossline are assigned to the first $Ns_x$ columns of the data matrix, the sources of the second crossline are assigned to the next $Ns_x$ columns of the data matrix, etc. The cross- and inline receivers are sorted in the rows of the data matrix in analogy. For example, one row if the data matrix, $\mathbf{P}$, in Figure \ref{fig:Ch-Theory-DelphiFormat} represents  a common receiver gather. The data of this such a common receiver gather is shown in Figure \ref{fig:Ch-Theory-DataSorting}, where each hyperbolic event refers to the sources of one crossline.
+The 4D "slice" is sorted in a 2D data matrix, $\mathbf{P}$, with as many rows as receivers and as many columns as shots. The total number of shots is obtained by multiplying the number of shots fired in each crossline and the number of shots fired in each inline. The total number of receivers is obtained likewise. Assume there are $Ns_x$ shots per crossline. The shots of the first crossline are assigned to the first $Ns_x$ columns of the data matrix, the shots of the second crossline are assigned to the next $Ns_x$ columns of the data matrix, etc. The cross- and inline receivers are sorted in the rows of the data matrix in analogy.
+
+For example, one row in the data matrix, $\mathbf{P}$, in Figure \ref{fig:Ch-Theory-DelphiFormat} represents  a common receiver gather. The data of this common receiver gather are shown in Figure \ref{fig:Ch-Theory-Data3d}, where the coordinates, $x$ and $y$, indicate the crossline and inline shot position respectively. For the described data sorting individual crossline slices are extracted from this data cube and assembled next to each other in a data matrix as shown in Figure \ref{fig:Ch-Theory-Data3d_Delphi}. Each hyperbolic event refers to the response of the shots of one crossline.
 
 \begin{figure}
 	\centering
