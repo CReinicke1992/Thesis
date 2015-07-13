@@ -81,9 +81,9 @@ With the new data and blending matrix sorting one can apply deblending to 3D dat
 
 \section{3D f-k-k Filter} \label{sec:Ch-Theory-3dExtension-FKK}
 
-In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. By sorting the 2D $f$-$k$-fitler according to section \ref{sec:Ch-Theory-3dExtension-DataSorting} it can be applied to 3D data (see Figure \ref{fig:Ch-Mahdad3d-2dfk}). However, it only filters the crossline wavenumbers $k_x$. Thus, it is a $f$-$k_x$-filter.
+In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. By sorting the 2D $f$-$k$-fitler according to section \ref{sec:Ch-Theory-3dExtension-DataSorting} it can be applied to 3D data (see Figure \ref{fig:Ch-Mahdad3d-2dfk}). However, it only filters the crossline wavenumbers $k_x$, i.e. it is an $f$-$k_x$-filter.
 
-By taking into account both spatial direction, $x$ and $y$, the filter can be extended to a 3D $f$-$k_x$-$k_y$-filter.
+The $f$-$k_x$-$k_y$ spectra of synthetic data shown in Figure \ref{fig:Ch-Theory-FK-f_slice-data} and \ref{fig:Ch-Theory-FK-delphi-data} illustrate that the 2D $f$-$k_x$-filter does also pass some energy which is no signal. In the following both spatial directions, $x$ and $y$, are considered to extend the filter to a 3D $f$-$k_x$-$k_y$-filter.
 
 \begin{figure}
 
@@ -109,7 +109,7 @@ By taking into account both spatial direction, $x$ and $y$, the filter can be ex
 	\label{fig:Ch-Mahdad3d-2dfk}
 \end{figure}
 
-The deblending method is applied to common receiver gathers. Thus, one picks a single receiver, which is a data cube, $\mathbf{p}(t,x_s,y_s)$. The common receiver gather, $\mathbf{p}(t,x_s,y_s)$, is transformed to the $f$-$k_x$-$k_y$-domain by applying an n-dimensional Fourier transform.  Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers ($k_x$, $k_y$) (see Figure \ref{fig:Ch-Theory-FK-f_slice-data}). Again the minimum velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber}. The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
+The deblending method is applied to common receiver gathers. Thus, one picks a single receiver, which is a data cube, $\mathbf{p}(t,x_s,y_s)$. The common receiver gather, $\mathbf{p}(t,x_s,y_s)$, is transformed to the $f$-$k_x$-$k_y$-domain by applying a 3-dimensional Fourier transform.  Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers ($k_x$, $k_y$) (see Figure \ref{fig:Ch-Theory-FK-f_slice-data}). Again the minimum velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber}. The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
 
 \begin{equation}
 	k_{T} = \sqrt{k_x^2 + k_{y}^2} < k_{max}.
