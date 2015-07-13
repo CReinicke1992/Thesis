@@ -81,7 +81,33 @@ With the new data and blending matrix sorting one can apply deblending to 3D dat
 
 \section{3D f-k-k Filter} \label{sec:Ch-Theory-3dExtension-FKK}
 
-In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. In 3D there are two spatial direction ($x$, $y$), i.e. the filter can be extended to a 3D $f$-$k_x$-$k_y$-filter.
+In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. By sorting the 2D $f$-$k$-fitler according to section \ref{sec:Ch-Theory-3dExtension-DataSorting} it can be applied to 3D data (see Figure \ref{fig:Ch-Mahdad3d-2dfk}). However, it only filters the crossline wavenumbers $k_x$. Thus, it is a $f$-$k_x$-filter.
+
+By taking into account both spatial direction, $x$ and $y$, the filter can be extended to a 3D $f$-$k_x$-$k_y$-filter.
+
+\begin{figure}
+
+	\centering 
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width = 0.65\textwidth]{Plots/IdealData3d/fkk-mask-slice40-2d}
+		\caption{}
+		\label{fig:Ch-Mahdad3d-2dfk-slice}
+	\end{subfigure}
+	
+	\par\bigskip
+	
+	\centering
+	\begin{subfigure}[t]{\textwidth}
+		\centering
+		\includegraphics[width = 0.9\textwidth]{Plots/IdealData3d/fkk-mask-Delphi-2d}
+		\caption{}
+		\label{fig:Ch-Mahdad3d-2dfk-Delphi}
+	\end{subfigure}
+	
+	\caption{One can design a 2D $f$-$k_x$-filter for 3D data. (a) shows a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum. Note that the filter is not affecting the inline wavenumber $k_y$. (b) illustrates the 2D $f$-$k_x$-filter sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}. Each cone represents a 2D $f$-$k$-filter for an individual crossline.}
+	\label{fig:Ch-Mahdad3d-2dfk}
+\end{figure}
 
 The deblending method is applied to common receiver gathers. Thus, one picks a single receiver, which is a data cube, $\mathbf{p}(t,x_s,y_s)$. The common receiver gather, $\mathbf{p}(t,x_s,y_s)$, is transformed to the $f$-$k_x$-$k_y$-domain by applying an n-dimensional Fourier transform.  Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers ($k_x$, $k_y$) (see Figure \ref{fig:Ch-Theory-FK-f_slice-data}). Again the minimum velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber}. The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
 
