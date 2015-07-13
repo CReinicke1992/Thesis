@@ -107,7 +107,7 @@ The $f$-$k_x$-$k_y$ spectra of synthetic data shown in Figure \ref{fig:Ch-Theory
 		\label{fig:Ch-Mahdad3d-2dfk-Delphi}
 	\end{subfigure}
 	
-	\caption{One can design a 2D $f$-$k_x$-filter for 3D data. (a) shows a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum. Note that the filter is not affecting the inline wavenumber $k_y$. (b) illustrates the 2D $f$-$k_x$-filter sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}. Each cone represents a 2D $f$-$k$-filter for an individual crossline.}
+	\caption{One can design a 2D $f$-$k_x$-filter for 3D data. (a) shows a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum, where the shite area equals 1 and the black area is 0. Note that the filter is not affecting the inline wavenumbers $k_y$. (b) illustrates the 2D $f$-$k_x$-filter sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}. Each cone represents a 2D $f$-$k$-filter for a single inline wavenumber.}
 	\label{fig:Ch-Mahdad3d-2dfk}
 \end{figure}
 
@@ -126,17 +126,25 @@ Once the mask is built for a 5D data array it can either be applied to filter a 
 
 \begin{figure}
 	\centering
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.3\textwidth}
 		\centering
-		\includegraphics[width=0.65\textwidth]{Plots/IdealData3d/P_f_slice40}
+		\includegraphics[width=\textwidth]{Plots/IdealData3d/P_f_slice40}
 		\caption{}
 		\label{fig:Ch-Theory-FK-f_slice-data}
 	\end{subfigure}
 	%
 	\centering
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.3\textwidth}
 		\centering
-		\includegraphics[width=0.65\textwidth]{Plots/IdealData3d/fkk-mask-slice40}
+		\includegraphics[width=\textwidth]{Plots/IdealData3d/fk-slices/3dfk-cone}
+		\caption{}
+		\label{fig:Ch-Theory-FK-f_slice-data3d}
+	\end{subfigure}
+	%
+	\centering
+	\begin{subfigure}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Plots/IdealData3d/fkk-mask-slice40}
 		\caption{}
 		\label{fig:Ch-Theory-FK-f_slice-mask}
 	\end{subfigure}
@@ -155,7 +163,7 @@ Once the mask is built for a 5D data array it can either be applied to filter a 
 		\label{fig:Ch-Theory-FK-delphi-mask}
 	\end{subfigure}
 	
-	\caption{Illustration of the 3D $f$-$k_x$-$k_y$-filter. (a) and (b) show a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$-spectrum, where $k_x$ and $k_y$ refer to the crossline and inline wavenumber respectively. (a) is the spectrum of the data in Figure \ref{fig:Ch-Theory-Data3d_Delphi}, and (b) is the corresponding filter mask. The white area equals 1 and the black area is 0. (c) and (d) display the $f$-$k_x$-$k_y$-spectrum sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, i.e. each sub-cone refers to one inline wavenumber. Note that the sorting implies that the wavenumber axis is a mix of crossline and inline wavenumbers. For this reason the wavenumber axis has no labels. (c) represents the data and (d) the filter mask.}
+	\caption{Illustration of the 3D $f$-$k_x$-$k_y$-filter. (a) is a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum of the data in Figure \ref{fig:Ch-Theory-Data3d_Delphi}. $k_x$ and $k_y$ refer to the crossline and inline wavenumber respectively. (b) shows the same data slice sorted in a 3D cube. The red cone represents the 3D $f$-$k_x$-$k_y$ filter mask. (c) is a \SI{40}{\hertz} frequency slice of the mask, where the white area equals 1 and the black area is 0. (d) and (e) display the $f$-$k_x$-$k_y$ data spectrum and mask sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, i.e. each sub-cone refers to one inline wavenumber. Note that due to the sorting the wavenumber axis is a mix of crossline and inline wavenumbers. For this reason the wavenumber axis has no labels.}
 	\label{fig:Ch-Theory-FKK-Mask}
 
 \end{figure}
