@@ -81,7 +81,9 @@ With the new data and blending matrix sorting one can apply deblending to 3D dat
 
 \section{3D f-k-k Filter} \label{sec:Ch-Theory-3dExtension-FKK}
 
-In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. By sorting the 2D $f$-$k$-fitler according to section \ref{sec:Ch-Theory-3dExtension-DataSorting} it can be applied to 3D data (see Figure \ref{fig:Ch-Mahdad3d-2dfk}). However, it only filters the crossline wavenumbers $k_x$, i.e. it is an $f$-$k_x$-filter.
+In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. By sorting the 2D $f$-$k$-fitler according to section \ref{sec:Ch-Theory-3dExtension-DataSorting} it can be applied to 3D data. 
+
+For this purpose one considers a 3D common receiver gather, $\mathbf{p}(t,x_s,y_s)$, and brings it to the $f$-$k_x$-$k_y$ domain by applying a 3-dimensional Fourier transform. Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers (kx, ky). The maximum crossline wavenumber, $k_x$, is defined according to section section \ref{sec:IterBlenNoiseEst}. The resulting $f$-$k$-mask is shown in Figure \ref{fig:Ch-Mahdad3d-2dfk}. Note that it only filters the crossline wavenumbers $k_x$, i.e. it is a $f$-$k_x$ filter.
 
 The $f$-$k_x$-$k_y$ spectra of synthetic data shown in Figure \ref{fig:Ch-Theory-FK-f_slice-data} and \ref{fig:Ch-Theory-FK-delphi-data} illustrate that the 2D $f$-$k_x$-filter does also pass some energy which is no signal. In the following both spatial directions, $x$ and $y$, are considered to extend the filter to a 3D $f$-$k_x$-$k_y$-filter.
 
