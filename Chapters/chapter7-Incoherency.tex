@@ -126,6 +126,71 @@ In practice, the maximum allowed firing time delay is limited by the available a
 
 \section{Effect of Incoherency}
 
+An incoherent blending pattern is crucial for good deblending performance (see section \ref{sec:BlendingMatrix}). Thus, a measure of incoherency and deblending quality will be introduced. Then, the possibilities of creating an incoherent blending pattern are presented. Finally, the effect of incoherency on the deblending quality will be shown on a synthetic data set.
+
+
+\subsection*{Incoherency Measure}
+
+\todo[inline]{Move this sentence to the introduction (literature). You might also want to mention the work of the Greek guy Apostolos.\\
+In this thesis only the incoherency of the acquisition design is considered. Thus, the blending matrix, $\Gamma$, or more precisely the product $\mathbf{\Gamma \Gamma}^H$ determines the incoherency.}
+
+A measure of incoherency will be introduced in order to analyze the importance of an incoherent blending pattern quantitatively.
+
+In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the product $\mathbf{\Gamma \Gamma}^H$ should be out of phase. Therefore, the phase variability of the sub-diagonal elements will be used to quantify incoherency.
+
+Note that the sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). 
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.5\textwidth]{Plots/complex-circle}
+	\caption{Illustration of the sub-diagonal elements in the complex number plane. The elements have unit length and variable phase. The absolute value of their sum depends on the phase coherency of the elements.}
+	\label{fig:Ch-Results-complex-circle}
+\end{figure}
+
+The sum of the elements along the $k^{th}$ sub-diagonal can be constructive or destructive, depending on the phase variability. Thus, the absolute value of the sum measures the incoherency of an individual sub-diagonal. The resulting value is squared in order to put it in terms of energy;
+
+\begin{equation}
+	\left| \sum_{j-i=k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2.
+	\label{eq:Ch-Results-incoherency-diagsum}	
+\end{equation} 
+
+For example, if all elements are in phase the length of their sum is maximized. The more the elements are out of phase, i.e. the more incoherent they are, the smaller is the length of the summed elements. 
+
+For illustration a blending matrix, $\mathbf{\Gamma}$, is generated and inserted in equation \ref{eq:Ch-Results-incoherency-diagsum}. This yields an output for each sub-diagonal, which is shown in Figure \ref{fig:Ch-Results-Diagonal-Sums}. The spike is caused by the elements on the main diagonal of $\mathbf{\Gamma \Gamma}^H$, which are all equal to 1, i.e. in phase. For a perfectly incoherent blending design the elements on a sub-diagonal cancel and the plot becomes a perfect spike. 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Plots/diagonal-sums}
+	\caption{The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, of the product $\mathbf{\Gamma \Gamma}^H$ are summed. The length of each output is plotted. The spike is caused by the main diagonal elements of $\mathbf{\Gamma \Gamma}^H$ because they are all in phase.}
+	\label{fig:Ch-Results-Diagonal-Sums}
+\end{figure}
+
+The closer Figure \ref{fig:Ch-Results-Diagonal-Sums} comes to a spike the more incoherent is the blending pattern. Thus, considering Figure \ref{fig:Ch-Results-Diagonal-Sums} the incoherency, $\mu$, is measured as the ratio between the amplitude of the spike and the sum of all amplitudes. 
+
+In terms of the sub-diagonals of $\mathbf{\Gamma \Gamma}^H$ this is the ratio between the squared absolute value of the summed main diagonal and the sum of all squared absolute summed sub-diagonals;
+
+\begin{equation}
+	\mu(\omega) = \frac{  \left| \sum_{j-i = 0} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2    }{ \sum_{k = 1-N_s}^{N_s-1}	 \left( \left| \sum_{j-i = k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2 \right)   }.
+	\label{eq:Ch-Results-incoherency-monochromatic}
+\end{equation}
+
+Note that $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns.
+
+Up to now, the incoherency is computed for each frequency separately. In order to account for all frequencies at once the nominator and denominator in equation \ref{eq:Ch-Results-incoherency-monochromatic} are summed over all frequency components;
+
+\begin{equation}
+	\mu = \frac{  \sum_{\omega} \left( \left| \sum_{j-i = 0} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2  \right)  }{  \sum_{\omega} \left( \sum_{k = 1-N_s}^{N_s-1}	 \left( \left| \sum_{j-i = k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2 \right) \right)  } \;.
+	\label{eq:Ch-Results-incoherency}
+\end{equation}
+
+
+
+For example, for a perfectly incoherent blending pattern only the sum along the main diagonal ($k=0$) is non zero. Thus, the nominator and the denominator in equation \ref{eq:Ch-Results-incoherency} are identical, the incoherency equals 1. 
+
+In contrast, for a perfectly coherent blending pattern all sub-diagonal elements are in phase. Consequently, the sum along the main diagonal is of the same magnitude as the sum along the sub-diagonals. The nominator in equation \ref{eq:Ch-Results-incoherency} becomes significantly smaller than the denominator, and the incoherency is nearly 0.
+
+
 \section{Results}
 
 \section{Effect of Maximum Firing Time Delay}
