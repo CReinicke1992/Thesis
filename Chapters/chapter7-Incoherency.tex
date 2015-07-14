@@ -165,7 +165,7 @@ Finally, the incoherency, $\mu$, is quantified by the ratio of the main diagonal
 
 Note that $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns. Equation \ref{eq:Ch-Results-incoherency} implies that the incoherency value can vary between 0 (perfectly coherent) and 1 (perfectly incoherent).
 
-For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses coherent firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $S(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One observes that coherent blending matrix, $\mathbf{\Gamma}_{coh}$, results in a less spike-like $S(d,\omega)$ function than the incoherent blending matrix, $\mathbf{\Gamma}_{ran}$.
+For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses coherent firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $S(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One observes that the coherent blending matrix, $\mathbf{\Gamma}_{coh}$, results in a less spike-like $S(d,\omega)$ function than the incoherent blending matrix, $\mathbf{\Gamma}_{ran}$.
 
 \begin{figure}
 	
@@ -189,6 +189,19 @@ For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\m
 	\label{fig:Ch-Incoherency-Coh-vs-Ran-Diag}
 	
 \end{figure}
+
+
+\subsection*{Deblending Performance Measure}
+
+The following data examples are synthetic data, i.e. the unblended data is known. Therefore, the deblending performance can be measured with the quality factor, $Q$, which is defined by \citet{IbrahimQuality} as the ratio of unblended data, $\mathbf{P}$, and the misfit between the unblended data, $\mathbf{P}$, and deblended data, \textbf{\^{P}};
+
+\begin{equation}
+	Q = 10 \cdot \mathrm{log_{10}} \left( \frac{\left|\left|\mathbf{P}\right|\right| _2 ^2}{\left|\left|\mathbf{P - \hat{P}}\right|\right| _2 ^2} \right) \;.	
+\end{equation}
+
+
+
+
 
 
 
