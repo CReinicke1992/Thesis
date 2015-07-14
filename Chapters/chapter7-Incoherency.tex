@@ -274,7 +274,9 @@ Another control factor of the deblending performance is the maximum firing time 
 
 The three suggested blending patterns namely temporal, spatial and mixed incoherency are applied to synthetic data with varying maximum firing time delays. 
 
-Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the three blending patterns as a function of maximum firing time delay. The spatially incoherent blending pattern yields a constant deblending quality independent of the maximum firing time delay. This is expected because it blends the sources without time delay. The deblending quality provided by the other two blending patterns continuously enhances with increasing maximum firing time delay. The difference between the deblending quality given by temporal and mixed blending patterns seems to be independent of the maximum firing time delay.
+Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the three blending patterns as a function of maximum firing time delay. Note that for a fixed maximum firing time delay and a specific blending pattern the firing time delays are generated with a random number generator. Consequently, the resulting quality factor varies depending on the variation of the random number series. For this reason several blending matrices are generated for each maximum firing time delay and each blending pattern. The resulting quality factors are averaged.
+
+According to Figure \ref{fig:Ch-Results-QualityFactors} the spatially incoherent blending pattern yields a constant deblending quality independent of the maximum firing time delay. This is expected because it blends the sources without time delay. The deblending quality provided by the other two blending patterns continuously enhances with increasing maximum firing time delay. The difference between the deblending quality given by temporal and mixed blending patterns seems to be independent of the maximum firing time delay.
 
 \begin{figure}
 	\centering
@@ -286,7 +288,51 @@ Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the thr
 \todo[inline]{For the conclusion/discussion of these results: \\ 
 				Say that a high degree of incoherency is required for successful deblending, but it is not useful as a control factor of the deblending performance. Instead the maximum firing time delay allows to fine tune the quality factor and might be suitable to fine tune a trade off between deblending quality and acquisition time.\\
 				One can also say that the  spatial incoherency performs poorly because its degree of incoherency is simply too low.}
+			
+			
 				
-\subsection*{}
+\subsection*{Application of Incoherency and Maximum Firing Time Delay}
+
+In Figure \ref{fig:Ch-Results-QualityFactors} the quality factors are averaged for each maximum firing time delay and blending pattern. This means that for a given maximum firing time delay and blending pattern there are random firing time delays which yield better deblending results than other firing time delays.
+
+In practice, the maximum firing time delay is given by the available acquisition time. For optimal deblending results the incoherency of the blending pattern should be maximized.
+
+For example, consider again the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing time delay. However, their incoherency values differ because $\mathbf{\Gamma}_{coh}$ uses coherent firing time delays whereas $\mathbf{\Gamma}_{ram}$ uses random firing time delays. 
+
+An effective blending matrix, $\mathbf{\Gamma}_{eff}$, is created by superimposing both blending matrices;
+
+\begin{equation}
+	\mathbf{\Gamma}_{eff} = a \cdot \mathbf{\Gamma}_{ran} + (1 - a) \cdot \mathbf{\Gamma}_{coh}, \; a \in [0,1].
+	\label{eq:Ch-Incoherency-EffectiveG}
+\end{equation}
+
+The maximum firing time delay of the effective blending matrix, $\mathbf{\Gamma}_{eff}$, is constant while the incoherency  varies with changing $a$. 
+
+\todo[inline]{Insert plot}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
