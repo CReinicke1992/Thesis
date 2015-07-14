@@ -202,7 +202,11 @@ The following data examples are synthetic data, i.e. the unblended data is known
 
 \subsection*{Incoherent Blending Patterns}
 
-Based on Figure \ref{fig:Ch-Theory-GGH} and \ref{fig:Ch-Theory-GGHx} this set up there are three possibilities to blend the sources incoherently. First, the sources can be blended with random time delays (temporal incoherency). Second, one can randomly pick sources for each experiment (spatial incoherency). Third, temporal and spatial incoherency can be combined (mixed incoherency), i.e. randomly picked sources are blended with random time delays.
+Based on the blending matrices in Figure \ref{fig:Ch-Theory-GGH} and \ref{fig:Ch-Theory-GGHx} there are three possibilities to blend the shots incoherently. First, the phase terms along the sub-diagonals can be varied randomly, i.e. the shots are blended with random firing time delays (temporal incoherency). Second, the rows of the blending matrix can be randomly permuted, i.e. one randomly selects shots for each experiment (spatial incoherency). Third, temporal and spatial incoherency can be combined (mixed incoherency), i.e. randomly selected sources are blended with random firing time delays.
+
+
+
+\section{Results}
 
 In the following these blending patterns will applied to a synthetic data set (see Figure \ref{fig:Ch-Results-Unbl-Delphi}, \ref{fig:Ch-Results-Unbl-inline10}, \ref{fig:Ch-Results-Unbl-xline10}). Next, the data is deblended with the 3D deblending algorithm of chapter \ref{chap:MahdadMethod3d}. 
 
@@ -317,14 +321,6 @@ The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-Delphi} and 
 	\label{fig:Ch-Results-Debl-x-inline}
 
 \end{figure}
-
-
-
-
-
-
-
-\section{Results}
 
 \section{Effect of Maximum Firing Time Delay}
 
