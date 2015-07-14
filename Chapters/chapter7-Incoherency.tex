@@ -154,9 +154,9 @@ The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map in the co
 
 For example, if all elements are in phase the absolute value of their sum, $S(d,\omega)$, is maximized. The more the elements are out of phase, i.e. the more incoherent they are, the smaller is $S(d,\omega)$. Thus, in case of an incoherent blending pattern $S(d,\omega)$ is small for all sub-diagonals $d$, except for the main diagonal, $d = 0$.  
 
-All frequency components, $\omega$, of $S(d,\omega)$ are summed. The resulting function, $S(d)$, only depends on the sub-diagonal number. Next, each element of $S(d)$ is squared to relate it to energy. 
+$S(d,\omega)$ is summed over all frequency components, $\omega$. The resulting function, $S(d)$, only depends on the sub-diagonal, d. Each element of $S(d)$ is squared to relate it to energy. 
 
-The incoherency, $\mu$, is quantified by the ratio of the main diagonal and the sum of all sub-diagonals;
+Finally, the incoherency, $\mu$, is quantified by the ratio of the main diagonal and the sum of all sub-diagonals;
 
 \begin{equation}
 	\mu = \frac{\left( \; \sum_{\omega}S(d=0,\omega) \; \right)^2}{\sum_{d = 1-Ns}^{Ns-1} \left(\left( \; \sum_{\omega}S(d,\omega) \; \right)^2\right)}
@@ -165,7 +165,7 @@ The incoherency, $\mu$, is quantified by the ratio of the main diagonal and the 
 
 Note that $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns. Equation \ref{eq:Ch-Results-incoherency} implies that the incoherency value can vary between 0 (perfectly coherent) and 1 (perfectly incoherent).
 
-Consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay}. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses coherent firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $S(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$.
+For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses coherent firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $S(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One observes that coherent blending matrix, $\mathbf{\Gamma}_{coh}$, results in a less spike-like $S(d,\omega)$ function than the incoherent blending matrix, $\mathbf{\Gamma}_{ran}$.
 
 \begin{figure}
 	
