@@ -6,14 +6,14 @@ This chapter describes the theory behind blending and deblending. First the deta
 %The detail hiding operator notation was introduced by \citet{Berkhout1982}, and later on it was extended for blended data. 
 
 \subsection{Conventional Seismic Data}
-In the detail hiding operator notation \citep{Berkhout1982} the recorded signal is considered discrete in terms of time $t$, receiver position $x_r$, and source position $x_s$. Thus, the measurements can be organized in a cube, $\mathbf{p(t,x_r,x_s)}$ (see Figure \ref{fig:Ch-Theory-DataMatrix}). Each frequency slice of this new cube represents the data matrix, $\mathbf{P}$. 
+In the detail hiding operator notation \citep{Berkhout1982} the recorded signal is considered discrete in terms of time $t$, receiver position $x_r$, and source position $x_s$. Thus, the measurements can be organized in a cube, $\mathbf{p}(t,x_r,x_s)$, (see Figure \ref{fig:Ch-Theory-DataMatrix}). Each frequency slice of this new cube represents the data matrix, $\mathbf{P}$. 
 
 In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic common shot gather (see Figure \ref{fig:Ch-Theory-DataMatrixMahdad}), each row to a monochromatic common receiver gather, each diagonal to a monochromatic common offset gather, and each anti-diagonal to a monochromatic common midpoint gather. 
 
 \begin{figure}
     \centering
 	\includegraphics{Plots/P-Groenestijn_2010}
-	\caption{Illustration of the data matrix, $\mathbf{P}$, by \citet{Groenestijn_2010}. \textit{Left:} The signal generated at the source position, $x_s$, is measured at receiver position, $x_r$, as a function of time, $t$. Thus, the discretized data is saved in a cube, $\mathbf{p(t,x_r,x_s)}$. \textit{Right:} The cube on the right equals the left cube after a Fourier transform with respect to time. Each frequency slice of the right cube represents the data matrix, $\mathbf{P}$.}
+	\caption{Illustration of the data matrix, $\mathbf{P}$, by \citet{Groenestijn_2010}. \textit{Left:} The signal generated at the source position, $x_s$, is measured at receiver position, $x_r$, as a function of time, $t$. Thus, the discretized data is saved in a cube, $\mathbf{p}(t,x_r,x_s)$. \textit{Right:} The cube on the right equals the left cube after a Fourier transform with respect to time. Each frequency slice of the right cube represents the data matrix, $\mathbf{P}$.}
 	\label{fig:Ch-Theory-DataMatrix}
 \end{figure}
 
@@ -32,11 +32,11 @@ According to the seismic forward model of \citet{Berkhout1982} the data matrix, 
 	\label{eq:Ch-Theory-DataRepresentation}
 \end{equation}
 
-In the source matrix, $\mathbf{S}$, each row and each column represent one source position (see Figure \ref{fig:Ch-Theory-BlendedSource-Matrices}). Thus, $\mathbf{S}$ is a diagonal matrix. Each diagonal element $s_{ii}$ captures one frequency component of the source signature injected in the earth at the position $x_s = x_i$. By applying a Fourier transform to all frequency components of the element $s_{ii}$ the source signature is obtained.
+In the source matrix, $\mathbf{S}$, each row and each column represent one shot position (see Figure \ref{fig:Ch-Theory-BlendedSource-Matrices}). Thus, $\mathbf{S}$ is a diagonal matrix. Each diagonal element $s_{ii}$ captures one frequency component of the source signature injected in the earth at the position $x_s = x_i$. By applying a Fourier transform to all frequency components of the element $s_{ii}$ the source signature is obtained.
 
  The impulse response of the earth, $\mathbf{X}$, describes how an impulse at the source location, $x_s$, is transformed in the earth into the signal at the receiver location, $x_r$.
 
-$\mathbf{D}$ is the receiver matrix, which converts the seismic wavefield at the receiver location $x_r$ to the recorded signal. This includes the forward model of the receiver ghost.
+$\mathbf{D}$ is the receiver matrix, which converts the seismic wavefield at the receiver location, $x_r$, to the recorded signal. This includes the forward model of the receiver ghost.
 
 In practice, one tries to retrieve the unknown earth response, $\mathbf{X}$, from the data, $\mathbf{P}$, by removing $\mathbf{S}$ (designature) and $\mathbf{D}$ (receiver deghosting).
 
@@ -68,13 +68,13 @@ In practice, one tries to retrieve the unknown earth response, $\mathbf{X}$, fro
 	\end{subfigure}
     % RATIO of the boat images 294 : 410
 	
-	\caption{(a) A conventional source matrix, $\mathbf{S}$, is transformed to a blended source matrix, $\mathbf{S}_{bl}$, by applying the blending matrix, $\mathbf{\Gamma}$. Each star represents a source, and the gray scale of the stars represents the relative firing time. (b) Illustration of conventional acquisition with one vessel. This acquisition set up is modeled by the source matrix $\mathbf{S}$. (c) Illustration of blended acquisition with two vessels. In this case the blended source matrix $\mathbf{S}_{bl}$ models the acquisition set up. The experiment number is indicated on top of each drawing.}
+	\caption{(a) A conventional source matrix, $\mathbf{S}$, is transformed to a blended source matrix, $\mathbf{S}_{bl}$, by applying the blending matrix, $\mathbf{\Gamma}$. Each star represents one shot, and the gray scale of the stars represents the relative firing time. (b) Illustration of conventional acquisition with one vessel. This acquisition set up is modeled by the source matrix $\mathbf{S}$. (c) Illustration of blended acquisition with two vessels. In this case the blended source matrix $\mathbf{S}_{bl}$ models the acquisition set up. The experiment number is indicated on top of each drawing.}
 	\label{fig:Ch-Theory-BlendedSource}
 	
 \end{figure}
 
 
-For blended acquisition the recorded events belonging to different sources overlap as shown in the shot gather in Figure \ref{fig:Ch-Theory-BlendedData}. 
+For blended acquisition the recorded events belonging to different shots overlap as shown in the shot gather in Figure \ref{fig:Ch-Theory-BlendedData}. 
 
 \begin{figure}
 	\centering
@@ -92,14 +92,14 @@ Blending can be captured in the forward model by introducing a blending matrix, 
 
  Each row of $\mathbf{\Gamma}$ represents one source, and each column of $\mathbf{\Gamma}$ represents one experiment (see Figure \ref{fig:Ch-Theory-BlendedSource}). 
  
- The blending matrix captures the physics of a blended acquisition as follows: An element $\gamma_{ij}$ of the blending matrix includes a source $i$ and an experiment $j$. If the source $i$ is not fired in the $j^{th}$ experiment the amplitude $A_{ij}$ is zero. If it is fired, source $i$ has a relative amplitude $A_{ij}$ and a relative time delay $t_{ij}$ with respect to the first source fired in the $j^{th}$ experiment;
+ The blending matrix captures the physics of a blended acquisition as follows: An element $\gamma_{ij}$ of the blending matrix includes a source $i$ and an experiment $j$. If the source $i$ is not fired in the $j^{th}$ experiment the amplitude $A_{ij}$ is zero. If it is fired, source $i$ has a relative amplitude $A_{ij}$ and a relative time delay $\Delta t_{ij}$ with respect to the first source fired in the $j^{th}$ experiment;
 
 \begin{equation}
 	\gamma_{ij} =  A_{ij} \mathrm{e}^{-j \omega \Delta t_{ij}}.
 	\label{eq:Ch-Theory-BlendingElement}
 \end{equation}  
  
-Thus, the blending matrix selects specific sources from the source matrix and superimposes as visualized in Figure \ref{fig:Ch-Theory-BlendedSource}. From Figure \ref{fig:Ch-Theory-BlendedSource} it also becomes clear that both the blending matrix, $\mathbf{\Gamma}$, and the blended source matrix, $\mathbf{S}_{bl}$, have more rows than columns, i.e. there are more sources than experiments. Thus, the acquisition can be done in less time.
+Thus, the blending matrix selects specific sources from the source matrix and superimposes them as visualized in Figure \ref{fig:Ch-Theory-BlendedSource}. From Figure \ref{fig:Ch-Theory-BlendedSource} it also becomes clear that both the blending matrix, $\mathbf{\Gamma}$, and the blended source matrix, $\mathbf{S}_{bl}$, have more rows than columns, i.e. there are more sources than experiments. Thus, the acquisition can be done in less time.
 
 In the case of source blending the receiver matrix, $\mathbf{D}$, is not influenced by blending. And of course, the earth impulse response, $\mathbf{X}$, is independent of the acquisition design. Hence, the blended data can be written as;
 
