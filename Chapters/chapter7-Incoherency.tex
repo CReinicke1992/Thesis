@@ -124,7 +124,7 @@ In practice, the maximum allowed firing time delay is limited by the available a
 
 \FloatBarrier
 
-\section{Effect of Incoherency}
+\section{Effect of Incoherency} \label{sec:Effect-of-Incoherency}
 
 An incoherent blending pattern is crucial for good deblending performance (see section \ref{sec:BlendingMatrix}). Thus, a measure of incoherency and deblending quality will be introduced. Then, the possibilities of creating an incoherent blending pattern are presented. Finally, the effect of incoherency on the deblending quality will be shown on a synthetic data set.
 
@@ -208,55 +208,16 @@ Based on the blending matrices in Figure \ref{fig:Ch-Theory-GGH} and \ref{fig:Ch
 
 \section{Results}
 
-In the following these blending patterns will applied to a synthetic data set (see Figure \ref{fig:Ch-Results-Unbl-Delphi}, \ref{fig:Ch-Results-Unbl-inline10}, \ref{fig:Ch-Results-Unbl-xline10}). Next, the data is deblended with the 3D deblending algorithm of chapter \ref{chap:MahdadMethod3d}. 
+In the following the 3 blending patterns presented in section \ref{sec:Effect-of-Incoherency} will be applied to a synthetic data set. The data are a common receiver gather with 21 shots (see Figure \ref{fig:Ch-Results-Unbl-inline10}), which are blended in 3 experiments with 7 shots per experiment. Next, the data are deblended with the deblending algorithm of section \ref{sec:MahdadMethod}. 
 
-The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-Delphi} and \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-Delphi-x}, \ref{fig:Ch-Results-Debl-inline10-x}, \ref{fig:Ch-Results-Debl-xline10-x}). By introducing random firing time delays the deblended data improves significantly as shown in Figure \ref{fig:Ch-Results-Debl-Delphi-t}, \ref{fig:Ch-Results-Debl-inline10-t}, \ref{fig:Ch-Results-Debl-xline10-t}). A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-Delphi-xt}, \ref{fig:Ch-Results-Debl-inline10-xt}, \ref{fig:Ch-Results-Debl-xline10-xt}).
+The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-inline10-x}). By introducing random firing time delays the deblended data improves significantly as shown in Figure \ref{fig:Ch-Results-Debl-inline10-t}. A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-inline10-xt}).
 
-\begin{figure}
-	\centering
-	\begin{subfigure}[t]{0.8\textwidth}
-		\centering
-		\includegraphics[width = \textwidth]{Plots/BlendingPatterns/Unblended_Delphi_zoom}
-		\caption{}
-		\label{fig:Ch-Results-Unbl-Delphi}
-	\end{subfigure}
-	\par\bigskip
-	\centering
-	\begin{subfigure}[t]{0.8\textwidth}
-		\centering
-		\includegraphics[width = \textwidth]{Plots/BlendingPatterns/Deblended_Delphi_zoomx}
-		\caption{}
-		\label{fig:Ch-Results-Debl-Delphi-x}
-	\end{subfigure}
-	\par\bigskip
-	\centering
-	\begin{subfigure}[t]{0.8\textwidth}
-		\centering
-		\includegraphics[width = \textwidth]{Plots/BlendingPatterns/Deblended_Delphi_zoomt}
-		\caption{}
-		\label{fig:Ch-Results-Debl-Delphi-t}
-	\end{subfigure}
-	\par\bigskip
-	\centering
-	\begin{subfigure}[t]{0.8\textwidth}
-		\centering
-		\includegraphics[width = \textwidth]{Plots/BlendingPatterns/Deblended_Delphi_zoomxt}
-		\caption{}
-		\label{fig:Ch-Results-Debl-Delphi-xt}
-	\end{subfigure}
-	
-	\caption{These 3D common receiver gathers are sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}. The unblended synthetic data (a) is used to simulate a blended acquisition with 3 experiments per crossline and 7 shots per experiment. The maximum firing time delay is \SI{400}{\milli\second}. The sources are blended in three different patterns: (b) Randomly selected sources are blended without time delay, (c) neighboring sources are blended with random time delays, (d) randomly picked sources are blended with random time delays. Next, the blended data sets are deblended. The corresponding deblending results are illustrated in (b) to (d).}
-	\label{fig:Ch-Results-Debl-Delphi}
-	
-\end{figure}
-
-\todo[inline]{Make a sketch of the set up of the synthetic data.}
 
 \begin{figure}
 	\centering
 	\begin{subfigure}[t]{0.24\textwidth}
 		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Unblended_inline10}
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Unblended_xline10}
 		\caption{}
 		\label{fig:Ch-Results-Unbl-inline10}
 	\end{subfigure}
@@ -264,7 +225,7 @@ The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-Delphi} and 
 	\centering
 	\begin{subfigure}[t]{0.24\textwidth}
 		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_inline10x}
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10x}
 		\caption{}
 		\label{fig:Ch-Results-Debl-inline10-x}
 	\end{subfigure}
@@ -272,7 +233,7 @@ The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-Delphi} and 
 	\centering
 	\begin{subfigure}[t]{0.24\textwidth}
 		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_inline10t}
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10t}
 		\caption{}
 		\label{fig:Ch-Results-Debl-inline10-t}
 	\end{subfigure}
@@ -280,50 +241,52 @@ The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-Delphi} and 
 	\centering
 	\begin{subfigure}[t]{0.24\textwidth}
 		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_inline10xt}
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10xt}
 		\caption{}
 		\label{fig:Ch-Results-Debl-inline10-xt}
 	\end{subfigure}
-	\par\bigskip
-	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
-		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Unblended_xline10}
-		\caption{}
-		\label{fig:Ch-Results-Unbl-xline10}
-	\end{subfigure}
-	%	
-	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
-		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10x}
-		\caption{}
-		\label{fig:Ch-Results-Debl-xline10-x}
-	\end{subfigure}
-	%
-	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
-		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10t}
-		\caption{}
-		\label{fig:Ch-Results-Debl-xline10-t}
-	\end{subfigure}
-	%
-	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
-		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10xt}
-		\caption{}
-		\label{fig:Ch-Results-Debl-xline10-xt}
-	\end{subfigure}
 	
-	\caption{(a)-(d) show inline slices of the data shown in Figure \ref{fig:Ch-Results-Debl-Delphi}. (e)-(h) display the corresponding crossline slices. }
+	\caption{(a) shows an synthetic unblended common receiver gather. The data are blended with a (b) spatially incoherent, (c) temporally incoherent, and (d) mixed incoherent blending pattern. The respective deblending results are shown in (b) to (d).}
 	\label{fig:Ch-Results-Debl-x-inline}
 
 \end{figure}
 
+
+Next, a quantitative analysis of the effect of incoherency, $\mu$, on the deblending quality, $Q$, is performed. For this purpose blending matrices with incoherencies between \SI{5}{\percent} and \SI{100}{\percent} are generated. The synthetic data are blended and deblended with these blending matrices. Figure \ref{fig:Ch-Results-QvsMu} illustrates the resulting quality factors as a function of the incoherency. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{Plots/Incoherency/Q-vs-Mu}
+	\caption{Quality factor, $Q$, as a function of the incoherency, $\mu$. The deblending results with quality factors above 5 look acceptable.}
+	\label{fig:Ch-Results-QvsMu}
+\end{figure}
+
+This result demonstrates that a good deblending result requires an incoherent deblending pattern. However, only within a small range of incoherencies the deblending quality is sensitive to incoherency. Therefore, incoherency is not a suitable parameter to adjust the desired quality factor.
+
+
 \section{Effect of Maximum Firing Time Delay}
 
+Another control factor of the deblending performance is the maximum firing time delay. In an extreme case of infinitely long maximum firing time delay the acquisition is not blended any more, and the deblending result is perfect. Hence, increasing maximum firing time delays are expected to enhance the deblending quality, but they require more acquisition time.
+
+
+
 \section{Results}
+
+The three suggested blending patterns namely temporal, spatial and mixed incoherency are applied to synthetic data with varying maximum firing time delays. 
+
+Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the three blending patterns as a function of maximum firing time delay. The spatially incoherent blending pattern yields a constant deblending quality independent of the maximum firing time delay. This is expected because it blends the sources without time delay. The deblending quality provided by the other two blending patterns continuously enhances with increasing maximum firing time delay. The difference between the deblending quality given by temporal and mixed blending patterns seems to be independent of the maximum firing time delay.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{Plots/BlendingPatterns/quality_line_plot_avg}
+	\caption{The 3 suggested blending patterns are simulated with maximum firing time delays between \SI{40}{\milli\second} and \SI{400}{\milli\second}. The quality factors are computed with respect to the unblended data and illustrated as a function of the maximum firing time delay.}
+	\label{fig:Ch-Results-QualityFactors}
+\end{figure}
+
+\todo[inline]{For the conclusion/discussion of these results: \\ 
+				Say that a high degree of incoherency is required for successful deblending, but it is not useful as a control factor of the deblending performance. Instead the maximum firing time delay allows to fine tune the quality factor and might be suitable to fine tune a trade off between deblending quality and acquisition time.\\
+				One can also say that the  spatial incoherency performs poorly because its degree of incoherency is simply too low.}
+				
+\subsection*{}
 
 
