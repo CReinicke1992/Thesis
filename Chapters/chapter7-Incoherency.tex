@@ -167,9 +167,31 @@ The incoherency, $\mu$, is quantified by the ratio of the main diagonal and the 
 	\label{eq:Ch-Results-incoherency}
 \end{equation}
 
-For illustration, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay}. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses coherent firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays.  
+Consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay}. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses coherent firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $S(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$.
 
-$S(d,\omega)$ is plotted for both blending matrices for a frequency slice $f=\SI{30}{\hertz}$.
+\begin{figure}
+	
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+	\centering
+	\includegraphics[width = \textwidth]{Plots/DiagonalSums/diagsums_coherent}	
+	\caption{}
+	\label{fig:Ch-Incoherency-CoherentDiag}	
+	\end{subfigure}
+	%
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+	\centering
+	\includegraphics[width = \textwidth]{Plots/DiagonalSums/diagsums_random}	
+	\caption{}
+	\label{fig:Ch-Incoherency-RandomDiag}	
+	\end{subfigure}
+	
+	\caption{Illustration of the absolute sub-diagonal sums, $S(d,\omega)$, for the frequency slice $f=\SI{25}{\hertz}$. (a) refers to the blending matrix $\mathbf{\Gamma}_{coh}$ with coherent firing time delays.  $S(d,\omega)$ is less spike-like and yields an incoherency value of $\mu_a = \SI{67}{\percent}$. (b) refers to the blending matrix $\mathbf{\Gamma}_{ran}$ with random firing time delays. $S(d,\omega)$ is  close to a spike and yields an incoherency value of $\mu_b = \SI{98}{\percent}$.}
+	\label{fig:Ch-Incoherency-Coh-vs-Ran-Diag}
+	
+\end{figure}
+
 
 
 
