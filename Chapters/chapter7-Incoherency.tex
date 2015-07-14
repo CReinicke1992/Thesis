@@ -167,6 +167,8 @@ The incoherency, $\mu$, is quantified by the ratio of the main diagonal and the 
 	\label{eq:Ch-Results-incoherency}
 \end{equation}
 
+Note that $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns. Equation \ref{eq:Ch-Results-incoherency} implies that the incoherency value can vary between 0 (perfectly coherent) and 1 (perfectly incoherent).
+
 Consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay}. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses coherent firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $S(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$.
 
 \begin{figure}
@@ -192,15 +194,6 @@ Consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}
 	
 \end{figure}
 
-
-
-Note that $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns.
-
-
-
-For example, for a perfectly incoherent blending pattern only the sum along the main diagonal ($k=0$) is non zero. Thus, the nominator and the denominator in equation \ref{eq:Ch-Results-incoherency} are identical, the incoherency equals 1. 
-
-In contrast, for a perfectly coherent blending pattern all sub-diagonal elements are in phase. Consequently, the sum along the main diagonal is of the same magnitude as the sum along the sub-diagonals. The nominator in equation \ref{eq:Ch-Results-incoherency} becomes significantly smaller than the denominator, and the incoherency is nearly 0.
 
 
 \section{Results}
