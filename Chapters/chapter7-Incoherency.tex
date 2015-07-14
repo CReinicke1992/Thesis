@@ -134,11 +134,9 @@ An incoherent blending pattern is crucial for good deblending performance (see s
 \todo[inline]{Move this sentence to the introduction (literature). You might also want to mention the work of the Greek guy Apostolos.\\
 In this thesis only the incoherency of the acquisition design is considered. Thus, the blending matrix, $\Gamma$, or more precisely the product $\mathbf{\Gamma \Gamma}^H$ determines the incoherency.}
 
-A measure of incoherency will be introduced in order to analyze the importance of an incoherent blending pattern quantitatively.
+%A measure of incoherency will be introduced in order to analyze the importance of an incoherent blending pattern quantitatively.
 
-In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the matrix product $\mathbf{\Gamma \Gamma}^H$ should be out of phase. Therefore, the phase variability of the sub-diagonal elements will be used to quantify incoherency.
-
-Note that the sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). 
+In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the matrix product $\mathbf{\Gamma \Gamma}^H$ should be out of phase. Therefore, the phase variability of the sub-diagonal elements will be used to quantify incoherency. 
 
 \begin{figure}
 	\centering
@@ -147,9 +145,7 @@ Note that the sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map
 	\label{fig:Ch-Results-complex-circle}
 \end{figure}
 
-The sum of the elements along the $d^{th}$ sub-diagonal can be constructive or destructive, depending on the phase variability. Thus, the absolute value of the sum, $S(d,\omega)$, measures the incoherency of an individual sub-diagonal. The sum, $S(d,\omega)$, is a function of the sub-diagonal $d$ and the frequency component, $\omega$;
-
-%The resulting value is squared in order to put it in terms of energy;
+The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). Thus, the sum of the elements along the $d^{th}$ sub-diagonal can be constructive or destructive, depending on the phase variability. The absolute value of this sum, $S(d,\omega)$, measures the incoherency of a sub-diagonal, d, and frequency component, $\omega$;
 
 \begin{equation}
 	S(d,\omega) = \left| \sum_{j-i=d} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|.
