@@ -196,13 +196,6 @@ Consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}
 
 Note that $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns.
 
-Up to now, the incoherency is computed for each frequency separately. In order to account for all frequencies at once the nominator and denominator in equation \ref{eq:Ch-Results-incoherency-monochromatic} are summed over all frequency components;
-
-\begin{equation}
-	\mu = \frac{  \sum_{\omega} \left( \left| \sum_{j-i = 0} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2  \right)  }{  \sum_{\omega} \left( \sum_{k = 1-N_s}^{N_s-1}	 \left( \left| \sum_{j-i = k} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|^2 \right) \right)  } \;.
-	\label{eq:Ch-Results-incoherency2}
-\end{equation}
-
 
 
 For example, for a perfectly incoherent blending pattern only the sum along the main diagonal ($k=0$) is non zero. Thus, the nominator and the denominator in equation \ref{eq:Ch-Results-incoherency} are identical, the incoherency equals 1. 
