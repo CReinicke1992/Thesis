@@ -8,10 +8,10 @@
 \contentsline {section}{\numberline {2-1}The Forward Model of Blending}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2-1-1}Conventional Seismic Data}{5}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2-1-2}Blended Seismic Data}{7}{subsection.2.1.2}
-\contentsline {section}{\numberline {2-2}Deblending}{9}{section.2.2}
-\contentsline {subsection}{\numberline {2-2-1}Pseudo-Deblending}{9}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2-2-2}Common Receiver Gather}{10}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2-2-3}Iterative Estimation of Blending Noise}{10}{subsection.2.2.3}
+\contentsline {section}{\numberline {2-2}Deblending}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2-2-1}Pseudo-Deblending}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2-2-2}Common Receiver Gather}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2-2-3}Iterative Estimation of Blending Noise}{9}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Incoherency}{15}{chapter.3}
 \contentsline {section}{\numberline {3-1}Analysis of the Blending Matrix}{15}{section.3.1}
 \contentsline {section}{\numberline {3-2}Effect of Incoherency}{18}{section.3.2}
