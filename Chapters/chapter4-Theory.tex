@@ -246,7 +246,7 @@ One of the constraints is coherency, i.e. by assuming the blending noise in Figu
 
 %For a 2D $f$-$k$-spectrum the minimum (physical) velocity of the subsurface, $v_{min}$, determines the maximum wavenumber, $k_{max}$,  for a given frequency, $f$;
 
-The unblended data maps in the $f$-$k$-domain in a cone (see Figure \ref{fig:Ch-Theory-fk-Unblended-data}). The minimum velocity of the subsurface, $v_{min}$, determines the slope of the cone. This means that for a given frequency, $f$, the maximum wavenumber inside the cone, $k_{max}$, is defined as; 
+The unblended data would map in the $f$-$k$-domain in a cone (see Figure \ref{fig:Ch-Theory-fk-Unblended-data}). The minimum wavefield velocity present in the subsurface, $v_{min}$, determines the slope of the cone. This means that for a given frequency, $f$, the maximum wavenumber inside the cone, $k_{max}$, is defined as; 
 
 \begin{equation}
 	k_{max} = \frac{f}{v_{min}}.
@@ -278,10 +278,9 @@ In the marine case the minimum velocity is usually the water velocity, $v_{w} = 
 
 A 2D $f$-$k$-filter can be designed that removes all elements outside the cone (see Figure \ref{fig:Ch-Theory-FK-Mask}). The $f$-$k$-filter removes the part of the blending noise, which maps outside of the signal cone (see Figure \ref{fig:Ch-Theory-FKDeblended-NoFilter}). Thus, after transforming the data back to the space time domain the amplitudes of the spiky noise are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
 
-Note that $f$-$k$-filtering can only reduce spatially unaliased blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest spatially unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}. 
+Note that $f$-$k$-filtering can only reduce spatially unaliased blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest spatially unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}. The spatially aliased blending noise will pass the $f$-$k$-filter and will be reduced afterwards by thresholding. 
 
-The high cut frequency of the $f$-$k$-mask is set according to the highest frequency components in the data. The aliased blending noise will pass the $f$-$k$-filter and will be reduced afterwards by thresholding. 
-
+The high cut frequency of the $f$-$k$-mask, $f_{cut} = \SI{80}{\hertz}$, is set according to the highest frequency components in the data. 
 
 \subsubsection*{Thresholding}
 
@@ -291,10 +290,10 @@ After $f$-$k$-filtering the spiky noise is attenuated (see Figure \ref{fig:Ch-Th
 
 \subsubsection*{Interference Estimation}
 
-The resulting thresholded data, \textbf{\={P}}, is used to predict the source interference;
+The resulting thresholded data, \textbf{\={P}}, is used to predict the blending noise;
 
 \begin{equation}
-	\textbf{\^{N}}_\textbf{i} = \textbf{\={P}} \, (\mathbf{\Gamma \, \Gamma^H} - \textbf{I}),
+	\textbf{\^{N}}_{i} = \textbf{\={P}} \, (\mathbf{\Gamma \, \Gamma^H} - \textbf{I}),
 	\label{eq:Ch-Theory-NoiseEstimation}
 \end{equation}
 
@@ -304,20 +303,20 @@ which is illustrated in Figure \ref{fig:Ch-Theory-Noise}.
 
 \subsubsection*{Blending Noise Subtraction} 
 
-The estimate of the unblended data matrix \textbf{\^{P}}$_\textbf{i}$ is updated by subtracting the noise from the pseudo-deblended data,
+The estimate of the unblended data matrix \textbf{\^{P}}$_\textbf{i}$ is updated by subtracting the estimated blending noise from the pseudo-deblended data,
 
 \begin{equation}
-	\textbf{\^P}_\textbf{i+1} = \textbf{P}_\textbf{ps} - \textbf{\^{N}}_\textbf{i}, 
+	\textbf{\^P}_{i+1} = \textbf{P}_{ps} - \textbf{\^{N}}_{i}, 
 	\label{eq:Ch-Theory-DataUpdate1}
 \end{equation}
 
 which is shown in Figure \ref{fig:Ch-Theory-Deblended}.
 
-This process is repeated iteratively till convergence is reached. In this context convergence can be defined as the point where the difference $\mid \textbf{\^P}_\textbf{i+1} - \textbf{\^{P}}_\textbf{i} \mid$ drops below a predefined limit. Alternatively, one can set a maximum number of iterations. 
+This process is repeated iteratively till convergence is reached. In this context convergence can be defined as the point where the difference $\mid \textbf{\^P}_{i+1} - \textbf{\^{P}}_{i} \mid$ drops below a predefined limit. Alternatively, one can set a maximum number of iterations. 
 
-Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted blending noise increases and approaches the true blending noise. The blended shot is successively  attenuated.
+Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted blending noise increases and approaches the true blending noise. The two blended shots are successively  deblended.
 
-Note that $f$-$k$-filtering lowers the noise level by removing spatially unaliased blending noise. Next, the lowered noise level enables thresholding to reduce spatially aliased the blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
+Note that, $f$-$k$-filtering lowers the noise level by removing spatially unaliased blending noise. Next, the lowered noise level enables thresholding to reduce spatially aliased blending noise. Thus, the combination of $f$-$k$-filtering and thresholding is very powerful.
 
 
 \begin{figure}

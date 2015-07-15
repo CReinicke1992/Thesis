@@ -16,13 +16,13 @@ The blending matrix, $\mathbf{\Gamma}$, determines the pseudo-deblended data,
 which are a superposition of the unblended data, $\mathbf{P}$, and the blending noise, $\mathbf{N}$,
 
 \begin{equation}
-	\mathbf{P}_{ps} = \mathbf{P} + \mathbf{N}.
+	\mathbf{P}_{ps} = \mathbf{P} + \mathbf{N} = \mathbf{P I} + \mathbf{P} \; (\mathbf{\Gamma \Gamma}^H - \mathbf{I}).
 	\label{eq:Ch-Theory-PseudoSuperposition}
 \end{equation}
 
 The more incoherent the blending noise, $\mathbf{N}$, the better it can be removed by noise filters.
 
-In the following the effect of the blending matrix, $\mathbf{\Gamma}$, on the matrix product, $\mathbf{\Gamma \Gamma}^H$, and on the pseudo-deblended data is analyzed. For simplicity, it is assumed that all shots are equal in strength and fire the same signature into the earth. This means that the blending matrix, $\mathbf{\Gamma}$, only contains phase shift terms, $\mathrm{e}^{-j \omega \Delta t}$, with an amplitude equal to 1 or 0. It is also assumed that each shot is fired only once, unlike e.g. the shot repetition case \citep{Sixue}.
+In the following the effect of the blending matrix, $\mathbf{\Gamma}$, on the pseudo-deblended data, $\mathbf{P}_{ps}$, is analyzed. For simplicity, it is assumed that all shots are equal in strength and fire the same signature into the earth. This means that the blending matrix, $\mathbf{\Gamma}$, only contains phase shift terms, $\mathrm{e}^{-j \omega \Delta t}$, with an amplitude equal to 1 or 0. It is also assumed that each shot is fired only once, unlike e.g. the shot repetition case \citep{Sixue}.
 
 Each row of $\mathbf{\Gamma}$ represents a shot $k$, and each column of $\mathbf{\Gamma}^H$ represents a shot $l$ with a complex conjugated phase term (see Figure \ref{fig:Ch-Theory-GGH}). Hence, each element $g_{kl}$ of the matrix $\mathbf{\Gamma \Gamma}^H$ is the dot product between the $k^{th}$ shot and the complex conjugate of the $l^{th}$ shot.
 
