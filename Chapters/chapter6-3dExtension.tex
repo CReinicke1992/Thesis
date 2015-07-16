@@ -44,24 +44,24 @@ One row in the data matrix, $\mathbf{P}$, in Figure \ref{fig:Ch-Theory-DelphiFor
 		\label{fig:Ch-Theory-Data3d_Delphi}
 	\end{subfigure}
 	
-	\caption{(a) Common receiver gather of a 3D data set with crossline (x) and inline (y) sources. (b) Resorted data set. Individual crossline sections are plotted next to each other in 2D. For visibility both subfigures only show a reduced part of the data.}
+	\caption{(a) 3D common receiver gather with crossline (x) and inline (y) sources (3D view). (b) Resorted data set. Individual crossline sections are plotted next to each other in 2D. For visibility both subfigures only show a reduced part of the data. This view is called 3D CRG 2D view.}
 	\label{fig:Ch-Theory-DataSorting}
 \end{figure}
 
 
 \subsection*{Blending matrix}
 
-The blending matrix for 3D is build in a similar fashion as the data matrix in 3D. As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one shot. For extension to 3D the shots of the first crossline are placed in the top $Ns_x$ rows of the blending matrix, followed by the shots of the second crossline etc. (see Figure \ref{fig:Ch-Theory-3D-BlendingMatrix-Design}). The elements in the $j^{th}$ column of the blending matrix, $\mathbf{\Gamma}$, select the shots which are blended in the $j^{th}$ experiment. For example, the first column of the blending matrix in Figure \ref{fig:Ch-Theory-3D-BlendingMatrix} describes that in the first experiment shots $1$ and $3$ are blended with a time delay of $\Delta t_1$.
+The blending matrix for 3D is build in a similar fashion as the data matrix in 3D. As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one shot. For extension to 3D the shots of the first crossline are placed in the top $Ns_x$ rows of the blending matrix, followed by the shots of the second crossline etc. (see Figure \ref{fig:Ch-Theory-3D-BlendingMatrix-Design}). The elements in the $j^{th}$ column of the blending matrix, $\mathbf{\Gamma}$, select the shots which are blended in the $j^{th}$ experiment. For example, the first column of the blending matrix in Figure \ref{fig:Ch-Theory-3D-BlendingMatrix} describes that in the first experiment shots (rows) $1$ and $3$ are blended with a time delay of $\Delta t_1$.
 
 \todo[inline]{Keep this sentence for later: This framework allows to blend any source combination independent of the cross- and inline positions of the involved sources.}
 
-With the new data and blending matrix sorting one can apply deblending to 3D data.
+With the new data and blending matrix sorting one can apply deblending to 3D data in the same way as presented in section \ref{sec:Ch-Theory-Operator} and section \ref{sec:MahdadMethod}.
 
 \begin{figure}
 
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width = \textwidth]{Plots/DrawingsCartesianFormat1}
+		\includegraphics[width = \textwidth]{Plots/DrawingsCartesianFormat3}
 		\caption{}
 		\label{fig:Ch-Theory-3D-BlendedAcquisition}
 	\end{subfigure}
