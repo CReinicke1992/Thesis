@@ -127,7 +127,7 @@ The deblended receiver gathers \todo{Add pseudo sections} are shown in Figure \r
 
 \begin{figure}
 	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
+	\begin{subfigure}[t]{0.16\textwidth}
 		\centering
 		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Unblended_xline10}
 		\caption{}
@@ -135,30 +135,33 @@ The deblended receiver gathers \todo{Add pseudo sections} are shown in Figure \r
 	\end{subfigure}
 	%	
 	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
+	\begin{subfigure}[t]{0.26\textwidth}
 		\centering
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Pseudo_Deblended_xline10_x}
 		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10x}
 		\caption{}
 		\label{fig:Ch-Results-Debl-inline10-x}
 	\end{subfigure}
 	%
 	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
+	\begin{subfigure}[t]{0.26\textwidth}
 		\centering
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Pseudo_Deblended_xline10_t}
 		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10t}
 		\caption{}
 		\label{fig:Ch-Results-Debl-inline10-t}
 	\end{subfigure}
 	%
 	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
+	\begin{subfigure}[t]{0.26\textwidth}
 		\centering
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Pseudo_Deblended_xline10_xt}
 		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10xt}
 		\caption{}
 		\label{fig:Ch-Results-Debl-inline10-xt}
 	\end{subfigure}
 	
-	\caption{(a) shows an synthetic unblended common receiver gather. The data are blended with a (b) spatially incoherent, (c) temporally incoherent, and (d) mixed incoherent blending pattern. The respective deblending results are shown in (b) to (d).}
+	\caption{(a) shows an synthetic unblended common receiver gather. The data are blended with a (b) spatially incoherent, (c) temporally incoherent, and (d) mixed incoherent blending pattern. The respective pseudo-deblended data (left) and deblended data (right) are shown in (b) to (d).}
 	\label{fig:Ch-Results-Debl-x-inline}
 
 \end{figure}
@@ -296,12 +299,10 @@ According to Figure \ref{fig:Ch-Results-QualityFactors} the spatially incoherent
 			
 			
 
-\section{Conclusions}				
-\subsection*{Combination of Incoherency and Maximum Firing Time Delay}
+\section{Conclusions}	\label{fig:Ch-Incoherency-Conclusions}
+			
 
-In Figure \ref{fig:Ch-Results-QualityFactors} the quality factors are averaged for each maximum firing time delay and blending pattern. This means that for a given maximum firing time delay and blending pattern there are random firing time delays which yield better deblending results than other firing time delays.
-
-In practice, the maximum firing time delay is given by the available acquisition time. For optimal deblending results the incoherency of the blending pattern should be maximized.
+In practice, the maximum firing time delay is given by the available acquisition time. Figure \ref{fig:Ch-Results-Quality-vs-Incoherency} demonstrates that for a fixed maximum firing time delay the deblending quality can be optimized by choosing a blending pattern with maximum incoherency. The maximum achievable deblending quality for a fixed maximum firing time delay can be estimated from Figure \ref{fig:Ch-Results-QualityFactors}.
 
 
 
