@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  15 JUL 2015 16:29
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  16 JUL 2015 10:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3641,22 +3641,28 @@ File: Plots/GGH_v2.pdf Graphic file (type QTm)
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 47.
+Package xcolor Warning: Incompatible color definition on input line 42.
 
 
-Package xcolor Warning: Incompatible color definition on input line 47.
+Package xcolor Warning: Incompatible color definition on input line 42.
 
 
-Package xcolor Warning: Incompatible color definition on input line 47.
+Package xcolor Warning: Incompatible color definition on input line 42.
 
 
-Package xcolor Warning: Incompatible color definition on input line 49.
+Package xcolor Warning: Incompatible color definition on input line 44.
 
 
-Package xcolor Warning: Incompatible color definition on input line 49.
+Package xcolor Warning: Incompatible color definition on input line 44.
 
 
-Package xcolor Warning: Incompatible color definition on input line 49.
+Package xcolor Warning: Incompatible color definition on input line 44.
+
+
+Package xcolor Warning: Incompatible color definition on input line 44.
+
+
+Package xcolor Warning: Incompatible color definition on input line 44.
 
 File: Plots/Mahdad/25iter/TimeDelay/Pseudo-DeblendedCRG_rec30_coh.pdf Graphic file (type QTm)
 <use  "Plots/Mahdad/25iter/TimeDelay/Pseudo-DeblendedCRG_rec30_coh.pdf" >
@@ -3669,76 +3675,82 @@ File: Plots/Mahdad/25iter/TimeDelay/FK-Pseudo-deblendedCRG_rec30.pdf Graphic fil
 File: Plots/GGH_x_v2.pdf Graphic file (type QTm)
  <use  "Plots/GGH_x_v2.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 95.
+Package xcolor Warning: Incompatible color definition on input line 90.
 
 
-Package xcolor Warning: Incompatible color definition on input line 95.
+Package xcolor Warning: Incompatible color definition on input line 90.
 
 
-Package xcolor Warning: Incompatible color definition on input line 106.
+Package xcolor Warning: Incompatible color definition on input line 101.
+
+
+Package xcolor Warning: Incompatible color definition on input line 101.
+
+
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 [16] [17]
 
-Package xcolor Warning: Incompatible color definition on input line 110.
+Package xcolor Warning: Incompatible color definition on input line 105.
 
 
-Package xcolor Warning: Incompatible color definition on input line 136.
+Package xcolor Warning: Incompatible color definition on input line 132.
 
 File: Plots/complex-circle.pdf Graphic file (type QTm)
 <use  "Plots/complex-circle.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 145.
-
-
-Package xcolor Warning: Incompatible color definition on input line 161.
+Package xcolor Warning: Incompatible color definition on input line 141.
 
 [18]
 
-Package xcolor Warning: Incompatible color definition on input line 163.
+Package xcolor Warning: Incompatible color definition on input line 157.
 
 
-Package xcolor Warning: Incompatible color definition on input line 163.
+Package xcolor Warning: Incompatible color definition on input line 159.
 
 
-Package xcolor Warning: Incompatible color definition on input line 163.
+Package xcolor Warning: Incompatible color definition on input line 159.
+
+
+Package xcolor Warning: Incompatible color definition on input line 159.
 
 File: Plots/DiagonalSums/diagsums_coherent.pdf Graphic file (type QTm)
 <use  "Plots/DiagonalSums/diagsums_coherent.pdf" >
 File: Plots/DiagonalSums/diagsums_random.pdf Graphic file (type QTm)
  <use  "Plots/DiagonalSums/diagsums_random.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 191.
+Package xcolor Warning: Incompatible color definition on input line 187.
 
 
-Package xcolor Warning: Incompatible color definition on input line 191.
+Package xcolor Warning: Incompatible color definition on input line 187.
 
 
-Package xcolor Warning: Incompatible color definition on input line 200.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 
-Package xcolor Warning: Incompatible color definition on input line 200.
-
-
-Package xcolor Warning: Incompatible color definition on input line 206.
-
-
-Package xcolor Warning: Incompatible color definition on input line 206.
-
-
-Package xcolor Warning: Incompatible color definition on input line 206.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 [19]
 
-Package xcolor Warning: Incompatible color definition on input line 208.
+Package xcolor Warning: Incompatible color definition on input line 202.
 
 
-Package xcolor Warning: Incompatible color definition on input line 208.
+Package xcolor Warning: Incompatible color definition on input line 202.
 
 
-Package xcolor Warning: Incompatible color definition on input line 208.
+Package xcolor Warning: Incompatible color definition on input line 202.
 
 
-Package xcolor Warning: Incompatible color definition on input line 208.
+Package xcolor Warning: Incompatible color definition on input line 204.
+
+
+Package xcolor Warning: Incompatible color definition on input line 204.
+
+
+Package xcolor Warning: Incompatible color definition on input line 204.
+
+
+Package xcolor Warning: Incompatible color definition on input line 204.
 
 File: Plots/BlendingPatterns/Unblended_xline10.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Unblended_xline10.pdf" >
@@ -3749,40 +3761,38 @@ File: Plots/BlendingPatterns/Deblended_xline10t.pdf Graphic file (type QTm)
 File: Plots/BlendingPatterns/Deblended_xline10xt.pdf Graphic file (type QTm)
  <use  "Plots/BlendingPatterns/Deblended_xline10xt.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 250.
+Package xcolor Warning: Incompatible color definition on input line 246.
 
 File: Plots/Incoherency/Q-vs-Mu.pdf Graphic file (type QTm)
 <use  "Plots/Incoherency/Q-vs-Mu.pdf" > [20] [21]
 
-Package xcolor Warning: Incompatible color definition on input line 272.
+Package xcolor Warning: Incompatible color definition on input line 268.
 
 
-Package xcolor Warning: Incompatible color definition on input line 274.
+Package xcolor Warning: Incompatible color definition on input line 270.
 
 File: Plots/BlendingPatterns/quality_line_plot_avg.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/quality_line_plot_avg.pdf" >
+Underfull \vbox (badness 2564) has occurred while \output is active []
+
+ [22]
+
+Package xcolor Warning: Incompatible color definition on input line 287.
+
 
 Package xcolor Warning: Incompatible color definition on input line 291.
 
-[22]
 
-Package xcolor Warning: Incompatible color definition on input line 295.
-
-
-Package xcolor Warning: Incompatible color definition on input line 295.
+Package xcolor Warning: Incompatible color definition on input line 291.
 
 
-Package xcolor Warning: Incompatible color definition on input line 306.
+Package xcolor Warning: Incompatible color definition on input line 302.
 
 File: Plots/BlendingPatterns/Mu-vs-Q.pdf Graphic file (type QTm)
-<use  "Plots/BlendingPatterns/Mu-vs-Q.pdf" >) [23]
+<use  "Plots/BlendingPatterns/Mu-vs-Q.pdf" >) [23] [24]
 \openout2 = `Chapters/chapter6-3dExtension.aux'.
 
- (./Chapters/chapter6-3dExtension.tex [24
-
-
-
-]
+ (./Chapters/chapter6-3dExtension.tex
 Chapter 4.
 
 Package xcolor Warning: Incompatible color definition on input line 9.
@@ -3811,7 +3821,11 @@ Package xcolor Warning: Incompatible color definition on input line 19.
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
-[25]
+[25
+
+
+
+]
 
 Package xcolor Warning: Incompatible color definition on input line 23.
 
@@ -4181,10 +4195,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 32850 strings out of 493734
- 625470 string characters out of 6146347
- 667200 words of memory out of 5000000
- 35557 multiletter control sequences out of 15000+600000
+ 32848 strings out of 493734
+ 625408 string characters out of 6146347
+ 667150 words of memory out of 5000000
+ 35555 multiletter control sequences out of 15000+600000
  26336 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10404b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
