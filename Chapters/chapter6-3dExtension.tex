@@ -2,13 +2,11 @@
 
 \todo[inline]{Make sure you mention the spatial incoherency for 3d blending in this chapter!}
 
-This thesis suggests to blend crossline sources, i.e. in combination with the movement of the seismic vessel one effectively blends sources in 3D.
+This thesis suggests to blend crossline sources. By combining several cross-lines one effectively blends sources in 3D.
 
-\todo[inline]{In this paragraph I use the word "source". For consistency I thought about using the word "shot". However, it seems to sound strange in this sentence.}
+The deblending method of \citet{Mahdad-Deblending-Method} described in section \ref{sec:MahdadMethod} is designed for 2D blended data. In this chapter I will explain how each step of the Mahdad method can be applied to 3D data as well, and I will demonstrate its performance.
 
-The deblending method of \citet{Mahdad-Deblending-Method} described in section \ref{sec:MahdadMethod} is designed for 2D blended data. In this thesis I will explain how each step of the Mahdad method can be applied to 3D data as well, and I will demonstrate its performance.
-
-First, the data sorting will be modified such that the blended 3D data can be described using the same forward model as in section \ref{sec:Ch-Theory-Operator}. The presented data sorting will allow to maintain all other steps of the deblending algorithm of \citet{Mahdad-Deblending-Method} unchanged. Second, the $f$-$k$-filter will be extended to an $f$-$k_x$-$k_y$-filter to remove noise in crossline and inline direction.
+First, the data sorting will be modified such that the blended 3D data can be described using the same forward model as in section \ref{sec:Ch-Theory-Operator}. The presented data sorting will allow to maintain all other steps of the deblending algorithm of \citet{Mahdad-Deblending-Method} unchanged. Second, the $f$-$k$-filter will be extended to an $f$-$k_x$-$k_y$-filter to remove noise in both crossline and inline direction.
 
 \section{Data Sorting} \label{sec:Ch-Theory-3dExtension-DataSorting}
 

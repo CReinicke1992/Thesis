@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  16 JUL 2015 15:17
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  16 JUL 2015 15:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3801,7 +3801,13 @@ Package xcolor Warning: Incompatible color definition on input line 305.
 ]
 Chapter 4.
 
-Package xcolor Warning: Incompatible color definition on input line 9.
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
 Package xcolor Warning: Incompatible color definition on input line 9.
@@ -3810,70 +3816,70 @@ Package xcolor Warning: Incompatible color definition on input line 9.
 Package xcolor Warning: Incompatible color definition on input line 9.
 
 
-Package xcolor Warning: Incompatible color definition on input line 11.
+Package xcolor Warning: Incompatible color definition on input line 9.
 
 
-Package xcolor Warning: Incompatible color definition on input line 11.
+Package xcolor Warning: Incompatible color definition on input line 17.
 
 
-Package xcolor Warning: Incompatible color definition on input line 11.
+Package xcolor Warning: Incompatible color definition on input line 17.
 
 
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-
-Package xcolor Warning: Incompatible color definition on input line 19.
+Package xcolor Warning: Incompatible color definition on input line 17.
 
 [25]
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 21.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 21.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 21.
 
 File: Plots/DelphiFormat-v2.pdf Graphic file (type QTm)
 <use  "Plots/DelphiFormat-v2.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 28.
+Package xcolor Warning: Incompatible color definition on input line 26.
 
 
-Package xcolor Warning: Incompatible color definition on input line 28.
+Package xcolor Warning: Incompatible color definition on input line 26.
 
 
-Package xcolor Warning: Incompatible color definition on input line 28.
+Package xcolor Warning: Incompatible color definition on input line 26.
 
 
-Package xcolor Warning: Incompatible color definition on input line 28.
+Package xcolor Warning: Incompatible color definition on input line 26.
 
 File: Plots/data3d.pdf Graphic file (type QTm)
 <use  "Plots/data3d.pdf" >
 File: Plots/IdealData3d/p_Delphi.pdf Graphic file (type QTm)
  <use  "Plots/IdealData3d/p_Delphi.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 56.
+Package xcolor Warning: Incompatible color definition on input line 54.
 
 
-Package xcolor Warning: Incompatible color definition on input line 56.
+Package xcolor Warning: Incompatible color definition on input line 54.
 
 
-Package xcolor Warning: Incompatible color definition on input line 56.
+Package xcolor Warning: Incompatible color definition on input line 54.
 
-[26] [27]
 File: Plots/DrawingsCartesianFormat1.pdf Graphic file (type QTm)
- <use  "Plots/DrawingsCartesianFormat1.pdf" >
+<use  "Plots/DrawingsCartesianFormat1.pdf" >
 File: Plots/DrawingsCartesianFormat2.pdf Graphic file (type QTm)
  <use  "Plots/DrawingsCartesianFormat2.pdf" >
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 64--77
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 62--75
 [][] [] 
  []
 
 
+Package xcolor Warning: Incompatible color definition on input line 84.
+
+
+Package xcolor Warning: Incompatible color definition on input line 84.
+
+[26] [27]
+
 Package xcolor Warning: Incompatible color definition on input line 86.
 
 
@@ -3884,35 +3890,28 @@ Package xcolor Warning: Incompatible color definition on input line 88.
 
 
 Package xcolor Warning: Incompatible color definition on input line 88.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
-
-
-Package xcolor Warning: Incompatible color definition on input line 90.
 
 File: Plots/IdealData3d/fkk-mask-slice40-2d.pdf Graphic file (type QTm)
 <use  "Plots/IdealData3d/fkk-mask-slice40-2d.pdf" >
 File: Plots/IdealData3d/fkk-mask-Delphi-2d.pdf Graphic file (type QTm)
  <use  "Plots/IdealData3d/fkk-mask-Delphi-2d.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 112.
+Package xcolor Warning: Incompatible color definition on input line 110.
 
 
-Package xcolor Warning: Incompatible color definition on input line 112.
+Package xcolor Warning: Incompatible color definition on input line 110.
 
 
-Package xcolor Warning: Incompatible color definition on input line 116.
+Package xcolor Warning: Incompatible color definition on input line 114.
 
 
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-[28]
-
-Package xcolor Warning: Incompatible color definition on input line 123.
+Package xcolor Warning: Incompatible color definition on input line 114.
 
 
-Package xcolor Warning: Incompatible color definition on input line 123.
+Package xcolor Warning: Incompatible color definition on input line 121.
+
+
+Package xcolor Warning: Incompatible color definition on input line 121.
 
 File: Plots/IdealData3d/P_f_slice40.pdf Graphic file (type QTm)
 <use  "Plots/IdealData3d/P_f_slice40.pdf" >
@@ -3925,16 +3924,23 @@ File: Plots/IdealData3d/P_fkk_Delphi.pdf Graphic file (type QTm)
 File: Plots/IdealData3d/fkk-mask-Delphi.pdf Graphic file (type QTm)
  <use  "Plots/IdealData3d/fkk-mask-Delphi.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 168.
+Package xcolor Warning: Incompatible color definition on input line 166.
 
 
-Package xcolor Warning: Incompatible color definition on input line 168.
+Package xcolor Warning: Incompatible color definition on input line 166.
 
 
-Package xcolor Warning: Incompatible color definition on input line 168.
+Package xcolor Warning: Incompatible color definition on input line 166.
 
 
-Package xcolor Warning: Incompatible color definition on input line 168.
+Package xcolor Warning: Incompatible color definition on input line 166.
+
+[28] [29]
+
+Package xcolor Warning: Incompatible color definition on input line 177.
+
+
+Package xcolor Warning: Incompatible color definition on input line 179.
 
 
 Package xcolor Warning: Incompatible color definition on input line 179.
@@ -3945,37 +3951,34 @@ Package xcolor Warning: Incompatible color definition on input line 181.
 
 Package xcolor Warning: Incompatible color definition on input line 181.
 
-
-Package xcolor Warning: Incompatible color definition on input line 183.
-
-
-Package xcolor Warning: Incompatible color definition on input line 183.
-
-[29] [30]
 File: Plots/BlendingPatterns/Unblended_Delphi_zoom-font14.pdf Graphic file (type QTm)
- <use  "Plots/BlendingPatterns/Unblended_Delphi_zoom-font14.pdf" >
+<use  "Plots/BlendingPatterns/Unblended_Delphi_zoom-font14.pdf" >
 File: Plots/2dvs3dfk/Deblendedv6_xt_100.pdf Graphic file (type QTm)
  <use  "Plots/2dvs3dfk/Deblendedv6_xt_100.pdf" >
 File: Plots/2dvs3dfk/Deblendedv5_xt_100.pdf Graphic file (type QTm)
  <use  "Plots/2dvs3dfk/Deblendedv5_xt_100.pdf" >
 
-LaTeX Warning: Reference `fig:Ch-Results-Unbl-Delphi' on page 31 undefined on input line 214.
+LaTeX Warning: Reference `fig:Ch-Results-Unbl-Delphi' on page 30 undefined on input line 212.
 
 
-LaTeX Warning: Reference `fig:Ch-Results-Unbl-Delphi' on page 31 undefined on input line 214.
+LaTeX Warning: Reference `fig:Ch-Results-Unbl-Delphi' on page 30 undefined on input line 212.
 
 File: Plots/2dvs3dfk/Q_2d-vs-3d_fk.pdf Graphic file (type QTm)
 <use  "Plots/2dvs3dfk/Q_2d-vs-3d_fk.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 224.
+Package xcolor Warning: Incompatible color definition on input line 222.
 
 
-Package xcolor Warning: Incompatible color definition on input line 224.
+Package xcolor Warning: Incompatible color definition on input line 222.
 
-) [31] [32]
+) [30] [31]
 \openout2 = `Chapters/chapter5-Results.aux'.
 
- (./Chapters/chapter5-Results.tex
+ (./Chapters/chapter5-Results.tex [32
+
+
+
+]
 Chapter 5.
 
 Package xcolor Warning: Incompatible color definition on input line 16.
@@ -3997,11 +4000,7 @@ LaTeX Warning: Reference `fig:Ch-Results-Debl-Delphi' on page 33 undefined on in
 
 LaTeX Warning: Reference `fig:Ch-Results-Debl-Delphi' on page 33 undefined on input line 313.
 
-) [33
-
-
-
-] [34]
+) [33] [34]
 \openout2 = `Chapters/chapter3-Incoherency.aux'.
 
  (./Chapters/chapter3-Incoherency.tex
@@ -4197,10 +4196,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 32855 strings out of 493734
- 625733 string characters out of 6146347
- 666963 words of memory out of 5000000
- 35561 multiletter control sequences out of 15000+600000
+ 32854 strings out of 493734
+ 625705 string characters out of 6146347
+ 666935 words of memory out of 5000000
+ 35560 multiletter control sequences out of 15000+600000
  26336 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10404b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
