@@ -116,6 +116,55 @@ In practice, the maximum allowed firing time delay is limited by the available a
 
 \FloatBarrier
 
+\section{Results Spatial and Temporal Incoherency}
+
+Based on the blending matrices in Figure \ref{fig:Ch-Theory-GGH} and \ref{fig:Ch-Theory-GGHx} there are three possibilities to blend the shots incoherently. First, the phase terms along the sub-diagonals can be randomly varied, i.e. the shots are blended with random firing time delays (temporal incoherency). Second, the rows of the blending matrix can be randomly permuted, i.e. one randomly selects shots for each experiment (spatial incoherency). Third, temporal and spatial incoherency can be combined (mixed incoherency), i.e. randomly selected shots are blended with random firing time delays.
+
+In the following the 3 blending patterns presented in section \ref{sec:Effect-of-Incoherency} will be applied to a synthetic data set. The data are a common receiver gather with 21 shots (see Figure \ref{fig:Ch-Results-Unbl-inline10}), which are blended in 3 experiments with 7 shots per experiment. Next, the data are deblended with the deblending algorithm of section \ref{sec:MahdadMethod}. 
+
+The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-inline10-x}). By introducing random firing time delays the deblended data improve significantly as shown in Figure \ref{fig:Ch-Results-Debl-inline10-t}. A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-inline10-xt}).
+
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[t]{0.24\textwidth}
+		\centering
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Unblended_xline10}
+		\caption{}
+		\label{fig:Ch-Results-Unbl-inline10}
+	\end{subfigure}
+	%	
+	\centering
+	\begin{subfigure}[t]{0.24\textwidth}
+		\centering
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10x}
+		\caption{}
+		\label{fig:Ch-Results-Debl-inline10-x}
+	\end{subfigure}
+	%
+	\centering
+	\begin{subfigure}[t]{0.24\textwidth}
+		\centering
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10t}
+		\caption{}
+		\label{fig:Ch-Results-Debl-inline10-t}
+	\end{subfigure}
+	%
+	\centering
+	\begin{subfigure}[t]{0.24\textwidth}
+		\centering
+		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10xt}
+		\caption{}
+		\label{fig:Ch-Results-Debl-inline10-xt}
+	\end{subfigure}
+	
+	\caption{(a) shows an synthetic unblended common receiver gather. The data are blended with a (b) spatially incoherent, (c) temporally incoherent, and (d) mixed incoherent blending pattern. The respective deblending results are shown in (b) to (d).}
+	\label{fig:Ch-Results-Debl-x-inline}
+
+\end{figure}
+
+
+
 \section{Effect of Incoherency} \label{sec:Effect-of-Incoherency}
 
 This section aims to analyze how strongly the deblending result depends on the incoherency of the blended acquisition. For this purpose a measure of incoherency and deblending quality will be introduced. Then, the possibilities of creating an incoherent blending pattern are presented.
@@ -189,56 +238,11 @@ The following data examples are synthetic data, i.e. the unblended data are know
 \end{equation}
 
 
-\subsection*{Incoherent Blending Patterns}
-
-Based on the blending matrices in Figure \ref{fig:Ch-Theory-GGH} and \ref{fig:Ch-Theory-GGHx} there are three possibilities to blend the shots incoherently. First, the phase terms along the sub-diagonals can be randomly varied, i.e. the shots are blended with random firing time delays (temporal incoherency). Second, the rows of the blending matrix can be randomly permuted, i.e. one randomly selects shots for each experiment (spatial incoherency). Third, temporal and spatial incoherency can be combined (mixed incoherency), i.e. randomly selected shots are blended with random firing time delays.
 
 
 
 \section{Results}
 
-In the following the 3 blending patterns presented in section \ref{sec:Effect-of-Incoherency} will be applied to a synthetic data set. The data are a common receiver gather with 21 shots (see Figure \ref{fig:Ch-Results-Unbl-inline10}), which are blended in 3 experiments with 7 shots per experiment. Next, the data are deblended with the deblending algorithm of section \ref{sec:MahdadMethod}. 
-
-The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-inline10-x}). By introducing random firing time delays the deblended data improve significantly as shown in Figure \ref{fig:Ch-Results-Debl-inline10-t}. A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-inline10-xt}).
-
-
-\begin{figure}
-	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
-		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Unblended_xline10}
-		\caption{}
-		\label{fig:Ch-Results-Unbl-inline10}
-	\end{subfigure}
-	%	
-	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
-		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10x}
-		\caption{}
-		\label{fig:Ch-Results-Debl-inline10-x}
-	\end{subfigure}
-	%
-	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
-		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10t}
-		\caption{}
-		\label{fig:Ch-Results-Debl-inline10-t}
-	\end{subfigure}
-	%
-	\centering
-	\begin{subfigure}[t]{0.24\textwidth}
-		\centering
-		\includegraphics[height = 0.38\textheight]{Plots/BlendingPatterns/Deblended_xline10xt}
-		\caption{}
-		\label{fig:Ch-Results-Debl-inline10-xt}
-	\end{subfigure}
-	
-	\caption{(a) shows an synthetic unblended common receiver gather. The data are blended with a (b) spatially incoherent, (c) temporally incoherent, and (d) mixed incoherent blending pattern. The respective deblending results are shown in (b) to (d).}
-	\label{fig:Ch-Results-Debl-x-inline}
-
-\end{figure}
 
 
 Next, a quantitative analysis of the effect of incoherency, $\mu$, on the deblending quality, $Q$, is performed. For this purpose blending matrices with incoherencies between \SI{5}{\percent} and \SI{100}{\percent} are generated. The synthetic data are blended and deblended with these blending matrices. Figure \ref{fig:Ch-Results-QvsMu} illustrates the resulting quality factors as a function of the incoherency. 
