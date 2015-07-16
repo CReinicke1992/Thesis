@@ -247,16 +247,14 @@ where $\mathbf{P}$ are the unblended data, and \textbf{\^{P}} the deblended data
 
 \section{Results Incoherency}
 
-For example, consider again the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing time delay. However, their incoherency values differ because $\mathbf{\Gamma}_{coh}$ uses coherent firing time delays whereas $\mathbf{\Gamma}_{ran}$ uses random firing time delays. 
+Consider again the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing time delay, while their incoherency values differ ($\mu_{coh} = \SI{67}{\percent}$, $\mu_{ran} = \SI{98}{\percent}$). 
 
-An effective blending matrix, $\mathbf{\Gamma}_{eff}$, is created by superimposing both blending matrices;
+An effective blending matrix, $\mathbf{\Gamma}_{eff}$, is created by superimposing the time delays $\mathrm{e}^{-j \omega \Delta t_{ij}}$ of the blending matrices $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$;
 
 \begin{equation}
-	\mathbf{\Gamma}_{eff} = a \cdot \mathbf{\Gamma}_{ran} + (1 - a) \cdot \mathbf{\Gamma}_{coh}, \; a \in [0,1].
+	\Delta t_{eff} = a \cdot \Delta t_{ij,ran} + (1 - a) \cdot \Delta t_{ij,coh}, \; a \in [0,1].
 	\label{eq:Ch-Incoherency-EffectiveG}
 \end{equation}
-
-\todo[inline]{superposition must be in the time domain!}
 
 The maximum firing time delay of the effective blending matrix, $\mathbf{\Gamma}_{eff}$, is constant while the incoherency  varies with changing $a$. The resulting quality factors are shown as a function of the incoherency in Figure \ref{fig:Ch-Results-Quality-vs-Incoherency}.
 
@@ -268,16 +266,16 @@ The maximum firing time delay of the effective blending matrix, $\mathbf{\Gamma}
 	\label{fig:Ch-Results-Quality-vs-Incoherency}
 \end{figure}
 
-This result demonstrates that an incoherent blending pattern is inevitable for a good deblending result. However, only within a small range of incoherencies the deblending quality is sensitive to incoherency. Therefore, incoherency by its own is not a suitable parameter to adjust the desired quality factor.
+One can observe that the deblending quality increases with increasing incoherency.
 
 
 \section{Effect of Maximum Firing Time Delay}
 
-Another control factor of the deblending quality is the maximum firing time delay. In an extreme case of infinitely long maximum firing time delay the acquisition is not blended any more, and the deblending result is perfect. Hence, increasing maximum firing time delays are expected to enhance the deblending quality, but they require more acquisition time.
+Another control factor of the deblending quality is the maximum firing time delay. In an extreme case of infinitely long maximum firing time delay the acquisition is not blended any more, and the deblending result is perfect. Hence, increasing maximum firing time delays are expected to enhance the deblending quality. Of course, they require more acquisition time.
 
 
 
-\section{Results}
+\section{Results Maximum Firing Time Delay}
 
 The three suggested blending patterns namely temporal, spatial and mixed incoherency are applied to synthetic data with varying maximum firing time delays. 
 
@@ -297,32 +295,16 @@ According to Figure \ref{fig:Ch-Results-QualityFactors} the spatially incoherent
 				One can also say that the  spatial incoherency performs poorly because its degree of incoherency is simply too low.}
 			
 			
-				
+
+\section{Conclusions}				
 \subsection*{Combination of Incoherency and Maximum Firing Time Delay}
 
 In Figure \ref{fig:Ch-Results-QualityFactors} the quality factors are averaged for each maximum firing time delay and blending pattern. This means that for a given maximum firing time delay and blending pattern there are random firing time delays which yield better deblending results than other firing time delays.
 
 In practice, the maximum firing time delay is given by the available acquisition time. For optimal deblending results the incoherency of the blending pattern should be maximized.
 
-For example, consider again the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing time delay. However, their incoherency values differ because $\mathbf{\Gamma}_{coh}$ uses coherent firing time delays whereas $\mathbf{\Gamma}_{ran}$ uses random firing time delays. 
 
-An effective blending matrix, $\mathbf{\Gamma}_{eff}$, is created by superimposing both blending matrices;
 
-\begin{equation}
-	\mathbf{\Gamma}_{eff} = a \cdot \mathbf{\Gamma}_{ran} + (1 - a) \cdot \mathbf{\Gamma}_{coh}, \; a \in [0,1].
-	\label{eq:Ch-Incoherency-EffectiveG}
-\end{equation}
-
-\todo[inline]{superposition must be in the time domain!}
-
-The maximum firing time delay of the effective blending matrix, $\mathbf{\Gamma}_{eff}$, is constant while the incoherency  varies with changing $a$. The resulting quality factors are shown as a function of the incoherency in Figure \ref{fig:Ch-Results-Quality-vs-Incoherency}.
-
-\begin{figure}
-	\centering
-	\includegraphics[width = 0.6\textwidth]{Plots/BlendingPatterns/Mu-vs-Q}
-	\caption{Deblending quality as a function of incoherency for a constant maximum firing time delay.}
-	\label{fig:Ch-Results-Quality-vs-Incoherency1}
-\end{figure}
 
 
 
