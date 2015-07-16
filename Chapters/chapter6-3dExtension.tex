@@ -81,11 +81,77 @@ With the new data and blending matrix sorting one can apply deblending to 3D dat
 
 \section{3D f-k-k Filter} \label{sec:Ch-Theory-3dExtension-FKK}
 
-In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. In 3D there are two spatial directions ($x$,$y$), i.e. the filter can be extended to a 3D $f$-$k_x$-$k_y$-filter.
+In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. In 3D there are two spatial directions ($x$,$y$), i.e. the filter can be extended to a 3D $f$-$k_x$-$k_y$ filter.
 
-For this purpose one considers a 3D common receiver gather, $\mathbf{p}(t,x_s,y_s)$, and brings it to the $f$-$k_x$-$k_y$ domain by applying a 3-dimensional Fourier transform. Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the cross- and inline wavenumbers ($k_x$, $k_y$). The maximum crossline wavenumber, $k_x$, is defined according to section \ref{sec:IterBlenNoiseEst}. The resulting $f$-$k$-mask is shown in Figure \ref{fig:Ch-Mahdad3d-2dfk}. Note that it only filters the crossline wavenumbers $k_x$, i.e. it is a $f$-$k_x$ filter.
+For this purpose one considers a 3D common receiver gather, $\mathbf{p}(t,x_s,y_s)$, and brings it to the $f$-$k_x$-$k_y$ domain by applying a 3-dimensional Fourier transform. Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the crossline and inline wavenumbers ($k_x$, $k_y$) as shown in Figure \ref{fig:Ch-Theory-FK-f_slice-data}. The minimum wavefield velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber};
 
-The $f$-$k_x$-$k_y$ spectra of synthetic data shown in Figure \ref{fig:Ch-Theory-FK-f_slice-data} and \ref{fig:Ch-Theory-FK-delphi-data} illustrate that the 2D $f$-$k_x$-filter will also pass some energy which is not signal. In the following both spatial directions, $x$ and $y$, are considered to extend the filter to a 3D $f$-$k_x$-$k_y$-filter.
+\begin{equation}
+	k_{max} = \frac{f}{v_{min}}.
+	\label{eq_Ch-Theory-MaxWavenmber-Repetition}
+\end{equation} 
+
+The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
+
+\begin{equation}
+	k_{T} = \sqrt{k_x^2 + k_{y}^2} < k_{max}.
+	\label{eq:Ch-Theory-TotalWavenumber}
+\end{equation}
+
+Hence the signal "cone" is defined by a circle (see Figure \ref{fig:Ch-Theory-FK-f_slice-mask}). This is repeated for each frequency component, such that the overall $f$-$k_x$-$k_y$ mask is a 3D cone (see Figure \ref{fig:Ch-Theory-FK-f_slice-data3d}). The cone can be sorted in a 2D view according to section \ref{sec:Ch-Theory-3dExtension-DataSorting} as illustrated in Figure \ref{fig:Ch-Theory-FK-delphi-data} and Figure \ref{fig:Ch-Theory-FK-delphi-mask}. Finally, this mask is computed for each receiver gather.
+
+
+
+
+
+%The maximum crossline wavenumber, $k_x$, is defined according to section \ref{sec:IterBlenNoiseEst}. The resulting $f$-$k$-mask is shown in Figure \ref{fig:Ch-Mahdad3d-2dfk}. Note that it only filters the crossline wavenumbers $k_x$, i.e. it is a $f$-$k_x$ filter.
+
+%The $f$-$k_x$-$k_y$ spectra of synthetic data shown in Figure \ref{fig:Ch-Theory-FK-f_slice-data} and \ref{fig:Ch-Theory-FK-delphi-data} illustrate that the 2D $f$-$k_x$-filter will also pass some energy which is not signal. In the following both spatial directions, $x$ and $y$, are considered to extend the filter to a 3D $f$-$k_x$-$k_y$-filter.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Plots/IdealData3d/P_f_slice40}
+		\caption{}
+		\label{fig:Ch-Theory-FK-f_slice-data}
+	\end{subfigure}
+	%
+	\centering
+	\begin{subfigure}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Plots/IdealData3d/fkk-mask-slice40}
+		\caption{}
+		\label{fig:Ch-Theory-FK-f_slice-mask}
+	\end{subfigure}
+	%
+	\centering
+	\begin{subfigure}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Plots/IdealData3d/fk-slices/3dfk-cone}
+		\caption{}
+		\label{fig:Ch-Theory-FK-f_slice-data3d}
+	\end{subfigure}
+	
+	\begin{subfigure}[t]{\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{Plots/IdealData3d/P_fkk_Delphi}
+		\caption{}
+		\label{fig:Ch-Theory-FK-delphi-data}
+	\end{subfigure}
+	\par\bigskip
+	\begin{subfigure}[t]{\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{Plots/IdealData3d/fkk-mask-Delphi}
+		\caption{}
+		\label{fig:Ch-Theory-FK-delphi-mask}
+	\end{subfigure}
+	
+	\caption{Illustration of the 3D $f$-$k_x$-$k_y$-filter. (a) is a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum of the data in Figure \ref{fig:Ch-Theory-Data3d_Delphi}. $k_x$ and $k_y$ refer to the crossline and inline wavenumber respectively. (b) shows the same data slice sorted in a 3D cube. The red cone represents the 3D $f$-$k_x$-$k_y$ filter mask. (c) is a \SI{40}{\hertz} frequency slice of the mask, where the white area equals 1 and the black area is 0. (d) and (e) display the $f$-$k_x$-$k_y$ data spectrum and mask sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, i.e. each sub-cone refers to one inline wavenumber. Note that due to the sorting the wavenumber axis is a mix of crossline and inline wavenumbers. For this reason the wavenumber axis has no labels.}
+	\label{fig:Ch-Theory-FKK-Mask}
+
+\end{figure}
+
+
 
 \begin{figure}
 
@@ -111,62 +177,12 @@ The $f$-$k_x$-$k_y$ spectra of synthetic data shown in Figure \ref{fig:Ch-Theory
 	\label{fig:Ch-Mahdad3d-2dfk}
 \end{figure}
 
-The starting point is a frequency slice of the $f$-$k_x$-$ky$ spectrum as shown in Figure \ref{fig:Ch-Theory-FK-f_slice-data}. Again the minimum velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber}. The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{max}$,
 
-\begin{equation}
-	k_{T} = \sqrt{k_x^2 + k_{y}^2} < k_{max}.
-	\label{eq:Ch-Theory-TotalWavenumber}
-\end{equation}
-
-Hence the signal "cone" is defined by a circle (see Figure \ref{fig:Ch-Theory-FK-f_slice-mask}). This is repeated for each frequency component, such that the overall $f$-$k_x$-$k_y$-mask is a 3D cone (see Figure \ref{fig:Ch-Theory-FKK-Mask}). Finally, this mask is computed for each receiver gather.
 
 \begin{comment}
 Once the mask is built for a 5D data array it can either be applied to filter a 5D data array, or the mask is sorted to 2D according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, and applied to the $f$-$k_x$-$k_y$-spectrum of the data matrix (see Figure \ref{fig:Ch-Theory-FK-delphi-data}, \ref{fig:Ch-Theory-FK-delphi-mask}).
 \end{comment}
 
-\begin{figure}
-	\centering
-	\begin{subfigure}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Plots/IdealData3d/P_f_slice40}
-		\caption{}
-		\label{fig:Ch-Theory-FK-f_slice-data}
-	\end{subfigure}
-	%
-	\centering
-	\begin{subfigure}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Plots/IdealData3d/fk-slices/3dfk-cone}
-		\caption{}
-		\label{fig:Ch-Theory-FK-f_slice-data3d}
-	\end{subfigure}
-	%
-	\centering
-	\begin{subfigure}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Plots/IdealData3d/fkk-mask-slice40}
-		\caption{}
-		\label{fig:Ch-Theory-FK-f_slice-mask}
-	\end{subfigure}
-	
-	\begin{subfigure}[t]{\textwidth}
-		\centering
-		\includegraphics[width=0.9\textwidth]{Plots/IdealData3d/P_fkk_Delphi}
-		\caption{}
-		\label{fig:Ch-Theory-FK-delphi-data}
-	\end{subfigure}
-	\par\bigskip
-	\begin{subfigure}[t]{\textwidth}
-		\centering
-		\includegraphics[width=0.9\textwidth]{Plots/IdealData3d/fkk-mask-Delphi}
-		\caption{}
-		\label{fig:Ch-Theory-FK-delphi-mask}
-	\end{subfigure}
-	
-	\caption{Illustration of the 3D $f$-$k_x$-$k_y$-filter. (a) is a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum of the data in Figure \ref{fig:Ch-Theory-Data3d_Delphi}. $k_x$ and $k_y$ refer to the crossline and inline wavenumber respectively. (b) shows the same data slice sorted in a 3D cube. The red cone represents the 3D $f$-$k_x$-$k_y$ filter mask. (c) is a \SI{40}{\hertz} frequency slice of the mask, where the white area equals 1 and the black area is 0. (d) and (e) display the $f$-$k_x$-$k_y$ data spectrum and mask sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, i.e. each sub-cone refers to one inline wavenumber. Note that due to the sorting the wavenumber axis is a mix of crossline and inline wavenumbers. For this reason the wavenumber axis has no labels.}
-	\label{fig:Ch-Theory-FKK-Mask}
-
-\end{figure}
 
 
 
