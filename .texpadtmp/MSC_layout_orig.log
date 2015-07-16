@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  16 JUL 2015 11:29
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  16 JUL 2015 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,7 +981,11 @@ Writing glossary file MSC_layout_orig.glo
 Writing index file MSC_layout_orig.idx
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
-) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter1.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter4-Theory.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter7-Incoherency.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter6-3dExtension.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter5-Results.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter3-Incoherency.aux))
+) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter1.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter4-Theory.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter7-Incoherency.aux
+
+LaTeX Warning: Label `eq:Ch-Incoherency-EffectiveG' multiply defined.
+
+) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter6-3dExtension.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter5-Results.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter3-Incoherency.aux))
 \openout1 = `MSC_layout_orig.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -3760,32 +3764,40 @@ Package xcolor Warning: Incompatible color definition on input line 236.
 Package xcolor Warning: Incompatible color definition on input line 236.
 
 
-LaTeX Warning: Reference `fig:Ch-Results-QvsMu' on page 20 undefined on input line 250.
+Package xcolor Warning: Incompatible color definition on input line 250.
+
+
+Package xcolor Warning: Incompatible color definition on input line 250.
 
 [20]
+
+Package xcolor Warning: Incompatible color definition on input line 261.
+
 File: Plots/BlendingPatterns/Mu-vs-Q.pdf Graphic file (type QTm)
- <use  "Plots/BlendingPatterns/Mu-vs-Q.pdf" >
+<use  "Plots/BlendingPatterns/Mu-vs-Q.pdf" > [21]
 
-Package xcolor Warning: Incompatible color definition on input line 272.
+Package xcolor Warning: Incompatible color definition on input line 284.
 
-[21]
 
-Package xcolor Warning: Incompatible color definition on input line 274.
+Package xcolor Warning: Incompatible color definition on input line 286.
 
 File: Plots/BlendingPatterns/quality_line_plot_avg.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/quality_line_plot_avg.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 291.
+Package xcolor Warning: Incompatible color definition on input line 303.
 
 
-Package xcolor Warning: Incompatible color definition on input line 295.
+Underfull \vbox (badness 3690) has occurred while \output is active []
+
+ [22]
+
+Package xcolor Warning: Incompatible color definition on input line 307.
 
 
-Package xcolor Warning: Incompatible color definition on input line 295.
+Package xcolor Warning: Incompatible color definition on input line 307.
 
-[22]
 
-Package xcolor Warning: Incompatible color definition on input line 306.
+Package xcolor Warning: Incompatible color definition on input line 318.
 
 File: Plots/BlendingPatterns/Mu-vs-Q.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Mu-vs-Q.pdf" >) [23] [24]
@@ -4191,12 +4203,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
  32851 strings out of 493734
- 625548 string characters out of 6146347
- 667002 words of memory out of 5000000
+ 625554 string characters out of 6146347
+ 667067 words of memory out of 5000000
  35560 multiletter control sequences out of 15000+600000
  26336 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191

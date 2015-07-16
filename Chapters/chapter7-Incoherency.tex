@@ -247,7 +247,19 @@ where $\mathbf{P}$ are the unblended data, and \textbf{\^{P}} the deblended data
 
 \section{Results Incoherency}
 
-Next, a quantitative analysis of the effect of incoherency, $\mu$, on the deblending quality, $Q$, is performed. For this purpose blending matrices with incoherencies between \SI{5}{\percent} and \SI{100}{\percent} are generated. The synthetic data are blended and deblended with these blending matrices. Figure \ref{fig:Ch-Results-QvsMu} illustrates the resulting quality factors as a function of the incoherency. 
+For example, consider again the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing time delay. However, their incoherency values differ because $\mathbf{\Gamma}_{coh}$ uses coherent firing time delays whereas $\mathbf{\Gamma}_{ran}$ uses random firing time delays. 
+
+An effective blending matrix, $\mathbf{\Gamma}_{eff}$, is created by superimposing both blending matrices;
+
+\begin{equation}
+	\mathbf{\Gamma}_{eff} = a \cdot \mathbf{\Gamma}_{ran} + (1 - a) \cdot \mathbf{\Gamma}_{coh}, \; a \in [0,1].
+	\label{eq:Ch-Incoherency-EffectiveG}
+\end{equation}
+
+\todo[inline]{superposition must be in the time domain!}
+
+The maximum firing time delay of the effective blending matrix, $\mathbf{\Gamma}_{eff}$, is constant while the incoherency  varies with changing $a$. The resulting quality factors are shown as a function of the incoherency in Figure \ref{fig:Ch-Results-Quality-vs-Incoherency}.
+
 
 \begin{figure}
 	\centering
