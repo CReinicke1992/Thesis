@@ -120,9 +120,9 @@ In practice, the maximum allowed firing time delay is limited by the available a
 
 Based on the blending matrices in Figure \ref{fig:Ch-Theory-GGH} and \ref{fig:Ch-Theory-GGHx} there are three possibilities to blend the shots incoherently. First, the phase terms along the sub-diagonals can be randomly varied, i.e. the shots are blended with random firing time delays (temporal incoherency). Second, the rows of the blending matrix can be randomly permuted, i.e. one randomly selects shots for each experiment (spatial incoherency). Third, temporal and spatial incoherency can be combined (mixed incoherency), i.e. randomly selected shots are blended with random firing time delays.
 
-In the following the 3 blending patterns presented in section \ref{sec:Effect-of-Incoherency} will be applied to a synthetic data set. The data are a common receiver gather with 21 shots (see Figure \ref{fig:Ch-Results-Unbl-inline10}), which are blended in 3 experiments with 7 shots per experiment. Next, the data are deblended with the deblending algorithm of section \ref{sec:MahdadMethod}. 
+These 3 blending patterns are applied to a synthetic data set. The data are a common receiver gather with 21 shots (see Figure \ref{fig:Ch-Results-Unbl-inline10}), which are blended in 3 experiments with 7 shots per experiment. Next, the data are deblended with the deblending algorithm of section \ref{sec:MahdadMethod}. 
 
-The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-inline10-x}). By introducing random firing time delays the deblended data improve significantly as shown in Figure \ref{fig:Ch-Results-Debl-inline10-t}. A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-inline10-xt}).
+The deblended receiver gathers \todo{Add pseudo sections} are shown in Figure \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-inline10-x}). By introducing random firing time delays the deblended data improve significantly as shown in Figure \ref{fig:Ch-Results-Debl-inline10-t}. A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-inline10-xt}).
 
 
 \begin{figure}
@@ -167,7 +167,7 @@ The deblending results are shown in Figure \ref{fig:Ch-Results-Debl-x-inline}. T
 
 \section{Effect of Incoherency} \label{sec:Effect-of-Incoherency}
 
-This section aims to analyze how strongly the deblending result depends on the incoherency of the blended acquisition. For this purpose a measure of incoherency and deblending quality will be introduced. Then, the possibilities of creating an incoherent blending pattern are presented.
+This section aims to analyze how strongly the deblending result depends on the incoherency of the blended acquisition. For this purpose a measure of incoherency and deblending quality will be introduced.
 
 \subsection*{Incoherency Measure}
 
@@ -185,25 +185,27 @@ In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending
 	\label{fig:Ch-Results-complex-circle}
 \end{figure}
 
-The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). Thus, the sum of the elements along the $d^{th}$ sub-diagonal can be constructive or destructive, depending on the phase variability. The absolute value of this sum, $S(d,\omega)$, measures the incoherency of the $d^{th}$ sub-diagonal for the frequency component, $\omega$;
+The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). Thus, the sum of the elements along the $d^{th}$ sub-diagonal can be constructive or destructive, depending on the phase variability. The absolute value of this sum, $M(d,\omega)$, measures the incoherency of the $d^{th}$ sub-diagonal for the frequency component, $\omega$;
 
 \begin{equation}
-	S(d,\omega) = \left| \sum_{j-i=d} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|.
+	M(d,\omega) = \left| \sum_{j-i=d} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|.
 	\label{eq:Ch-Results-incoherency-diagsum}	
 \end{equation} 
 
-For example, if all sub-diagonal elements are in phase the absolute value of their sum, $S(d,\omega)$, is maximized. Instead, in case of an incoherent blending pattern $S(d,\omega)$ is small for all sub-diagonals $d$, except for the main diagonal ($d = 0$).  
+If all sub-diagonal elements are in phase the absolute value of their sum, $M(d,\omega)$, is maximized. Instead, in case of an incoherent blending pattern $M(d,\omega)$ is small for all sub-diagonals $d$, except for the main diagonal ($d = 0$).  
 
-Next, $S(d,\omega)$ is summed over all frequency components, $\omega$. Each element of the resulting vector $S(d)$ is squared in order to relate it to energy. Finally, the incoherency, $\mu$, is quantified by the ratio of the main diagonal result and the sum of all sub-diagonal results;
+The incoherency measure, $\mu$, is introduced as;
 
 \begin{equation}
-	\mu = \frac{\left( \; \sum_{\omega}S(d=0,\omega) \; \right)^2}{\sum_{d = 1-Ns}^{Ns-1} \left(\left( \; \sum_{\omega}S(d,\omega) \; \right)^2\right)}
+	\mu = \frac{\left( \; \sum_{\omega}S(d=0,\omega) \; \right)^2}{\sum_{d = 1-Ns}^{Ns-1} \left(\left( \; \sum_{\omega}M(d,\omega) \; \right)^2\right)} \; ,
 	\label{eq:Ch-Results-incoherency}
 \end{equation}
 
-Note that $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns. Equation \ref{eq:Ch-Results-incoherency} implies that the incoherency value can vary between 0 (perfectly coherent) and 1 (perfectly incoherent).
+where $N_s$ is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns. Note that in this ratio, the numerator relates to the main diagonal only, and the denominator to all sub-diagonals.
 
-For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produce the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses coherent firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $S(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One observes that the coherent blending matrix, $\mathbf{\Gamma}_{coh}$, results in a less spike-like $S(d,\omega)$ function than the incoherent blending matrix, $\mathbf{\Gamma}_{ran}$.
+Equation \ref{eq:Ch-Results-incoherency} implies that the incoherency value can vary between 0 (perfectly coherent) and 1 (perfectly incoherent).
+
+For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produce the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses constant firing time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $M(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One can observe that for the incoherent blending matrix, $\mathbf{\Gamma}_{ran}$, $M(d,\omega)$ resembles a simple spike more than for the coherent blending matrix, $\mathbf{\Gamma}_{coh}$. The coherent blending matrix, $\mathbf{\Gamma}_{coh}$,  yields an incoherency value of $\mu_{coh} = \SI{67}{\percent}$, whereas the incoherent blending matrix, $\mathbf{\Gamma}_{ran}$, yields an incoherency value of $\mu_{ran} = \SI{98}{\percent}$.
 
 \begin{figure}
 	
@@ -223,7 +225,7 @@ For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\m
 	\label{fig:Ch-Incoherency-RandomDiag}	
 	\end{subfigure}
 	
-	\caption{Illustration of the absolute sub-diagonal sums, $S(d,\omega)$, for the frequency slice $f=\SI{25}{\hertz}$. (a) refers to the blending matrix $\mathbf{\Gamma}_{coh}$ with coherent firing time delays.  $S(d,\omega)$ is less spike-like and yields an incoherency value of $\mu_a = \SI{67}{\percent}$. (b) refers to the blending matrix $\mathbf{\Gamma}_{ran}$ with random firing time delays. $S(d,\omega)$ is  close to a spike and yields an incoherency value of $\mu_b = \SI{98}{\percent}$.}
+	\caption{Illustration of the absolute sub-diagonal sums, $M(d,\omega)$, for the frequency slice $f=\SI{25}{\hertz}$. (a) refers to the blending matrix $\mathbf{\Gamma}_{coh}$ with constant firing time delays.  (b) refers to the blending matrix $\mathbf{\Gamma}_{ran}$ with random firing time delays.}
 	\label{fig:Ch-Incoherency-Coh-vs-Ran-Diag}
 	
 \end{figure}
@@ -231,27 +233,27 @@ For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\m
 
 \subsection*{Deblending Performance Measure}
 
-The following data examples are synthetic data, i.e. the unblended data are known. Therefore, the deblending performance can be measured with the quality factor, $Q$, which is defined by \citet{IbrahimQuality} as the ratio of unblended data, $\mathbf{P}$, and the misfit between unblended data, $\mathbf{P}$, and deblended data, \textbf{\^{P}};
+The following data examples are synthetic data, i.e. the unblended data are known. Therefore, the deblending performance can be measured with the quality factor, $Q$, which is defined by \citet{IbrahimQuality} as;
 
 \begin{equation}
-	Q = 10 \cdot \mathrm{log_{10}} \left( \frac{\left|\left|\mathbf{P}\right|\right| _2 ^2}{\left|\left|\mathbf{P - \hat{P}}\right|\right| _2 ^2} \right) \;.	
+	Q = 10 \cdot \mathrm{log_{10}} \left( \frac{\left|\left|\mathbf{P}\right|\right| _2 ^2}{\left|\left|\mathbf{P - \hat{P}}\right|\right| _2 ^2} \right) \;,	
 \end{equation}
 
+where $\mathbf{P}$ are the unblended data, and \textbf{\^{P}} the deblended data. This is similar to the definition of signal to noise ratio. 
 
 
 
 
-\section{Results}
 
-
+\section{Results Incoherency}
 
 Next, a quantitative analysis of the effect of incoherency, $\mu$, on the deblending quality, $Q$, is performed. For this purpose blending matrices with incoherencies between \SI{5}{\percent} and \SI{100}{\percent} are generated. The synthetic data are blended and deblended with these blending matrices. Figure \ref{fig:Ch-Results-QvsMu} illustrates the resulting quality factors as a function of the incoherency. 
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 0.6\textwidth]{Plots/Incoherency/Q-vs-Mu}
-	\caption{Quality factor, $Q$, as a function of the incoherency, $\mu$. The deblending results with quality factors above 5 look acceptable.}
-	\label{fig:Ch-Results-QvsMu}
+	\includegraphics[width = 0.6\textwidth]{Plots/BlendingPatterns/Mu-vs-Q}
+	\caption{Deblending quality as a function of incoherency for a constant maximum firing time delay.}
+	\label{fig:Ch-Results-Quality-vs-Incoherency}
 \end{figure}
 
 This result demonstrates that an incoherent blending pattern is inevitable for a good deblending result. However, only within a small range of incoherencies the deblending quality is sensitive to incoherency. Therefore, incoherency by its own is not a suitable parameter to adjust the desired quality factor.
@@ -307,7 +309,7 @@ The maximum firing time delay of the effective blending matrix, $\mathbf{\Gamma}
 	\centering
 	\includegraphics[width = 0.6\textwidth]{Plots/BlendingPatterns/Mu-vs-Q}
 	\caption{Deblending quality as a function of incoherency for a constant maximum firing time delay.}
-	\label{fig:Ch-Results-Quality-vs-Incoherency}
+	\label{fig:Ch-Results-Quality-vs-Incoherency1}
 \end{figure}
 
 

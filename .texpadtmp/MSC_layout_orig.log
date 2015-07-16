@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  16 JUL 2015 10:18
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  16 JUL 2015 11:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3343,10 +3343,10 @@ Package xcolor Warning: Incompatible color definition on input line 28.
 
 LaTeX Warning: Reference `fig:Ch-Results-Unbl-Delphi' on page xii undefined on input line 28.
 
-[12]
 
 Package xcolor Warning: Incompatible color definition on input line 29.
 
+[12]
 
 Package xcolor Warning: Incompatible color definition on input line 31.
 
@@ -3709,9 +3709,6 @@ Package xcolor Warning: Incompatible color definition on input line 123.
 Package xcolor Warning: Incompatible color definition on input line 123.
 
 
-Package xcolor Warning: Incompatible color definition on input line 123.
-
-
 Package xcolor Warning: Incompatible color definition on input line 125.
 
 
@@ -3741,54 +3738,54 @@ Package xcolor Warning: Incompatible color definition on input line 188.
 
 [18] [19]
 
-Package xcolor Warning: Incompatible color definition on input line 204.
-
-
 Package xcolor Warning: Incompatible color definition on input line 206.
 
 
-Package xcolor Warning: Incompatible color definition on input line 206.
+Package xcolor Warning: Incompatible color definition on input line 208.
 
 
-Package xcolor Warning: Incompatible color definition on input line 206.
+Package xcolor Warning: Incompatible color definition on input line 208.
+
+
+Package xcolor Warning: Incompatible color definition on input line 208.
 
 File: Plots/DiagonalSums/diagsums_coherent.pdf Graphic file (type QTm)
 <use  "Plots/DiagonalSums/diagsums_coherent.pdf" >
 File: Plots/DiagonalSums/diagsums_random.pdf Graphic file (type QTm)
  <use  "Plots/DiagonalSums/diagsums_random.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 236.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 236.
 
 
-Package xcolor Warning: Incompatible color definition on input line 248.
+LaTeX Warning: Reference `fig:Ch-Results-QvsMu' on page 20 undefined on input line 250.
 
 [20]
-File: Plots/Incoherency/Q-vs-Mu.pdf Graphic file (type QTm)
- <use  "Plots/Incoherency/Q-vs-Mu.pdf" >
+File: Plots/BlendingPatterns/Mu-vs-Q.pdf Graphic file (type QTm)
+ <use  "Plots/BlendingPatterns/Mu-vs-Q.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 270.
+Package xcolor Warning: Incompatible color definition on input line 272.
 
 [21]
 
-Package xcolor Warning: Incompatible color definition on input line 272.
+Package xcolor Warning: Incompatible color definition on input line 274.
 
 File: Plots/BlendingPatterns/quality_line_plot_avg.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/quality_line_plot_avg.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 289.
+Package xcolor Warning: Incompatible color definition on input line 291.
 
 
-Package xcolor Warning: Incompatible color definition on input line 293.
+Package xcolor Warning: Incompatible color definition on input line 295.
 
 
-Package xcolor Warning: Incompatible color definition on input line 293.
+Package xcolor Warning: Incompatible color definition on input line 295.
 
 [22]
 
-Package xcolor Warning: Incompatible color definition on input line 304.
+Package xcolor Warning: Incompatible color definition on input line 306.
 
 File: Plots/BlendingPatterns/Mu-vs-Q.pdf Graphic file (type QTm)
 <use  "Plots/BlendingPatterns/Mu-vs-Q.pdf" >) [23] [24]
@@ -4197,10 +4194,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 32848 strings out of 493734
- 625408 string characters out of 6146347
- 668149 words of memory out of 5000000
- 35555 multiletter control sequences out of 15000+600000
+ 32851 strings out of 493734
+ 625548 string characters out of 6146347
+ 667002 words of memory out of 5000000
+ 35560 multiletter control sequences out of 15000+600000
  26336 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10404b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
