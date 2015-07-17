@@ -1,7 +1,5 @@
 \chapter{Crossline Deblending (3D)} \label{chap:MahdadMethod3d}
 
-\todo[inline]{Make sure you mention the spatial incoherency for 3d blending in this chapter!}
-
 This thesis suggests to blend crossline sources. By combining several cross-lines one effectively blends sources in 3D.
 
 The deblending method of \citet{Mahdad-Deblending-Method} described in section \ref{sec:MahdadMethod} is designed for 2D blended data. In this chapter I will explain how each step of the Mahdad method can be applied to 3D data as well, and I will demonstrate its performance.
@@ -55,7 +53,7 @@ The blending matrix for 3D is build in a similar fashion as the data matrix in 3
 
 \todo[inline]{Keep this sentence for later: This framework allows to blend any source combination independent of the cross- and inline positions of the involved sources.}
 
-With the new data and blending matrix sorting one can apply deblending to 3D data in the same way as presented in section \ref{sec:Ch-Theory-Operator} and section \ref{sec:MahdadMethod}.
+With the new data and blending matrix sorting one can apply deblending to 3D data in the same way as presented in section \ref{sec:Ch-Theory-Operator} and section \ref{sec:MahdadMethod}. Note that unlike for 2D blending spatially incoherent blending patterns are practical for 3D blended acquisition.
 
 \begin{figure}
 
@@ -188,12 +186,9 @@ Once the mask is built for a 5D data array it can either be applied to filter a 
 
 The 3D $f$-$k_x$-$k_y$ filter removes incoherent energy in the crossline and inline direction. The 3D blended acquisition design suggested in this thesis blends shots within the same crossline. Hence, the underlying question is whether an extension of the 2D $f$-$k_x$ filter to the inline direction provides significant deblending enhancements.
 
-For this purpose the synthetic data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended: Within each crossline there are 21 sources, which are blended in 3 experiments. For each experiment 7 randomly selected sources are blended with random time delays, i.e. the blending pattern with mixed incoherency is applied. The maximum allowed firing time delay is set to \SI{400}{\milli\second}. 
+For this purpose the synthetic data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended: Within each crossline there are 21 sources, which are blended in 3 experiments. For each experiment 7 randomly selected sources are blended with random time delays, i.e. the blending pattern with mixed incoherency is applied. The maximum allowed firing time delay is set to \SI{400}{\milli\second}. The incoherency measure of the used blending matrix, $\mathbf{\Gamma}$, is $\mu = \SI{99}{\percent}$. 
 
-The blended data are deblended with the 3D deblending algorithm. In one case a 2D $f$-$k_x$ filter is applied (see Figure \ref{fig:Ch-Mahdad3d-Deblending-2dfk}). In the other case a 3D $f$-$k_x$-$k_y$ filter is applied (see Figure \ref{fig:Ch-Mahdad3d-Deblending-3dfk}). It is clearly visible that the deblending quality increases significantly with the 3D $f$-$k_x$-$k_y$ filter.
-
-In order to quantify the quality gap between the results with 2D and 3D filters, the data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended with maximum firing time delays varying between \SI{40}{\milli\second} and \SI{400}{\milli\second}. The blended data are deblended in one case with a 2D $f$-$k$ filter, and in the other case with a 3D $f$-$k_x$-$k_y$ filter. The resulting quality factors are shown in Figure \ref{fig:Ch-Mahdad3d-2dvs3dfk}.
-
+The blended data are deblended with the 3D deblending algorithm. In one case a 2D $f$-$k_x$ filter is applied (see Figure \ref{fig:Ch-Mahdad3d-Deblending-2dfk}). In the other case a 3D $f$-$k_x$-$k_y$ filter is applied (see Figure \ref{fig:Ch-Mahdad3d-Deblending-3dfk}). It is clearly visible that the deblending quality increases significantly with the 3D $f$-$k_x$-$k_y$ filter. Figure \ref{fig:Ch-Mahdad3d-Deblending-2dvs3d-fk-tslice} displays a $\SI{420}{\milli\second}$ time slice of each subplot in Figure \ref{fig:Ch-Mahdad3d-Deblending-2dvs3d-fk}.
  
 \begin{figure}
 	
@@ -271,10 +266,13 @@ In order to quantify the quality gap between the results with 2D and 3D filters,
 		\label{fig:Ch-Mahdad3d-Deblending-3dfk-tslice}
 	\end{subfigure}
 	
-	\caption{}
+	\caption{(a) - (d) show \SI{420}{\milli\second} time slices of the data in Figure \ref{fig:Ch-Mahdad3d-Deblending-2dvs3d-fk}.}
 	\label{fig:Ch-Mahdad3d-Deblending-2dvs3d-fk-tslice}
 	
 \end{figure}
+
+
+In order to quantify the quality gap between the results with 2D and 3D filters, the data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended with maximum firing time delays varying between \SI{40}{\milli\second} and \SI{400}{\milli\second}. The blended data are deblended in one case with a 2D $f$-$k$ filter, and in the other case with a 3D $f$-$k_x$-$k_y$ filter. The resulting quality factors are shown in Figure \ref{fig:Ch-Mahdad3d-2dvs3dfk}.
 
 
 
@@ -284,6 +282,11 @@ In order to quantify the quality gap between the results with 2D and 3D filters,
 	\caption{Comparison of the deblending quality with a 2D $f$-$k_x$ filter and a 3D $f$-$k_x$-$k_y$ filter. The data in Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended with varying maximum firing time delay. Then the blended data are deblended using a 2D $f$-$k_x$ filter and a 3D $f$-$k_x$-$k_y$ filter.}
 	\label{fig:Ch-Mahdad3d-2dvs3dfk}
 \end{figure}
+
+\FloatBarrier
+
+
+\section{Conclusions}
 
 
 

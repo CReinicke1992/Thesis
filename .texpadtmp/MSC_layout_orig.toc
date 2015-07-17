@@ -24,18 +24,19 @@
 \contentsline {section}{\numberline {4-1}Data Sorting}{25}{section.4.1}
 \contentsline {section}{\numberline {4-2}3D f-k-k Filter}{28}{section.4.2}
 \contentsline {section}{\numberline {4-3}Results}{29}{section.4.3}
-\contentsline {chapter}{\numberline {5}Results on Synthetic Data}{33}{chapter.5}
-\contentsline {section}{\numberline {5-1}Blending pattern}{33}{section.5.1}
-\contentsline {section}{\numberline {5-2}Feasibility}{33}{section.5.2}
-\contentsline {chapter}{\numberline {6}Incoherency}{35}{chapter.6}
-\contentsline {section}{\numberline {6-1}Incoherency Control Factors}{35}{section.6.1}
-\contentsline {section}{\numberline {6-2}Quantification of Incoherency}{36}{section.6.2}
-\contentsline {section}{\numberline {6-3}Optimization of Incoherency}{37}{section.6.3}
-\contentsline {section}{\numberline {6-4}Fingerprint of the Incoherency in the Blending Matrix $\mathbf {\Gamma }$}{37}{section.6.4}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{39}{equation.6.4.7}
-\contentsline {chapter}{\numberline {A}The back of the thesis}{41}{appendix.A}
-\contentsline {section}{\numberline {A-1}An appendix section}{41}{section.A.1}
-\contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{41}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A-1-2}A \textsc {Matlab}$ $ Listing}{41}{subsection.A.1.2}
-\contentsline {chapter}{\numberline {B}Yet another appendix}{43}{appendix.B}
-\contentsline {section}{\numberline {B-1}Another test section}{43}{section.B.1}
+\contentsline {section}{\numberline {4-4}Conclusions}{33}{section.4.4}
+\contentsline {chapter}{\numberline {5}Results on Synthetic Data}{35}{chapter.5}
+\contentsline {section}{\numberline {5-1}Blending pattern}{35}{section.5.1}
+\contentsline {section}{\numberline {5-2}Feasibility}{35}{section.5.2}
+\contentsline {chapter}{\numberline {6}Incoherency}{37}{chapter.6}
+\contentsline {section}{\numberline {6-1}Incoherency Control Factors}{37}{section.6.1}
+\contentsline {section}{\numberline {6-2}Quantification of Incoherency}{38}{section.6.2}
+\contentsline {section}{\numberline {6-3}Optimization of Incoherency}{39}{section.6.3}
+\contentsline {section}{\numberline {6-4}Fingerprint of the Incoherency in the Blending Matrix $\mathbf {\Gamma }$}{39}{section.6.4}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{41}{equation.6.4.7}
+\contentsline {chapter}{\numberline {A}The back of the thesis}{43}{appendix.A}
+\contentsline {section}{\numberline {A-1}An appendix section}{43}{section.A.1}
+\contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{43}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A-1-2}A \textsc {Matlab}$ $ Listing}{43}{subsection.A.1.2}
+\contentsline {chapter}{\numberline {B}Yet another appendix}{45}{appendix.B}
+\contentsline {section}{\numberline {B-1}Another test section}{45}{section.B.1}
