@@ -1,18 +1,17 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux
-A level-1 auxiliary file: Chapters/chapter1.aux
+A level-1 auxiliary file: Chapters/chapter-Introduction.aux
 A level-1 auxiliary file: Chapters/chapter4-Theory.aux
 A level-1 auxiliary file: Chapters/chapter7-Incoherency.aux
 A level-1 auxiliary file: Chapters/chapter6-3dExtension.aux
-A level-1 auxiliary file: Chapters/chapter5-Results.aux
-A level-1 auxiliary file: Chapters/chapter3-Incoherency.aux
+A level-1 auxiliary file: Chapters/chapter-ComplexData.aux
+A level-1 auxiliary file: Chapters/chapter-DiscussionConclusion.aux
 The style file: apalike.bst
 Database file #1: ../my_bib.bib
-Warning--I didn't find a database entry for "texbook"
 You've used 6 entries,
             1935 wiz_defined-function locations,
-            515 strings with 4891 characters,
+            514 strings with 4907 characters,
 and the built_in function-call counts, 1809 in all, are:
 = -- 178
 > -- 59
@@ -51,4 +50,3 @@ warning$ -- 0
 while$ -- 14
 width$ -- 0
 write$ -- 78
-(There was 1 warning)

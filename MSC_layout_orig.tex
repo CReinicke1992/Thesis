@@ -16,7 +16,7 @@
 \usepackage{natbib}
 \usepackage{siunitx}
 %\usetikzlibrary{matrix}
-\usepackage{todonotes}
+\usepackage[disable]{todonotes}
 \usepackage{caption}
 \usepackage{verbatim}
 
@@ -80,7 +80,7 @@
 \mainmatter
 %
 % Introduction
-\include{Chapters/chapter1} % notice how the reference to the introduction takes place.. It refers to the name.tex
+%\include{Chapters/chapter1} % notice how the reference to the introduction takes place.. It refers to the name.tex
 \cleardoublepage
 
 %
@@ -89,13 +89,16 @@
 		%\include{Chapters/chapter2}
 		
 % My part
-    \part{Theory}
+    %\part{Theory}
+    	\include{Chapters/chapter-Introduction}
     	\include{Chapters/chapter4-Theory}
     	\include{Chapters/chapter7-Incoherency}
     	\include{Chapters/chapter6-3dExtension}
-    	\include{Chapters/chapter5-Results}
-		\include{Chapters/chapter3-Incoherency}
-\cite{Mahdad-Deblending-Method}
+    	\include{Chapters/chapter-ComplexData}
+    	\include{Chapters/chapter-DiscussionConclusion}
+    	%\include{Chapters/chapter5-Results}
+		%\include{Chapters/chapter3-Incoherency}
+%\cite{Mahdad-Deblending-Method}
 
 %
 % Biblio

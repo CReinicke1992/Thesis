@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  17 JUL 2015 15:31
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  17 JUL 2015 17:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,7 +981,7 @@ Writing glossary file MSC_layout_orig.glo
 Writing index file MSC_layout_orig.idx
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
-) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter1.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter4-Theory.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter7-Incoherency.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter6-3dExtension.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter5-Results.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter3-Incoherency.aux))
+) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-Introduction.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter4-Theory.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter7-Incoherency.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter6-3dExtension.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-ComplexData.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-DiscussionConclusion.aux))
 \openout1 = `MSC_layout_orig.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -3198,13 +3198,13 @@ Package xcolor Warning: Incompatible color definition on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 23.
 
-[9]
 
 Package xcolor Warning: Incompatible color definition on input line 24.
 
 
 Package xcolor Warning: Incompatible color definition on input line 25.
 
+[9]
 
 Package xcolor Warning: Incompatible color definition on input line 26.
 
@@ -3230,35 +3230,14 @@ Package xcolor Warning: Incompatible color definition on input line 32.
 Package xcolor Warning: Incompatible color definition on input line 33.
 
 
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 33.
+
+
 Package xcolor Warning: Incompatible color definition on input line 34.
 
 
 Package xcolor Warning: Incompatible color definition on input line 35.
-
-
-Package xcolor Warning: Incompatible color definition on input line 36.
-
-
-Package xcolor Warning: Incompatible color definition on input line 37.
-
-
-Package xcolor Warning: Incompatible color definition on input line 38.
-
-
-Package xcolor Warning: Incompatible color definition on input line 39.
-
-
-Package xcolor Warning: Incompatible color definition on input line 40.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 40.
-
-
-Package xcolor Warning: Incompatible color definition on input line 41.
-
-
-Package xcolor Warning: Incompatible color definition on input line 42.
 
 )
 \tf@toc=\write10
@@ -3350,12 +3329,6 @@ Package xcolor Warning: Incompatible color definition on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 29.
 
-
-Package xcolor Warning: Incompatible color definition on input line 31.
-
-
-LaTeX Warning: Reference `fig:Ch-Results-Debl-Delphi' on page xiii undefined on input line 31.
-
 )
 \tf@lof=\write11
 \openout11 = `MSC_layout_orig.lof'.
@@ -3379,44 +3352,23 @@ No file MSC_layout_orig.gls.
 ] [18
 
 ]
-\openout2 = `Chapters/chapter1.aux'.
+\openout2 = `Chapters/chapter-Introduction.aux'.
 
- (./Chapters/chapter1.tex
+ (./Chapters/chapter-Introduction.tex
 Chapter 1.
-
-Package xcolor Warning: Incompatible color definition on input line 4.
-
-
-Package natbib Warning: Citation `texbook' on page 1 undefined on input line 5.
-
-Package acronym Info: Label `acro:DUT' newly defined as it shall be overridden
-although it is yet undefined on input line 5.
-
-Package xcolor Warning: Incompatible color definition on input line 5.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
 ) [1
 
 
 
-] [2
 
-
-] [3
-
-] [4]
+]
 \openout2 = `Chapters/chapter4-Theory.aux'.
 
- (./Chapters/chapter4-Theory.tex
+ (./Chapters/chapter4-Theory.tex [2
+
+
+
+]
 Chapter 2.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
@@ -3477,10 +3429,7 @@ Package xcolor Warning: Incompatible color definition on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
-[5
-
-
-] [6]
+[3] [4]
 File: Plots/Blended-Source-edit2.pdf Graphic file (type QTm)
  <use  "Plots/Blended-Source-edit2.pdf" >
 
@@ -3497,7 +3446,7 @@ Package xcolor Warning: Incompatible color definition on input line 112.
 
 Package xcolor Warning: Incompatible color definition on input line 112.
 
-[7]
+[5]
 
 Package xcolor Warning: Incompatible color definition on input line 129.
 
@@ -3524,7 +3473,7 @@ Package xcolor Warning: Incompatible color definition on input line 136.
 
 Package xcolor Warning: Incompatible color definition on input line 142.
 
-[8]
+[6]
 
 Package xcolor Warning: Incompatible color definition on input line 151.
 
@@ -3540,7 +3489,6 @@ Package xcolor Warning: Incompatible color definition on input line 156.
 
 Package xcolor Warning: Incompatible color definition on input line 156.
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 156.
 
 Package xcolor Warning: Incompatible color definition on input line 156.
 
@@ -3557,7 +3505,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--179
 
 Package xcolor Warning: Incompatible color definition on input line 197.
 
-[9]
+[7]
 
 Package xcolor Warning: Incompatible color definition on input line 199.
 
@@ -3595,7 +3543,7 @@ Package xcolor Warning: Incompatible color definition on input line 280.
 
 Package xcolor Warning: Incompatible color definition on input line 280.
 
-[10] [11]
+[8] [9]
 
 Package xcolor Warning: Incompatible color definition on input line 282.
 
@@ -3608,7 +3556,7 @@ Package xcolor Warning: Incompatible color definition on input line 290.
 
 Package xcolor Warning: Incompatible color definition on input line 301.
 
-[12]
+[10]
 
 Package xcolor Warning: Incompatible color definition on input line 314.
 
@@ -3626,7 +3574,7 @@ File: Plots/Mahdad/15iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
 File: Plots/Mahdad/20iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
  <use  "Plots/Mahdad/20iter/DeblendedCRG_rec30.pdf" >
 File: Plots/Mahdad/25iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
- <use  "Plots/Mahdad/25iter/DeblendedCRG_rec30.pdf" > [13] [14])
+ <use  "Plots/Mahdad/25iter/DeblendedCRG_rec30.pdf" > [11] [12])
 \openout2 = `Chapters/chapter7-Incoherency.aux'.
 
  (./Chapters/chapter7-Incoherency.tex
@@ -3641,7 +3589,7 @@ Package xcolor Warning: Incompatible color definition on input line 25.
 Package xcolor Warning: Incompatible color definition on input line 27.
 
 File: Plots/GGH_v2.pdf Graphic file (type QTm)
-<use  "Plots/GGH_v2.pdf" > [15
+<use  "Plots/GGH_v2.pdf" > [13
 
 
 
@@ -3695,7 +3643,7 @@ Package xcolor Warning: Incompatible color definition on input line 101.
 
 Package xcolor Warning: Incompatible color definition on input line 101.
 
-[16] [17]
+[14] [15]
 
 Package xcolor Warning: Incompatible color definition on input line 105.
 
@@ -3736,7 +3684,7 @@ File: Plots/BlendingPatterns/Deblended_xline10t.pdf Graphic file (type QTm)
 File: Plots/BlendingPatterns/Pseudo_Deblended_xline10_xt.pdf Graphic file (type QTm)
  <use  "Plots/BlendingPatterns/Pseudo_Deblended_xline10_xt.pdf" >
 File: Plots/BlendingPatterns/Deblended_xline10xt.pdf Graphic file (type QTm)
- <use  "Plots/BlendingPatterns/Deblended_xline10xt.pdf" > [18]
+ <use  "Plots/BlendingPatterns/Deblended_xline10xt.pdf" > [16]
 
 Package xcolor Warning: Incompatible color definition on input line 182.
 
@@ -3745,7 +3693,7 @@ File: Plots/ComplexPlane.pdf Graphic file (type QTm)
 
 Package xcolor Warning: Incompatible color definition on input line 191.
 
-[19]
+[17]
 
 Package xcolor Warning: Incompatible color definition on input line 209.
 
@@ -3768,7 +3716,7 @@ Package xcolor Warning: Incompatible color definition on input line 239.
 
 Package xcolor Warning: Incompatible color definition on input line 239.
 
-[20]
+[18]
 
 Package xcolor Warning: Incompatible color definition on input line 253.
 
@@ -3779,7 +3727,7 @@ Package xcolor Warning: Incompatible color definition on input line 253.
 Package xcolor Warning: Incompatible color definition on input line 262.
 
 File: Plots/BlendingPatterns/Mu-vs-Q_v2.pdf Graphic file (type QTm)
-<use  "Plots/BlendingPatterns/Mu-vs-Q_v2.pdf" > [21]
+<use  "Plots/BlendingPatterns/Mu-vs-Q_v2.pdf" > [19]
 
 Package xcolor Warning: Incompatible color definition on input line 285.
 
@@ -3787,17 +3735,17 @@ Package xcolor Warning: Incompatible color definition on input line 285.
 Package xcolor Warning: Incompatible color definition on input line 287.
 
 File: Plots/BlendingPatterns/quality_line_plot_avg.pdf Graphic file (type QTm)
-<use  "Plots/BlendingPatterns/quality_line_plot_avg.pdf" > [22]
+<use  "Plots/BlendingPatterns/quality_line_plot_avg.pdf" >
 
 Package xcolor Warning: Incompatible color definition on input line 305.
 
 
 Package xcolor Warning: Incompatible color definition on input line 305.
 
-) [23]
+[20]) [21]
 \openout2 = `Chapters/chapter6-3dExtension.aux'.
 
- (./Chapters/chapter6-3dExtension.tex [24
+ (./Chapters/chapter6-3dExtension.tex [22
 
 
 
@@ -3833,7 +3781,7 @@ Package xcolor Warning: Incompatible color definition on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
-[25]
+[23]
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
@@ -3884,10 +3832,10 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 60--73
 [][] [] 
  []
 
-[26] [27]
 
 Package xcolor Warning: Incompatible color definition on input line 82.
 
+[24] [25]
 
 Package xcolor Warning: Incompatible color definition on input line 84.
 
@@ -3915,9 +3863,8 @@ Package xcolor Warning: Incompatible color definition on input line 100.
 
 Package xcolor Warning: Incompatible color definition on input line 100.
 
-[28]
 File: Plots/IdealData3d/P_f_slice40.pdf Graphic file (type QTm)
- <use  "Plots/IdealData3d/P_f_slice40.pdf" >
+<use  "Plots/IdealData3d/P_f_slice40.pdf" >
 File: Plots/IdealData3d/fkk-mask-slice40.pdf Graphic file (type QTm)
  <use  "Plots/IdealData3d/fkk-mask-slice40.pdf" >
 File: Plots/IdealData3d/fk-slices/3dfk-cone.pdf Graphic file (type QTm)
@@ -3951,7 +3898,6 @@ Package xcolor Warning: Incompatible color definition on input line 172.
 
 Package xcolor Warning: Incompatible color definition on input line 189.
 
-[29]
 
 Package xcolor Warning: Incompatible color definition on input line 191.
 
@@ -4006,95 +3952,32 @@ Package xcolor Warning: Incompatible color definition on input line 282.
 
 Package xcolor Warning: Incompatible color definition on input line 282.
 
-[30] [31] [32]) [33]
-\openout2 = `Chapters/chapter5-Results.aux'.
+[26] [27] [28] [29] [30]) [31
 
- (./Chapters/chapter5-Results.tex [34
+]
+\openout2 = `Chapters/chapter-ComplexData.aux'.
+
+ (./Chapters/chapter-ComplexData.tex [32
 
 
 
 ]
 Chapter 5.
+) [33]
+\openout2 = `Chapters/chapter-DiscussionConclusion.aux'.
 
-Package xcolor Warning: Incompatible color definition on input line 16.
-
-
-LaTeX Warning: Reference `fig:Ch-Results-Debl-Delphi' on page 35 undefined on input line 306.
-
-
-Package xcolor Warning: Incompatible color definition on input line 306.
-
-
-LaTeX Warning: Reference `fig:Ch-Results-Debl-Delphi-xt' on page 35 undefined on input line 308.
-
-File: Plots/Feasibility/acquisition-set-up-syn.pdf Graphic file (type QTm)
-<use  "Plots/Feasibility/acquisition-set-up-syn.pdf" >
-
-LaTeX Warning: Reference `fig:Ch-Results-Debl-Delphi' on page 35 undefined on input line 313.
-
-
-LaTeX Warning: Reference `fig:Ch-Results-Debl-Delphi' on page 35 undefined on input line 313.
-
-) [35] [36]
-\openout2 = `Chapters/chapter3-Incoherency.aux'.
-
- (./Chapters/chapter3-Incoherency.tex
-Chapter 6.
-
-Package xcolor Warning: Incompatible color definition on input line 3.
-
-
-Package xcolor Warning: Incompatible color definition on input line 3.
-
-[37
+ (./Chapters/chapter-DiscussionConclusion.tex [34
 
 
 
 ]
-
-Package xcolor Warning: Incompatible color definition on input line 36.
-
-
-Package xcolor Warning: Incompatible color definition on input line 36.
+Chapter 6.
+) [35] [36
 
 
-Package xcolor Warning: Incompatible color definition on input line 47.
+] (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.bbl) [37
 
-
-Package xcolor Warning: Incompatible color definition on input line 47.
-
-
-Package xcolor Warning: Incompatible color definition on input line 58.
-
-
-Package xcolor Warning: Incompatible color definition on input line 58.
-
-[38]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 69.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Gamma' on input line 69.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 69.
-
-) [39]
-
-Package xcolor Warning: Incompatible color definition on input line 98.
-
-
-Package xcolor Warning: Incompatible color definition on input line 98.
-
-[40
-
-] (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.bbl) [41
-
-
-] [42
+] [38
 
 ]
 Appendix A.
@@ -4160,15 +4043,15 @@ Package xcolor Warning: Incompatible color definition on input line 9.
 )
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 118.
+(Font)              using `OT1/cmss/bx/n' instead on input line 121.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 118.
+(hyperref)                removing `math shift' on input line 121.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 118.
+(hyperref)                removing `math shift' on input line 121.
 
 (./test.m
 
@@ -4195,48 +4078,36 @@ Package xcolor Warning: Incompatible color definition on input line 6.
 
 Package xcolor Warning: Incompatible color definition on input line 6.
 
-) [43
+) [39
 
-] [44
+] [40
 
 ]
 Appendix B.
-(/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.ind [45]
+(/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.ind) [41] [42
 
-Package xcolor Warning: Incompatible color definition on input line 3.
-
-[46
-
-
-])
+]
 \tf@thm=\write13
 \openout13 = `MSC_layout_orig.thm'.
 
-
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
-(/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter1.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter4-Theory.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter7-Incoherency.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter6-3dExtension.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter5-Results.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter3-Incoherency.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
+ (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-Introduction.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter4-Theory.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter7-Incoherency.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter6-3dExtension.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-ComplexData.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-DiscussionConclusion.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 136.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 32887 strings out of 493734
- 627165 string characters out of 6146347
- 667858 words of memory out of 5000000
- 35587 multiletter control sequences out of 15000+600000
- 26336 words of font info for 99 fonts, out of 8000000 for 9000
+ 32745 strings out of 493734
+ 623937 string characters out of 6146347
+ 662748 words of memory out of 5000000
+ 35447 multiletter control sequences out of 15000+600000
+ 24320 words of font info for 91 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,13n,97p,10404b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,97p,10413b,1492s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.pdf (66 pages).
+Output written on /Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.pdf (62 pages).
