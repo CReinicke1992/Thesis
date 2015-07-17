@@ -23,7 +23,7 @@
 \contentsline {chapter}{\numberline {4}Crossline Deblending (3D)}{25}{chapter.4}
 \contentsline {section}{\numberline {4-1}Data Sorting}{25}{section.4.1}
 \contentsline {section}{\numberline {4-2}3D f-k-k Filter}{28}{section.4.2}
-\contentsline {section}{\numberline {4-3}Results}{30}{section.4.3}
+\contentsline {section}{\numberline {4-3}Results}{29}{section.4.3}
 \contentsline {chapter}{\numberline {5}Results on Synthetic Data}{33}{chapter.5}
 \contentsline {section}{\numberline {5-1}Blending pattern}{33}{section.5.1}
 \contentsline {section}{\numberline {5-2}Feasibility}{33}{section.5.2}
