@@ -28,6 +28,7 @@
 \contentsline {figure}{\numberline {4-7}{\ignorespaces (a) - (d) show \SI {420}{\milli \second } time slices of the data in Figure \ref {fig:Ch-Mahdad3d-Deblending-2dvs3d-fk}.\relax }}{30}{figure.caption.41}
 \contentsline {figure}{\numberline {4-8}{\ignorespaces Comparison of the deblending quality with a 2D $f$-$k_x$ filter and a 3D $f$-$k_x$-$k_y$ filter. The data in Figure \ref {fig:Ch-Mahdad3d-Unbl-Delphi} are blended with varying maximum firing time delay. Then the blended data are deblended using a 2D $f$-$k_x$ filter and a 3D $f$-$k_x$-$k_y$ filter.\relax }}{30}{figure.caption.42}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5-1}{\ignorespaces \relax }}{34}{figure.caption.43}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
