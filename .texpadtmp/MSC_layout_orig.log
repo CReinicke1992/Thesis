@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  22 JUL 2015 17:58
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  23 JUL 2015 13:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3204,10 +3204,10 @@ Package xcolor Warning: Incompatible color definition on input line 24.
 
 Package xcolor Warning: Incompatible color definition on input line 25.
 
-[9]
 
 Package xcolor Warning: Incompatible color definition on input line 26.
 
+[9]
 
 Package xcolor Warning: Incompatible color definition on input line 27.
 
@@ -3245,14 +3245,23 @@ Package xcolor Warning: Incompatible color definition on input line 37.
 Package xcolor Warning: Incompatible color definition on input line 38.
 
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 38.
-
-
 Package xcolor Warning: Incompatible color definition on input line 39.
 
 
 Package xcolor Warning: Incompatible color definition on input line 40.
+
+
+Package xcolor Warning: Incompatible color definition on input line 41.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 41.
+
+
+Package xcolor Warning: Incompatible color definition on input line 42.
+
+
+Package xcolor Warning: Incompatible color definition on input line 43.
 
 )
 \tf@toc=\write10
@@ -3260,14 +3269,14 @@ Package xcolor Warning: Incompatible color definition on input line 40.
 
  [10] (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.lof
 
-Package xcolor Warning: Incompatible color definition on input line 3.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 3.
+Package xcolor Warning: Incompatible color definition on input line 2.
 
 
 Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 4.
 
 
 Package xcolor Warning: Incompatible color definition on input line 5.
@@ -3291,7 +3300,7 @@ Package xcolor Warning: Incompatible color definition on input line 10.
 Package xcolor Warning: Incompatible color definition on input line 11.
 
 
-Package xcolor Warning: Incompatible color definition on input line 13.
+Package xcolor Warning: Incompatible color definition on input line 12.
 
 
 Package xcolor Warning: Incompatible color definition on input line 14.
@@ -3320,7 +3329,7 @@ Package xcolor Warning: Incompatible color definition on input line 19.
 Package xcolor Warning: Incompatible color definition on input line 20.
 
 
-Package xcolor Warning: Incompatible color definition on input line 22.
+Package xcolor Warning: Incompatible color definition on input line 21.
 
 
 Package xcolor Warning: Incompatible color definition on input line 23.
@@ -3337,15 +3346,18 @@ Package xcolor Warning: Incompatible color definition on input line 26.
 
 Package xcolor Warning: Incompatible color definition on input line 27.
 
-[12]
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
+[12]
 
 Package xcolor Warning: Incompatible color definition on input line 29.
 
 
-Package xcolor Warning: Incompatible color definition on input line 31.
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+
+Package xcolor Warning: Incompatible color definition on input line 32.
 
 )
 \tf@lof=\write11
@@ -3374,19 +3386,40 @@ No file MSC_layout_orig.gls.
 
  (./Chapters/chapter-Introduction.tex
 Chapter 1.
-) [1
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+File: Plots/SeismicSurvey/Marine-Seismic-Acquisition-Sercel.jpg Graphic file (type QTm)
+<use  "Plots/SeismicSurvey/Marine-Seismic-Acquisition-Sercel.jpg" >
+File: Plots/SeismicSurvey/seismic_survey_2_web.png Graphic file (type QTm)
+ <use  "Plots/SeismicSurvey/seismic_survey_2_web.png" >
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+[1
 
 
 
 
-]
+]) [2]
 \openout2 = `Chapters/chapter4-Theory.aux'.
 
- (./Chapters/chapter4-Theory.tex [2
-
-
-
-]
+ (./Chapters/chapter4-Theory.tex
 Chapter 2.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
@@ -3447,7 +3480,11 @@ Package xcolor Warning: Incompatible color definition on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
-[3] [4]
+[3
+
+
+
+] [4]
 File: Plots/Blended-Source-edit2.pdf Graphic file (type QTm)
  <use  "Plots/Blended-Source-edit2.pdf" >
 
@@ -4163,10 +4200,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 32776 strings out of 493734
- 624935 string characters out of 6146347
- 662340 words of memory out of 5000000
- 35472 multiletter control sequences out of 15000+600000
+ 32800 strings out of 493734
+ 625540 string characters out of 6146347
+ 662777 words of memory out of 5000000
+ 35487 multiletter control sequences out of 15000+600000
  24320 words of font info for 91 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10413b,1492s stack positions out of 5000i,500n,10000p,200000b,80000s
