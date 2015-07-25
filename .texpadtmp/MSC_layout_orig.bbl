@@ -3,6 +3,12 @@
 \bibitem[Jul, 2015]{JulyMarineAcquisition}
  (2015).
 
+\bibitem[Beasley et~al., 1998]{beasley1998}
+Beasley, C.~J., Chambers, R.~E., Jiang, Z., et~al. (1998).
+\newblock A new look at simultaneous sources.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~17, pages
+  133--135.
+
 \bibitem[Berkhout, 1982]{Berkhout1982}
 Berkhout, A. (1982).
 \newblock {\em Seismic Migration: Imaging of Acoustic Energy by Wave Field
@@ -20,11 +26,24 @@ Ibrahim, A. and Sacchi, M.~D. (2015).
   demigration operators.
 \newblock {\em researchgate.net}.
 
+\bibitem[Ikelle et~al., 2007]{ikelle2007}
+Ikelle, L. et~al. (2007).
+\newblock Coding and decoding: Seismic data modeling acquisition and
+  processing.
+\newblock In {\em 2007 SEG Annual Meeting}. Society of Exploration
+  Geophysicists.
+
 \bibitem[Mahdad et~al., 2011]{Mahdad-Deblending-Method}
 Mahdad, A., Doulgeris, P., and Blacquiere, G. (2011).
 \newblock Separation of blended data by iterative estimation and subtraction of
   blending interference noise.
 \newblock {\em Geophysics}, 76(3):Q9--Q17.
+
+\bibitem[Vaage, 2005]{Vaage}
+Vaage, S.~T. (2005).
+\newblock Method and system for acquiring marine seismic data using multiple
+  seismic sources.
+\newblock US Patent 6,906,981.
 
 \bibitem[van Dedem, 2002]{Delphi-Format}
 van Dedem, E.~J. (2002).
@@ -35,6 +54,12 @@ van Dedem, E.~J. (2002).
 van Groenestijn, G. J.~A. (2010).
 \newblock {\em Estimation of Primaries and Multiples by Sparse Inversion}.
 \newblock PhD thesis, TU Delft.
+
+\bibitem[Womack et~al., 1990]{womack1990}
+Womack, J., Cruz, J., Rigdon, H., and Hoover, G. (1990).
+\newblock Encoding techniques for multiple source point seismic data
+  acquisition.
+\newblock {\em Geophysics}, 55(10):1389--1396.
 
 \bibitem[Wu, 2014]{Sixue}
 Wu, S. (2014).

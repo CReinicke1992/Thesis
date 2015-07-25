@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  24 JUL 2015 17:15
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  25 JUL 2015 18:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3426,27 +3426,60 @@ Package xcolor Warning: Incompatible color definition on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 52.
 [1
 
 
 
 
 ]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 66.
+
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 
-Package xcolor Warning: Incompatible color definition on input line 75.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 
-Package xcolor Warning: Incompatible color definition on input line 75.
+Package xcolor Warning: Incompatible color definition on input line 64.
 
 
-Package xcolor Warning: Incompatible color definition on input line 75.
+Package xcolor Warning: Incompatible color definition on input line 64.
 
 
-Package xcolor Warning: Incompatible color definition on input line 75.
+Package xcolor Warning: Incompatible color definition on input line 66.
 
-[2]) [3]
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 68.
+
+
+Package xcolor Warning: Incompatible color definition on input line 68.
+
+
+Package xcolor Warning: Incompatible color definition on input line 68.
+
+
+Package xcolor Warning: Incompatible color definition on input line 68.
+
+
+Package xcolor Warning: Incompatible color definition on input line 68.
+
+[2]
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+) [3]
 \openout2 = `Chapters/chapter4-Theory.aux'.
 
  (./Chapters/chapter4-Theory.tex [4
@@ -4284,10 +4317,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 32978 strings out of 493734
- 630399 string characters out of 6146347
- 670123 words of memory out of 5000000
- 35656 multiletter control sequences out of 15000+600000
+ 32992 strings out of 493734
+ 630659 string characters out of 6146347
+ 670304 words of memory out of 5000000
+ 35670 multiletter control sequences out of 15000+600000
  24320 words of font info for 91 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10404b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
