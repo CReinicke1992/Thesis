@@ -16,6 +16,13 @@ Similar as in section \ref{sec:Ch-Theory-Operator} the 5D data "cube" will be ag
 
 The 4D "slice" is sorted in a 2D data matrix, $\mathbf{P}$, with as many rows as receivers and as many columns as shots. The total number of shots is obtained by multiplying the number of shots fired in each crossline and the number of shots fired in each inline. The total number of receivers is obtained likewise. Assume there are $Ns_x$ shots per crossline. The shots of the first crossline are assigned to the first $Ns_x$ columns of the data matrix, the shots of the second crossline are assigned to the next $Ns_x$ columns of the data matrix, etc. The receivers are sorted in the rows of the data matrix in analogy.
 
+\nomenclature{$Ns_x$}{Number of sources in crossline direction}
+\nomenclature{$Ns_y$}{Number of sources in inline direction}
+\nomenclature{$x$}{Crossline space coordinate}
+\nomenclature{$y$}{Inline space coordinate}
+\nomenclature{CRG}{Common receiver gather}
+\nomenclature{CSG}{Common shot gather}
+
 One row in the data matrix, $\mathbf{P}$, in Figure \ref{fig:Ch-Theory-DelphiFormat} represents  a 3D common receiver gather. The data of this 3D common receiver gather are shown in Figure \ref{fig:Ch-Theory-Data3d} in a 3D view, where the coordinates, $x$ and $y$, indicate the crossline and inline shot position respectively. For the described data sorting individual crossline slices are extracted from this data cube and assembled next to each other in a data matrix as shown in Figure \ref{fig:Ch-Theory-Data3d_Delphi}. This view will be referred to as 3D CRG 2D view. Each hyperbolic event refers to the response of the shots of one crossline.
 
 \begin{figure}
@@ -94,6 +101,7 @@ The total wavenumber, $k_{T}$, must be smaller than the maximum wavenumber, $k_{
 	k_{T} = \sqrt{k_x^2 + k_{y}^2} < k_{max}.
 	\label{eq:Ch-Theory-TotalWavenumber}
 \end{equation}
+\nomenclature{$k_T$}{Total wavenumber}
 
 Hence the signal "cone" is defined by a circle (see Figure \ref{fig:Ch-Theory-FK-f_slice-mask}). This is repeated for each frequency component, such that the overall $f$-$k_x$-$k_y$ mask is a 3D cone (see Figure \ref{fig:Ch-Theory-FK-f_slice-data3d}). The cone can be sorted in a 2D view according to section \ref{sec:Ch-Theory-3dExtension-DataSorting} as illustrated in Figure \ref{fig:Ch-Theory-FK-delphi-data} and Figure \ref{fig:Ch-Theory-FK-delphi-mask}. Finally, this mask is computed for each receiver gather.
 

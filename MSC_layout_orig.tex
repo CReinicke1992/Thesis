@@ -21,6 +21,14 @@
 \usepackage{verbatim}
 \usepackage{rotating}
 
+% Gloaary
+%\usepackage[plainpages=false,colorlinks]{hyperref}
+%\usepackage[toc,style=treenoname,order=word,subentrycounter]{glossaries}
+\usepackage{nomencl}
+\makenomenclature
+
+%\makeglossary
+
 \mscName{Christian Reinicke Urruticoechea}
 \mscDate{\today}
 \mscTitle{Seismic deblending of simultaneous crossline sources}
@@ -45,8 +53,13 @@
 %
 % Abstract
     \nonumchap{Abstract}
+Blending is a recent seismic acquisition design which allows seismic shots to interfere. Blending is beneficial in terms of data quality and acquisition costs. Current processing techniques are not capable to deal with blended data. Consequently, the blended data must be separated as if they were acquired in a conventional way. The separation technique is referred to as deblending.
 
-    This is the shortest abstract you have ever seen.
+This thesis reviews the 2D deblending method of \citet{Mahdad-Deblending-Method}, which is a noise prediction and subtraction method. Thus, this thesis points out how deblending benefits from incoherent shot interference, or "blending noise". For this purpose, a new measure of incoherency is introduced and 3 incoherent blending patterns are proposed. The deblending performance is measured with a quality factor which is similar to the signal to noise ratio.
+
+A new blended acquisition design, 3D crossline blending, is presented. Based on the 2D method of \citet{Mahdad-Deblending-Method} a 3D deblending method is derived. The presented method is tested on a field data set. The field data results demonstrate that the method successfully deblends strong interfering events. The deblending of weak late events is not optimal yet. 
+
+   
     \cleardoublepage
 %
 % Acknowledgements
@@ -64,7 +77,7 @@
     \tocloflot
 %
 % Nomenclature
-    \printnomencl %
+    %\printnomencl %
 %
 % Acronyms
     \nonumchap{Acronyms} %
@@ -133,6 +146,9 @@
 % Index
     \printindex%
     \cleardoublepage%
-
+    
+    %\printglossary
+   
+	\printnomenclature
 \end{document}
 
