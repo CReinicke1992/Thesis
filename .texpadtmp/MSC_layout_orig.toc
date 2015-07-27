@@ -34,7 +34,9 @@
 \contentsline {section}{\numberline {5-3}Discussion}{37}{section.5.3}
 \contentsline {section}{\numberline {5-4}Conclusion}{39}{section.5.4}
 \contentsline {chapter}{\numberline {6}Discussion and Conclusions}{41}{chapter.6}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{43}{chapter.6}
+\contentsline {section}{\numberline {6-1}Discussion}{41}{section.6.1}
+\contentsline {section}{\numberline {6-2}Conclusions}{41}{section.6.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{43}{section.6.2}
 \contentsline {chapter}{\numberline {A}The back of the thesis}{45}{appendix.A}
 \contentsline {section}{\numberline {A-1}An appendix section}{45}{section.A.1}
 \contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{45}{subsection.A.1.1}
