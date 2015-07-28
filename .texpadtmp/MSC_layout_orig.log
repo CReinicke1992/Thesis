@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  27 JUL 2015 18:07
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  28 JUL 2015 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3634,7 +3634,7 @@ File: Plots/Mahdad/30iter/Pseudo-DeblendedCSG_sh1.pdf Graphic file (type QTm)
 File: Plots/Mahdad/30iter/Pseudo-DeblendedCRG_rec30.pdf Graphic file (type QTm)
  <use  "Plots/Mahdad/30iter/Pseudo-DeblendedCRG_rec30.pdf" >
 Underfull \hbox (badness 10000) in paragraph at lines 179--179
-[][]|\OT1/cmss/m/n/10 Common-receiver-
+[][]|\OT1/cmss/m/n/10 Common-receiver
  []
 
 
@@ -3688,10 +3688,10 @@ Package xcolor Warning: Incompatible color definition on input line 293.
 
 Package xcolor Warning: Incompatible color definition on input line 293.
 
+[12]
 
 Package xcolor Warning: Incompatible color definition on input line 306.
 
-[12]
 
 Package xcolor Warning: Incompatible color definition on input line 320.
 
@@ -3778,7 +3778,10 @@ Package xcolor Warning: Incompatible color definition on input line 101.
 
 Package xcolor Warning: Incompatible color definition on input line 101.
 
-[16] [17]
+
+Underfull \vbox (badness 3375) has occurred while \output is active []
+
+ [16] [17]
 
 Package xcolor Warning: Incompatible color definition on input line 105.
 
@@ -3877,6 +3880,9 @@ Package xcolor Warning: Incompatible color definition on input line 315.
 
 Package xcolor Warning: Incompatible color definition on input line 315.
 
+
+Package xcolor Warning: Incompatible color definition on input line 315.
+
 ) [23]
 \openout2 = `Chapters/chapter6-3dExtension.aux'.
 
@@ -3967,10 +3973,42 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 67--80
 [][] [] 
  []
 
-[26] [27]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
 
 Package xcolor Warning: Incompatible color definition on input line 89.
 
+[26] [27]
 
 Package xcolor Warning: Incompatible color definition on input line 91.
 
@@ -3998,9 +4036,8 @@ Package xcolor Warning: Incompatible color definition on input line 108.
 
 Package xcolor Warning: Incompatible color definition on input line 108.
 
-[28]
 File: Plots/IdealData3d/P_f_slice40.pdf Graphic file (type QTm)
- <use  "Plots/IdealData3d/P_f_slice40.pdf" >
+<use  "Plots/IdealData3d/P_f_slice40.pdf" >
 File: Plots/IdealData3d/fkk-mask-slice40.pdf Graphic file (type QTm)
  <use  "Plots/IdealData3d/fkk-mask-slice40.pdf" >
 File: Plots/IdealData3d/fk-slices/3dfk-cone.pdf Graphic file (type QTm)
@@ -4034,7 +4071,6 @@ Package xcolor Warning: Incompatible color definition on input line 180.
 
 Package xcolor Warning: Incompatible color definition on input line 197.
 
-[29]
 
 Package xcolor Warning: Incompatible color definition on input line 199.
 
@@ -4089,7 +4125,9 @@ Package xcolor Warning: Incompatible color definition on input line 290.
 
 Package xcolor Warning: Incompatible color definition on input line 290.
 
-[30] [31] [32]) [33]
+[28] [29] [30] [31] [32]) [33
+
+]
 \openout2 = `Chapters/chapter-ComplexData.aux'.
 
  (./Chapters/chapter-ComplexData.tex [34
@@ -4349,11 +4387,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 33015 strings out of 493734
- 631316 string characters out of 6146347
- 670358 words of memory out of 5000000
- 35689 multiletter control sequences out of 15000+600000
- 24921 words of font info for 93 fonts, out of 8000000 for 9000
+ 33021 strings out of 493734
+ 631412 string characters out of 6146347
+ 671407 words of memory out of 5000000
+ 35695 multiletter control sequences out of 15000+600000
+ 26337 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10404b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
 

@@ -1,34 +1,34 @@
 \chapter{Crossline Deblending (3D)} \label{chap:MahdadMethod3d}
 
-This thesis suggests to blend crossline sources. By combining several cross-lines one effectively blends sources in 3D.
+This thesis proposes to blend crossline sources. It is hypothesized that by combining several cross-lines one can effectively blend sources in 3D.
 
-The deblending method of \citet{Mahdad-Deblending-Method} described in section \ref{sec:MahdadMethod} is designed for 2D blended data. In this chapter I will explain how each step of the Mahdad method can be applied to 3D data as well, and I will demonstrate its performance.
+The deblending method of \citet{Mahdad-Deblending-Method} described in section \ref{sec:MahdadMethod} is designed for 2D blended data. In this chapter I will explain how each step of the Mahdad method can be extended to 3D data, and I will demonstrate its strengths and  performance.
 
-First, the data sorting will be modified such that the blended 3D data can be described using the same forward model as in section \ref{sec:Ch-Theory-Operator}. The presented data sorting will allow to maintain all other steps of the deblending algorithm of \citet{Mahdad-Deblending-Method} unchanged. Second, the $f$-$k$-filter will be extended to an $f$-$k_x$-$k_y$-filter to remove noise in both crossline and inline direction.
+First, the data sorting will be modified such that the blended 3D data can be described using the same forward model as in section \ref{sec:Ch-Theory-Operator}. The presented data sorting will allow to maintain all other steps of the deblending algorithm of \citet{Mahdad-Deblending-Method}. Second, the 2D $f$-$k$ filter will be extended to a 3D $f$-$k_x$-$k_y$ filter to remove noise in both crossline and inline direction.
 
 \section{Data Sorting} \label{sec:Ch-Theory-3dExtension-DataSorting}
 
 \subsection*{Data Matrix}
 
-In 3D acquisition the sources and receivers are distributed on a 2D surface. Thus, their locations are defined by their crossline and inline positions, ($x$, $y$). Each data point which is measured by a source receiver pair at a specific time is therefore described by 5 coordinates, time $t$, receiver crossline and inline position ($x_r$, $y_r$), and source crossline and inline position ($x_s$, $y_s$).
+In 3D acquisition the sources and receivers are distributed on a 2D surface. Thus, their locations are defined by their inline and crossline positions, ($x$, $y$). Each data point which is measured by a source receiver pair at a specific time is therefore described by 5 coordinates, time $t$, receiver inline and crossline position ($x_r$, $y_r$), and source inline and crossline position ($x_s$, $y_s$).
 
 Similar as in section \ref{sec:Ch-Theory-Operator} the 5D data "cube" will be again reorganized in a 2D data matrix according to \citet{Delphi-Format} (see Figure \ref{fig:Ch-Theory-DelphiFormat}). For this data sorting a 1D Fourier transform with respect to time is performed and a 4D frequency "slice" is selected.
 
-The 4D "slice" is sorted in a 2D data matrix, $\mathbf{P}$, with as many rows as receivers and as many columns as shots. The total number of shots is obtained by multiplying the number of shots fired in each crossline and the number of shots fired in each inline. The total number of receivers is obtained likewise. Assume there are $Ns_x$ shots per crossline. The shots of the first crossline are assigned to the first $Ns_x$ columns of the data matrix, the shots of the second crossline are assigned to the next $Ns_x$ columns of the data matrix, etc. The receivers are sorted in the rows of the data matrix in analogy.
+The 4D "slice" is sorted in a 2D data matrix, $\mathbf{P}$, with as many rows as receivers and as many columns as shots. The total number of shots is obtained by multiplying the number of shots fired in each crossline and the number of shots fired in each inline. The total number of receivers is obtained likewise. Assume there are $Ns_x$ shots per crossline. The shots of the first crossline are assigned to the first $Ns_x$ columns of the data matrix, the shots of the second crossline are assigned to the next $Ns_x$ columns of the data matrix, etc. The receivers are sorted in the rows of the data matrix analogously.
 
 \nomenclature{$Ns_x$}{Number of sources in crossline direction}
 \nomenclature{$Ns_y$}{Number of sources in inline direction}
 \nomenclature{$x$}{Crossline space coordinate}
 \nomenclature{$y$}{Inline space coordinate}
-\nomenclature{CRG}{Common receiver gather}
-\nomenclature{CSG}{Common shot gather}
+\nomenclature{CRG}{Common-receiver gather}
+\nomenclature{CSG}{Common-shot gather}
 
-One row in the data matrix, $\mathbf{P}$, in Figure \ref{fig:Ch-Theory-DelphiFormat} represents  a 3D common receiver gather. The data of this 3D common receiver gather are shown in Figure \ref{fig:Ch-Theory-Data3d} in a 3D view, where the coordinates, $x$ and $y$, indicate the crossline and inline shot position respectively. For the described data sorting individual crossline slices are extracted from this data cube and assembled next to each other in a data matrix as shown in Figure \ref{fig:Ch-Theory-Data3d_Delphi}. This view will be referred to as 3D CRG 2D view. Each hyperbolic event refers to the response of the shots of one crossline.
+One row in the data matrix, $\mathbf{P}$, in Figure \ref{fig:Ch-Theory-DelphiFormat} represents  a 3D common-receiver gather. The data of this 3D common-receiver gather are shown in Figure \ref{fig:Ch-Theory-Data3d} in a 3D view, where the coordinates, $x$ and $y$, indicate the inline and crossline shot position respectively. For the described data sorting individual crossline slices are extracted from this data cube and assembled next to each other in a data matrix as shown in Figure \ref{fig:Ch-Theory-Data3d_Delphi}. This view will be referred to as 3D CRG 2D view. Each hyperbolic event refers to the response of the shots of one crossline.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\textwidth]{Plots/DelphiFormat-v2}
-	\caption{Illustration of the data matrix $\mathbf{P}$ for 3D data \citep{Delphi-Format}. $y_r$ and $y_s$ represent the inline receiver and shot positions. $x_r$ and $x_s$ represent the crossline receiver and shot positions. Each row refers to a 3D common receiver gather and each column to a 3D common shot gather. A sub-matrix with fixed receiver and source inline positions ($y_r$, $y_s$) is equivalent to a data matrix for 2D acquisition.}
+	\caption{Illustration of the data matrix $\mathbf{P}$ for 3D data \citep{Delphi-Format}. $y_r$ and $y_s$ represent the inline receiver and shot positions. $x_r$ and $x_s$ represent the crossline receiver and shot positions. Each row refers to a 3D common-receiver gather and each column to a 3D common-shot gather. A sub-matrix with fixed receiver and source inline positions ($y_r$, $y_s$) is equivalent to a data matrix for 2D acquisition.}
 	\label{fig:Ch-Theory-DelphiFormat}
 \end{figure}
 
@@ -49,14 +49,14 @@ One row in the data matrix, $\mathbf{P}$, in Figure \ref{fig:Ch-Theory-DelphiFor
 		\label{fig:Ch-Theory-Data3d_Delphi}
 	\end{subfigure}
 	
-	\caption{(a) 3D common receiver gather with crossline (x) and inline (y) sources (3D view). (b) Resorted data set. Individual crossline sections are plotted next to each other in 2D. For visibility both subfigures only show a reduced part of the data. This view is called 3D CRG 2D view.}
+	\caption{(a) 3D common-receiver gather with crossline (x) and inline (y) sources (3D view). (b) Resorted data set. Individual crossline sections are plotted next to each other in 2D. For visibility both subfigures only show a reduced part of the data. This view is called 3D CRG 2D view.}
 	\label{fig:Ch-Theory-DataSorting}
 \end{figure}
 
 
 \subsection*{Blending matrix}
 
-The blending matrix for 3D is build in a similar fashion as the data matrix in 3D. As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one shot. For extension to 3D the shots of the first crossline are placed in the top $Ns_x$ rows of the blending matrix, followed by the shots of the second crossline etc. (see Figure \ref{fig:Ch-Theory-3D-BlendingMatrix-Design}). The elements in the $j^{th}$ column of the blending matrix, $\mathbf{\Gamma}$, select the shots which are blended in the $j^{th}$ experiment. For example, the first column of the blending matrix in Figure \ref{fig:Ch-Theory-3D-BlendingMatrix} describes that in the first experiment shots (rows) $1$ and $3$ are blended with a time delay of $\Delta t_1$.
+The blending matrix for 3D is built in a similar fashion as the data matrix in 3D. As described in section \ref{sec:BlendingMatrix} each row of the blending matrix, $\mathbf{\Gamma}$, captures one shot. For extension to 3D the shots of the first crossline are placed in the top $Ns_x$ rows of the blending matrix, followed by the shots of the second crossline etc. (see Figure \ref{fig:Ch-Theory-3D-BlendingMatrix-Design}). The elements in the $j^{th}$ column of the blending matrix, $\mathbf{\Gamma}$, select the shots which are blended in the $j^{th}$ experiment. For example, the first column of the blending matrix in Figure \ref{fig:Ch-Theory-3D-BlendingMatrix} describes that in the first experiment shots (rows) $1$ and $3$ are blended with a time delay of $\Delta t_1$.
 
 \todo[inline]{Keep this sentence for later: This framework allows to blend any source combination independent of the cross- and inline positions of the involved sources.}
 
@@ -84,11 +84,11 @@ With the new data and blending matrix sorting one can apply deblending to 3D dat
 \end{figure}
 
 
-\section{3D f-k-k Filter} \label{sec:Ch-Theory-3dExtension-FKK}
+\section{3D $f$-$k_x$-$k_y$ Filter} \label{sec:Ch-Theory-3dExtension-FKK}
 
 In section \ref{sec:IterBlenNoiseEst} the 2D $f$-$k$ filter was introduced. In 3D there are two spatial directions ($x$,$y$), i.e. the filter can be extended to a 3D $f$-$k_x$-$k_y$ filter.
 
-For this purpose one considers a 3D common receiver gather, $\mathbf{p}(t,x_s,y_s)$, and brings it to the $f$-$k_x$-$k_y$ domain by applying a 3-dimensional Fourier transform. Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the crossline and inline wavenumbers ($k_x$, $k_y$) as shown in Figure \ref{fig:Ch-Theory-FK-f_slice-data}. The minimum wavefield velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber};
+For this purpose one considers a 3D common-receiver gather, $\mathbf{p}(t,x_s,y_s)$, and brings it to the $f$-$k_x$-$k_y$ domain by applying a 3-dimensional Fourier transform. Next, a constant frequency slice is selected. This leaves a 2D matrix, which captures the crossline and inline wavenumbers ($k_x$, $k_y$) as shown in Figure \ref{fig:Ch-Theory-FK-f_slice-data}. The minimum wavefield velocity, $v_{min}$, and the frequency, $f$, determine the maximum wavenumber, $k_{max}$, according to equation \ref{eq_Ch-Theory-MaxWavenmber};
 
 \begin{equation}
 	k_{max} = \frac{f}{v_{min}}.
@@ -150,7 +150,7 @@ For comparison, a 2D $f$-$k$ filter is designed for 3D data and plotted in a 2D 
 		\label{fig:Ch-Theory-FK-delphi-mask}
 	\end{subfigure}
 	
-	\caption{Illustration of the 3D $f$-$k_x$-$k_y$-filter. (a) is a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum of the data in Figure \ref{fig:Ch-Theory-DataSorting}. $k_x$ and $k_y$ refer to the crossline and inline wavenumber respectively. (b) is a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ mask, where the white area equals 1 and the black area is 0. (c) shows the \SI{40}{\hertz} frequency slice of (a) sorted in a 3D cube. The red cone represents the edge of the 3D $f$-$k_x$-$k_y$ filter mask. (d) and (e) display the $f$-$k_x$-$k_y$ data spectrum and mask sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, i.e. each sub-cone refers to one inline wavenumber. Note that due to the sorting the wavenumber axis is a mix of crossline and inline wavenumbers. For this reason the wavenumber axis has no labels.}
+	\caption{Illustration of the 3D $f$-$k_x$-$k_y$ filter. (a) is a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum of the data in Figure \ref{fig:Ch-Theory-DataSorting}. $k_x$ and $k_y$ refer to the crossline and inline wavenumber respectively. (b) is a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ mask, where the white area equals 1 and the black area is 0. (c) shows the \SI{40}{\hertz} frequency slice of (a) sorted in a 3D cube. The red cone represents the edge of the 3D $f$-$k_x$-$k_y$ filter mask. (d) and (e) display the $f$-$k_x$-$k_y$ data spectrum and mask sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}, i.e. each sub-cone refers to one inline wavenumber. Note that due to the sorting the wavenumber axis is a mix of crossline and inline wavenumbers. For this reason the wavenumber axis has no labels.}
 	\label{fig:Ch-Theory-FKK-Mask}
 
 \end{figure}
@@ -177,7 +177,7 @@ For comparison, a 2D $f$-$k$ filter is designed for 3D data and plotted in a 2D 
 		\label{fig:Ch-Mahdad3d-2dfk-Delphi}
 	\end{subfigure}
 	
-	\caption{2D $f$-$k_x$-filter for 3D data. (a) shows a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum, where the white area equals 1 and the black area is 0. Note that the filter is not affecting the inline wavenumbers $k_y$. (b) illustrates the 2D $f$-$k_x$-filter sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}. Each cone represents a 2D $f$-$k$-filter for a single inline wavenumber.}
+	\caption{2D $f$-$k_x$ filter for 3D data. (a) shows a \SI{40}{\hertz} frequency slice of the $f$-$k_x$-$k_y$ spectrum, where the white area equals 1 and the black area is 0. Note that the filter is not affecting the inline wavenumbers $k_y$. (b) illustrates the 2D $f$-$k_x$ filter sorted according to section \ref{sec:Ch-Theory-3dExtension-DataSorting}. Each cone represents a 2D $f$-$k$ filter for a single inline wavenumber.}
 	\label{fig:Ch-Mahdad3d-2dfk}
 \end{figure}
 
@@ -192,9 +192,9 @@ Once the mask is built for a 5D data array it can either be applied to filter a 
 
 \section{Results}
 
-The 3D $f$-$k_x$-$k_y$ filter removes incoherent energy in the crossline and inline direction. The 3D blended acquisition design suggested in this thesis blends shots within the same crossline. Hence, the underlying question is whether an extension of the 2D $f$-$k_x$ filter to the inline direction provides significant deblending enhancements.
+The 3D $f$-$k_x$-$k_y$ filter removes incoherent energy in the crossline and inline direction. The 3D blended acquisition design suggested in this thesis blends shots within the same crossline. Hence, an underlying question is whether an extension of the 2D $f$-$k_x$ filter to the inline direction provides significant deblending enhancements.
 
-For this purpose the synthetic data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended: Within each crossline there are 21 sources, which are blended in 3 experiments. For each experiment 7 randomly selected sources are blended with random time delays, i.e. the blending pattern with mixed incoherency is applied. The maximum allowed firing time delay is set to \SI{400}{\milli\second}. The incoherency measure of the used blending matrix, $\mathbf{\Gamma}$, is $\mu = \SI{99}{\percent}$. 
+For this purpose the synthetic data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended: Within each crossline there are 21 sources, which are blended in 3 experiments. For each experiment 7 randomly selected sources are blended with random time delays, i.e. the blending pattern with mixed incoherency is applied. The maximum allowed firing-time delay is set to \SI{400}{\milli\second}. The incoherency measure of the used blending matrix, $\mathbf{\Gamma}$, is $\mu = \SI{99}{\percent}$. 
 
 The blended data are deblended with the 3D deblending algorithm. In one case a 2D $f$-$k_x$ filter is applied (see Figure \ref{fig:Ch-Mahdad3d-Deblending-2dfk}). In the other case a 3D $f$-$k_x$-$k_y$ filter is applied (see Figure \ref{fig:Ch-Mahdad3d-Deblending-3dfk}). It is clearly visible that the deblending quality increases significantly with the 3D $f$-$k_x$-$k_y$ filter. Figure \ref{fig:Ch-Mahdad3d-Deblending-2dvs3d-fk-tslice} displays a $\SI{420}{\milli\second}$ time slice of each subplot in Figure \ref{fig:Ch-Mahdad3d-Deblending-2dvs3d-fk}.
  
@@ -235,7 +235,7 @@ The blended data are deblended with the 3D deblending algorithm. In one case a 2
 		\label{fig:Ch-Mahdad3d-Deblending-3dfk}
 	\end{subfigure}
 	
-	\caption{(a) is a synthetic 3D common receiver gather in 2D view. The data are generated by 21 crossline shots and 51 inline shots. The shown section is a zoom on the strongest events. Figure \ref{fig:Ch-Results-Unbl-inline10} shows one crossline of the data for all times. The data are blended with a mixed incoherency blending pattern. Then, the 3D deblending algorithm is applied. (b) shows the pseudo-deblended data. In case (c) the algorithm uses a 2D $f$-$k_x$ filter. In case (d) it uses a 3D $f$-$k_x$-$k_y$ filter.}
+	\caption{(a) is a synthetic 3D common-receiver gather in 2D view. The data are generated by 21 crossline shots and 51 inline shots. The shown section is a zoom on the strongest events. Figure \ref{fig:Ch-Results-Unbl-inline10} shows one crossline of the data for all times. The data are blended with a mixed incoherency blending pattern. Then, the 3D deblending algorithm is applied. (b) shows the pseudo-deblended data. In case (c) the algorithm uses a 2D $f$-$k_x$ filter. In case (d) it uses a 3D $f$-$k_x$-$k_y$ filter.}
 	\label{fig:Ch-Mahdad3d-Deblending-2dvs3d-fk}
 	
 \end{figure}
@@ -280,14 +280,14 @@ The blended data are deblended with the 3D deblending algorithm. In one case a 2
 \end{figure}
 
 
-In order to quantify the quality gap between the results with 2D and 3D filters, the data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended with maximum firing time delays varying between \SI{40}{\milli\second} and \SI{400}{\milli\second}. The blended data are deblended in one case with a 2D $f$-$k$ filter, and in the other case with a 3D $f$-$k_x$-$k_y$ filter. The resulting quality factors are shown in Figure \ref{fig:Ch-Mahdad3d-2dvs3dfk}.
+In order to quantify the quality gap between the results with 2D and 3D filters, the data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended with maximum firing-time delays varying between \SI{40}{\milli\second} and \SI{400}{\milli\second}. The blended data are deblended in one case with a 2D $f$-$k$ filter, and in the other case with a 3D $f$-$k_x$-$k_y$ filter. The resulting quality factors are shown in Figure \ref{fig:Ch-Mahdad3d-2dvs3dfk}.
 
 
 
 \begin{figure}
 	\centering
 	\includegraphics[width = 0.6\textwidth]{Plots/2dvs3dfk/Q_2d-vs-3d_fk}
-	\caption{Comparison of the deblending quality with a 2D $f$-$k_x$ filter and a 3D $f$-$k_x$-$k_y$ filter. The data in Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended with varying maximum firing time delay. Then the blended data are deblended using a 2D $f$-$k_x$ filter and a 3D $f$-$k_x$-$k_y$ filter.}
+	\caption{Comparison of the deblending quality with a 2D $f$-$k_x$ filter and a 3D $f$-$k_x$-$k_y$ filter. The data in Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended with varying maximum firing-time delay. Then the blended data are deblended using a 2D $f$-$k_x$ filter and a 3D $f$-$k_x$-$k_y$ filter.}
 	\label{fig:Ch-Mahdad3d-2dvs3dfk}
 \end{figure}
 
@@ -296,7 +296,7 @@ In order to quantify the quality gap between the results with 2D and 3D filters,
 
 \section{Conclusions}
 
-The presented deblending method uses a coherency constraint. It has been demonstrated that for 3D deblending the quality of the deblended data can be enhanced significantly by extending the coherency constraint to crossline and inline direction.
+The presented deblending method uses a coherency constraint. It has been demonstrated that for 3D deblending the quality of the deblended data can be enhanced significantly by extending the coherency constraint to crossline direction too.
 
 
 
