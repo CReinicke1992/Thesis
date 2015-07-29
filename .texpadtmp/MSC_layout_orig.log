@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  28 JUL 2015 14:50
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  29 JUL 2015 11:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4163,8 +4163,9 @@ Package xcolor Warning: Incompatible color definition on input line 14.
 
 Package xcolor Warning: Incompatible color definition on input line 16.
 
+[35]
 File: Plots/AcquisitionDesign/Geometry.pdf Graphic file (type QTm)
-<use  "Plots/AcquisitionDesign/Geometry.pdf" >
+ <use  "Plots/AcquisitionDesign/Geometry.pdf" >
 File: Plots/AcquisitionDesign/GeometryUnit.pdf Graphic file (type QTm)
  <use  "Plots/AcquisitionDesign/GeometryUnit.pdf" >
 File: Plots/AcquisitionDesign/GeometryUnitEquivalent.pdf Graphic file (type QTm)
@@ -4172,7 +4173,7 @@ File: Plots/AcquisitionDesign/GeometryUnitEquivalent.pdf Graphic file (type QTm)
 File: Plots/AcquisitionDesign/Legend.pdf Graphic file (type QTm)
  <use  "Plots/AcquisitionDesign/Legend.pdf" >
 File: Plots/AcquisitionDesign/PracticeDesign.pdf Graphic file (type QTm)
- <use  "Plots/AcquisitionDesign/PracticeDesign.pdf" > [35]
+ <use  "Plots/AcquisitionDesign/PracticeDesign.pdf" >
 
 Package xcolor Warning: Incompatible color definition on input line 66.
 
@@ -4188,7 +4189,10 @@ Package xcolor Warning: Incompatible color definition on input line 73.
 
 Package xcolor Warning: Incompatible color definition on input line 73.
 
-[36]
+
+Underfull \vbox (badness 2809) has occurred while \output is active []
+
+ [36]
 
 Package xcolor Warning: Incompatible color definition on input line 75.
 
@@ -4233,14 +4237,23 @@ Package xcolor Warning: Incompatible color definition on input line 202.
 
 Package xcolor Warning: Incompatible color definition on input line 204.
 
-[37] [38]) [39]
+
+Package xcolor Warning: Incompatible color definition on input line 204.
+
+[37] [38]
+
+Package xcolor Warning: Incompatible color definition on input line 206.
+
+
+Package xcolor Warning: Incompatible color definition on input line 206.
+
+
+Package xcolor Warning: Incompatible color definition on input line 208.
+
+[39]) [40]
 \openout2 = `Chapters/chapter-DiscussionConclusion.aux'.
 
- (./Chapters/chapter-DiscussionConclusion.tex [40
-
-
-
-]
+ (./Chapters/chapter-DiscussionConclusion.tex
 Chapter 6.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
@@ -4248,7 +4261,11 @@ Package xcolor Warning: Incompatible color definition on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-[41]
+[41
+
+
+
+]
 
 Package xcolor Warning: Incompatible color definition on input line 25.
 
@@ -4387,10 +4404,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 33021 strings out of 493734
- 631412 string characters out of 6146347
- 671407 words of memory out of 5000000
- 35695 multiletter control sequences out of 15000+600000
+ 33022 strings out of 493734
+ 631440 string characters out of 6146347
+ 671423 words of memory out of 5000000
+ 35696 multiletter control sequences out of 15000+600000
  26337 words of font info for 99 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10404b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
