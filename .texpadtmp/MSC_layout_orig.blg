@@ -9,15 +9,15 @@ A level-1 auxiliary file: Chapters/chapter-ComplexData.aux
 A level-1 auxiliary file: Chapters/chapter-DiscussionConclusion.aux
 The style file: apalike.bst
 Database file #1: ../my_bib.bib
-Warning--entry type for "Forbes" isn't style-file defined
---line 53 of file ../my_bib.bib
+Warning--entry type for "WorldEnergy" isn't style-file defined
+--line 11 of file ../my_bib.bib
 Warning--entry type for "JulyMarineAcquisition" isn't style-file defined
---line 66 of file ../my_bib.bib
+--line 74 of file ../my_bib.bib
 Warning--to sort, need author or key in JulyMarineAcquisition
 Warning--can't use both volume and number fields in beasley1998
 You've used 12 entries,
             1935 wiz_defined-function locations,
-            547 strings with 5642 characters,
+            547 strings with 5612 characters,
 and the built_in function-call counts, 3892 in all, are:
 = -- 387
 > -- 132
