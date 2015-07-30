@@ -38,7 +38,7 @@
 %\mscBackPicture{2660PF3}    % eps of 21 * 29.7 cm
 \mscReaderOne{Dr. Ir. G.J.A. van Groenestijn}
 \mscReaderTwo{Dr. Ir. G.G.Drijkoningen}
-\mscReaderThree{Dr. Christoph Clauser}
+\mscReaderThree{Dr. M. Hruska}
 %\mscReaderFour{}
 %
 \setThesisInfo
@@ -55,34 +55,24 @@
     \nonumchap{Abstract}
 Blending is a recent seismic acquisition design which allows seismic shots to interfere. Blending is beneficial in terms of data quality and acquisition costs. Current processing techniques are not capable to deal with blended data. Consequently, the blended data must be separated as if they were acquired in a conventional way. The separation technique is referred to as deblending.
 
-This thesis reviews the 2D deblending method of \citet{Mahdad-Deblending-Method}, which is a noise prediction and subtraction method. Thus, this thesis points out how deblending benefits from incoherent shot interference, or "blending noise". In this context a new measure of incoherency is introduced, and 3 incoherent blending patterns are proposed. The effect of incoherency on the deblending quality is analyzed at the example of 2D synthetic 2D data. The results suggest that optimal deblending quality is achieved by maximizing the incoherency of the blending pattern.
+This thesis reviews the 2D deblending method of \citet{Mahdad-Deblending-Method}, which is a noise prediction and subtraction method. Thus, it is demonstrated how deblending benefits from incoherent shot interference, so-called blending noise. In this context a new measure of incoherency is introduced, and 3 possibilities of incoherent blending are proposed. The effect of incoherency on the deblending quality is analyzed at the example of 2D synthetic data. The results suggest that optimal deblending quality is achieved by maximizing the incoherency of the blended acquisition.
 
-Based on the 2D method of \citet{Mahdad-Deblending-Method} a 3D deblending method is derived. The key differences between the 2D and 3D methods are the data sorting and the coherency filter. Next, the presented method is tested on a field data set. The field data results demonstrate that the method successfully deblends strong interfering events. The deblending of weak late events is not optimal yet. 
+Based on the 2D method of \citet{Mahdad-Deblending-Method} a 3D deblending method is derived. The key differences between the 2D and 3D methods are; (1) the data sorting, and (2) the coherency filter. Next, the presented method is tested on a complex synthetic data set. The results demonstrate that the method successfully deblends strong interfering events. The deblending of weak late events is not optimal yet. 
 
-In total, the results indicate that 3D crossline blending is a potential acquisition design. Before applying it in practice further development should be done.
-
+In total, the results indicate that 3D crossline blending is a potential acquisition design. With some further development 3D crossline blending is promising to become feasible as a standard acquisition design.
  
 
    
     \cleardoublepage
 %
-% Acknowledgements
-    \nonumchap{Acknowledgements}%
-    First of all I want to thank all the people who have participated in this project ..
-    Remember, often more people have contributed to your final thesis than you initially would think of.
-    \vspace*{15mm}
-
-    \noindent
-    Delft, University of Technology \hfill \mscname\\ % change to the university where you carried out your final MSc thesis research
-    \mscdate
-
-%
 % table of contents, (\toc of \toclof of \tocloflot )
-    \tocloflot
+    %\tocloflot
+\toc
 %
-% Nomenclature
-    %\printnomencl %
-%
+
+\begin{comment}
+	
+
 % Acronyms
     \nonumchap{Acronyms} %
     %
@@ -90,8 +80,9 @@ In total, the results indicate that 3D crossline blending is a potential acquisi
         \acro{DUT}{Delft University of Technology}%
     \end{acronym}%
     %
-    \cleardoublepage%
-    
+    \cleardublepage%
+\end{comment}
+
 % Nomenclature
     \printnomenclature
     \cleardoublepage
@@ -122,6 +113,17 @@ In total, the results indicate that 3D crossline blending is a potential acquisi
 		%\include{Chapters/chapter3-Incoherency}
 %\cite{Mahdad-Deblending-Method}
 
+% Acknowledgements
+    \nonumchap{Acknowledgements}%
+    First of all I want to thank all the people who have participated in this project ..
+    Remember, often more people have contributed to your final thesis than you initially would think of.
+    \vspace*{15mm}
+
+    \noindent
+    Delft, University of Technology \hfill \mscname\\ % change to the university where you carried out your final MSc thesis research
+    \mscdate
+
+
 %
 % Biblio
     \bibliographystyle{apalike}
@@ -144,6 +146,10 @@ In total, the results indicate that 3D crossline blending is a potential acquisi
 
     \lstset{language=matlab}
     \lstinputlisting{test.m}
+    
+\begin{comment}
+	
+
 
     \chapter{Yet another appendix}
 
@@ -155,6 +161,7 @@ In total, the results indicate that 3D crossline blending is a potential acquisi
     \printindex%
     \cleardoublepage%
     
+\end{comment}
     %\printglossary
    
 	%\printnomenclature

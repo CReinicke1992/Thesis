@@ -1157,25 +1157,27 @@ Printed in The Netherlands, Switzerland, Germany % pick here the country of the 
 \vspace{3cm}
 
 \noindent
-Supervisor(s):    \hfill \underline{ \hspace{7cm} }\\
-\mbox{}        \hfill  \mscreaderone \\
+%Supervisor(s):    \hfill \underline{ \hspace{7cm} }\\
+%\mbox{}        \hfill  \mscreaderone \\
+Supervisor(s):       \hfill  \mscreaderone \\
 \\
-\mbox{}        \hfill \underline{ \hspace{7cm} }\\
+%\mbox{}        \hfill \underline{ \hspace{7cm} }\\
 \mbox{}        \hfill  \mscreadertwo\\
 %\hfill \underline{ \hspace{7cm} }\\
 %\mbox{}        \hfill  \mscreaderthree\\
 \\
 \\
-Committee Members:       \hfill \underline{ \hspace{7cm} }\\
-\mbox{}        \hfill  \mscreaderone\\
+%Committee Members:       \hfill \underline{ \hspace{7cm} }\\
+%\mbox{}        \hfill  \mscreaderone\\
+Committee Members:     \hfill  \mscreaderone\\
 \ifthenelse{ \equal{\mscreadertwo}{} }{}{\\
 \\
-\mbox{}        \hfill \underline{ \hspace{7cm} }\\
+%\mbox{}        \hfill \underline{ \hspace{7cm} }\\
 \mbox{}        \hfill \mscreadertwo\\
 }
 \ifthenelse{ \equal{\mscreaderthree}{} }{}{\\
 \\
-\mbox{}        \hfill \underline{ \hspace{7cm} }\\
+%\mbox{}        \hfill \underline{ \hspace{7cm} }\\
 \mbox{}        \hfill \mscreaderthree\\
 }
 %%\ifthenelse{ \equal{\mscreaderfour}{} }{}{\\
