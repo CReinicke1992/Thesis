@@ -15,45 +15,45 @@ Warning--entry type for "JulyMarineAcquisition" isn't style-file defined
 --line 74 of file ../my_bib.bib
 Warning--to sort, need author or key in JulyMarineAcquisition
 Warning--can't use both volume and number fields in beasley1998
-You've used 12 entries,
+You've used 11 entries,
             1935 wiz_defined-function locations,
-            547 strings with 5612 characters,
-and the built_in function-call counts, 3892 in all, are:
-= -- 387
-> -- 132
-< -- 10
-+ -- 44
-- -- 42
-* -- 295
-:= -- 703
-add.period$ -- 34
-call.type$ -- 12
-change.case$ -- 75
-chr.to.int$ -- 12
-cite$ -- 15
-duplicate$ -- 165
-empty$ -- 275
-format.name$ -- 56
-if$ -- 752
+            542 strings with 5484 characters,
+and the built_in function-call counts, 3544 in all, are:
+= -- 352
+> -- 119
+< -- 9
++ -- 40
+- -- 38
+* -- 272
+:= -- 642
+add.period$ -- 30
+call.type$ -- 11
+change.case$ -- 69
+chr.to.int$ -- 11
+cite$ -- 14
+duplicate$ -- 147
+empty$ -- 246
+format.name$ -- 50
+if$ -- 679
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 7
-newline$ -- 60
-num.names$ -- 33
-pop$ -- 73
+missing$ -- 6
+newline$ -- 55
+num.names$ -- 30
+pop$ -- 64
 preamble$ -- 1
-purify$ -- 79
+purify$ -- 73
 quote$ -- 0
-skip$ -- 128
+skip$ -- 118
 stack$ -- 0
-substring$ -- 232
-swap$ -- 19
+substring$ -- 220
+swap$ -- 18
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 70
+type$ -- 64
 warning$ -- 2
-while$ -- 29
+while$ -- 27
 width$ -- 0
-write$ -- 147
+write$ -- 134
 (There were 4 warnings)

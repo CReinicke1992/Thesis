@@ -33,8 +33,8 @@
 \contentsline {chapter}{\numberline {6}Conclusions and Discussion}{41}{chapter.6}
 \contentsline {section}{\numberline {6-1}Conclusions}{41}{section.6.1}
 \contentsline {section}{\numberline {6-2}Discussion}{42}{section.6.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{43}{chapter*.56}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{45}{chapter*.56}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{43}{chapter*.57}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{45}{chapter*.57}
 \contentsline {chapter}{\numberline {A}The back of the thesis}{47}{appendix.A}
 \contentsline {section}{\numberline {A-1}An appendix section}{47}{section.A.1}
 \contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{47}{subsection.A.1.1}
