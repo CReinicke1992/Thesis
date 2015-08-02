@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  31 JUL 2015 10:54
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.12.26)  2 AUG 2015 17:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -985,7 +985,32 @@ Writing glossary file MSC_layout_orig.glo
 Writing index file MSC_layout_orig.idx
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
-) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-Introduction.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter4-Theory.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter7-Incoherency.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter6-3dExtension.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-ComplexData.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-DiscussionConclusion.aux))
+) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.aux (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-Introduction.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter4-Theory.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter7-Incoherency.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter6-3dExtension.aux) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-ComplexData.aux
+
+LaTeX Warning: Label `fig:Ch-ComplexData-Unblendedt' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Ch-ComplexData-Unblendedt' multiply defined.
+
+
+LaTeX Warning: Label `fig:Ch-ComplexData-Unblendedt700' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Ch-ComplexData-Unblendedt700' multiply defined.
+
+
+LaTeX Warning: Label `fig:Ch-ComplexData-Pseudot' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Ch-ComplexData-Pseudot' multiply defined.
+
+
+LaTeX Warning: Label `fig:Ch-ComplexData-Pseudot700' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Ch-ComplexData-Pseudot700' multiply defined.
+
+) (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/Chapters/chapter-DiscussionConclusion.aux))
 \openout1 = `MSC_layout_orig.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -3266,11 +3291,8 @@ Package xcolor Warning: Incompatible color definition on input line 39.
 Package xcolor Warning: Incompatible color definition on input line 40.
 
 
-Package xcolor Warning: Incompatible color definition on input line 41.
-
-
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 41.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 40.
 
 )
 \tf@toc=\write11
@@ -3286,13 +3308,13 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
  (./Chapters/chapter-Introduction.tex
 Chapter 1.
 
-Package xcolor Warning: Incompatible color definition on input line 8.
+Package xcolor Warning: Incompatible color definition on input line 9.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8.
+Package xcolor Warning: Incompatible color definition on input line 9.
 
 
-Package xcolor Warning: Incompatible color definition on input line 15.
+Package xcolor Warning: Incompatible color definition on input line 16.
 
 [1
 
@@ -3306,36 +3328,29 @@ File: Plots/SeismicSurvey/Marine-Seismic-Acquisition-Sercel.jpg Graphic file (ty
 File: Plots/SeismicSurvey/PicModified.pdf Graphic file (type QTm)
  <use  "Plots/SeismicSurvey/PicModified.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 60.
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 60.
 
 
-Package xcolor Warning: Incompatible color definition on input line 59.
+Package xcolor Warning: Incompatible color definition on input line 60.
 
 
-Package xcolor Warning: Incompatible color definition on input line 59.
+Package xcolor Warning: Incompatible color definition on input line 60.
 
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 61.
 [2]
 
 Package xcolor Warning: Incompatible color definition on input line 62.
@@ -3355,28 +3370,70 @@ Package xcolor Warning: Incompatible color definition on input line 66.
 
 Package xcolor Warning: Incompatible color definition on input line 66.
 
-File: Plots/Configurations/Config1.pdf Graphic file (type QTm)
-<use  "Plots/Configurations/Config1.pdf" >
-File: Plots/Configurations/Config2.pdf Graphic file (type QTm)
- <use  "Plots/Configurations/Config2.pdf" >
-File: Plots/Configurations/Config3.pdf Graphic file (type QTm)
- <use  "Plots/Configurations/Config3.pdf" >
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 74.
+
+
+Package xcolor Warning: Incompatible color definition on input line 77.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 83.
+File: Plots/Configurations/Config1_v2.pdf Graphic file (type QTm)
+<use  "Plots/Configurations/Config1_v2.pdf" >
+File: Plots/Configurations/Config2_v2.pdf Graphic file (type QTm)
+ <use  "Plots/Configurations/Config2_v2.pdf" >
+File: Plots/Configurations/Config3_v2.pdf Graphic file (type QTm)
+ <use  "Plots/Configurations/Config3_v2.pdf" >
 
 Package xcolor Warning: Incompatible color definition on input line 110.
 
 
 Package xcolor Warning: Incompatible color definition on input line 110.
 
+[3] [4]
 
-Package xcolor Warning: Incompatible color definition on input line 110.
+Package xcolor Warning: Incompatible color definition on input line 118.
 
 
-Package xcolor Warning: Incompatible color definition on input line 110.
+Package xcolor Warning: Incompatible color definition on input line 118.
 
-[3]) [4]
+
+Package xcolor Warning: Incompatible color definition on input line 127.
+
+
+Package xcolor Warning: Incompatible color definition on input line 127.
+
+
+Package xcolor Warning: Incompatible color definition on input line 127.
+
+
+Package xcolor Warning: Incompatible color definition on input line 127.
+
+) [5]
 \openout2 = `Chapters/chapter4-Theory.aux'.
 
- (./Chapters/chapter4-Theory.tex
+ (./Chapters/chapter4-Theory.tex [6
+
+
+
+]
 Chapter 2.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
@@ -3437,11 +3494,7 @@ Package xcolor Warning: Incompatible color definition on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
-[5
-
-
-
-] [6]
+[7] [8]
 File: Plots/Blended-Source-edit2.pdf Graphic file (type QTm)
  <use  "Plots/Blended-Source-edit2.pdf" >
 
@@ -3458,7 +3511,7 @@ Package xcolor Warning: Incompatible color definition on input line 112.
 
 Package xcolor Warning: Incompatible color definition on input line 112.
 
-[7]
+[9]
 
 Package xcolor Warning: Incompatible color definition on input line 129.
 
@@ -3485,7 +3538,7 @@ Package xcolor Warning: Incompatible color definition on input line 136.
 
 Package xcolor Warning: Incompatible color definition on input line 142.
 
-[8]
+[10]
 
 Package xcolor Warning: Incompatible color definition on input line 151.
 
@@ -3517,7 +3570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--179
 
 Package xcolor Warning: Incompatible color definition on input line 197.
 
-[9]
+[11]
 
 Package xcolor Warning: Incompatible color definition on input line 199.
 
@@ -3555,7 +3608,7 @@ Package xcolor Warning: Incompatible color definition on input line 283.
 
 Package xcolor Warning: Incompatible color definition on input line 283.
 
-[10] [11]
+[12] [13]
 
 Package xcolor Warning: Incompatible color definition on input line 285.
 
@@ -3565,7 +3618,7 @@ Package xcolor Warning: Incompatible color definition on input line 293.
 
 Package xcolor Warning: Incompatible color definition on input line 293.
 
-[12]
+[14]
 
 Package xcolor Warning: Incompatible color definition on input line 306.
 
@@ -3586,7 +3639,7 @@ File: Plots/Mahdad/15iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
 File: Plots/Mahdad/20iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
  <use  "Plots/Mahdad/20iter/DeblendedCRG_rec30.pdf" >
 File: Plots/Mahdad/25iter/DeblendedCRG_rec30.pdf Graphic file (type QTm)
- <use  "Plots/Mahdad/25iter/DeblendedCRG_rec30.pdf" > [13] [14])
+ <use  "Plots/Mahdad/25iter/DeblendedCRG_rec30.pdf" > [15] [16])
 \openout2 = `Chapters/chapter7-Incoherency.aux'.
 
  (./Chapters/chapter7-Incoherency.tex
@@ -3601,7 +3654,7 @@ Package xcolor Warning: Incompatible color definition on input line 25.
 Package xcolor Warning: Incompatible color definition on input line 27.
 
 File: Plots/GGH_v2.pdf Graphic file (type QTm)
-<use  "Plots/GGH_v2.pdf" > [15
+<use  "Plots/GGH_v2.pdf" > [17
 
 
 
@@ -3658,7 +3711,7 @@ Package xcolor Warning: Incompatible color definition on input line 101.
 
 Underfull \vbox (badness 3375) has occurred while \output is active []
 
- [16] [17]
+ [18] [19]
 
 Package xcolor Warning: Incompatible color definition on input line 105.
 
@@ -3699,7 +3752,7 @@ File: Plots/BlendingPatterns/Deblended_xline10t.pdf Graphic file (type QTm)
 File: Plots/BlendingPatterns/Pseudo_Deblended_xline10_xt_b7.pdf Graphic file (type QTm)
  <use  "Plots/BlendingPatterns/Pseudo_Deblended_xline10_xt_b7.pdf" >
 File: Plots/BlendingPatterns/Deblended_xline10xt.pdf Graphic file (type QTm)
- <use  "Plots/BlendingPatterns/Deblended_xline10xt.pdf" > [18]
+ <use  "Plots/BlendingPatterns/Deblended_xline10xt.pdf" > [20]
 
 Package xcolor Warning: Incompatible color definition on input line 182.
 
@@ -3708,7 +3761,7 @@ File: Plots/ComplexPlane.pdf Graphic file (type QTm)
 
 Package xcolor Warning: Incompatible color definition on input line 191.
 
-[19]
+[21]
 
 Package xcolor Warning: Incompatible color definition on input line 211.
 
@@ -3731,7 +3784,7 @@ Package xcolor Warning: Incompatible color definition on input line 246.
 
 Package xcolor Warning: Incompatible color definition on input line 246.
 
-[20]
+[22]
 
 Package xcolor Warning: Incompatible color definition on input line 261.
 
@@ -3742,7 +3795,7 @@ Package xcolor Warning: Incompatible color definition on input line 261.
 Package xcolor Warning: Incompatible color definition on input line 272.
 
 File: Plots/BlendingPatterns/Mu-vs-Q_v2.pdf Graphic file (type QTm)
-<use  "Plots/BlendingPatterns/Mu-vs-Q_v2.pdf" > [21]
+<use  "Plots/BlendingPatterns/Mu-vs-Q_v2.pdf" > [23]
 
 Package xcolor Warning: Incompatible color definition on input line 295.
 
@@ -3750,7 +3803,7 @@ Package xcolor Warning: Incompatible color definition on input line 295.
 Package xcolor Warning: Incompatible color definition on input line 297.
 
 File: Plots/BlendingPatterns/quality_line_plot_avg_v2.pdf Graphic file (type QTm)
-<use  "Plots/BlendingPatterns/quality_line_plot_avg_v2.pdf" > [22]
+<use  "Plots/BlendingPatterns/quality_line_plot_avg_v2.pdf" > [24]
 
 Package xcolor Warning: Incompatible color definition on input line 315.
 
@@ -3760,10 +3813,10 @@ Package xcolor Warning: Incompatible color definition on input line 315.
 
 Package xcolor Warning: Incompatible color definition on input line 315.
 
-) [23]
+) [25]
 \openout2 = `Chapters/chapter6-3dExtension.aux'.
 
- (./Chapters/chapter6-3dExtension.tex [24
+ (./Chapters/chapter6-3dExtension.tex [26
 
 
 
@@ -3799,7 +3852,7 @@ Package xcolor Warning: Incompatible color definition on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
-[25]
+[27]
 
 Package xcolor Warning: Incompatible color definition on input line 26.
 
@@ -3885,7 +3938,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package xcolor Warning: Incompatible color definition on input line 89.
 
-[26] [27]
+[28] [29]
 
 Package xcolor Warning: Incompatible color definition on input line 91.
 
@@ -4002,12 +4055,12 @@ Package xcolor Warning: Incompatible color definition on input line 290.
 
 Package xcolor Warning: Incompatible color definition on input line 290.
 
-[28] [29] [30] [31] [32]) [33
+[30] [31] [32] [33] [34]) [35
 
 ]
 \openout2 = `Chapters/chapter-ComplexData.aux'.
 
- (./Chapters/chapter-ComplexData.tex [34
+ (./Chapters/chapter-ComplexData.tex [36
 
 
 
@@ -4020,69 +4073,47 @@ Package xcolor Warning: Incompatible color definition on input line 3.
 Package xcolor Warning: Incompatible color definition on input line 3.
 
 
-Package xcolor Warning: Incompatible color definition on input line 10.
+Package xcolor Warning: Incompatible color definition on input line 9.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 9.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 21.
+
+[37]
+File: Plots/AcquisitionDesign/Geometry_v3.pdf Graphic file (type QTm)
+ <use  "Plots/AcquisitionDesign/Geometry_v3.pdf" >
+
+Package xcolor Warning: Incompatible color definition on input line 93.
 
 
-Package xcolor Warning: Incompatible color definition on input line 16.
-
-[35]
-File: Plots/AcquisitionDesign/Geometry.pdf Graphic file (type QTm)
- <use  "Plots/AcquisitionDesign/Geometry.pdf" >
-File: Plots/AcquisitionDesign/GeometryUnit.pdf Graphic file (type QTm)
- <use  "Plots/AcquisitionDesign/GeometryUnit.pdf" >
-File: Plots/AcquisitionDesign/GeometryUnitEquivalent.pdf Graphic file (type QTm)
- <use  "Plots/AcquisitionDesign/GeometryUnitEquivalent.pdf" >
-File: Plots/AcquisitionDesign/Legend.pdf Graphic file (type QTm)
- <use  "Plots/AcquisitionDesign/Legend.pdf" >
-File: Plots/AcquisitionDesign/PracticeDesign.pdf Graphic file (type QTm)
- <use  "Plots/AcquisitionDesign/PracticeDesign.pdf" >
-
-Package xcolor Warning: Incompatible color definition on input line 66.
+Package xcolor Warning: Incompatible color definition on input line 93.
 
 
-Package xcolor Warning: Incompatible color definition on input line 66.
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+[38]
+
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 66.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
 
-Package xcolor Warning: Incompatible color definition on input line 73.
+Package xcolor Warning: Incompatible color definition on input line 101.
 
-
-Package xcolor Warning: Incompatible color definition on input line 73.
-
-
-Underfull \vbox (badness 2809) has occurred while \output is active []
-
- [36]
-
-Package xcolor Warning: Incompatible color definition on input line 75.
-
-
-Package xcolor Warning: Incompatible color definition on input line 75.
-
-
-Package xcolor Warning: Incompatible color definition on input line 75.
-
-File: Plots/Seam/tg_vs_Q_xt.pdf Graphic file (type QTm)
-<use  "Plots/Seam/tg_vs_Q_xt.pdf" >
 File: Plots/Seam/Unblended/p_red_fil_x10.pdf Graphic file (type QTm)
- <use  "Plots/Seam/Unblended/p_red_fil_x10.pdf" >
+<use  "Plots/Seam/Unblended/p_red_fil_x10.pdf" >
 File: Plots/Seam/Pseudo/p_red_fil_x10.pdf Graphic file (type QTm)
  <use  "Plots/Seam/Pseudo/p_red_fil_x10.pdf" >
 File: Plots/Seam/Deblended/p_red_fil_x10.pdf Graphic file (type QTm)
@@ -4101,33 +4132,34 @@ File: Plots/Seam/Pseudo/p_red_fil_t400_b7.pdf Graphic file (type QTm)
  <use  "Plots/Seam/Pseudo/p_red_fil_t400_b7.pdf" >
 File: Plots/Seam/Pseudo/p_red_fil_t700_b7.pdf Graphic file (type QTm)
  <use  "Plots/Seam/Pseudo/p_red_fil_t700_b7.pdf" >
+File: Plots/Seam/Unblended/p_red_fil_t400.pdf Graphic file (type QTm)
+ <use  "Plots/Seam/Unblended/p_red_fil_t400.pdf" >
+File: Plots/Seam/Unblended/p_red_fil_t700.pdf Graphic file (type QTm)
+ <use  "Plots/Seam/Unblended/p_red_fil_t700.pdf" >
+File: Plots/Seam/Pseudo/p_red_fil_t400_b7.pdf Graphic file (type QTm)
+ <use  "Plots/Seam/Pseudo/p_red_fil_t400_b7.pdf" >
+File: Plots/Seam/Pseudo/p_red_fil_t700_b7.pdf Graphic file (type QTm)
+ <use  "Plots/Seam/Pseudo/p_red_fil_t700_b7.pdf" >
 File: Plots/Seam/Deblended/p_red_fil_t400.pdf Graphic file (type QTm)
  <use  "Plots/Seam/Deblended/p_red_fil_t400.pdf" >
 File: Plots/Seam/Deblended/p_red_fil_t700.pdf Graphic file (type QTm)
  <use  "Plots/Seam/Deblended/p_red_fil_t700.pdf" >
 
-Package xcolor Warning: Incompatible color definition on input line 202.
+Package xcolor Warning: Incompatible color definition on input line 267.
 
 
-Package xcolor Warning: Incompatible color definition on input line 202.
+Package xcolor Warning: Incompatible color definition on input line 267.
 
 
-Package xcolor Warning: Incompatible color definition on input line 204.
+Package xcolor Warning: Incompatible color definition on input line 269.
 
 
-Package xcolor Warning: Incompatible color definition on input line 204.
-
-[37] [38]
-
-Package xcolor Warning: Incompatible color definition on input line 206.
+Package xcolor Warning: Incompatible color definition on input line 269.
 
 
-Package xcolor Warning: Incompatible color definition on input line 206.
+Package xcolor Warning: Incompatible color definition on input line 271.
 
-
-Package xcolor Warning: Incompatible color definition on input line 208.
-
-[39]) [40]
+) [39] [40] [41] [42]
 \openout2 = `Chapters/chapter-DiscussionConclusion.aux'.
 
  (./Chapters/chapter-DiscussionConclusion.tex
@@ -4138,7 +4170,7 @@ Package xcolor Warning: Incompatible color definition on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-[41
+[43
 
 
 
@@ -4149,14 +4181,32 @@ Package xcolor Warning: Incompatible color definition on input line 25.
 
 Package xcolor Warning: Incompatible color definition on input line 25.
 
-) [42] [43
+
+LaTeX Warning: Reference `fig:Ch-ComplexData-GeometryUnitEquivalent' on page 44 undefined on input line 34.
 
 
-] [44
+LaTeX Warning: Reference `fig:Ch-ComplexData-Geometry' on page 44 undefined on input line 34.
 
-] (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.bbl) [45
+
+LaTeX Warning: Reference `fig:Ch-ComplexData-GeometryUnitEquivalent' on page 44 undefined on input line 34.
+
+) [44] [45
+
 
 ] [46
+
+] (/Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.bbl
+
+Package xcolor Warning: Incompatible color definition on input line 55.
+
+
+Overfull \hbox (18.18622pt too wide) in paragraph at lines 53--56
+[]\OT1/cmr/m/n/10.95 Wikigrewal (2015).  [][]$\OT1/cmtt/m/n/10.95 http : / / wikigrewal . com / what-[]is-[]a-[]offshore-[]seismic-[]survey-[]vessel/$[][]\OT1/cmr/m/n/10.95 . 
+ []
+
+) [47
+
+] [48
 
 ]
 Appendix A.
@@ -4261,7 +4311,7 @@ Package xcolor Warning: Incompatible color definition on input line 6.
 \tf@thm=\write12
 \openout12 = `MSC_layout_orig.thm'.
 
- [47
+ [49
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
@@ -4273,15 +4323,21 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 168.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 33025 strings out of 493734
- 631233 string characters out of 6146347
- 671708 words of memory out of 5000000
- 35701 multiletter control sequences out of 15000+600000
+ 33001 strings out of 493734
+ 630384 string characters out of 6146347
+ 672451 words of memory out of 5000000
+ 35683 multiletter control sequences out of 15000+600000
  25981 words of font info for 98 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,97p,10404b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.pdf (59 pages).
+Output written on /Users/christianreinicke/Documents/Master/4PGS/Writing/Thesis/.texpadtmp/MSC_layout_orig.pdf (61 pages).

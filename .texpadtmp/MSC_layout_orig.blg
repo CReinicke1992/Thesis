@@ -10,50 +10,50 @@ A level-1 auxiliary file: Chapters/chapter-DiscussionConclusion.aux
 The style file: apalike.bst
 Database file #1: ../my_bib.bib
 Warning--entry type for "WorldEnergy" isn't style-file defined
---line 11 of file ../my_bib.bib
+--line 18 of file ../my_bib.bib
 Warning--entry type for "JulyMarineAcquisition" isn't style-file defined
---line 74 of file ../my_bib.bib
-Warning--to sort, need author or key in JulyMarineAcquisition
+--line 82 of file ../my_bib.bib
 Warning--can't use both volume and number fields in beasley1998
-You've used 11 entries,
+Warning--empty journal in radon
+You've used 12 entries,
             1935 wiz_defined-function locations,
-            542 strings with 5484 characters,
-and the built_in function-call counts, 3544 in all, are:
-= -- 352
-> -- 119
-< -- 9
-+ -- 40
-- -- 38
-* -- 272
-:= -- 642
-add.period$ -- 30
-call.type$ -- 11
-change.case$ -- 69
-chr.to.int$ -- 11
+            545 strings with 5638 characters,
+and the built_in function-call counts, 3904 in all, are:
+= -- 387
+> -- 139
+< -- 11
++ -- 46
+- -- 44
+* -- 296
+:= -- 717
+add.period$ -- 33
+call.type$ -- 12
+change.case$ -- 78
+chr.to.int$ -- 12
 cite$ -- 14
-duplicate$ -- 147
-empty$ -- 246
-format.name$ -- 50
-if$ -- 679
+duplicate$ -- 160
+empty$ -- 263
+format.name$ -- 60
+if$ -- 744
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 55
-num.names$ -- 30
-pop$ -- 64
+missing$ -- 7
+newline$ -- 60
+num.names$ -- 36
+pop$ -- 68
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 81
 quote$ -- 0
-skip$ -- 118
+skip$ -- 133
 stack$ -- 0
-substring$ -- 220
+substring$ -- 231
 swap$ -- 18
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 64
+type$ -- 70
 warning$ -- 2
-while$ -- 27
+while$ -- 31
 width$ -- 0
-write$ -- 134
+write$ -- 147
 (There were 4 warnings)

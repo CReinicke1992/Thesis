@@ -1,8 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[Jul, 2015]{JulyMarineAcquisition}
- (2015).
-
 \bibitem[Beasley et~al., 1998]{beasley1998}
 Beasley, C.~J., Chambers, R.~E., Jiang, Z., et~al. (1998).
 \newblock A new look at simultaneous sources.
@@ -15,9 +12,10 @@ Berkhout, A. (1982).
   Extrapolation, Part A: Theoretical Aspects}.
 \newblock Elsevier.
 
-\bibitem[Council, 2013]{WorldEnergy}
-Council, W.~E. (2013).
-\newblock World energy resources.
+\bibitem[Ibrahim and Sacchi, 2013]{radon}
+Ibrahim, A. and Sacchi, M.~D. (2013).
+\newblock Simultaneous source separation via robust time variant radon
+  operators.
 
 \bibitem[Ibrahim and Sacchi, 2015]{IbrahimQuality}
 Ibrahim, A. and Sacchi, M.~D. (2015).
@@ -31,8 +29,8 @@ Mahdad, A., Doulgeris, P., and Blacquiere, G. (2011).
   blending interference noise.
 \newblock {\em Geophysics}, 76(3):Q9--Q17.
 
-\bibitem[Vaage, 2005]{Vaage}
-Vaage, S.~T. (2005).
+\bibitem[Vaage, 2002]{Vaage}
+Vaage, S.~T. (2002).
 \newblock Method and system for acquiring marine seismic data using multiple
   seismic sources.
 \newblock US Patent 6,906,981.
@@ -46,6 +44,15 @@ van Dedem, E.~J. (2002).
 van Groenestijn, G. J.~A. (2010).
 \newblock {\em Estimation of Primaries and Multiples by Sparse Inversion}.
 \newblock PhD thesis, TU Delft.
+
+\bibitem[WEC, 2013]{WorldEnergy}
+WEC, W. E.~C. (2013).
+\newblock World energy resources.
+
+\bibitem[Wikigrewal, 2015]{JulyMarineAcquisition}
+Wikigrewal (2015).
+\newblock
+  \url{http://wikigrewal.com/what-is-a-offshore-seismic-survey-vessel/}.
 
 \bibitem[Womack et~al., 1990]{womack1990}
 Womack, J., Cruz, J., Rigdon, H., and Hoover, G. (1990).

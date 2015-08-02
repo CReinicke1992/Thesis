@@ -3,39 +3,38 @@
 \contentsline {section}{\numberline {1-1}Marine Seismic Acquisition}{1}{section.1.1}
 \contentsline {section}{\numberline {1-2}Literature Review}{2}{section.1.2}
 \contentsline {section}{\numberline {1-3}New Survey Design: Crossline Blending (3D)}{3}{section.1.3}
-\contentsline {section}{\numberline {1-4}Thesis Outline}{3}{section.1.4}
-\contentsline {chapter}{\numberline {2}2D Blending and Deblending}{5}{chapter.2}
-\contentsline {section}{\numberline {2-1}The Forward Model of Blending}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2-1-1}Conventional Seismic Data}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2-1-2}Blended Seismic Data}{7}{subsection.2.1.2}
-\contentsline {section}{\numberline {2-2}Deblending}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2-2-1}Pseudo-Deblending}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2-2-2}Common-Receiver Gather}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2-2-3}Iterative Estimation of Blending Noise}{9}{subsection.2.2.3}
-\contentsline {chapter}{\numberline {3}Incoherency}{15}{chapter.3}
-\contentsline {section}{\numberline {3-1}Analysis of the Blending Matrix}{15}{section.3.1}
-\contentsline {section}{\numberline {3-2}Results Spatial and Temporal Incoherency}{18}{section.3.2}
-\contentsline {section}{\numberline {3-3}Effect of Incoherency}{19}{section.3.3}
-\contentsline {section}{\numberline {3-4}Results Incoherency}{21}{section.3.4}
-\contentsline {section}{\numberline {3-5}Effect of Maximum Firing-Time Delay}{22}{section.3.5}
-\contentsline {section}{\numberline {3-6}Results Maximum Firing-Time Delay}{22}{section.3.6}
-\contentsline {section}{\numberline {3-7}Conclusions}{23}{section.3.7}
-\contentsline {chapter}{\numberline {4}Crossline Deblending (3D)}{25}{chapter.4}
-\contentsline {section}{\numberline {4-1}Data Sorting}{25}{section.4.1}
-\contentsline {section}{\numberline {4-2}3D $f$-$k_x$-$k_y$ Filter}{28}{section.4.2}
-\contentsline {section}{\numberline {4-3}Results}{28}{section.4.3}
-\contentsline {section}{\numberline {4-4}Conclusions}{33}{section.4.4}
-\contentsline {chapter}{\numberline {5}Results Complex Synthetic Data}{35}{chapter.5}
-\contentsline {section}{\numberline {5-1}Acquisition Set Up}{35}{section.5.1}
-\contentsline {section}{\numberline {5-2}Deblending Results}{37}{section.5.2}
-\contentsline {section}{\numberline {5-3}Discussion}{37}{section.5.3}
-\contentsline {section}{\numberline {5-4}Conclusion}{39}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusions and Discussion}{41}{chapter.6}
-\contentsline {section}{\numberline {6-1}Conclusions}{41}{section.6.1}
-\contentsline {section}{\numberline {6-2}Discussion}{42}{section.6.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{43}{chapter*.57}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{45}{chapter*.57}
-\contentsline {chapter}{\numberline {A}The back of the thesis}{47}{appendix.A}
-\contentsline {section}{\numberline {A-1}An appendix section}{47}{section.A.1}
-\contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{47}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A-1-2}A \textsc {Matlab}$ $ Listing}{47}{subsection.A.1.2}
+\contentsline {section}{\numberline {1-4}Thesis Outline}{5}{section.1.4}
+\contentsline {chapter}{\numberline {2}2D Blending and Deblending}{7}{chapter.2}
+\contentsline {section}{\numberline {2-1}The Forward Model of Blending}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2-1-1}Conventional Seismic Data}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2-1-2}Blended Seismic Data}{9}{subsection.2.1.2}
+\contentsline {section}{\numberline {2-2}Deblending}{10}{section.2.2}
+\contentsline {subsection}{\numberline {2-2-1}Pseudo-Deblending}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2-2-2}Common-Receiver Gather}{11}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2-2-3}Iterative Estimation of Blending Noise}{11}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}Incoherency}{17}{chapter.3}
+\contentsline {section}{\numberline {3-1}Analysis of the Blending Matrix}{17}{section.3.1}
+\contentsline {section}{\numberline {3-2}Results Spatial and Temporal Incoherency}{20}{section.3.2}
+\contentsline {section}{\numberline {3-3}Effect of Incoherency}{21}{section.3.3}
+\contentsline {section}{\numberline {3-4}Results Incoherency}{23}{section.3.4}
+\contentsline {section}{\numberline {3-5}Effect of Maximum Firing-Time Delay}{24}{section.3.5}
+\contentsline {section}{\numberline {3-6}Results Maximum Firing-Time Delay}{24}{section.3.6}
+\contentsline {section}{\numberline {3-7}Conclusions}{25}{section.3.7}
+\contentsline {chapter}{\numberline {4}Crossline Deblending (3D)}{27}{chapter.4}
+\contentsline {section}{\numberline {4-1}Data Sorting}{27}{section.4.1}
+\contentsline {section}{\numberline {4-2}3D $f$-$k_x$-$k_y$ Filter}{30}{section.4.2}
+\contentsline {section}{\numberline {4-3}Results}{30}{section.4.3}
+\contentsline {section}{\numberline {4-4}Conclusions}{35}{section.4.4}
+\contentsline {chapter}{\numberline {5}Results Complex Synthetic Data}{37}{chapter.5}
+\contentsline {section}{\numberline {5-1}Acquisition Set Up}{37}{section.5.1}
+\contentsline {section}{\numberline {5-2}Deblending Results}{39}{section.5.2}
+\contentsline {section}{\numberline {5-3}Conclusion and Discussion}{39}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusions and Discussion}{43}{chapter.6}
+\contentsline {section}{\numberline {6-1}Conclusions}{43}{section.6.1}
+\contentsline {section}{\numberline {6-2}Discussion}{44}{section.6.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{45}{chapter*.64}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{47}{chapter*.64}
+\contentsline {chapter}{\numberline {A}The back of the thesis}{49}{appendix.A}
+\contentsline {section}{\numberline {A-1}An appendix section}{49}{section.A.1}
+\contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{49}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A-1-2}A \textsc {Matlab}$ $ Listing}{49}{subsection.A.1.2}
