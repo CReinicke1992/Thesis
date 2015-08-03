@@ -302,17 +302,17 @@ According to Figure \ref{fig:Ch-Results-QualityFactors} the spatially incoherent
 	\caption{The 3 suggested blending patterns are simulated with maximum firing-time delays between \SI{40}{\milli\second} and \SI{400}{\milli\second}. The quality factors are computed with respect to the unblended data and illustrated as a function of the maximum firing-time delay.}
 	\label{fig:Ch-Results-QualityFactors}
 \end{figure}
-
-\todo[inline]{For the conclusion/discussion of these results: \\ 
-				Say that a high degree of incoherency is required for successful deblending, but it is not useful as a control factor of the deblending performance. Instead the maximum firing time delay allows to fine tune the quality factor and might be suitable to fine tune a trade off between deblending quality and acquisition time.\\
-				One can also say that the  spatial incoherency performs poorly because its degree of incoherency is simply too low.}
 			
 			
 
 \section{Conclusions}	\label{fig:Ch-Incoherency-Conclusions}
+
+It was demonstrated that successful deblending depends on; (1) the degree of incoherency, and (2) the maximum firing-time delay. These parameters are linked to each other because a longer maximum firing-time delay gives more freedom to generate (temporal) incoherency. However, the two parameters affect the deblending quality very differently. The degree of incoherency influences the deblending quality step-like (see Figure \ref{fig:Ch-Results-Quality-vs-Incoherency}), i.e. either the incoherency is sufficiently high to deblend the data, or it is not and the deblending result is poor. The maximum firing-time delay shows an almost linear effect on the deblending quality (see Figure \ref{fig:Ch-Results-QualityFactors}). Thus, the maximum firing-time delay allows to adjust the desired deblending quality.
+
+In practice, the maximum firing-time delay will be limited by the schedule of the seismic survey. Hence, for a given maximum firing-time delay the blending pattern must be designed sufficiently incoherent to achieve the desired deblending quality. Of course, if the maximum firing-time delay is too short, it is not possible to achieve a sufficiently high degree of incoherency to deblend the data. In such a case the maximum firing-time delay must be increased.
 			
 
-In practice, the maximum firing-time delay is given by the available acquisition time. Figure \ref{fig:Ch-Results-Quality-vs-Incoherency} demonstrates that for a fixed maximum firing-time delay the deblending quality can be optimized by choosing a blending pattern with maximum incoherency. The maximum achievable deblending quality for a fixed maximum firing-time delay can be estimated from Figure \ref{fig:Ch-Results-QualityFactors}. Besides, Figure \ref{fig:Ch-Results-QualityFactors} confirms that the deblending quality increases with increasing maximum firing-time delay. 
+%In practice, the maximum firing-time delay is given by the available acquisition time. Figure \ref{fig:Ch-Results-Quality-vs-Incoherency} demonstrates that for a fixed maximum firing-time delay the deblending quality can be optimized by choosing a blending pattern with maximum incoherency. The maximum achievable deblending quality for a fixed maximum firing-time delay can be estimated from Figure \ref{fig:Ch-Results-QualityFactors}. Besides, Figure \ref{fig:Ch-Results-QualityFactors} confirms that the deblending quality increases with increasing maximum firing-time delay. 
 
 
 
