@@ -27,17 +27,13 @@
 \contentsline {section}{\numberline {4-4}Conclusions}{35}{section.4.4}
 \contentsline {chapter}{\numberline {5}Results Complex Synthetic Data}{37}{chapter.5}
 \contentsline {section}{\numberline {5-1}Large Crossline Source Array}{37}{section.5.1}
-\contentsline {subsection}{\numberline {5-1-1}Acquisition Set Up}{37}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5-1-2}Deblending Results}{39}{subsection.5.1.2}
 \contentsline {section}{\numberline {5-2}Dense Crossline Source Array}{42}{section.5.2}
-\contentsline {subsection}{\numberline {5-2-1}Acquisition Set-Up}{42}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5-2-2}Deblending Results}{42}{subsection.5.2.2}
-\contentsline {section}{\numberline {5-3}Conclusion and Discussion}{43}{section.5.3}
+\contentsline {section}{\numberline {5-3}Conclusion and Discussion}{46}{section.5.3}
 \contentsline {chapter}{\numberline {6}Conclusions and Discussion}{47}{chapter.6}
 \contentsline {section}{\numberline {6-1}Conclusions}{47}{section.6.1}
 \contentsline {section}{\numberline {6-2}Discussion}{47}{section.6.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{49}{chapter*.66}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{51}{chapter*.66}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{49}{chapter*.69}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{51}{chapter*.69}
 \contentsline {chapter}{\numberline {A}The back of the thesis}{53}{appendix.A}
 \contentsline {section}{\numberline {A-1}An appendix section}{53}{section.A.1}
 \contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{53}{subsection.A.1.1}
