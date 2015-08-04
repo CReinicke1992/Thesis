@@ -189,7 +189,7 @@ In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending
 \end{figure}
 
 The sub-diagonal elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, map in the complex plane on a circle with radius 1 (see Figure \ref{fig:Ch-Results-complex-circle}). Thus, the sum of the elements along the $d^{th}$ sub-diagonal can be constructive or destructive, depending on the phase variability. The absolute value of this sum, $M(d,\omega)$, measures the incoherency of the $d^{th}$ sub-diagonal for the frequency component, $\omega$;
-\nomenclature{$M(d,\omega)$}{(Monochromatic) absolute value of the sum along the $d^{th}$ sub-diagonal of the matrix product $\mathbf{\Gamma \Gamma}^H(\omega)$}
+\nomenclature{$M$}{Absolute value of the sum along a sub-diagonal of the matrix product $\mathbf{\Gamma \Gamma}^H(\omega)$}
 
 \begin{equation}
 	M(d,\omega) = \left| \sum_{j-i=d} \mathbf{\Gamma \Gamma}^H_{ij} (\omega) \right|.
@@ -210,12 +210,12 @@ where $N_s$\nomenclature{$N_s$}{Total number of sources} is the number of source
 
 Equation \ref{eq:Ch-Results-incoherency} implies that the incoherency value can vary between 0 (perfectly coherent) and 1 (perfectly incoherent).
 
-\nomenclature{$\mathbf{\Gamma}_{coh}$}{(Monochromatic) blending matrix with constant firing-time delays}
-\nomenclature{$\mathbf{\Gamma}_{ran}$}{(Monochromatic) blending matrix with random firing-time delays}
-\nomenclature{$\mu_{coh}$}{Incoherency of the blending matrix $\mathbf{\Gamma}_{coh}$}
-\nomenclature{$\mu_{ran}$}{Incoherency of the blending matrix $\mathbf{\Gamma}_{ran}$}
+\nomenclature{$\mathbf{\Gamma}_{\mathrm{coh}}$}{Blending matrix with constant firing-time delays}
+\nomenclature{$\mathbf{\Gamma}_{\mathrm{ran}}$}{Blending matrix with random firing-time delays}
+\nomenclature{$\mu_{\mathrm{coh}}$}{Incoherency of the blending matrix $\mathbf{\Gamma}_{\mathrm{coh}}$}
+\nomenclature{$\mu_{\mathrm{ran}}$}{Incoherency of the blending matrix $\mathbf{\Gamma}_{\mathrm{ran}}$}
 
-For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produce the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{coh}$, uses constant firing-time delays, while the blending matrix, $\mathbf{\Gamma}_{ran}$, uses random firing-time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $M(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One can observe that for the incoherent blending matrix, $\mathbf{\Gamma}_{ran}$, $M(d,\omega)$ resembles a simple spike more than for the coherent blending matrix, $\mathbf{\Gamma}_{coh}$. The coherent blending matrix, $\mathbf{\Gamma}_{coh}$,  yields an incoherency value of $\mu_{coh} = \SI{67}{\percent}$, whereas the incoherent blending matrix, $\mathbf{\Gamma}_{ran}$, yields an incoherency value of $\mu_{ran} = \SI{98}{\percent}$.
+For example, consider the two blending matrices, $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$, which produce the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$, uses constant firing-time delays, while the blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, uses random firing-time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $M(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One can observe that for the incoherent blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, $M(d,\omega)$ resembles a simple spike more than for the coherent blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$. The coherent blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$,  yields an incoherency value of $\mu_{\mathrm{coh}} = \SI{67}{\percent}$, whereas the incoherent blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, yields an incoherency value of $\mu_{\mathrm{ran}} = \SI{98}{\percent}$.
 
 \begin{figure}
 	
@@ -235,7 +235,7 @@ For example, consider the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\m
 	\label{fig:Ch-Incoherency-RandomDiag}	
 	\end{subfigure}
 	
-	\caption{Illustration of the absolute sub-diagonal sums, $M(d,\omega)$, for the frequency slice $f=\SI{25}{\hertz}$. (a) refers to the blending matrix $\mathbf{\Gamma}_{coh}$ with constant firing-time delays.  (b) refers to the blending matrix $\mathbf{\Gamma}_{ran}$ with random firing-time delays.}
+	\caption{Illustration of the absolute sub-diagonal sums, $M(d,\omega)$, for the frequency slice $f=\SI{25}{\hertz}$. (a) refers to the blending matrix $\mathbf{\Gamma}_{\mathrm{coh}}$ with constant firing-time delays.  (b) refers to the blending matrix $\mathbf{\Gamma}_{\mathrm{ran}}$ with random firing-time delays.}
 	\label{fig:Ch-Incoherency-Coh-vs-Ran-Diag}
 	
 \end{figure}
@@ -258,18 +258,18 @@ where $\mathbf{P}$ are the unblended data, and \textbf{\^{P}} the deblended data
 
 \section{Results Incoherency}
 
-Consider again the two blending matrices, $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing-time delay, while their incoherency values differ ($\mu_{coh} = \SI{67}{\percent}$, $\mu_{ran} = \SI{98}{\percent}$). 
+Consider again the two blending matrices, $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing-time delay, while their incoherency values differ ($\mu_{\mathrm{coh}} = \SI{67}{\percent}$, $\mu_{\mathrm{ran}} = \SI{98}{\percent}$). 
 
-An effective blending matrix, $\mathbf{\Gamma}_{eff}$, is created by superimposing the time delays $\mathrm{e}^{-j \omega \Delta t_{ij}}$ of the blending matrices $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$;
+An effective blending matrix, $\mathbf{\Gamma}_{\mathrm{eff}}$, is created by superimposing the time delays $\mathrm{e}^{-j \omega \Delta t_{ij}}$ of the blending matrices $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$;
 
 \begin{equation}
-	\Delta t_{eff} = a \cdot \Delta t_{ij,ran} + (1 - a) \cdot \Delta t_{ij,coh}, \; a \in [0,1].
+	\Delta t_{\mathrm{eff}} = a \cdot \Delta t_{ij,ran} + (1 - a) \cdot \Delta t_{ij,coh}, \; a \in [0,1].
 	\label{eq:Ch-Incoherency-EffectiveG}
 \end{equation}
 
-\nomenclature{$\mathbf{\Gamma}_{eff}$}{Linear superposition of the blending matrices $\mathbf{\Gamma}_{coh}$ and $\mathbf{\Gamma}_{ran}$}
+\nomenclature{$\mathbf{\Gamma}_{\mathrm{eff}}$}{Linear superposition of the blending matrices $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$}
 
-The maximum firing-time delay of the effective blending matrix, $\mathbf{\Gamma}_{eff}$, is constant while the incoherency  varies with changing $a$. The resulting quality factors are shown as a function of the incoherency in Figure \ref{fig:Ch-Results-Quality-vs-Incoherency}.
+The maximum firing-time delay of the effective blending matrix, $\mathbf{\Gamma}_{\mathrm{eff}}$, is constant while the incoherency  varies with changing $a$. The resulting quality factors are shown as a function of the incoherency in Figure \ref{fig:Ch-Results-Quality-vs-Incoherency}.
 
 
 \begin{figure}

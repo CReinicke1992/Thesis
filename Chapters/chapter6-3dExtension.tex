@@ -60,7 +60,7 @@ The blending matrix for 3D is built in a similar fashion as the data matrix in 3
 
 \todo[inline]{Keep this sentence for later: This framework allows to blend any source combination independent of the cross- and inline positions of the involved sources.}
 
-With the new data and blending matrix sorting one can apply deblending to 3D data in the same way as presented in section \ref{sec:Ch-Theory-Operator} and section \ref{sec:MahdadMethod}. Note that unlike for 2D blending spatially incoherent blending patterns are practical for 3D blended acquisition.
+With the new data and blending matrix sorting one can apply deblending to 3D data in the same way as presented in section \ref{sec:Ch-Theory-Operator} and section \ref{sec:MahdadMethod}. Note that unlike for 2D blending spatially incoherent blending patterns are practical for blended crossline-sources.
 
 \begin{figure}
 
@@ -192,7 +192,7 @@ Once the mask is built for a 5D data array it can either be applied to filter a 
 
 \section{Results}
 
-The 3D $f$-$k_x$-$k_y$ filter removes incoherent energy in the crossline and inline direction. The 3D blended acquisition design suggested in this thesis blends shots within the same crossline. Hence, an underlying question is whether an extension of the 2D $f$-$k_x$ filter to the inline direction provides significant deblending enhancements.
+The 3D $f$-$k_x$-$k_y$ filter removes incoherent energy in the crossline and inline direction. The blended crossline-sources design suggested in this thesis blends shots within the same crossline. Hence, an underlying question is whether an extension of the 2D $f$-$k_x$ filter to the inline direction provides significant deblending enhancements.
 
 For this purpose the synthetic data of Figure \ref{fig:Ch-Mahdad3d-Unbl-Delphi} are blended: Within each crossline there are 21 sources, which are blended in 3 experiments. For each experiment 7 randomly selected sources are blended with random time delays, i.e. the blending pattern with mixed incoherency is applied. The maximum allowed firing-time delay is set to \SI{400}{\milli\second}. The incoherency measure of the used blending matrix, $\mathbf{\Gamma}$, is $\mu = \SI{99}{\percent}$. 
 
@@ -298,6 +298,7 @@ In order to quantify the quality gap between the results with 2D and 3D filters,
 
 The presented deblending method uses a coherency constraint. It has been demonstrated that for 3D deblending the quality of the deblended data can be enhanced significantly by extending the coherency constraint to crossline direction too.
 
+\todo[inline]{extend a bit!}
 
 
 

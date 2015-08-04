@@ -2,8 +2,9 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1-1}Marine Seismic Acquisition}{1}{section.1.1}
 \contentsline {section}{\numberline {1-2}Literature Review}{2}{section.1.2}
-\contentsline {section}{\numberline {1-3}New Survey Design: Crossline Blending (3D)}{3}{section.1.3}
-\contentsline {section}{\numberline {1-4}Thesis Outline}{5}{section.1.4}
+\contentsline {section}{\numberline {1-3}2D/3D Blending and 2D Deblending}{3}{section.1.3}
+\contentsline {section}{\numberline {1-4}New Survey Design: Blended Crossline-Sources (3D)}{3}{section.1.4}
+\contentsline {section}{\numberline {1-5}Thesis Outline}{5}{section.1.5}
 \contentsline {chapter}{\numberline {2}2D Blending and Deblending}{7}{chapter.2}
 \contentsline {section}{\numberline {2-1}The Forward Model of Blending}{7}{section.2.1}
 \contentsline {subsection}{\numberline {2-1-1}Conventional Seismic Data}{7}{subsection.2.1.1}
@@ -26,14 +27,14 @@
 \contentsline {section}{\numberline {4-3}Results}{30}{section.4.3}
 \contentsline {section}{\numberline {4-4}Conclusions}{35}{section.4.4}
 \contentsline {chapter}{\numberline {5}Results Complex Synthetic Data}{37}{chapter.5}
-\contentsline {section}{\numberline {5-1}Large Crossline Source Array}{37}{section.5.1}
+\contentsline {section}{\numberline {5-1}Wide Crossline Source Array}{37}{section.5.1}
 \contentsline {section}{\numberline {5-2}Dense Crossline Source Array}{42}{section.5.2}
 \contentsline {section}{\numberline {5-3}Conclusion and Discussion}{46}{section.5.3}
 \contentsline {chapter}{\numberline {6}Conclusions and Discussion}{47}{chapter.6}
 \contentsline {section}{\numberline {6-1}Conclusions}{47}{section.6.1}
 \contentsline {section}{\numberline {6-2}Discussion}{47}{section.6.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{49}{chapter*.69}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{51}{chapter*.69}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{49}{chapter*.72}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{51}{chapter*.72}
 \contentsline {chapter}{\numberline {A}The back of the thesis}{53}{appendix.A}
 \contentsline {section}{\numberline {A-1}An appendix section}{53}{section.A.1}
 \contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{53}{subsection.A.1.1}

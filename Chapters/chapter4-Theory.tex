@@ -6,7 +6,7 @@ This chapter recapitulates the idea behind blending and deblending. First the de
 %The detail hiding operator notation was introduced by \citet{Berkhout1982}, and later on it was extended for blended data. 
 
 \subsection{Conventional Seismic Data}
-In the detail hiding operator notation \citep{Berkhout1982} the recorded signal is considered discrete in terms of time $t$\nomenclature{$t$}{Time}, receiver position $x_r$\nomenclature{$x_r$}{Receiver coordinates}, and source position $x_s$\nomenclature{$x_s$}{Source coordinates}. Thus, the measurements can be organized in a cube, $\mathbf{p}(t,x_r,x_s)$\nomenclature{$\mathbf{p}$}{3D data cube as a function of time, receiver coordinates, and source coordinates}, (see Figure \ref{fig:Ch-Theory-DataMatrix}). After applying a Fourier transform with respect to time each frequency slice of this new cube represents the data matrix, $\mathbf{P}$\nomenclature{$\mathbf{P}$}{(Monochromatic) data matrix as a function of receiver and source number}.
+In the detail hiding operator notation \citep{Berkhout1982} the recorded signal is considered discrete in terms of time $t$\nomenclature{$t$}{Time}, receiver position $x_r$\nomenclature{$x_r$}{Receiver coordinates}, and source position $x_s$\nomenclature{$x_s$}{Source coordinates}. Thus, the measurements can be organized in a cube, $\mathbf{p}(t,x_r,x_s)$\nomenclature{$\mathbf{p}$}{3D data cube as a function of time, receiver coordinates, and source coordinates}, (see Figure \ref{fig:Ch-Theory-DataMatrix}). After applying a Fourier transform with respect to time each frequency slice of this new cube represents the data matrix, $\mathbf{P}$\nomenclature{$\mathbf{P}$}{Data matrix as a function of receiver and source number}.
 
 In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic common-shot gather (see Figure \ref{fig:Ch-Theory-DataMatrixMahdad}), each row to a monochromatic common-receiver gather, each diagonal to a monochromatic common-offset gather, and each anti-diagonal to a monochromatic common-midpoint gather. 
 
@@ -25,7 +25,7 @@ In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic com
 	\label{fig:Ch-Theory-DataMatrixMahdad}
 \end{figure}
 
-According to the seismic forward model of \citet{Berkhout1982} the data matrix, $\mathbf{P}$, can be represented by a matrix multiplication of the source matrix, $\mathbf{S}$\nomenclature{$\mathbf{S}$}{(Monochromatic) source matrix as a function of source number}, the impulse response of the earth, $\mathbf{X}$\nomenclature{$\mathbf{X}$}{(Monochromatic) earth impulse response matrix as a function of receiver and source number}, and the receiver matrix, $\mathbf{D}$\nomenclature{$\mathbf{D}$}{(Monochromatic) receiver matrix as a function of receiver number}:
+According to the seismic forward model of \citet{Berkhout1982} the data matrix, $\mathbf{P}$, can be represented by a matrix multiplication of the source matrix, $\mathbf{S}$\nomenclature{$\mathbf{S}$}{Source matrix as a function of source number}, the impulse response of the earth, $\mathbf{X}$\nomenclature{$\mathbf{X}$}{Earth impulse response matrix as a function of receiver and source number}, and the receiver matrix, $\mathbf{D}$\nomenclature{$\mathbf{D}$}{Receiver matrix as a function of receiver number}:
 
 \begin{equation}
 	\mathbf{P} = \mathbf{D \, X \, S}.
@@ -93,7 +93,7 @@ In blended acquisition the recorded events belonging to different shots overlap,
 	\label{fig:Ch-Theory-BlendedData}
 \end{figure}
 
-Blending can be captured in the forward model by introducing a blending matrix, $\mathbf{\Gamma}$\nomenclature{$\mathbf{\Gamma}$}{(Monochromatic) blending matrix as a function of source and experiment number}, which transforms the source matrix, $\mathbf{S}$, into a blended source matrix, $\mathbf{S}_{bl}$\nomenclature{$\mathbf{S}_{bl}$}{(Monochromatic) blended source matrix as a function of source and experiment number},
+Blending can be captured in the forward model by introducing a blending matrix, $\mathbf{\Gamma}$\nomenclature{$\mathbf{\Gamma}$}{Blending matrix as a function of source and experiment number}, which transforms the source matrix, $\mathbf{S}$, into a blended source matrix, $\mathbf{S}_{bl}$\nomenclature{$\mathbf{S}_{bl}$}{Blended source matrix as a function of source and experiment number},
 
 \begin{equation}
 	\mathbf{S}_{bl} = \mathbf{S \, \Gamma}.
@@ -118,7 +118,7 @@ In the case of source blending the receiver matrix, $\mathbf{D}$, is not influen
 	\label{eq:Ch-Theory-BlendedData}
 \end{equation}
 
-Note that, the blended data matrix, $\mathbf{P}_{bl}$\nomenclature{$\mathbf{P}_{bl}$}{(Monochromatic) blended data matrix as a function of receiver and experiment number}, also has less columns, i.e. less experiments, than the unblended data matrix, $\mathbf{P}$.
+Note that, the blended data matrix, $\mathbf{P}_{bl}$\nomenclature{$\mathbf{P}_{bl}$}{Blended data matrix as a function of receiver and experiment number}, also has less columns, i.e. less experiments, than the unblended data matrix, $\mathbf{P}$.
 
 
 
@@ -147,7 +147,7 @@ The first estimate of the unblended data matrix, $\mathbf{P}$, is obtained by ps
 	\label{eq:Ch-Theory-PseudoDeblended}
 \end{equation}
 
-where $\mathbf{\Gamma}^H$\nomenclature{$\mathbf{\Gamma}^{H}$}{(Monochromatic) conjugate transpose of the blending matrix $\mathbf{\Gamma}$ as a function of experiment and source number} is the conjugate transpose of the blending matrix, $\mathbf{\Gamma}$. Pseudo-deblending copies the blended data to the locations of all shots present in the blended shot and shifts them  upward in time to compensate for the time delay. For example, Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoDeblendedCSG} shows the two pseudo-deblended shot gathers of the blended data in Figure \ref{fig:Ch-Theory-BlendedData}. Note that the pseudo-deblended data, $\mathbf{P}_{ps}$\nomenclature{$\mathbf{P}_{ps}$}{(Monochromatic) pseudo-deblended data matrix as a function of receiver and source number}, have the same size as $\mathbf{P}$.
+where $\mathbf{\Gamma}^H$\nomenclature{$\mathbf{\Gamma}^{H}$}{Conjugate transpose of the blending matrix $\mathbf{\Gamma}$ as a function of experiment and source number} is the conjugate transpose of the blending matrix, $\mathbf{\Gamma}$. Pseudo-deblending copies the blended data to the locations of all shots present in the blended shot and shifts them  upward in time to compensate for the time delay. For example, Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoDeblendedCSG} shows the two pseudo-deblended shot gathers of the blended data in Figure \ref{fig:Ch-Theory-BlendedData}. Note that the pseudo-deblended data, $\mathbf{P}_{ps}$\nomenclature{$\mathbf{P}_{ps}$}{Pseudo-deblended data matrix as a function of receiver and source number}, have the same size as $\mathbf{P}$.
 
 
 \subsection{Common-Receiver Gather}
@@ -186,7 +186,7 @@ In Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoD
 
 \subsection{Iterative Estimation of Blending Noise} \label{sec:IterBlenNoiseEst}
 
-In an ideal case the noise generated by the interfering shots present in the pseudo-deblended data, the so-called blending noise, is calculated with the unblended data, \nomenclature{$\mathbf{N}$}{(Monochromatic) blending noise matrix as a function of receiver and source number}
+In an ideal case the noise generated by the interfering shots present in the pseudo-deblended data, the so-called blending noise, is calculated with the unblended data, \nomenclature{$\mathbf{N}$}{Blending noise matrix as a function of receiver and source number}
 
 \begin{equation}
 	\mathbf{N} = \mathbf{P}_{bl} \, \mathbf{\Gamma}^H - \mathbf{P} = \mathbf{P}_{ps} - \mathbf{P}.
@@ -293,8 +293,8 @@ After $f$-$k$ filtering the spiky noise is attenuated (see Figure \ref{fig:Ch-Th
 
 \subsubsection*{Interference Estimation}
 
-The resulting thresholded data, \textbf{\={P}}\nomenclature{$\textbf{\={P}}$}{(Monochromatic) data matrix after thresholding as a function of receiver and source number}, is used to predict the blending noise;
-\nomenclature{$\textbf{\^{N}}_{i}$}{(Monochromatic) blending noise prediction after $i$ iterations as a function of receiver and source number}
+The resulting thresholded data, \textbf{\={P}}\nomenclature{$\textbf{\={P}}$}{Data matrix after thresholding as a function of receiver and source number}, is used to predict the blending noise;
+\nomenclature{$\textbf{\^{N}}_{i}$}{Blending noise prediction after $i$ iterations as a function of receiver and source number}
 \nomenclature{$\mathbf{I}$}{Identity matrix}
 
 \begin{equation}
@@ -309,7 +309,7 @@ which is illustrated in Figure \ref{fig:Ch-Theory-Noise}.
 \subsubsection*{Blending Noise Subtraction} 
 
 The estimate of the unblended data matrix \textbf{\^{P}}$_{i}$ is updated by subtracting the estimated blending noise from the pseudo-deblended data,
-\nomenclature{$\textbf{\^P}_{i}$}{(Monochromatic) data matrix prediction after $i$ iterations as a function of receiver and source number}
+\nomenclature{$\textbf{\^P}_{i}$}{Data matrix prediction after $i$ iterations as a function of receiver and source number}
 
 \begin{equation}
 	\textbf{\^P}_{i+1} = \textbf{P}_{ps} - \textbf{\^{N}}_{i}, 
