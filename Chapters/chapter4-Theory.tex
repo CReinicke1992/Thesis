@@ -1,12 +1,12 @@
 \chapter{2D Blending and Deblending} \label{chap:theory}
 
-This chapter recapitulates the idea behind blending and deblending. First the detail hiding operator notation is explained. This notation is used to describe the forward model of seismic data. By introducing the blending operator the forward model is extended to the blended case. Next, the deblending method presented in \citet{Mahdad-Deblending-Method} is discussed to illustrate some of the concepts used in this thesis.
+This chapter recapitulates the idea behind blending and deblending. First the detail hiding operator notation is explained. This notation is used to describe the forward model of seismic data. By introducing the blending operator the forward model is extended to the blended case. Next, the deblending method of \citet{Mahdad-Deblending-Method} is discussed to illustrate some of the concepts used in this thesis.
 
 \section{The Forward Model of Blending} \label{sec:Ch-Theory-Operator}
 %The detail hiding operator notation was introduced by \citet{Berkhout1982}, and later on it was extended for blended data. 
 
 \subsection{Conventional Seismic Data}
-In the detail hiding operator notation \citep{Berkhout1982} the recorded signal is considered discrete in terms of time $t$\nomenclature{$t$}{Time}, receiver position $x_r$\nomenclature{$x_r$}{Receiver coordinates}, and source position $x_s$\nomenclature{$x_s$}{Source coordinates}. Thus, the measurements can be organized in a cube, $\mathbf{p}(t,x_r,x_s)$\nomenclature{$\mathbf{p}$}{3D data cube as a function of time, receiver coordinates, and source coordinates}, (see Figure \ref{fig:Ch-Theory-DataMatrix}). After applying a Fourier transform with respect to time each frequency slice of this new cube represents the data matrix, $\mathbf{P}$\nomenclature{$\mathbf{P}$}{Data matrix as a function of receiver and source number}.
+In the detail hiding operator notation \citep{Berkhout1982} the recorded signal is considered discrete in terms of time $t$\nomenclature{$t$}{Time}, receiver position $x_r$\nomenclature{$x_r$}{Receiver coordinates}, and source position $x_s$\nomenclature{$x_s$}{Source coordinates}. Thus, the measurements can be organized in a cube, $\mathbf{p}(t,x_r,x_s)$\nomenclature{$\mathbf{p}$}{3D data cube as a function of time, receiver coordinates, and source coordinates}, (see Figure \ref{fig:Ch-Theory-DataMatrix}). After applying a Fourier transform with respect to time each frequency slice of this new cube represents the data matrix, $\mathbf{P}(x_r,x_s)$\nomenclature{$\mathbf{P}$}{Data matrix as a function of receiver and source number}, i.e. there is one data matrix for each frequency component. In this thesis I will refer to the data matrix with $\mathbf{P}$.
 
 In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic common-shot gather (see Figure \ref{fig:Ch-Theory-DataMatrixMahdad}), each row to a monochromatic common-receiver gather, each diagonal to a monochromatic common-offset gather, and each anti-diagonal to a monochromatic common-midpoint gather. 
 
@@ -31,6 +31,8 @@ According to the seismic forward model of \citet{Berkhout1982} the data matrix, 
 	\mathbf{P} = \mathbf{D \, X \, S}.
 	\label{eq:Ch-Theory-DataRepresentation}
 \end{equation}
+
+Note that each of these matrices refers to a single frequency component.
 
 In the source matrix, $\mathbf{S}$, both rows and columns represent shot positions (see Figure \ref{fig:Ch-Theory-BlendedSource}). Thus, $\mathbf{S}$ is a diagonal matrix. Each diagonal element $s_{ii}$\nomenclature{$s_{ii}$}{Diagonal element of the source matrix $\mathbf{S}$} captures one frequency component of the source signature injected in the earth at the position $x_s = x_i$\nomenclature{$x_i$}{Coordinates of the $i^{th}$ source}. By applying a Fourier transform to all frequency components of the element $s_{ii}$ the source signature as a function of time is obtained.
 
@@ -100,9 +102,9 @@ Blending can be captured in the forward model by introducing a blending matrix, 
 	\label{eq:Ch-Theory-BlendedSource}
 \end{equation}
 
- Figure \ref{fig:Ch-Theory-BlendedSource} shows the structure of $\mathbf{\Gamma}$; each row of $\mathbf{\Gamma}$ represents one source, and each column of $\mathbf{\Gamma}$ represents one experiment with multiple shots. 
+ Figure \ref{fig:Ch-Theory-BlendedSource} shows the structure of $\mathbf{\Gamma}$; each row of $\mathbf{\Gamma}$ represents one source position, and each column of $\mathbf{\Gamma}$ represents one experiment with multiple shots. 
  
- The blending matrix captures the physics of a blended acquisition as follows: An element $\gamma_{ij}$\nomenclature{$\gamma_{ij}$}{Element of the blending matrix $\mathbf{\Gamma}$ corresponding to the $i^{th}$ source and the $j^{th}$ experiment} of the blending matrix includes a source $i$ and an experiment $j$. If the source $i$ is not fired in the $j^{th}$ experiment $\gamma_{ij}$ is zero. If it is fired, source $i$ has a relative amplitude $A_{ij}$\nomenclature{$A_{ij}$}{Amplitude of the element $\gamma_{ij}$ of the blending matrix $\mathbf{\Gamma}$} and a relative time delay $\Delta t_{ij}$\nomenclature{$\Delta t_{ij}$}{Time delay of the $i^{th}$ source in the $j^{th}$ experiment} with respect to the first source fired in the $j^{th}$ experiment;
+ The blending matrix captures the physics of a blended acquisition as follows: An element $\gamma_{ij}$\nomenclature{$\gamma_{ij}$}{Element of the blending matrix $\mathbf{\Gamma}$ corresponding to the $i^{th}$ source and the $j^{th}$ experiment} of the blending matrix, $\mathbf{\Gamma}$, includes a source $i$ and an experiment $j$. If the source $i$ is not fired in the $j^{th}$ experiment $\gamma_{ij}$ is zero. If it is fired, source $i$ has a relative amplitude $A_{ij}$\nomenclature{$A_{ij}$}{Amplitude of the element $\gamma_{ij}$ of the blending matrix $\mathbf{\Gamma}$} and a relative time delay $\Delta t_{ij}$\nomenclature{$\Delta t_{ij}$}{Time delay of the $i^{th}$ source in the $j^{th}$ experiment} with respect to the first source fired in the $j^{th}$ experiment;
 
 \begin{equation}
 	\gamma_{ij} =  A_{ij} \mathrm{e}^{-j \omega \Delta t_{ij}}.
@@ -111,7 +113,7 @@ Blending can be captured in the forward model by introducing a blending matrix, 
  
 Thus, the blending matrix selects specific sources from the source matrix and superimposes them as visualized in Figure \ref{fig:Ch-Theory-BlendedSource}. From Figure \ref{fig:Ch-Theory-BlendedSource} it also becomes clear that both the blending matrix, $\mathbf{\Gamma}$, and the blended source matrix, $\mathbf{S}_{bl}$, have more rows than columns, i.e. there are more sources than experiments. Thus, the acquisition is done in less time.
 
-In the case of source blending the receiver matrix, $\mathbf{D}$, is not influenced. Of course, the earth impulse response, $\mathbf{X}$, is independent of the acquisition design. Hence, the blended data can be written as;
+In the case of source blending, the receiver matrix, $\mathbf{D}$, is not influenced. Of course, the earth impulse response, $\mathbf{X}$, is independent of the acquisition design. Hence, the blended data can be written as;
 
 \begin{equation}
 	\mathbf{P}_{bl} = \mathbf{D} \, \mathbf{X} \, \mathbf{S}_{bl} = \mathbf{D} \, \mathbf{X} \, \mathbf{S} \, \mathbf{\Gamma} = \mathbf{P \, \Gamma}.
@@ -138,7 +140,14 @@ The basic workflow of the Mahdad method is summarized in Figure \ref{fig:Ch-Theo
 \end{figure}
 
 \subsection{Pseudo-Deblending}
-Unfortunately, the inverse problem of equation \ref{eq:Ch-Theory-BlendedData} is underdetermined, which means that there is not a unique solution for the unblended data, $\mathbf{P}$. Thus, additional constraints are required to deblend the data, which are; (1) sparsity of the signal in the $x$-$t$-domain and (2) coherency of the signal in the $f$-$k$ domain. 
+Unfortunately, the inverse problem of equation \ref{eq:Ch-Theory-BlendedData} is underdetermined;
+
+\begin{equation}
+	\mathbf{P} = \mathbf{\Gamma}^{-1} \; \mathbf{P}_{bl} \;.
+	\label{eq:Ch-Theory-Inverse}
+\end{equation}
+
+Hence, there is not an unique solution for the unblended data, $\mathbf{P}$. Thus, additional constraints are required to deblend the data, which are; (1) sparsity of the signal in the $x$-$t$-domain and (2) coherency of the signal in the $f$-$k$ domain. 
 
 The first estimate of the unblended data matrix, $\mathbf{P}$, is obtained by pseudo-deblending;
 
@@ -152,9 +161,7 @@ where $\mathbf{\Gamma}^H$\nomenclature{$\mathbf{\Gamma}^{H}$}{Conjugate transpos
 
 \subsection{Common-Receiver Gather}
 
-In Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoDeblendedCSG} the interfering shot is coherent. By transforming the data to another domain, e.g. to the common-receiver domain, the interfering shot becomes incoherent \todo{definition of incoherency?} and is visible as spiky noise (see Figure \ref{fig:Ch-Theory-PseudoDeblendedCRG}). Therefore, the interfering shots can be attenuated with a noise filter in the common-receiver domain. 
-
-%\todo[inline]{MOVE TO EXTENSION PART: Considering the 1/b factor, the interfering source creates blending noise and scales the amplitude of the shot of interest. So, is it correct to set blending noise and interfering source equal?}
+In Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoDeblendedCSG} the interfering shot is coherent. By transforming the data to another domain, e.g. to the common-receiver domain, the interfering shot becomes incoherent and is visible as spiky noise (see Figure \ref{fig:Ch-Theory-PseudoDeblendedCRG}). Therefore, the interfering shots can be estimated with a coherency constraint in the common-receiver domain and subtracted subsequently. 
 
 \begin{figure}
 	\centering
@@ -178,7 +185,7 @@ In Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoD
 		\caption{Common-receiver gather}
 		\label{fig:Ch-Theory-PseudoDeblendedCRG}
 	\end{subfigure}
-	\caption{Pseudo-deblended data, $\mathbf{P}_{ps}$, sorted in common-shot gathers (a,b) and in a common-receiver gather (c). The pseudo-deblended data of the right shot (a) and the left shot (b,c) were shifted by different time delays. The overlapping sources map in the pseudo-deblended shot gathers as coherent events, while they map as incoherent spikes in the pseudo-deblended receiver gather.}
+	\caption{Pseudo-deblended data, $\mathbf{P}_{ps}$, sorted in common-shot gathers (a,b) and in a common-receiver gather (c). The pseudo-deblended data in (a) and the the pseudo-deblended data in (b,c) were shifted by different time delays. The overlapping sources map in the pseudo-deblended shot gathers as coherent events, while they map as incoherent spikes in the pseudo-deblended receiver gather.}
 	\label{fig:Ch-Theory-PseudoDeblended}
 
 \end{figure}
@@ -186,14 +193,14 @@ In Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoD
 
 \subsection{Iterative Estimation of Blending Noise} \label{sec:IterBlenNoiseEst}
 
-In an ideal case the noise generated by the interfering shots present in the pseudo-deblended data, the so-called blending noise, is calculated with the unblended data, \nomenclature{$\mathbf{N}$}{Blending noise matrix as a function of receiver and source number}
+In an ideal case the noise generated by the interfering shots present in the pseudo-deblended data, the so-called blending noise, $\mathbf{N}$, is calculated with the unblended data, \nomenclature{$\mathbf{N}$}{Blending noise matrix as a function of receiver and source number}
 
 \begin{equation}
 	\mathbf{N} = \mathbf{P}_{bl} \, \mathbf{\Gamma}^H - \mathbf{P} = \mathbf{P}_{ps} - \mathbf{P}.
 	\label{eq:Ch-Theory-Noise}
 \end{equation}
 
-Obviously, in practice the unblended data are unknown and are estimated by adding extra constraints. The loop shown in Figure \ref{fig:Ch-Theory-FlowChart} uses the pseudo-deblended data, $\mathbf{P}_{ps}$, as an initial estimation of the unblended data. Next, it applies the constraints to reduce the blending noise iteratively until the solution is obtained. 
+Obviously, in practice the unblended data are unknown and are estimated by adding extra constraints to the inverse problem. The loop shown in Figure \ref{fig:Ch-Theory-FlowChart} uses the pseudo-deblended data, $\mathbf{P}_{ps}$, as an initial estimation of the unblended data. Next, it applies the constraints to reduce the blending noise iteratively until the solution is obtained. 
 
 In the following all the quantities which are estimated are indicated with a hat. The steps of the iterative blending noise estimation are illustrated in Figure \ref{fig:Ch-Theory-IterativeDeblending}.
 
@@ -235,28 +242,26 @@ In the following all the quantities which are estimated are indicated with a hat
 		\caption{}
 		\label{fig:Ch-Theory-Deblended}
 	\end{subfigure}
-	\caption{(a) Pseudo-deblended receiver gather. The subfigures (b)-(f) illustrate each step of the deblending algorithm. For better visibility examples from the $5^{th}$ iteration are chosen. (b) $f$-$k$ spectrum before (top) and after (bottom) $f$-$k$ filtering, (c) $f$-$k$ filtered common-receiver gather, (d) after thresholding, (e) estimated blending noise, (f) estimated data.}
+	\caption{(a) Pseudo-deblended receiver gather. The subfigures (b)-(f) illustrate each step of the deblending algorithm. For better visibility examples from the $5^{th}$ iteration are chosen. (b) $f$-$k$ spectrum before (top) and after (bottom) $f$-$k$ filtering, (c) $f$-$k$ filtered common-receiver gather, (d) after thresholding, (e) estimated blending noise, (f) estimated deblended data after 5 iterations.}
 	\label{fig:Ch-Theory-IterativeDeblending}
 \end{figure}
 
 
 \subsubsection*{f-k Filtering}
 
-One of the constraints is coherency, i.e. by assuming the blending noise in Figure \ref{fig:Ch-Theory-PseudoDeblendedCRG5} is incoherent it can be removed. For this purpose the data are transformed from the space-time to the wavenumber-frequency domain where the spiky noise spreads over all wavenumber and frequency components (see Figure \ref{fig:Ch-Theory-FKDeblended-NoFilter}, top). 
-
-%For a 2D $f$-$k$-spectrum the minimum (physical) velocity of the subsurface, $v_{min}$, determines the maximum wavenumber, $k_{max}$,  for a given frequency, $f$;
+One of the constraints is coherency, i.e. by assuming the blending noise in the pseudo-deblended common-receiver gather of Figure \ref{fig:Ch-Theory-PseudoDeblendedCRG5} is incoherent, it can be iteratively attenuated. For this purpose the data are transformed from the space-time to the wavenumber-frequency domain where the spiky noise spreads over all wavenumber and frequency components (see Figure \ref{fig:Ch-Theory-FKDeblended-NoFilter}, top). 
 
 \nomenclature{$k$}{Wavenumber in a 2D case}
 \nomenclature{$k_x$}{Crossline wavenumber in a 3D case}
 \nomenclature{$k_y$}{Inline wavenumber in a 3D case}
-The unblended data would map in the $f$-$k$ domain in a cone (see Figure \ref{fig:Ch-Theory-fk-Unblended-data}). The minimum wavefield velocity present in the subsurface, $v_{min}$\nomenclature{$v_{min}$}{Minimum wavefield velocity present in the subsurface}, determines the slope of the cone. This means that for a given frequency, $f$\nomenclature{$f$}{Frequency}, the maximum wavenumber inside the cone, $k_{max}$\nomenclature{$k_{max}$}{Maximum wavenumber for a given frequency $f$}, is defined as; 
+The unblended data would map in the $f$-$k$ domain in a cone (see Figure \ref{fig:Ch-Theory-fk-Unblended-data}). In this thesis the energy in this cone is defined as coherent. The lowest wavefield velocity present in the subsurface, $v_{min}$\nomenclature{$v_{min}$}{Lowest wavefield velocity present in the subsurface}, determines the slope of the cone. This means that for a given frequency, $f$\nomenclature{$f$}{Frequency}, the maximum wavenumber inside the cone, $k_{max}$\nomenclature{$k_{max}$}{Maximum wavenumber for a given frequency $f$}, is defined as; 
 
 \begin{equation}
 	k_{max} = \frac{f}{v_{min}}.
 	\label{eq_Ch-Theory-MaxWavenmber}
 \end{equation} 
 
-In the marine case the minimum velocity is usually the water velocity, $v_{w} = \SI{1500}{\metre\per\second}$\nomenclature{$v_w$}{Seismic velocity in water}.
+In the marine case the lowest velocity is usually the water velocity, $v_{w} = \SI{1500}{\metre\per\second}$\nomenclature{$v_w$}{Seismic velocity in water}.
 
 \begin{figure}
 	\centering
@@ -271,7 +276,7 @@ In the marine case the minimum velocity is usually the water velocity, $v_{w} = 
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width = 0.957\textwidth]{Plots/Mahdad/30iter/FK-MaskCRG_rec30_v2}
-		\caption{The $f$-$k$-mask is determined by the minimum signal velocity in the subsurface. The white area of the filter equals one, the black area equals zero. Thus, the filter removes data which are mapped outside of the white signal cone.}
+		\caption{The $f$-$k$-mask is determined by the lowest signal velocity in the subsurface. The white area of the filter equals one, the black area equals zero. Thus, the filter removes data which are mapped outside of the white signal cone.}
 		\label{fig:Ch-Theory-FK-Mask}
 	\end{subfigure}
 	

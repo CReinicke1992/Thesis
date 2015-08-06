@@ -1175,20 +1175,20 @@ Supervisor(s):    \hfill  \mscreaderone \\
 %\mbox{}        \hfill  \mscreaderone\\
 Committee Members:       \hfill  \mscreaderone\\
 \ifthenelse{ \equal{\mscreadertwo}{} }{}{\\
-\\
+%\\
 %\mbox{}        \hfill \underline{ \hspace{7cm} }\\
 \mbox{}        \hfill \mscreadertwo\\
 }
 \ifthenelse{ \equal{\mscreaderthree}{} }{}{\\
-\\
+%\\
 %\mbox{}        \hfill \underline{ \hspace{7cm} }\\
 \mbox{}        \hfill \mscreaderthree\\
 }
-%%\ifthenelse{ \equal{\mscreaderfour}{} }{}{\\
+\ifthenelse{ \equal{\mscreaderfour}{} }{}{\\
 %%\\
 %%\mbox{}        \hfill \underline{ \hspace{7cm} }\\
-%%\mbox{}        \hfill \mscreaderfour \\
-%}
+\mbox{}        \hfill \mscreaderfour \\
+}
 \newpage\clearemptydoublepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

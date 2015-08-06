@@ -39,7 +39,7 @@
 \mscReaderOne{Dr. Ir. G.J.A. van Groenestijn}
 \mscReaderTwo{Dr. Ir. G.G.Drijkoningen}
 \mscReaderThree{Dr. M. Hruska}
-%\mscReaderFour{}
+\mscReaderFour{Prof. Jan van der Kruk}
 %
 \setThesisInfo
 %
@@ -50,27 +50,25 @@
 %
 % Make a hell of a lot of title pages
     \maketitle
+    
+    \listoftodos
 %
 % Abstract
     \nonumchap{Abstract}
 Blending is a recent seismic acquisition design, which allows seismic shots to interfere. %Blending is beneficial in terms of data quality and acquisition costs. 
 Current processing techniques are not capable to deal with blended data. Consequently, the blended data must be deblended (separated) as if they were acquired in a conventional way.
+I propose a new acquisition design  based on blended crossline sources. In contrast to existing blended-acquisition designs that only blend in 2D (inline direction and time), this design blends sources in 3D (inline direction, crossline direction and time). Blended crossline sources allow to increase the data quality and/or to reduce the acquisition costs. 
+While most blended-acquisition designs blend 2 sources, the proposed acquisition design blends up to 7 sources. In order to realize this increase in number of blended sources without degrading the data quality, both the blended-acquisition design and the deblending method must be improved.
 
-I propose a new acquisition design, blended crossline-sources. In contrast to existing blended acquisition designs, that only blend in 2D (inline direction and time), this design blends sources in 3D (inline direction, crossline direction and time). Blended crossline-sources allow to increase the data quality, and/or to reduce the acquisition costs. 
-
-While most blended acquisition designs blend 2 sources, the proposed acquisition design has to blend up to 7 sources. In order to realize this increase in number of blended sources without degrading the data quality the blended acquisition design and the deblending method must be improved.
-
-To enhance the blending, I introduce a new incoherency measure of the blended acquisition design, and propose 3 incoherent blending patterns. A 2D synthetic data example illustrated that the deblending quality indeed is optimized by maximizing the incoherency of the blended acquisition.
-
+To enhance the blending, I introduce a new incoherency measure of the blended-acquisition design, and propose 3 incoherent blending patterns. A 2D synthetic data example illustrates that the deblending quality indeed is optimized by maximizing the incoherency of the blended acquisition.
 To enhance the deblending, I derive a 3D deblending method. In contrast to 2D deblending methods, this method exploits both the crossline and inline direction to deblend sources. The 3D deblending method significantly increases the deblending quality as illustrated by a 3D synthetic data example.
-
-The feasibility of blended crossline-sources was proven on a 3D complex synthetic dataset. Two acquisition configurations were examined: The \textit{Wide Crossline Source Array} aims to reduce the acquisition costs, and the \textit{Dense Crossline Source Array} increases the data quality. Both of them provided excellent deblending results with quality factors of \SI{14.2}{\decibel} and \SI{20.8}{\decibel} respectively.
+The feasibility of blended crossline sources is proven on a 3D complex synthetic data example. Two acquisition configurations are examined: The \textit{Wide Crossline Source Array} that aims to reduce the acquisition costs, and the \textit{Dense Crossline Source Array} that increases the data quality. Both of them provide excellent deblending results with quality factors of \SI{14.2}{\decibel} and \SI{20.8}{\decibel} respectively.
 
 %This thesis reviews the 2D deblending method of \citet{Mahdad-Deblending-Method}, which is a noise prediction and subtraction method. Thus, it is demonstrated how deblending benefits from incoherent shot interference, so-called blending noise. In this context a new measure of incoherency is introduced, and 3 possibilities of incoherent blending are proposed. The effect of incoherency on the deblending quality is analyzed at the example of 2D synthetic data. The results suggest that optimal deblending quality is achieved by maximizing the incoherency of the blended acquisition.
 
 %Based on the 2D method of \citet{Mahdad-Deblending-Method} a 3D deblending method is derived. The key differences between the 2D and 3D methods are; (1) the data sorting, and (2) the coherency filter. Next, the presented method is tested on a complex synthetic data set. The results demonstrate that the method successfully deblends strong interfering events. The deblending of weak late events is not optimal yet. 
 
-%In total, the results indicate that blended crossline-sources is a potential acquisition design. With some further development blended crossline-sources is promising to become feasible as a standard acquisition design.
+%In total, the results indicate that blended crossline sources is a potential acquisition design. With some further development blended crossline sources is promising to become feasible as a standard acquisition design.
  
 
    
@@ -126,7 +124,8 @@ The feasibility of blended crossline-sources was proven on a 3D complex syntheti
 
 % Acknowledgements
     \nonumchap{Acknowledgements}%
-    Thanks to my colleagues Gert-Jan, Rolf and Martijn for the great table soccer competitions, which were very inspiring for my thesis. In particular, the concept of incoherent shooting was shaped significantly during these legendary matches.
+    I would like to thank to all people who have supported my thesis. In particular, I wie
+    %Thanks to my colleagues Gert-Jan, Rolf and Martijn for the great table soccer competitions, which were very inspiring for my thesis. In particular, the concept of incoherent shooting was shaped significantly during these legendary matches.
 
     %First of all I want to thank all the people who have participated in this project ..
     %Remember, often more people have contributed to your final thesis than you initially would think of.
@@ -146,21 +145,21 @@ The feasibility of blended crossline-sources was proven on a 3D complex syntheti
 %============================= Back matter =========================================
 \appendix
 
-    \chapter{The back of the thesis}
+    %\chapter{The back of the thesis}
 
-    \section{An appendix section}
+    %\section{An appendix section}
     
     \todo[inline]{List of matlab functions!}
 
-    \subsection{An appendix subsection with C++ Lisitng}
+    %\subsection{An appendix subsection with C++ Lisitng}
 
-    \lstset{language=C++}
-    \lstinputlisting{test.c}
+    %\lstset{language=C++}
+    %\lstinputlisting{test.c}
 
-    \subsection{A \matlab $ $ Listing}
+    %\subsection{A \matlab $ $ Listing}
 
-    \lstset{language=matlab}
-    \lstinputlisting{test.m}
+    %\lstset{language=matlab}
+    %\lstinputlisting{test.m}
     
 \begin{comment}
 	

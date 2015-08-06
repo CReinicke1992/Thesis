@@ -1,10 +1,10 @@
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Abstract}{v}{chapter*.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Abstract}{vii}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1-1}Marine Seismic Acquisition}{1}{section.1.1}
 \contentsline {section}{\numberline {1-2}Literature Review}{2}{section.1.2}
 \contentsline {section}{\numberline {1-3}2D/3D Blending and 2D Deblending}{3}{section.1.3}
-\contentsline {section}{\numberline {1-4}New Survey Design: Blended Crossline-Sources (3D)}{3}{section.1.4}
-\contentsline {section}{\numberline {1-5}Thesis Outline}{5}{section.1.5}
+\contentsline {section}{\numberline {1-4}New Survey Design: Blended Crossline sources (3D)}{3}{section.1.4}
+\contentsline {section}{\numberline {1-5}Thesis Outline}{6}{section.1.5}
 \contentsline {chapter}{\numberline {2}2D Blending and Deblending}{7}{chapter.2}
 \contentsline {section}{\numberline {2-1}The Forward Model of Blending}{7}{section.2.1}
 \contentsline {subsection}{\numberline {2-1-1}Conventional Seismic Data}{7}{subsection.2.1.1}
@@ -17,25 +17,24 @@
 \contentsline {section}{\numberline {3-1}Analysis of the Blending Matrix}{17}{section.3.1}
 \contentsline {section}{\numberline {3-2}Results Spatial and Temporal Incoherency}{20}{section.3.2}
 \contentsline {section}{\numberline {3-3}Effect of Incoherency}{21}{section.3.3}
-\contentsline {section}{\numberline {3-4}Results Incoherency}{23}{section.3.4}
+\contentsline {section}{\numberline {3-4}Results Incoherency}{24}{section.3.4}
 \contentsline {section}{\numberline {3-5}Effect of Maximum Firing-Time Delay}{24}{section.3.5}
-\contentsline {section}{\numberline {3-6}Results Maximum Firing-Time Delay}{24}{section.3.6}
+\contentsline {section}{\numberline {3-6}Results Maximum Firing-Time Delay}{25}{section.3.6}
 \contentsline {section}{\numberline {3-7}Conclusions}{25}{section.3.7}
 \contentsline {chapter}{\numberline {4}Crossline Deblending (3D)}{27}{chapter.4}
 \contentsline {section}{\numberline {4-1}Data Sorting}{27}{section.4.1}
-\contentsline {section}{\numberline {4-2}3D $f$-$k_x$-$k_y$ Filter}{30}{section.4.2}
-\contentsline {section}{\numberline {4-3}Results}{30}{section.4.3}
-\contentsline {section}{\numberline {4-4}Conclusions}{35}{section.4.4}
-\contentsline {chapter}{\numberline {5}Results Complex Synthetic Data}{37}{chapter.5}
-\contentsline {section}{\numberline {5-1}Wide Crossline Source Array}{37}{section.5.1}
-\contentsline {section}{\numberline {5-2}Dense Crossline Source Array}{42}{section.5.2}
+\contentsline {section}{\numberline {4-2}Incoherency}{31}{section.4.2}
+\contentsline {section}{\numberline {4-3}3D $f$-$k_x$-$k_y$ Filter}{31}{section.4.3}
+\contentsline {section}{\numberline {4-4}Results}{33}{section.4.4}
+\contentsline {section}{\numberline {4-5}Conclusions}{37}{section.4.5}
+\contentsline {chapter}{\numberline {5}Results Complex Synthetic Data}{39}{chapter.5}
+\contentsline {section}{\numberline {5-1}Wide Crossline Source Array}{39}{section.5.1}
+\contentsline {section}{\numberline {5-2}Dense Crossline Source Array}{44}{section.5.2}
+\contentsline {subsection}{\numberline {5-2-1}Source Grid Array}{44}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5-2-2}Blending}{44}{subsection.5.2.2}
 \contentsline {section}{\numberline {5-3}Conclusion and Discussion}{46}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusions and Discussion}{47}{chapter.6}
-\contentsline {section}{\numberline {6-1}Conclusions}{47}{section.6.1}
-\contentsline {section}{\numberline {6-2}Discussion}{47}{section.6.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{49}{chapter*.72}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{51}{chapter*.72}
-\contentsline {chapter}{\numberline {A}The back of the thesis}{53}{appendix.A}
-\contentsline {section}{\numberline {A-1}An appendix section}{53}{section.A.1}
-\contentsline {subsection}{\numberline {A-1-1}An appendix subsection with C++ Lisitng}{53}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A-1-2}A \textsc {Matlab}$ $ Listing}{53}{subsection.A.1.2}
+\contentsline {chapter}{\numberline {6}Conclusions and Discussion}{51}{chapter.6}
+\contentsline {section}{\numberline {6-1}Conclusions}{51}{section.6.1}
+\contentsline {section}{\numberline {6-2}Discussion}{51}{section.6.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{53}{chapter*.67}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{55}{chapter*.67}
