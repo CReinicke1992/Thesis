@@ -1,7 +1,7 @@
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Abstract}{vii}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1-1}Marine Seismic Acquisition}{1}{section.1.1}
-\contentsline {section}{\numberline {1-2}Literature Review}{2}{section.1.2}
+\contentsline {section}{\numberline {1-2}Literature Review}{3}{section.1.2}
 \contentsline {section}{\numberline {1-3}2D/3D Blending and 2D Deblending}{3}{section.1.3}
 \contentsline {section}{\numberline {1-4}New Survey Design: Blended Crossline Sources (3D)}{3}{section.1.4}
 \contentsline {section}{\numberline {1-5}Thesis Outline}{6}{section.1.5}
@@ -10,9 +10,9 @@
 \contentsline {subsection}{\numberline {2-1-1}Conventional Seismic Data}{7}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2-1-2}Blended Seismic Data}{9}{subsection.2.1.2}
 \contentsline {section}{\numberline {2-2}Deblending}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2-2-1}Pseudo-Deblending}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2-2-1}Pseudo-Deblending}{11}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2-2-2}Common-Receiver Gather}{11}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2-2-3}Iterative Estimation of Blending Noise}{11}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2-2-3}Iterative Estimation of Blending Noise}{12}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Incoherency}{17}{chapter.3}
 \contentsline {section}{\numberline {3-1}Analysis of the Blending Matrix}{17}{section.3.1}
 \contentsline {section}{\numberline {3-2}Results Spatial and Temporal Incoherency}{20}{section.3.2}
@@ -24,7 +24,7 @@
 \contentsline {chapter}{\numberline {4}Crossline Deblending (3D)}{27}{chapter.4}
 \contentsline {section}{\numberline {4-1}Data Sorting}{27}{section.4.1}
 \contentsline {section}{\numberline {4-2}Incoherency}{31}{section.4.2}
-\contentsline {section}{\numberline {4-3}3D $f$-$k_x$-$k_y$ Filter}{31}{section.4.3}
+\contentsline {section}{\numberline {4-3}3D $f$-$k_x$-$k_y$ Filter}{32}{section.4.3}
 \contentsline {section}{\numberline {4-4}Results}{32}{section.4.4}
 \contentsline {section}{\numberline {4-5}Conclusions}{38}{section.4.5}
 \contentsline {chapter}{\numberline {5}Results Complex Synthetic Data}{39}{chapter.5}
@@ -33,6 +33,6 @@
 \contentsline {section}{\numberline {5-3}Conclusions and Discussion}{46}{section.5.3}
 \contentsline {chapter}{\numberline {6}Conclusions and Discussion}{51}{chapter.6}
 \contentsline {section}{\numberline {6-1}Conclusions}{51}{section.6.1}
-\contentsline {section}{\numberline {6-2}Discussion}{51}{section.6.2}
+\contentsline {section}{\numberline {6-2}Discussion}{52}{section.6.2}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{53}{chapter*.69}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{55}{chapter*.69}
