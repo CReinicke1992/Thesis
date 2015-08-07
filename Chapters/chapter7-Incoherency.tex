@@ -40,11 +40,11 @@ Consequently, an element $g_{kl}$ of the matrix product, $\mathbf{\Gamma \Gamma}
 
 In the following the term "sub-diagonal" will be used to refer to an arbitrary diagonal of the matrix product, $\mathbf{\Gamma \Gamma}^H$. For example, the $d^{th}$ sub-diagonal includes all the matrix elements, $g_{ij}$\nomenclature{$g_{ij}$}{Element of the matrix product $\mathbf{\Gamma \Gamma}^H$ corresponding to the interference between the $i^{th}$ and $j^{th}$ source}, which fulfill the condition; $j -i = d$.
 
-In equation \ref{eq:Ch-Theory-PseudoSuperposition} the main diagonal elements of $\mathbf{\Gamma \Gamma}^H$ copy the data matrix, $\mathbf{P}$, while the off-diagonal elements create the blending noise, $\mathbf{N}$. In case of constant firing-time delays the elements along a sub-diagonal $d$ all have the same phase. This means that the sub-diagonal elements will shift the columns of the data matrix and apply a constant phase shift to each of them resulting in the pseudo-deblended receiver gather shown in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay}. If the firing-times are random instead of constant, the elements $g_{ij}$ along a sub-diagonal $d$ will have different phases. Consequently, they will shift the columns of the data matrix, and distort the phase of each column (see Figure \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay}). 
+In equation \ref{eq:Ch-Theory-PseudoSuperposition} the main diagonal elements of $\mathbf{\Gamma \Gamma}^H$ copy the data matrix, $\mathbf{P}$, while the off-diagonal elements create the blending noise, $\mathbf{N}$. In case of constant firing-time delays the elements along a sub-diagonal $d$ all have the same phase. This means that the sub-diagonal elements shift the columns of the data matrix and apply a constant phase shift to each of them resulting in the pseudo-deblended receiver gather shown in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay}. If the firing-time delays are random, instead of constant, the elements $g_{ij}$ along a sub-diagonal $d$ have different phases. Consequently, they shift the columns of the data matrix, and distort the phase of each column (see Figure \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay}). 
 
-Figure \ref{fig:Ch-Theory-PseudoCRG-FK-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-FK-IncoherentDelay} display the $f$-$k$ spectra of the pseudo-deblended data for constant firing-time delays and random firing-time delays respectively. In the case of constant firing-time delays all of the energy maps in the signal cone. In the case of random firing-time delays a significant part of the energy maps outside of the signal cone. From Figure \ref{fig:Ch-Theory-PseudoCRG-FK-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-FK-IncoherentDelay} it is clear that the coherency constraint presented in section \ref{sec:IterBlenNoiseEst} cannot work with constant firing-time delays, but needs the random firing-time delays. 
+Figure \ref{fig:Ch-Theory-PseudoCRG-FK-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-FK-IncoherentDelay} display the $f$-$k$ spectra of the pseudo-deblended data with constant firing-time delays and random firing-time delays respectively. In the case of constant firing-time delays all of the energy maps in the signal cone. In the case of random firing-time delays a significant part of the energy maps outside of the signal cone. From Figure \ref{fig:Ch-Theory-PseudoCRG-FK-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-FK-IncoherentDelay} it is clear that the coherency constraint presented in section \ref{sec:IterBlenNoiseEst} cannot work with constant firing-time delays but needs the random firing-time delays. 
 
-In this thesis the random firing-time delays along a sub-diagonal are referred to as temporal incoherency.  
+In this thesis the random firing-time delays between blended shots are referred to as temporal incoherency.  
 
 \begin{figure}
 	\centering
@@ -96,7 +96,7 @@ In this thesis the random firing-time delays along a sub-diagonal are referred t
 		\label{fig:Ch-Theory-PseudoCRG-FK-IncoherentSpace}
 	\end{subfigure}
 	
-	\caption{Comparison of the pseudo-deblended receiver gather for (a) constant firing-time delays of \SI{100}{\milli\second}, (b) random firing-time delays between \SI{0}{\milli\second} and \SI{100}{\milli\second} and (c) a spatially incoherent blending pattern. (d) - (f) show the $f$-$k$ spectra of (a), (b) and (c) respectively.}
+	\caption{Comparison of the pseudo-deblended receiver gather for (a) constant firing-time delays of \SI{100}{\milli\second}, (b) random firing-time delays between \SI{0}{\milli\second} and \SI{100}{\milli\second}, and (c) a spatially incoherent blending pattern. (d) - (f) show the $f$-$k$ spectra of (a), (b), and (c) respectively.}
 	\label{fig:Ch-Theory-PseudoCRG-IncoherencyEffect}
 
 \end{figure}
@@ -104,7 +104,7 @@ In this thesis the random firing-time delays along a sub-diagonal are referred t
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Plots/GGH_x_v2}
-	\caption{The blending matrix, $\mathbf{\Gamma}$, is obtained by interchanging the $3^{rd}$ and $4^{th}$ row of the blending matrix in Figure \ref{fig:Ch-Theory-GGH}. In acquisition this is equivalent to moving shot three to experiment two, and shot four to experiment one. A random permutation of the rows of the blending matrix spreads the off-diagonal elements of the matrix product, $\mathbf{\Gamma\Gamma}^H$. The elements are not assembled on the sub-diagonals anymore.}
+	\caption{The blending matrix, $\mathbf{\Gamma}$, is obtained by interchanging the third and fourth row of the blending matrix in Figure \ref{fig:Ch-Theory-GGH}. In acquisition this is equivalent to moving shot three to experiment two, and shot four to experiment one. A random permutation of the rows of the blending matrix spreads the off-diagonal elements of the matrix product, $\mathbf{\Gamma\Gamma}^H$. The elements are not assembled on the sub-diagonals anymore.}
 	\label{fig:Ch-Theory-GGHx}
 \end{figure}
 
@@ -115,11 +115,16 @@ In order to generate incoherent source interference, $\mathbf{N}$, it is therefo
 
 \subsection*{Spatial incoherency}
 
-Of course, the degree of incoherency of the blending noise, $\mathbf{N}$, also depends on whether the shot positions of shots blended in an experiment are selected spatially in a random or coherent pattern. For example, one expects the blending noise to be more incoherent, if in each experiment randomly selected shot positions are blended as in Figure \ref{fig:Ch-Theory-GGHx}, than if in each experiment adjacent shot positions are blended as in Figure \ref{fig:Ch-Theory-GGH}, because the interfering shots are spread over the sub-diagonals in Figure \ref{fig:Ch-Theory-GGHx}.
+The degree of incoherency of the blending noise, $\mathbf{N}$, also depends on whether the shot positions of blended shots are selected in a random or coherent pattern. For example, if in each experiment equidistant shot positions are blended, as shown in Figure \ref{fig:Ch-Theory-GGH}, the interfering shots are organized along the sub-diagonals of the matrix product, $\mathbf{\Gamma\Gamma}^H$. Instead, if in each experiment randomly selected shot positions are blended, as shown in Figure \ref{fig:Ch-Theory-GGHx}, the interfering shots are spread over the sub-diagonals of the matrix product, $\mathbf{\Gamma\Gamma}^H$. Thus, the blending noise is more incoherent in the case of blending randomly selected shot positions.
 
-In this thesis selecting random shots for an experiment is referred to as spatial incoherency. Figure \ref{fig:Ch-Theory-PseudoCRG-IncoherentSpace} shows a pseudo-deblended common-receiver gather of a blended dataset, which was acquired in a spatially incoherent fashion, i.e. the blended shot-positions are selected randomly but the firing-time delay is always zero. The corresponding $f$-$k$ spectrum is shown in Figure \ref{fig:Ch-Theory-PseudoCRG-FK-IncoherentSpace}.
 
-Although examples of spatial incoherency are shown in this chapter, it has to be noted that to blend shots in a spatially incoherent fashion is not very practical in 2D acquisition. However, in chapter \ref{chap:MahdadMethod3d} it will be shown, that for 3D blending spatial incoherency becomes practical.
+
+
+%one expects the blending noise to be more incoherent if in each experiment randomly selected shot positions are blended as shown in Figure \ref{fig:Ch-Theory-GGHx} than if in each experiment adjacent shot positions are blended as shown in Figure \ref{fig:Ch-Theory-GGH} because the interfering shots are spread over the sub-diagonals in Figure \ref{fig:Ch-Theory-GGHx}.
+
+In this thesis selecting random shot positions for an experiment is referred to as spatial incoherency. Figure \ref{fig:Ch-Theory-PseudoCRG-IncoherentSpace} shows a pseudo-deblended common-receiver gather of a blended dataset which was acquired in a spatially incoherent fashion, i.e. the blended shot positions are selected randomly but the firing-time delays are always zero. The corresponding $f$-$k$ spectrum is shown in Figure \ref{fig:Ch-Theory-PseudoCRG-FK-IncoherentSpace}.
+
+Although examples of spatial incoherency are shown in this chapter it has to be noted that blending shots in a spatially incoherent fashion is not very practical in 2D acquisition. However, in chapter \ref{chap:MahdadMethod3d} it will be shown that for 3D blending spatial incoherency becomes practical.
 
 
 \begin{comment}
@@ -135,9 +140,9 @@ In practice, the maximum allowed firing time delay is limited by the available a
 
 \section{Results Spatial and Temporal Incoherency}
 
-Based on the blending matrices in Figure \ref{fig:Ch-Theory-GGH} and \ref{fig:Ch-Theory-GGHx} there are three possibilities to blend the shots incoherently. First, the phase terms along the sub-diagonals can be randomly varied, i.e. the shots are blended with random firing-time delays (temporal incoherency). Second, the rows of the blending matrix can be randomly permuted, i.e. one randomly selects shots for each experiment and fires them with no delay time (spatial incoherency). Third, temporal and spatial incoherency can be combined (mixed incoherency), i.e. randomly selected shots are blended with random firing-time delays.
+Based on the blending matrices in Figure \ref{fig:Ch-Theory-GGH} and \ref{fig:Ch-Theory-GGHx} there are three possibilities to blend shots incoherently. First, the phase terms along the sub-diagonals can be randomly varied, i.e. the shots are blended with random firing-time delays (temporal incoherency). Second, the rows of the blending matrix can be randomly permuted, i.e. one randomly selects shots for each experiment and fires them with no delay time (spatial incoherency). Third, temporal and spatial incoherency can be combined (mixed incoherency), i.e. randomly selected shots are blended with random firing-time delays.
 
-These three blending patterns are applied to a synthetic dataset. The data are a common-receiver gather with 21 shots (see Figure \ref{fig:Ch-Results-Unbl-inline10}), which are blended in three experiments with seven shots per experiment. Next, the data are deblended with the deblending algorithm of section \ref{sec:MahdadMethod}. 
+These three blending patterns are applied to a synthetic dataset. The data are a common-receiver gather with 21 shots (see Figure \ref{fig:Ch-Results-Unbl-inline10}). The shots are blended in three experiments with seven shots per experiment. Next, the data are deblended with the deblending algorithm of section \ref{sec:MahdadMethod}. 
 
 The deblended receiver gathers are shown in Figure \ref{fig:Ch-Results-Debl-x-inline}. The results suggest that only spatial incoherency is not sufficient to deblend the data (see Figure \ref{fig:Ch-Results-Debl-inline10-x}). By introducing random firing-time delays the deblended data improve significantly as shown in Figure \ref{fig:Ch-Results-Debl-inline10-t}. A combination of both spatial and temporal incoherency enhances the deblended data further (see Figure \ref{fig:Ch-Results-Debl-inline10-xt}).
 
@@ -189,7 +194,7 @@ Note that the blending noise in the pseudo-deblended common-receiver gathers in 
 \FloatBarrier
 \section{Effect of Incoherency} \label{sec:Effect-of-Incoherency}
 
-This section aims to analyze how strongly the deblending result depends on the incoherency of the blended acquisition. For this purpose I will introduce a measure of incoherency and deblending quality.
+This section aims to analyze how strongly the deblending result depends on the incoherency of the blended acquisition. For this purpose I will introduce a measure of incoherency and a measure of deblending quality.
 
 \subsection*{Incoherency Measure}
 
@@ -198,7 +203,7 @@ This section aims to analyze how strongly the deblending result depends on the i
 
 %A measure of incoherency will be introduced in order to analyze the importance of an incoherent blending pattern quantitatively.
 
-In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the matrix product, $\mathbf{\Gamma \Gamma}^H$, should be out of phase, i.e. each element should contain a different time delay, $\Delta t$. Therefore, the phase variability of the sub-diagonal elements will be used to quantify incoherency. 
+In section \ref{sec:BlendingMatrix} it was shown that for an incoherent blending pattern the elements, $\mathrm{e}^{-j \omega \Delta t_{kl}}$, along a sub-diagonal of the matrix product, $\mathbf{\Gamma \Gamma}^H$, should be out of phase, i.e. each element should contain a different time delay, $\Delta t$. Therefore, the phase variability of the sub-diagonal elements is used to quantify incoherency. 
 
 \begin{figure}
 	\centering
@@ -227,14 +232,14 @@ The incoherency measure, $\mu$, is introduced as;
 
 where $N_s$\nomenclature{$N_s$}{Total number of sources} is the number of sources, i.e. the matrix $\mathbf{\Gamma \Gamma}^H$ has $N_s$ rows and columns. Note that in this ratio, the numerator relates to the main diagonal only, and the denominator to all sub-diagonals.
 
-Equation \ref{eq:Ch-Results-incoherency} implies that the incoherency value can vary between zero (perfectly coherent) and one (perfectly incoherent). Thus, a maximum incoherency value is desired.
+Equation \ref{eq:Ch-Results-incoherency} implies that the incoherency value can vary between zero (perfectly coherent) and one (perfectly incoherent). Thus, a maximum incoherency value, $\mu$, is desired.
 
 \nomenclature{$\mathbf{\Gamma}_{\mathrm{coh}}$}{Blending matrix with constant firing-time delays}
 \nomenclature{$\mathbf{\Gamma}_{\mathrm{ran}}$}{Blending matrix with random firing-time delays}
 \nomenclature{$\mu_{\mathrm{coh}}$}{Incoherency of the blending matrix $\mathbf{\Gamma}_{\mathrm{coh}}$}
 \nomenclature{$\mu_{\mathrm{ran}}$}{Incoherency of the blending matrix $\mathbf{\Gamma}_{\mathrm{ran}}$}
 
-For example, consider the two blending matrices, $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$, which produce the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$, uses constant firing-time delays, while the blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, uses random firing-time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $M(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One can observe that for the incoherent blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, $M(d,\omega)$ resembles a simple spike more than for the coherent blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$. The coherent blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$,  yields an incoherency value of $\mu_{\mathrm{coh}} = \SI{67}{\percent}$, whereas the incoherent blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, yields an incoherency value of $\mu_{\mathrm{ran}} = \SI{98}{\percent}$. 
+For example, consider the two blending matrices, $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$, which produce the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. The blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$, uses constant firing-time delays while the blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, uses random firing-time delays. Figure \ref{fig:Ch-Incoherency-Coh-vs-Ran-Diag} shows $M(d,\omega)$ for both blending matrices for the frequency slice $f=\SI{25}{\hertz}$. One observes that in case of the incoherent blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, $M(d,\omega)$ resembles a simple spike more than in case of the coherent blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$. The coherent blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$,  yields an incoherency value of $\mu_{\mathrm{coh}} = \SI{67}{\percent}$ whereas the incoherent blending matrix, $\mathbf{\Gamma}_{\mathrm{ran}}$, yields an incoherency value of $\mu_{\mathrm{ran}} = \SI{98}{\percent}$. 
 
 Note that the coherent blending matrix, $\mathbf{\Gamma}_{\mathrm{coh}}$, yields an incoherency value of $\mu_{\mathrm{coh}} = \SI{67}{\percent}$ and not $\mu_{\mathrm{coh}} = \SI{0}{\percent}$ as one might expect. This is because this example only blends two sources, i.e. only the main and the first upper and lower sub-diagonals are non-zero. As a consequence the minimum ratio in equation \ref{eq:Ch-Results-incoherency} is $\frac{2}{3}$. In order to achieve smaller incoherency values more sub-diagonals must contain non-zero entries, i.e. more than two sources must be blended.
 
@@ -279,12 +284,12 @@ where $\mathbf{P}$ are the unblended data, and \textbf{\^{P}} the deblended data
 
 \section{Results Incoherency}
 
-Consider again the two blending matrices, $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing-time delay, while their incoherency values differ ($\mu_{\mathrm{coh}} = \SI{67}{\percent}$, $\mu_{\mathrm{ran}} = \SI{98}{\percent}$). 
+Consider again the two blending matrices, $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$, which produced the pseudo-deblended receiver gathers in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay} and \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay} respectively. Both blending matrices use the same maximum firing-time delay but their incoherency values differ ($\mu_{\mathrm{coh}} = \SI{67}{\percent}$, $\mu_{\mathrm{ran}} = \SI{98}{\percent}$). 
 
 An effective blending matrix, $\mathbf{\Gamma}_{\mathrm{eff}}$, is created by superimposing the time delays $\mathrm{e}^{-j \omega \Delta t_{ij}}$ of the blending matrices $\mathbf{\Gamma}_{\mathrm{coh}}$ and $\mathbf{\Gamma}_{\mathrm{ran}}$;
 
 \begin{equation}
-	\Delta t_{\mathrm{eff}} = a \cdot \Delta t_{ij,ran} + (1 - a) \cdot \Delta t_{ij,coh}, \; a \in [0,1].
+	\Delta t_{\mathrm{eff}} = a \cdot \Delta t_{ij,ran} + (1 - a) \cdot \Delta t_{ij,coh}\;, \; a \in [0,1].
 	\label{eq:Ch-Incoherency-EffectiveG}
 \end{equation}
 
@@ -296,7 +301,7 @@ The maximum firing-time delay of the effective blending matrix, $\mathbf{\Gamma}
 \begin{figure}
 	\centering
 	\includegraphics[width = 0.6\textwidth]{Plots/BlendingPatterns/Mu-vs-Q_v2}
-	\caption{Deblending quality as a function of incoherency for a constant maximum firing-time delay.}
+	\caption{Deblending quality as a function of incoherency for a constant maximum firing-time delay of \SI{100}{\milli\second}.}
 	\label{fig:Ch-Results-Quality-vs-Incoherency}
 \end{figure}
 
@@ -314,7 +319,7 @@ The three suggested blending patterns, namely temporal, spatial and mixed incohe
 
 Figure \ref{fig:Ch-Results-QualityFactors} shows the quality factors for the three blending patterns as a function of maximum firing-time delay. Note that for a fixed maximum firing-time delay and a specific blending pattern the firing-time delays are generated with a random number generator. Consequently, the resulting quality factor varies depending on the variation of the random number series. For this reason several blending matrices are generated for each maximum firing-time delay and each blending pattern. The resulting quality factors are averaged.
 
-In Figure \ref{fig:Ch-Results-QualityFactors} the spatially incoherent blending pattern yields a constant deblending quality independent of the maximum firing-time delay, because it blends the sources without time delay. The deblending quality provided by the other two blending patterns continuously enhances with increasing maximum firing-time delay. The difference in deblending quality between temporal and mixed blending patterns seems to be independent of the maximum firing-time delay.
+In Figure \ref{fig:Ch-Results-QualityFactors} the spatially incoherent blending pattern yields a constant deblending quality independent of the maximum firing-time delay because it blends the sources without firing-time delay. The deblending quality provided by the other two blending patterns continuously enhances with increasing maximum firing-time delay. The difference in deblending quality between temporal and mixed blending patterns seems to be independent of the maximum firing-time delay.
 
 \begin{figure}
 	\centering
