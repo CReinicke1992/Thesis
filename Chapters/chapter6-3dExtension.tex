@@ -1,11 +1,9 @@
 \chapter{Crossline Deblending (3D)} \label{chap:MahdadMethod3d}
 
-This thesis proposes to blend crossline sources. It is hypothesized that by combining several cross-lines one can effectively blend sources in 3D. Figure \ref{fig:Ch-Mahdad3d-Geometry_v2} illustrates how a 3D source grid can be built. Note that for 3D blending each cross-line must be fired with a different blending pattern. Otherwise the blending noise along the inline direction would be coherent.
-
 \begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{Plots/AcquisitionDesign/Geometry_v3}	
-	\caption{\textit{Top}: Illustration of the 3D source grid array. \textit{Bottom}: The vessels show how the source grid can be built in practice.}
+	\caption{\textit{Top}: Illustration of the 3D source grid array. \textit{Bottom}: The sailing vessel shows how the source grid can be built in practice. Note that this design builds a source grid for each receiver position.}
 	\label{fig:Ch-Mahdad3d-Geometry_v2}	
 \end{figure}
 
@@ -14,6 +12,8 @@ The deblending method of \citet{Mahdad-Deblending-Method} described in section \
 First, I will modify the data sorting such that the blended 3D data can be described using the same forward model as in section \ref{sec:Ch-Theory-Operator}. The presented data sorting will allow to maintain all other steps of the deblending algorithm of \citet{Mahdad-Deblending-Method}. Second, I will extend the incoherency estimation of the blending design from 2D to 3D. Third, I will extend the 2D $f$-$k$ filter to a 3D $f$-$k_x$-$k_y$ filter to attenuate blending noise in both crossline and inline direction.
 
 \section{Data Sorting} \label{sec:Ch-Theory-3dExtension-DataSorting}
+
+This thesis proposes to blend crossline sources. It is hypothesized that by combining several cross-lines one can effectively blend sources in 3D. Figure \ref{fig:Ch-Mahdad3d-Geometry_v2} illustrates how a 3D source grid can be built. This acquisition design builds a source grid for each receiver position. Note that for 3D blending each cross-line must be fired with a different blending pattern. Otherwise the blending noise along the inline direction would be coherent.
 
 \subsection*{Data Matrix}
 

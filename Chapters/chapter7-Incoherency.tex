@@ -1,19 +1,19 @@
 \chapter{Incoherency} \label{chap:Incoherency}
 
-In this chapter the blending operator is analyzed in greater detail. The analysis aims to propose a blending operator, which facilitates better deblending. Before starting the analysis I will introduce a new measure of incoherency. Then, I will discussed how incoherency and the so-called maximum firing-time delay influence deblending.
+In this chapter the blending operator is analyzed in greater detail. The analysis aims to propose a blending operator which facilitates better deblending. Before starting the analysis I will introduce a new measure of incoherency. Then, I will discuss how incoherency and the so-called maximum firing-time delay influence deblending.
 
 \section{Analysis of the Blending Matrix} \label{sec:BlendingMatrix}
 
-In order to optimize the blended-acquisition design, one must understand the properties of the blending matrix, $\mathbf{\Gamma}$, and its influence on the deblending performance.
+In order to optimize the blended-acquisition design one must understand the properties of the blending matrix, $\mathbf{\Gamma}$, and its influence on the deblending performance.
 
-The blending matrix, $\mathbf{\Gamma}$, determines the pseudo-deblended data,
+The blending matrix, $\mathbf{\Gamma}$, determines the pseudo-deblended data;
 
 \begin{equation}
 	\mathbf{P}_{ps} = \mathbf{P \Gamma \Gamma}^H,
 	\label{eq:Ch-Theory-Pseudo-Deblended-Data}
 \end{equation}
 
-which are a superposition of the unblended data, $\mathbf{P}$, and the blending noise, $\mathbf{N}$,
+which are a superposition of the unblended data, $\mathbf{P}$, and the blending noise, $\mathbf{N}$;
 
 \begin{equation}
 	\mathbf{P}_{ps} = \mathbf{P} + \mathbf{N} = \mathbf{P I} + \mathbf{P} \; (\mathbf{\Gamma \Gamma}^H - \mathbf{I}).
@@ -38,7 +38,7 @@ Consequently, an element $g_{kl}$ of the matrix product, $\mathbf{\Gamma \Gamma}
 
 \subsection*{Temporal incoherency}
 
-In the following the term "sub-diagonal" will be used to refer to an arbitrary diagonal of the matrix $\mathbf{\Gamma \Gamma}^H$. For example, the $d^{th}$ sub-diagonal includes all the matrix elements $g_{ij}$\nomenclature{$g_{ij}$}{Element of the matrix product $\mathbf{\Gamma \Gamma}^H$ corresponding to the interference between the $i^{th}$ and $j^{th}$ source}, which fulfill the condition; $j -i = d$.
+In the following the term "sub-diagonal" will be used to refer to an arbitrary diagonal of the matrix product, $\mathbf{\Gamma \Gamma}^H$. For example, the $d^{th}$ sub-diagonal includes all the matrix elements, $g_{ij}$\nomenclature{$g_{ij}$}{Element of the matrix product $\mathbf{\Gamma \Gamma}^H$ corresponding to the interference between the $i^{th}$ and $j^{th}$ source}, which fulfill the condition; $j -i = d$.
 
 In equation \ref{eq:Ch-Theory-PseudoSuperposition} the main diagonal elements of $\mathbf{\Gamma \Gamma}^H$ copy the data matrix, $\mathbf{P}$, while the off-diagonal elements create the blending noise, $\mathbf{N}$. In case of constant firing-time delays the elements along a sub-diagonal $d$ all have the same phase. This means that the sub-diagonal elements will shift the columns of the data matrix and apply a constant phase shift to each of them resulting in the pseudo-deblended receiver gather shown in Figure \ref{fig:Ch-Theory-PseudoCRG-CoherentDelay}. If the firing-times are random instead of constant, the elements $g_{ij}$ along a sub-diagonal $d$ will have different phases. Consequently, they will shift the columns of the data matrix, and distort the phase of each column (see Figure \ref{fig:Ch-Theory-PseudoCRG-IncoherentDelay}). 
 
@@ -329,7 +329,7 @@ In Figure \ref{fig:Ch-Results-QualityFactors} the spatially incoherent blending 
 
 It was demonstrated that successful deblending depends on; (1) the degree of incoherency, and (2) the maximum firing-time delay. These parameters are linked to each other because a longer maximum firing-time delay gives more freedom to generate (temporal) incoherency. However, the two parameters affect the deblending quality very differently. The degree of incoherency influences the deblending quality step-like (see Figure \ref{fig:Ch-Results-Quality-vs-Incoherency}), i.e. either the incoherency is sufficiently high to deblend the data, or it is not and the deblending result is poor. The maximum firing-time delay shows an almost linear effect on the deblending quality (see Figure \ref{fig:Ch-Results-QualityFactors}). Thus, the maximum firing-time delay allows to adjust the desired deblending quality.
 
-This chapter showed that deblending benefits; (1) from increasing the maximum firing-time delay, and (2) from maximizing the blending incoherency, which is achieved with a mixed incoherent blending pattern. Therefore, I will blend the complex synthetic data in chapter \ref{chap:ComplexSynthetic} with the longest possible maximum firing-time delay, and with a mixed incoherent blending pattern to achieve optimal deblending results.
+This chapter showed that deblending benefits; (1) from increasing the maximum firing-time delay, and (2) from maximizing the blending incoherency which is achieved with high incoherency values. The highest incoherency values were obtained with a mixed incoherent blending pattern. Therefore, I will blend the complex synthetic data in chapter \ref{chap:ComplexSynthetic} with the longest possible maximum firing-time delay, and with a mixed incoherent blending pattern to achieve optimal deblending results.
 
 %In practice, the maximum firing-time delay will be limited by the schedule of the seismic survey. Hence, for a given maximum firing-time delay the blending pattern must be designed sufficiently incoherent to achieve the desired deblending quality. Of course, if the maximum firing-time delay is too short, it is not possible to achieve a sufficiently high degree of incoherency to deblend the data. In such a case the maximum firing-time delay must be increased.
 			

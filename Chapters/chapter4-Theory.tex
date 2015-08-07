@@ -8,7 +8,7 @@ This chapter recapitulates the idea behind blending and deblending. First the de
 \subsection{Conventional Seismic Data}
 In the detail hiding operator notation \citep{Berkhout1982} the recorded signal is considered discrete in terms of time $t$\nomenclature{$t$}{Time}, receiver position $x_r$\nomenclature{$x_r$}{Receiver coordinates}, and source position $x_s$\nomenclature{$x_s$}{Source coordinates}. Thus, the measurements can be organized in a cube, $\mathbf{p}(t,x_r,x_s)$\nomenclature{$\mathbf{p}$}{3D data cube as a function of time, receiver coordinates and source coordinates}, (see Figure \ref{fig:Ch-Theory-DataMatrix}). After applying a Fourier transform with respect to time each frequency slice of this new cube represents the data matrix, $\mathbf{P}(x_r,x_s)$\nomenclature{$\mathbf{P}$}{Data matrix as a function of receiver and source number}, i.e. there is one data matrix for each frequency component. In this thesis I will refer to the data matrix with $\mathbf{P}$.
 
-In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic common-shot gather (see Figure \ref{fig:Ch-Theory-DataMatrixMahdad}), each row to a monochromatic common-receiver gather, each diagonal to a monochromatic common-offset gather, and each anti-diagonal to a monochromatic common-midpoint gather. 
+In the data matrix, $\mathbf{P}$, each column corresponds to a monochromatic common-shot gather (see Figure \ref{fig:Ch-Theory-DataMatrixMahdad}), each row to a monochromatic common-receiver gather, each diagonal to a monochromatic common-offset gather and each anti-diagonal to a monochromatic common-midpoint gather. 
 
 \begin{figure}
     \centering
@@ -113,7 +113,7 @@ Blending can be captured in the forward model by introducing a blending matrix, 
  
 Thus, the blending matrix selects specific sources from the source matrix and superimposes them as visualized in Figure \ref{fig:Ch-Theory-BlendedSource}. From Figure \ref{fig:Ch-Theory-BlendedSource} it also becomes clear that both the blending matrix, $\mathbf{\Gamma}$, and the blended source matrix, $\mathbf{S}_{bl}$, have more rows than columns, i.e. there are more sources than experiments. Thus, the acquisition is done in less time.
 
-In the case of source blending, the receiver matrix, $\mathbf{D}$, is not influenced. Of course, the earth impulse response, $\mathbf{X}$, is independent of the acquisition design. Hence, the blended data can be written as;
+In the case of source blending the receiver matrix, $\mathbf{D}$, is not influenced. Of course, the earth impulse response, $\mathbf{X}$, is independent of the acquisition design. Hence, the blended data can be written as;
 
 \begin{equation}
 	\mathbf{P}_{bl} = \mathbf{D} \, \mathbf{X} \, \mathbf{S}_{bl} = \mathbf{D} \, \mathbf{X} \, \mathbf{S} \, \mathbf{\Gamma} = \mathbf{P \, \Gamma}.
@@ -147,7 +147,7 @@ The basic workflow of the Mahdad method is summarized in Figure \ref{fig:Ch-Theo
 	\label{eq:Ch-Theory-Inverse}
 \end{equation}
 
-Hence, there is not an unique solution for the unblended data, $\mathbf{P}$. Thus, additional constraints are required to deblend the data, which are; (1) sparsity of the signal in the $x$-$t$-domain and (2) coherency of the signal in the $f$-$k$ domain. 
+Hence, there is not an unique solution for the unblended data, $\mathbf{P}$. Thus, additional constraints are required to deblend the data which are; (1) sparsity of the signal in the $x$-$t$-domain, and (2) coherency of the signal in the $f$-$k$ domain. 
 
 The first estimate of the unblended data matrix, $\mathbf{P}$, is obtained by pseudo-deblending;
 
@@ -156,7 +156,7 @@ The first estimate of the unblended data matrix, $\mathbf{P}$, is obtained by ps
 	\label{eq:Ch-Theory-PseudoDeblended}
 \end{equation}
 
-where $\mathbf{\Gamma}^H$\nomenclature{$\mathbf{\Gamma}^{H}$}{Conjugate transpose of the blending matrix $\mathbf{\Gamma}$ as a function of experiment and source number} is the conjugate transpose of the blending matrix, $\mathbf{\Gamma}$. Pseudo-deblending copies the blended data to the locations of all shots present in the blended shot and shifts them  upward in time to compensate for the time delay. For example, Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoDeblendedCSG} shows the two pseudo-deblended shot gathers of the blended data in Figure \ref{fig:Ch-Theory-BlendedData}. Note that the pseudo-deblended data, $\mathbf{P}_{ps}$\nomenclature{$\mathbf{P}_{ps}$}{Pseudo-deblended data matrix as a function of receiver and source number}, have the same size as $\mathbf{P}$.
+where $\mathbf{\Gamma}^H$\nomenclature{$\mathbf{\Gamma}^{H}$}{Conjugate transpose of the blending matrix $\mathbf{\Gamma}$ as a function of experiment and source number} is the conjugate transpose of the blending matrix, $\mathbf{\Gamma}$. Pseudo-deblending copies the blended data to the locations of all shots present in the blended shot and shifts them  upward in time to compensate for the time delay. For example, Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoDeblendedCSG} show the two pseudo-deblended shot gathers of the blended data in Figure \ref{fig:Ch-Theory-BlendedData}. Note that the pseudo-deblended data, $\mathbf{P}_{ps}$\nomenclature{$\mathbf{P}_{ps}$}{Pseudo-deblended data matrix as a function of receiver and source number}, have the same size as the data matrix, $\mathbf{P}$.
 
 
 \subsection{Common-Receiver Gather}
@@ -185,7 +185,7 @@ In Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoD
 		\caption{Common-receiver gather}
 		\label{fig:Ch-Theory-PseudoDeblendedCRG}
 	\end{subfigure}
-	\caption{Pseudo-deblended data, $\mathbf{P}_{ps}$, sorted in common-shot gathers (a,b) and in a common-receiver gather (c). The pseudo-deblended data in (a) and the the pseudo-deblended data in (b,c) were shifted by different time delays. The overlapping sources map in the pseudo-deblended shot gathers as coherent events, while they map as incoherent spikes in the pseudo-deblended receiver gather.}
+	\caption{Pseudo-deblended data, $\mathbf{P}_{ps}$, sorted in common-shot gathers (a,b) and in a common-receiver gather (c). The pseudo-deblended data in (a) and the the pseudo-deblended data in (b,c) were shifted by different time delays. The overlapping shots map in the pseudo-deblended shot gathers as coherent events, while they map as incoherent spikes in the pseudo-deblended receiver gather.}
 	\label{fig:Ch-Theory-PseudoDeblended}
 
 \end{figure}
@@ -193,7 +193,7 @@ In Figure \ref{fig:Ch-Theory-PseudoDeblendedCSG2} and \ref{fig:Ch-Theory-PseudoD
 
 \subsection{Iterative Estimation of Blending Noise} \label{sec:IterBlenNoiseEst}
 
-In an ideal case the noise generated by the interfering shots present in the pseudo-deblended data, the so-called blending noise, $\mathbf{N}$, is calculated with the unblended data, \nomenclature{$\mathbf{N}$}{Blending noise matrix as a function of receiver and source number}
+In an ideal case the noise generated by the interfering shots present in the pseudo-deblended data, the so-called blending noise, $\mathbf{N}$, is calculated with the unblended data; \nomenclature{$\mathbf{N}$}{Blending noise matrix as a function of receiver and source number}
 
 \begin{equation}
 	\mathbf{N} = \mathbf{P}_{bl} \, \mathbf{\Gamma}^H - \mathbf{P} = \mathbf{P}_{ps} - \mathbf{P}.
@@ -284,7 +284,7 @@ In the marine case the lowest velocity is usually the water velocity, $v_{w} = \
 	\label{fig:Ch-Theory-fk-unblended-data-mask}
 \end{figure}
 
-A 2D $f$-$k$ filter can be designed that removes all elements outside the cone (see Figure \ref{fig:Ch-Theory-FK-Mask}). The $f$-$k$ filter removes the part of the blending noise, which maps outside of the signal cone (see Figure \ref{fig:Ch-Theory-FKDeblended-NoFilter}). Thus, after transforming the data back to the space-time domain the amplitudes of the spiky noise are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
+A 2D $f$-$k$ filter can be designed that removes all elements outside the cone (see Figure \ref{fig:Ch-Theory-FK-Mask}). The $f$-$k$ filter removes the part of the blending noise which maps outside of the signal cone (see Figure \ref{fig:Ch-Theory-FKDeblended-NoFilter}). Thus, after transforming the data back to the space-time domain the amplitudes of the spiky noise are attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). 
 
 Note that $f$-$k$ filtering can only reduce spatially unaliased blending noise. In Figure \ref{fig:Ch-Theory-FK-Mask} the highest spatially unaliased frequency is defined by the point where the white cone intersects with the frequency axis, i.e. at \SI{60}{\hertz}. The spatially aliased blending noise will pass the $f$-$k$ filter and will be reduced afterwards by thresholding. 
 
@@ -294,7 +294,7 @@ The high cut frequency of the $f$-$k$ mask, $f_{cut} = \SI{80}{\hertz}$\nomencla
 
 The second constraint for the estimation of the unblended data is sparsity of the signal in the space-time domain.
 
-After $f$-$k$ filtering the spiky noise is attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). Consequently, the signal amplitudes are now stronger than the noise amplitudes. This allows to define a threshold in the $x$-$t$ domain, which is larger than the attenuated noise amplitudes and smaller than the highest signal amplitudes. Only amplitudes above the threshold are picked (see Figure \ref{fig:Ch-Theory-Threshold}). 
+After $f$-$k$ filtering the spiky noise is attenuated (see Figure \ref{fig:Ch-Theory-FKFiltered}). Consequently, the signal amplitudes are now stronger than the noise amplitudes. This allows to define a threshold in the $x$-$t$ domain which is larger than the attenuated noise amplitudes and smaller than the highest signal amplitudes. Only amplitudes above the threshold are picked (see Figure \ref{fig:Ch-Theory-Threshold}). 
 
 \subsubsection*{Interference Estimation}
 
@@ -313,7 +313,7 @@ which is illustrated in Figure \ref{fig:Ch-Theory-Noise}.
 
 \subsubsection*{Blending Noise Subtraction} 
 
-The estimate of the unblended data matrix \textbf{\^{P}}$_{i}$ is updated by subtracting the estimated blending noise from the pseudo-deblended data,
+The estimate of the unblended data matrix, \textbf{\^{P}}$_{i}$, is updated by subtracting the estimated blending noise from the pseudo-deblended data;
 \nomenclature{$\textbf{\^P}_{i}$}{Data matrix prediction after $i$ iterations as a function of receiver and source number}
 
 \begin{equation}
@@ -323,11 +323,11 @@ The estimate of the unblended data matrix \textbf{\^{P}}$_{i}$ is updated by sub
 
 which is shown in Figure \ref{fig:Ch-Theory-Deblended}.
 
-This process is repeated iteratively till convergence is reached. In this context convergence can be defined as the point where the difference $\mid \textbf{\^P}_{i+1} - \textbf{\^{P}}_{i} \mid$ drops below a predefined limit. Alternatively, one can set a maximum number of iterations. 
+This process is repeated iteratively till convergence is reached. In this context convergence is defined as the point where the difference $\mid \textbf{\^P}_{i+1} - \textbf{\^{P}}_{i} \mid$ drops below a predefined limit. Alternatively, one can set a maximum number of iterations. 
 
 Figure \ref{fig:Ch-Theory-EstimatedData} shows the estimate of the unblended data for increasing iterations. At each iteration the blending noise is attenuated further, such that the threshold can be lowered. Hence, the predicted blending noise increases and approaches the true blending noise. The two blended shots are successively  deblended.
 
-Note that, $f$-$k$ filtering lowers the noise level by removing spatially unaliased blending noise. Next, the lowered noise level enables thresholding to reduce spatially aliased blending noise. Thus, the combination of $f$-$k$ filtering and thresholding is very powerful.
+Note that $f$-$k$ filtering lowers the noise level by removing spatially unaliased blending noise. Next, the lowered noise level enables thresholding to reduce spatially aliased blending noise. Thus, the combination of $f$-$k$ filtering and thresholding is very powerful.
 
 
 \begin{figure}

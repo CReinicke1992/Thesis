@@ -12,6 +12,11 @@ Berkhout, A. (1982).
   Extrapolation, Part A: Theoretical Aspects}.
 \newblock Elsevier.
 
+\bibitem[Berkhout, 2008]{berkhout2008}
+Berkhout, A.~G. (2008).
+\newblock Changing the mindset in seismic data acquisition.
+\newblock {\em The Leading Edge}, 27(7):924--938.
+
 \bibitem[Ibrahim and Sacchi, 2013]{radon}
 Ibrahim, A. and Sacchi, M.~D. (2013).
 \newblock Simultaneous source separation via robust time variant radon
@@ -23,11 +28,22 @@ Ibrahim, A. and Sacchi, M.~D. (2015).
   demigration operators.
 \newblock {\em researchgate.net}.
 
+\bibitem[Long et~al., 2013]{Norris}
+Long, A., von Abendorff, E., Purves, M., Norris, J., and Moritz, A. (2013).
+\newblock Simultaneous long offset (slo) towed streamer seismic acquisition.
+\newblock In {\em 75th EAGE Conference \&amp; Exhibition incorporating SPE
+  EUROPEC 2013}.
+
 \bibitem[Mahdad et~al., 2011]{Mahdad-Deblending-Method}
 Mahdad, A., Doulgeris, P., and Blacquiere, G. (2011).
 \newblock Separation of blended data by iterative estimation and subtraction of
   blending interference noise.
 \newblock {\em Geophysics}, 76(3):Q9--Q17.
+
+\bibitem[Mueller et~al., 2014]{Moritz}
+Mueller, M., Robertsson, J., and Halliday, D. (2014).
+\newblock Simultaneous source separation using encoded source sequences.
+\newblock In {\em 76th EAGE Conference and Exhibition 2014}.
 
 \bibitem[Vaage, 2002]{Vaage}
 Vaage, S.~T. (2002).

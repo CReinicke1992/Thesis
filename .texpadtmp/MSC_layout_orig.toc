@@ -25,8 +25,8 @@
 \contentsline {section}{\numberline {4-1}Data Sorting}{27}{section.4.1}
 \contentsline {section}{\numberline {4-2}Incoherency}{31}{section.4.2}
 \contentsline {section}{\numberline {4-3}3D $f$-$k_x$-$k_y$ Filter}{31}{section.4.3}
-\contentsline {section}{\numberline {4-4}Results}{33}{section.4.4}
-\contentsline {section}{\numberline {4-5}Conclusions}{37}{section.4.5}
+\contentsline {section}{\numberline {4-4}Results}{32}{section.4.4}
+\contentsline {section}{\numberline {4-5}Conclusions}{38}{section.4.5}
 \contentsline {chapter}{\numberline {5}Results Complex Synthetic Data}{39}{chapter.5}
 \contentsline {section}{\numberline {5-1}Wide Crossline Source Array}{39}{section.5.1}
 \contentsline {section}{\numberline {5-2}Dense Crossline Source Array}{44}{section.5.2}
